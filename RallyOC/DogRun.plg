@@ -1,0 +1,220 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DogRun - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP3.bat" with contents
+[
+@echo off
+copy "hlp\DogRun.cnt" .\Debug
+]
+Creating command line "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP3.bat"
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP4.bat" with contents
+[
+@echo off
+echo. >"hlp\RallyOC.hm"
+echo // Commands (ID_* and IDM_*) >>"hlp\RallyOC.hm"
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h >>"hlp\RallyOC.hm"
+echo. >>"hlp\RallyOC.hm"
+echo // Prompts (IDP_*) >>"hlp\RallyOC.hm"
+makehm IDP_,HIDP_,0x30000 resource.h >>"hlp\RallyOC.hm"
+echo. >>"hlp\RallyOC.hm"
+echo // Resources (IDR_*) >>"hlp\RallyOC.hm"
+makehm IDR_,HIDR_,0x20000 resource.h >>"hlp\RallyOC.hm"
+echo. >>"hlp\RallyOC.hm"
+echo // Dialogs (IDD_*) >>"hlp\RallyOC.hm"
+makehm IDD_,HIDD_,0x20000 resource.h >>"hlp\RallyOC.hm"
+echo. >>"hlp\RallyOC.hm"
+echo // Frame Controls (IDW_*) >>"hlp\RallyOC.hm"
+makehm IDW_,HIDW_,0x50000 resource.h >>"hlp\RallyOC.hm"
+]
+Creating command line "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP4.bat"
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP5.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\DogRun.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\DogRun.hlp" goto :Error
+copy "hlp\DogRun.hlp" .\Debug
+goto :done
+:Error
+echo hlp\DogRun.hpj(1) : error:
+type "hlp\DogRun.log"
+:done
+]
+Creating command line "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP5.bat"
+Creating command line "rc.exe /l 0x409 /fo"Debug/DogRun.res" /d "_DEBUG" "C:\RallyOC\DogRun.rc"" 
+Copying contents file...
+        1 file(s) copied.
+Making help include file...
+Making help file...
+        1 file(s) copied.
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/RallyOC.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\RallyOC\AddressDlg.cpp"
+"C:\RallyOC\ArrowObj.cpp"
+"C:\RallyOC\ArrowObjList.cpp"
+"C:\RallyOC\AuthorDlg.cpp"
+"C:\RallyOC\AuthorPref.cpp"
+"C:\RallyOC\CGridCtrl.cpp"
+"C:\RallyOC\ChildFrm.cpp"
+"C:\RallyOC\CourseInfo.cpp"
+"C:\RallyOC\CourseInfoDlg.cpp"
+"C:\RallyOC\CourseTextPrefDlg.cpp"
+"C:\RallyOC\DocInfodlg.cpp"
+"C:\RallyOC\DogRun.cpp"
+"C:\RallyOC\DogRunDoc.cpp"
+"C:\RallyOC\DogRunView.cpp"
+"C:\RallyOC\EditDlg.cpp"
+"C:\RallyOC\EnBitmap.cpp"
+"C:\RallyOC\ErrorReportDlg.cpp"
+"C:\RallyOC\ImageProcessors.cpp"
+"C:\RallyOC\MainFrm.cpp"
+"C:\RallyOC\MyFont.cpp"
+"C:\RallyOC\ObjectPropDlg.cpp"
+"C:\RallyOC\PylonObj.cpp"
+"C:\RallyOC\RallyListDlg.cpp"
+"C:\RallyOC\RallyListView.cpp"
+"C:\RallyOC\RallyObject.cpp"
+"C:\RallyOC\RallyObjList.cpp"
+"C:\RallyOC\RallyOCPrintDialog.cpp"
+"C:\RallyOC\RallyTracker.cpp"
+"C:\RallyOC\RegisterDlg.cpp"
+"C:\RallyOC\RenumberDlg.cpp"
+"C:\RallyOC\ScoreSheetPrefDlg.cpp"
+"C:\RallyOC\Scribble.cpp"
+"C:\RallyOC\SelectFinishDlg.cpp"
+"C:\RallyOC\SpecialObj.cpp"
+"C:\RallyOC\Splash.cpp"
+"C:\RallyOC\StationDescDlg.cpp"
+"C:\RallyOC\StationList.cpp"
+"C:\RallyOC\StationListPrefdlg.cpp"
+"C:\RallyOC\StationPrefDlg.cpp"
+"C:\RallyOC\StationPropDlg.cpp"
+"C:\RallyOC\TextObj.cpp"
+"C:\RallyOC\TextPrefDlg.cpp"
+"C:\RallyOC\Verify.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/RallyOC.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\RallyOC\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP7.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RallyOC.pdb" /debug /machine:I386 /out:"Debug/RallyOC.exe" /pdbtype:sept 
+.\Debug\AddressDlg.obj
+.\Debug\ArrowObj.obj
+.\Debug\ArrowObjList.obj
+.\Debug\AuthorDlg.obj
+.\Debug\AuthorPref.obj
+.\Debug\CGridCtrl.obj
+.\Debug\ChildFrm.obj
+.\Debug\CourseInfo.obj
+.\Debug\CourseInfoDlg.obj
+.\Debug\CourseTextPrefDlg.obj
+.\Debug\DocInfodlg.obj
+.\Debug\DogRun.obj
+.\Debug\DogRunDoc.obj
+.\Debug\DogRunView.obj
+.\Debug\EditDlg.obj
+.\Debug\EnBitmap.obj
+.\Debug\ErrorReportDlg.obj
+.\Debug\ImageProcessors.obj
+.\Debug\MainFrm.obj
+.\Debug\MyFont.obj
+.\Debug\ObjectPropDlg.obj
+.\Debug\PylonObj.obj
+.\Debug\RallyListDlg.obj
+.\Debug\RallyListView.obj
+.\Debug\RallyObject.obj
+.\Debug\RallyObjList.obj
+.\Debug\RallyOCPrintDialog.obj
+.\Debug\RallyTracker.obj
+.\Debug\RegisterDlg.obj
+.\Debug\RenumberDlg.obj
+.\Debug\ScoreSheetPrefDlg.obj
+.\Debug\Scribble.obj
+.\Debug\SelectFinishDlg.obj
+.\Debug\SpecialObj.obj
+.\Debug\Splash.obj
+.\Debug\StationDescDlg.obj
+.\Debug\StationList.obj
+.\Debug\StationListPrefdlg.obj
+.\Debug\StationPrefDlg.obj
+.\Debug\StationPropDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TextObj.obj
+.\Debug\TextPrefDlg.obj
+.\Debug\Verify.obj
+.\Debug\DogRun.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddressDlg.cpp
+ArrowObj.cpp
+ArrowObjList.cpp
+AuthorDlg.cpp
+AuthorPref.cpp
+CGridCtrl.cpp
+ChildFrm.cpp
+CourseInfo.cpp
+CourseInfoDlg.cpp
+CourseTextPrefDlg.cpp
+DocInfodlg.cpp
+DogRun.cpp
+DogRunDoc.cpp
+DogRunView.cpp
+EditDlg.cpp
+EnBitmap.cpp
+ErrorReportDlg.cpp
+ImageProcessors.cpp
+MainFrm.cpp
+MyFont.cpp
+Generating Code...
+Compiling...
+ObjectPropDlg.cpp
+PylonObj.cpp
+RallyListDlg.cpp
+RallyListView.cpp
+RallyObject.cpp
+RallyObjList.cpp
+RallyOCPrintDialog.cpp
+RallyTracker.cpp
+RegisterDlg.cpp
+RenumberDlg.cpp
+ScoreSheetPrefDlg.cpp
+Scribble.cpp
+SelectFinishDlg.cpp
+SpecialObj.cpp
+Splash.cpp
+StationDescDlg.cpp
+StationList.cpp
+StationListPrefdlg.cpp
+StationPrefDlg.cpp
+StationPropDlg.cpp
+Generating Code...
+Compiling...
+TextObj.cpp
+TextPrefDlg.cpp
+Verify.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+RallyOC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

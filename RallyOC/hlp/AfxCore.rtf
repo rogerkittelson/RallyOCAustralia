@@ -1,0 +1,974 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff6\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+{\f4\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Helvetica{\*\falt Arial};}{\f6\froman\fcharset0\fprq2{\*\panose 02020603040505020304}Tms Rmn{\*\falt Times New Roman};}
+{\f7\fswiss\fcharset0\fprq2{\*\panose 020b0604020202030204}Helv{\*\falt Arial};}{\f36\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}MS Sans Serif;}{\f171\froman\fcharset238\fprq2 Times New Roman CE;}
+{\f172\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f174\froman\fcharset161\fprq2 Times New Roman Greek;}{\f175\froman\fcharset162\fprq2 Times New Roman Tur;}{\f176\froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\f177\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f178\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f179\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f211\fswiss\fcharset238\fprq2 Helvetica CE{\*\falt Arial};}
+{\f212\fswiss\fcharset204\fprq2 Helvetica Cyr{\*\falt Arial};}{\f214\fswiss\fcharset161\fprq2 Helvetica Greek{\*\falt Arial};}{\f215\fswiss\fcharset162\fprq2 Helvetica Tur{\*\falt Arial};}{\f216\fswiss\fcharset177\fprq2 Helvetica (Hebrew){\*\falt Arial};}
+{\f217\fswiss\fcharset178\fprq2 Helvetica (Arabic){\*\falt Arial};}{\f218\fswiss\fcharset186\fprq2 Helvetica Baltic{\*\falt Arial};}{\f219\fswiss\fcharset163\fprq2 Helvetica (Vietnamese){\*\falt Arial};}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;
+\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;
+\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red255\green255\blue255;}{\stylesheet{\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{
+\s1\ql \li0\ri0\sb240\nowidctlpar\faauto\outlinelevel0\rin0\lin0\itap0 \b\f7\fs24\ul\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 1;}{\s2\ql \li0\ri0\sb120\nowidctlpar\faauto\outlinelevel1\rin0\lin0\itap0 
+\b\f7\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 2;}{\s3\ql \li360\ri0\nowidctlpar\faauto\outlinelevel2\rin0\lin360\itap0 \b\f6\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 3;}{
+\s4\ql \li360\ri0\nowidctlpar\faauto\outlinelevel3\rin0\lin360\itap0 \f6\fs24\ul\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 4;}{\s5\ql \li720\ri0\nowidctlpar\faauto\outlinelevel4\rin0\lin720\itap0 
+\b\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 5;}{\s6\ql \li720\ri0\nowidctlpar\faauto\outlinelevel5\rin0\lin720\itap0 \f6\fs20\ul\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 6;}
+{\s7\ql \li720\ri0\nowidctlpar\faauto\outlinelevel6\rin0\lin720\itap0 \i\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 7;}{\s8\ql \li720\ri0\nowidctlpar\faauto\outlinelevel7\rin0\lin720\itap0 
+\i\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 8;}{\s9\ql \li720\ri0\nowidctlpar\faauto\outlinelevel8\rin0\lin720\itap0 \i\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 heading 9;}
+{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\*\cs15 \additive \f6\fs16\up6\lang1033\langfe0\langnp1033\langfenp0 
+\sbasedon10 \ssemihidden footnote reference;}{\s16\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext16 \ssemihidden footnote text;}{
+\s17\ql \li720\ri0\nowidctlpar\faauto\rin0\lin720\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 Normal Indent;}{\s18\ql \fi-240\li480\ri0\sb80\nowidctlpar\tx480\faauto\rin0\lin480\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext18 nscba;}{\s19\ql \fi-240\li240\ri0\sa20\nowidctlpar\faauto\rin0\lin240\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext19 j;}{
+\s20\ql \li480\ri0\sa20\nowidctlpar\faauto\rin0\lin480\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext20 ij;}{\s21\ql \li0\ri0\sb80\sa20\nowidctlpar\faauto\rin0\lin0\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext21 btb;}{\s22\ql \fi-240\li2400\ri0\sb20\sa20\nowidctlpar\faauto\rin0\lin2400\itap0 \f4\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext22 ctcb;}{
+\s23\ql \fi-240\li480\ri0\sa40\nowidctlpar\tx480\faauto\rin0\lin480\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext23 ns;}{\s24\ql \li0\ri0\sa120\nowidctlpar\faauto\rin0\lin0\itap0 
+\f4\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext24 TT;}{\s25\ql \fi-240\li2400\ri0\sa20\nowidctlpar\faauto\rin0\lin2400\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext25 crtj;}{
+\s26\ql \fi-240\li480\ri0\nowidctlpar\tx480\faauto\rin0\lin480\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext26 nsca;}{\s27\ql \li0\ri0\sa20\nowidctlpar\faauto\rin0\lin0\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext27 bt;}{\s28\ql \li240\ri0\sb120\sa40\nowidctlpar\faauto\rin0\lin240\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext28 Hf;}{
+\s29\ql \li240\ri0\sb120\sa40\nowidctlpar\faauto\rin0\lin240\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext29 Hs;}{\s30\ql \li480\ri0\sb120\sa40\nowidctlpar\faauto\rin0\lin480\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext30 RT;}{\s31\ql \fi-2160\li2160\ri0\sb240\sa80\nowidctlpar\tx2160\faauto\rin0\lin2160\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext31 c;}{
+\s32\ql \li2160\ri0\sa20\nowidctlpar\faauto\rin0\lin2160\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext32 ct;}{\s33\ql \li240\ri0\sa20\nowidctlpar\faauto\rin0\lin240\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext33 it;}{\s34\ql \li480\ri0\nowidctlpar\faauto\rin0\lin480\itap0 \f4\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext34 nsct;}{
+\s35\ql \fi-160\li400\ri0\sb80\sa40\nowidctlpar\faauto\rin0\lin400\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext35 nscb;}{\s36\ql \fi-2640\li2880\ri0\sb120\sa40\nowidctlpar\brdrb\brdrs\brdrw15 \brdrbtw\brdrs\brdrw15 
+\tx2880\faauto\rin0\lin2880\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext36 HC2;}{\s37\ql \fi-2640\li2880\ri0\sb120\sa20\nowidctlpar\tx2880\faauto\rin0\lin2880\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext37 C2;}{\s38\ql \fi-240\li2400\ri0\sa20\nowidctlpar\faauto\rin0\lin2400\itap0 \f4\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext38 ctc;}{
+\s39\ql \li2160\ri0\sb160\nowidctlpar\faauto\rin0\lin2160\itap0 \f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext39 crt;}{\s40\ql \li480\ri0\sb20\sa40\nowidctlpar\faauto\rin0\lin480\itap0 
+\f4\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext40 or;}{\s41\ql \fi-259\li360\ri0\sb40\sa40\nowidctlpar\tx360\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext41 Ln1;}{
+\s42\ql \li115\ri0\sb80\sa80\nowidctlpar\faauto\rin0\lin115\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 *Intro;}{\s43\ql \li115\ri0\sb80\sa80\keepn\nowidctlpar\faauto\rin0\lin115\itap0 
+\b\f36\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon3 \snext42 *Title;}{\s44\ql \fi-245\li360\ri0\sb80\nowidctlpar\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext44 *Jl;}{
+\s45\ql \li360\ri0\sb40\sa40\nowidctlpar\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Lp1;}{\s46\ql \fi-1800\li1915\ri0\sb60\sl-240\slmult1\nowidctlpar\tx1915\faauto\rin0\lin1915\itap0 
+\f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext46 Tph;}{\s47\ql \li115\ri0\sb120\sa80\nowidctlpar\faauto\rin0\lin115\itap0 \b\f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext41 Proch;}{\*\cs48 \additive 
+\super \sbasedon10 \ssemihidden endnote reference;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\rsidtbl \rsid686057\rsid748626\rsid799284\rsid1010655\rsid1727822\rsid1783371\rsid2162850\rsid2251502\rsid2502912\rsid2574372\rsid2636904\rsid2766242
+\rsid3350950\rsid3556644\rsid4144512\rsid4546081\rsid4816164\rsid4931486\rsid4941670\rsid5001387\rsid5774218\rsid5833330\rsid5862835\rsid5913190\rsid5968358\rsid6706752\rsid7175733\rsid7364585\rsid7567214\rsid7680747\rsid7685116\rsid7931031\rsid7996066
+\rsid8202060\rsid8202283\rsid8654872\rsid8738445\rsid9124686\rsid9398692\rsid9464978\rsid9635412\rsid9792117\rsid10039298\rsid10125188\rsid10181495\rsid10289790\rsid10368545\rsid10562739\rsid10573006\rsid10581037\rsid10838733\rsid10949035\rsid11292104
+\rsid11414175\rsid11535368\rsid11557657\rsid11608767\rsid11690361\rsid12403591\rsid12469047\rsid12537555\rsid12669016\rsid12873828\rsid13107446\rsid13187278\rsid13791071\rsid13858286\rsid14237900\rsid14293372\rsid14371056\rsid14486773\rsid15095911
+\rsid15227571\rsid15556866\rsid15871797\rsid15872340\rsid16473247\rsid16515689}{\*\generator Microsoft Word 11.0.5604;}{\info{\title AFXCORE}{\subject MFC Core RTF Help}{\author AFX}{\operator Janet Hopson}{\creatim\yr1992\mo10\dy7\hr11\min4}
+{\revtim\yr2004\mo9\dy28\hr8\min51}{\version54}{\edmins687}{\nofpages87}{\nofwords4023}{\nofchars22933}{\*\company self}{\nofcharsws26903}{\vern24689}}
+\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind4\viewscale100\nolnhtadjtbl\rsidroot2574372 \fet0{\*\ftnsep 
+\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9635412 \chftnsep 
+\par }}{\*\ftnsepc \pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9635412 \chftnsepc 
+\par }}{\*\aftnsep \pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9635412 \chftnsep 
+\par }}{\*\aftnsepc \pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9635412 \chftnsepc 
+\par }}\sectd \linex576\endnhere\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}
+{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #
+}{\insrsid2574372  main_index}}}{\fs16\up6\insrsid2574372   }{\b\f7\fs24\up6\insrsid2574372 RallyOC Help Index}{\b\f7\insrsid2574372 
+\par }{\f4\insrsid2574372 
+\par }{\b\f7\insrsid2574372 How To ...
+\par }{\f7\insrsid2574372 \tab <<add your application-specific "how to" topics here>>}{\f4\ulw\insrsid2574372 
+\par 
+\par }{\b\f7\insrsid2574372 Commands
+\par }{\f7\insrsid2574372 \tab }{\f7\uldb\insrsid2574372 File menu}{\v\f7\insrsid2574372 menu_file}{\f7\insrsid2574372 
+\par \tab }{\f7\uldb\insrsid2574372 Edit menu}{\v\f7\insrsid2574372 menu_edit}{\f7\uldb\insrsid2574372\charrsid9635412 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11292104 {\f7\insrsid2574372 \tab }{\f7\uldb\insrsid2574372 View menu}{\v\f7\insrsid2574372 menu_view}{\f7\uldb\insrsid11292104\charrsid9635412 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid4941670 {\f7\insrsid11292104 \tab }{\f7\uldb\insrsid9635412 Add menu}{\v\f7\insrsid9635412 menu_}{\v\f7\insrsid686057 add}{\f7\uldb\insrsid4941670\charrsid9635412 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid8738445 {\f7\insrsid4941670 \tab }{\f7\uldb\insrsid4941670 Course menu}{\v\f7\insrsid4941670 menu_}{\v\f7\insrsid11608767 course}{\f7\insrsid8738445\charrsid4941670 
+\par }{\f7\insrsid8738445 \tab }{\f7\uldb\insrsid2574372 Window menu}{\v\f7\insrsid2574372 menu_window}{\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \tab }{\f7\uldb\insrsid2574372 Help menu}{\v\f7\uldb\insrsid10368545 menu_help}{\v\f7\uldb\insrsid12873828\charrsid10368545 
+\par }{\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  menu_file}}K
+{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  files: managing}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 $
+{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  File menu commands}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 
+File menu commands}{\f7\insrsid2574372 
+\par 
+\par The File menu offers the following commands:
+\par 
+\par }\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {
+\f7\uldb\insrsid2574372 New}{\v\f7\insrsid2574372 HID_FILE_NEW}{\f7\insrsid2574372 \cell Creates a new document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow0\irowband0
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Open}{\v\f7\insrsid2574372 
+HID_FILE_OPEN}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Opens an existing document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow1\irowband1
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Close}{\v\f7\insrsid2574372 
+HID_FILE_CLOSE}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Closes an opened document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow2\irowband2
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Save}{\v\f7\insrsid2574372 
+HID_FILE_SAVE}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Saves an opened document using the same file name.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow3\irowband3
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Save As}{\v\f7\insrsid2574372 
+HID_FILE_SAVE_AS}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Saves an opened document to a specified file name.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow4\irowband4
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Print}{\v\f7\insrsid2574372 
+HID_FILE_PRINT}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Prints a document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow5\irowband5
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Print Preview}{
+\v\f7\insrsid2574372 HID_FILE_PRINT_PREVIEW}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Displays the document on the screen as it would appear printed.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {
+\f7\insrsid2574372 \trowd \irow6\irowband6\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {
+\f7\uldb\insrsid2574372 Print Setup}{\v\f7\insrsid2574372 HID_FILE_PRINT_SETUP}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Selects a printer and printer connection.\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow7\irowband7\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row 
+}\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Send...}{\v\f7\insrsid2574372 HID_FILE_SEND_MAIL}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Sends the active document through electronic mail.}{\f7\insrsid2251502 
+\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow8\irowband8\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil 
+\cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid11414175 {\f7\uldb\insrsid2251502 DocumentInfo...}{\v\f7\insrsid2251502 HID_DOC_INFO}{\f7\uldb\insrsid2251502 \cell }{\f7\insrsid2251502 Update/view document information.\cell 
+}\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2251502 \trowd \irow9\irowband9\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil 
+\cellx8622\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Exit}{\v\f7\insrsid2574372 HID_APP_EXIT}{\f7\insrsid2574372 \tab 
+\par }{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Exits RallyOC.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow10\irowband10\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2088\clshdrawnil \cellx1980
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6642\clshdrawnil \cellx8622\row }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  menu_edit}}}{\b\f7\insrsid2574372 
+Edit menu commands}{\f7\insrsid2574372 
+\par 
+\par The Edit menu offers the following commands:
+\par }\pard \ql \fi-720\li720\ri0\widctlpar\faauto\rin0\lin720\itap0 {\f7\insrsid2574372 
+\par }\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {
+\f7\uldb\insrsid2574372 Undo}{\v\f7\insrsid2574372 HID_EDIT_UNDO}{\f7\insrsid2574372 \cell Reverse previous editing operation.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 
+\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard 
+\ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid1727822 {\f7\uldb\insrsid16473247 Redo}{\v\f7\insrsid16473247 HID_EDIT_REDO}{\f7\insrsid16473247 \cell Reverse\rquote s the previous undo operation.\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow1\irowband1\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid16473247 Cut}{\v\f7\insrsid16473247 HID_EDIT_CUT}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid16473247 Deletes }{
+\f7\insrsid10573006 station(s)}{\f7\insrsid16473247  from the document and moves it to the clipboard.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow2\irowband2
+\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil 
+\cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid16473247 Copy}{
+\v\f7\insrsid16473247 HID_EDIT_COPY}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid16473247 Copies }{\f7\insrsid10573006 station(s) }{\f7\insrsid16473247 from the document to the clipboard.\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow3\irowband3\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid16473247 Paste}{\v\f7\insrsid16473247 HID_EDIT_PASTE}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid16473247 Pastes }{
+\f7\insrsid10573006 station(s) }{\f7\insrsid16473247 from the clipboard into the document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow4\irowband4
+\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil 
+\cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid10573006 Delete}{
+\v\f7\insrsid16473247 HID_EDIT_}{\v\f7\insrsid10573006 CLEAR}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid10573006 Deletes station(s) from the document.}{\f7\insrsid16473247 \cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow5\irowband5\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid10573006 Rotate Station}{\v\f7\uldb\insrsid10573006 menu_rotate}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid8202060 
+Rotate station(s) 90}{\f7\insrsid8202060 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid8202060  clockwise, 90}{\f7\insrsid8202060 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{
+\f7\insrsid8202060  counter-clockwise, 180}{\f7\insrsid8202060 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid8202060  or return to 0}{\f7\insrsid8202060 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt
+\f3\fs20}}}{\f7\insrsid16473247 .\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid16473247 \trowd \irow6\irowband6
+\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil 
+\cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid9398692 Align}{
+\v\f7\insrsid9398692 menu_align}{\f7\uldb\insrsid16473247 \cell }{\f7\insrsid9398692 Align stations vertically or horizontally}{\f7\insrsid16473247 .\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {
+\f7\insrsid16473247 \trowd \irow7\irowband7\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil \cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard 
+\ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid1727822 {\f7\uldb\insrsid9398692 Insert After}{\v\f7\insrsid9398692 menu_insert}{\f7\uldb\insrsid9398692 \cell }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\insrsid9398692 
+Change station number.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid9398692 \trowd \irow8\irowband8\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth3\trwWidth10320\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1605\clshdrawnil 
+\cellx1497\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth8715\clshdrawnil \cellx10212\row }\pard \ql \fi-720\li720\ri0\widctlpar\faauto\rin0\lin720\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \tab \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  menu_view}}}{\b\f7\insrsid2574372 View menu commands}{\f7\insrsid2574372 
+\par 
+\par The View menu offers the following commands:
+\par 
+\par }\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {
+\f7\uldb\insrsid2574372 Toolbar}{\v\f7\insrsid2574372 HID_VIEW_TOOLBAR}{\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Shows or hides the toolbar.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {
+\f7\insrsid2574372 \trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {
+\f7\uldb\insrsid2574372 Status Bar}{\v\f7\insrsid2574372 HID_VIEW_STATUS_BAR}{\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 Shows or hides the status bar.
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\insrsid2574372 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow1\irowband1
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid5774218 Course Info}{
+\v\f7\insrsid5774218\charrsid5774218 ID_VIEW_COURSE_INFO}{\f7\uldb\insrsid5774218 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid5774218 Shows information for the course.
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid5774218 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid5774218 \trowd \irow2\irowband2
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid5774218 Size to Screen}{
+\v\f7\insrsid5774218\charrsid5774218 ID_SIZE_TO_SCREEN\cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid5774218 Sizes the course to fit the size of the window.
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid5774218 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid5774218 \trowd \irow3\irowband3\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2502912 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid12403591 {\f7\insrsid2766242 \page }{\cs15\fs16\up6\insrsid12403591 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid12403591 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid12403591 #}{\insrsid12403591  menu_add}}}{\b\f7\insrsid12403591 Add menu commands}{\f7\insrsid12403591 
+\par 
+\par The Add menu offers the following commands:
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid16515689 {\f7\uldb\insrsid8654872 Start}{\v\f7\insrsid12403591 ID_}{\v\f7\insrsid8654872 DRAW_START}{\f7\uldb\insrsid12403591 \cell }{\f7\insrsid8654872 Add the Start Station.}{
+\f7\insrsid12403591 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid12403591 \trowd \irow0\irowband0
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid16515689 {\f7\uldb\insrsid8654872 Finish}{
+\v\f7\insrsid12403591 ID_}{\v\f7\insrsid13187278 DRAW_FINISH}{\f7\uldb\insrsid12403591 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid16515689 {\f7\insrsid8654872 Add the Finish Station}{\f7\insrsid12403591 .
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid16515689 {\f7\insrsid12403591 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid12403591 \trowd \irow1\irowband1
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 Honor}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 DRAW_HONOR}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add the Honor Station.
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow2\irowband2
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 Halt-Forward}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 FOWARD_HALT}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add a Halt-Perform Exercise-Move Forward }{\f7\insrsid14371056 
+Exercise }{\f7\insrsid8654872 Station.}{\f7\insrsid14371056  (Sit, Sit-Down, Walk Around, Down-Walk Around, Stand-Walk Around, Down-Sit}{\f7\insrsid14293372 , Stand-Down, Stand-Sit)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow3\irowband3
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 Pace}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 CHANGE_PACE}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add a Change of Pace }{\f7\insrsid14371056 Exercise }{
+\f7\insrsid8654872 Station.}{\f7\insrsid14293372  (Slow, Normal, Fast, Fast From Sit)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow4\irowband4
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 Right Turns}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 RIGHT_TURNS}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add a Right Turn }{\f7\insrsid14371056 Exercise }{
+\f7\insrsid8654872 Station.}{\f7\insrsid9464978  (90}{\f7\insrsid9464978 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978 , About Turn, 270}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol"
+ \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978 , 360}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978 , About Forward, 90}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol"
+ \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid13858286  }{\f7\insrsid9464978 Pivot,  180}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid13858286  }{\f7\insrsid9464978 Pivot, 1 Step Call to Heel)}{
+\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow5\irowband5
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 Left Turns}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 LEFT_TURNS}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add }{\f7\insrsid12469047 a Left }{\f7\insrsid8654872 Turn }{
+\f7\insrsid14371056 Exercise }{\f7\insrsid8654872 Station.}{\f7\insrsid9464978  }{\f7\insrsid13858286 (90}{\f7\insrsid9464978 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978 , About \'93U\'94 }{
+\f7\insrsid13858286 Turn, 270}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978 , 360}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{
+\f7\insrsid9464978 , About Turn, }{\f7\insrsid13858286 \'93U\'94 Turn Forward, }{\f7\insrsid9464978 90}{\f7\insrsid13858286 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978  Pivot,  180}{\f7\insrsid13858286 
+{\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid9464978  Pivot, )}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow6\irowband6
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid8654872 F}{
+\f7\uldb\insrsid12669016 ront}{\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 FINISH}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add }{\f7\insrsid14371056 
+a Finish Exercise}{\f7\insrsid8654872  Station.}{\f7\insrsid5968358  (Call Dog Front- Finish Right-Forward, Call Dog Front-Finish Left-Forward, Call Dog Front-Finish Right-Halt, Call Dog Front-Finish Left-Halt, Halt-Call Dog Front-Finis
+h Right, Halt-Call Dog Front-Finish Left)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow7\irowband7
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid14371056 Moving}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid1783371 MOVE}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add }{\f7\insrsid14371056 a Movement Exercise }{\f7\insrsid8654872 
+Station.}{\f7\insrsid12669016  (Side Step Right, Moving Down, Send Over Jump-Handler Runs By, Moving Stand-Walk Around Dog)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow8\irowband8
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid14371056 Heel}{
+\v\f7\insrsid8654872 ID_}{\v\f7\insrsid4546081 HEEL}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add }{\f7\insrsid14371056 a Heel Exercise}{\f7\insrsid8654872  Station.}
+{\f7\insrsid12669016  (Halt-1,2, 3 Steps Forward, Call Front-1, 2, 3 Steps Backward,}{\f7\insrsid5862835  Halt-Side Step Right-Halt,}{\f7\insrsid12669016  Back Up 3 Steps-Dog Stays in Position)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow9\irowband9
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\uldb\insrsid14371056 Weaves}{
+\v\f7\insrsid8654872 ID}{\v\f7\insrsid4546081 _WEAVE}{\f7\uldb\insrsid8654872 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720\pararsid5001387 {\f7\insrsid8654872 Add }{\f7\insrsid14371056 a Weave Exercise}{\f7\insrsid8654872 
+ Station.}{\f7\insrsid5862835  (Spiral Right-Dog Outside, Spiral Left-Dog Inside, Straight Figure 8 Weave Twice, Serpentine Weave Once, Offset Figure 8)}{\f7\insrsid8654872 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid5001387 {\f7\insrsid8654872 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid8654872 \trowd \irow10\irowband10\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth1\trftsWidthB3\trftsWidthA3\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272
+\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid12403591 {\f7\insrsid12403591 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11608767 {\f7\insrsid12403591 \page }{\cs15\fs16\up6\insrsid11608767 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11608767 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid11608767 #}{\insrsid11608767  menu_course}}}{\b\f7\insrsid11608767 Course menu commands}{\f7\insrsid11608767 
+\par 
+\par The Course menu offers the following commands:
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid11414175 {\f7\uldb\insrsid10949035 Info}{\v\f7\insrsid10949035 ID}{\v\f7\insrsid11608767 D_}{\v\f7\insrsid10949035 COURSE_INFO}{\f7\uldb\insrsid11608767 \cell }{\f7\insrsid10949035 
+Show the Course Information Dialog.}{\f7\insrsid11608767 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid11608767 \trowd \irow0\irowband0
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid11414175 {\f7\uldb\insrsid10949035 Verify}{\v\f7\insrsid10949035 ID}{
+\v\f7\insrsid11608767 D_}{\v\f7\insrsid10949035 COURSE_VERIFY}{\f7\uldb\insrsid11608767 \cell }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid10949035 {\f7\insrsid10949035 Checks course design for compliance with \line 
+AKC Rally Obedience Regulations. 
+\par }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0\pararsid11414175 {\f7\insrsid11608767 \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid11608767 \trowd \irow1\irowband1\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1380\clshdrawnil \cellx1272\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7452\row }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11608767 {\f7\insrsid11608767 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid14237900  }{\insrsid2574372 menu_window}}}{
+\b\f7\insrsid2574372 Window menu commands}{\b\f7\insrsid2574372\charrsid5913190 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par The Window menu offers the following commands, which enable you to arrange multiple views of multiple documents in the application window:
+\par 
+\par }\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 New Window}{\v\f7\insrsid2574372 HID_WINDOW_NEW}{
+\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Creates a new window that views the same document.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow0\irowband0
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Cascade}{\v\f7\insrsid2574372 HID_WINDOW_CASCADE}{
+\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Arranges windows in an overlapped fashion.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow1\irowband1
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Tile}{\v\f7\insrsid2574372 HID_WINDOW_TILE}{
+\f7\uldb\insrsid2574372 \cell }{\f7\insrsid2574372 Arranges windows in non-overlapped tiles.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow2\irowband2
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Arrange Icons}{\v\f7\insrsid2574372 HID_WINDOW_ARRANGE}{
+\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 Arranges icons of closed windows.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 
+\trowd \irow3\irowband3\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Split}{\v\f7\insrsid2574372 
+HID_WINDOW_SPLIT}{\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 Split the active window into panes.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {
+\f7\insrsid2574372 \trowd \irow4\irowband4\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil 
+\cellx1572\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Window 1, 2, ...}{
+\v\f7\insrsid2574372 HID_WINDOW_ALL}{\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 Goes to specified window.\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow5\irowband5\lastrow \ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1680\clshdrawnil \cellx1572\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7752\row }\pard 
+\ql \fi-720\li720\ri0\widctlpar\faauto\rin0\lin720\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  menu_help}}}{\b\f7\insrsid2574372 
+Help menu commands}{\f7\insrsid2574372 
+\par 
+\par The Help menu offers the following commands, which provide you assistance with this application: 
+\par 
+\par }\trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1185\clshdrawnil \cellx1077\clvertalt
+\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7257\pard \ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 Help Topics}{\v\f7\insrsid2574372 HID_HELP_INDEX}
+{\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 Offers you an index to topics on which you can get help.\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow0\irowband0\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb
+\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1185\clshdrawnil \cellx1077\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7257\row }\pard 
+\ql \li0\ri0\widctlpar\intbl\faauto\rin0\lin0 {\f7\uldb\insrsid2574372 About}{\v\f7\insrsid2574372 HID_APP_ABOUT}{\f7\uldb\insrsid2574372 \cell }\pard \ql \fi-720\li720\ri0\widctlpar\intbl\faauto\rin0\lin720 {\f7\insrsid2574372 
+Displays the version number of this application.\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\f7\insrsid2574372 \trowd \irow1\irowband1\lastrow 
+\ts11\trgaph108\trleft-108\trftsWidth1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth1185\clshdrawnil \cellx1077\clvertalt\clbrdrt\brdrnone 
+\clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6180\clshdrawnil \cellx7257\row }\pard \ql \fi-720\li720\ri0\widctlpar\faauto\rin0\lin720\itap0 {\f7\insrsid2574372 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_NEW}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372 
+ files: managing}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ File New command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 New command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to create a new document in RallyOC.  Select the type of new file you want to create in the }{\f7\uldb\insrsid2574372 File New dialog box}{\v\insrsid2574372 AFX_HIDD_NEWTYPEDLG}{\insrsid2574372 .  }{\f7\insrsid2574372 
+<< Remove previous sentence if your application supports only one document type. >>
+\par 
+\par You can open an existing document with the }{\f7\uldb\insrsid2574372 Open command}{\v\insrsid2574372 HID_FILE_OPEN}{\f7\insrsid2574372 .
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc filenew.bmp\}
+\par Keys:\tab CTRL+N
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_NEWTYPEDLG}}}{
+\b\f7\insrsid2574372 File New dialog box
+\par }{\f7\insrsid2574372 
+\par << Delete this help topic if your application supports only one document type. >>
+\par 
+\par Specify the type of document you wish to create:
+\par << List your application's document types here >>\page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{
+\insrsid2574372  HID_FILE_OPEN}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  files: managing}}}{\f7\insrsid2574372  
+}{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  File Open command}}}{
+\f7\insrsid2574372  }{\b\f7\insrsid2574372 Open command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to open an existing document in a new window.  You can open multiple documents at once.  Use the Window menu to switch among the multiple open documents.  See }{\f7\uldb\insrsid2574372 Window 1, 2, ... command}{\v\f7\insrsid2574372 
+HID_WINDOW_ALL}{\f7\insrsid2574372 .
+\par 
+\par You can create new documents with the }{\f7\uldb\insrsid2574372 New command}{\v\insrsid2574372 HID_FILE_NEW}{\f7\insrsid2574372 .
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc fileopen.bmp\}
+\par Keys:\tab CTRL+O
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_FILEOPEN}}}{\b\f7\insrsid2574372 File Open dialog box
+\par }{\f7\insrsid2574372 
+\par The following options allow you to specify which file to open:
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 File Name
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Type or select the filename you want to open.  This box lists files with the extension you select in the List Files of Type box. 
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 List Files of Type
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the type of file you want to open:
+\par << List your application's file types here. >>
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Drives
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the drive in which RallyOC stores the file that you want to open. 
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Directories
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the directory in which RallyOC stores the file that you want to open.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Network...
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Choose this button to connect to a network location, assigning it a new drive letter. 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_CLOSE}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372 
+ files: managing}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ File Close command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 Close command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to close all windows containing the act
+ive document.  RallyOC suggests that you save changes to your document before you close it.  If you close a document without saving, you lose all changes made since the last time you saved it.  Before closing an untitled document, RallyOC displays the }{
+\f7\uldb\insrsid2574372 Save As dialog box}{\v\insrsid2574372 AFX_HIDD_FILESAVE}{\f7\insrsid2574372  and suggests that you name and save the document.
+\par 
+\par You can also close a document by using the Close icon on the document's window, as shown below:
+\par \{bml scmenu.bmp\}
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_SAVE}}K{\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  files: managing}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  File Save command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 
+Save command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to save the active document to its current name and directory.  When you save a document for the first time, RallyOC displays the }{\f7\uldb\insrsid2574372 Save As dialog box}{\v\insrsid2574372 AFX_HIDD_FILESAVE}{\f7\insrsid2574372 
+ so you can name your document.  If you want to change the name and directory of an existing document before you save it, choose the }{\f7\uldb\insrsid2574372 Save As command}{\v\insrsid2574372 HID_FILE_SAVE_AS}{\f7\insrsid2574372 .
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc filesave.bmp\}
+\par Keys:\tab CTRL+S
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_SAVE_AS}}K{\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  files: managing}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  File Save As command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 
+Save As command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to save and name the active document.  RallyOC displays the }{\f7\uldb\insrsid2574372 Save As dialog box}{\v\insrsid2574372 AFX_HIDD_FILESAVE}{\f7\insrsid2574372  so you can name your document.  
+\par 
+\par To save a document with its existing name and directory, use the }{\f7\uldb\insrsid2574372 Save command}{\v\insrsid2574372 HID_FILE_SAVE}{\f7\insrsid2574372 .
+\par 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_SEND_MAIL}}}{
+\b\f7\insrsid2574372 Send command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to send the active document through electronic mail.  This command presents a mail window with the active document attached to it.  You may then fill out the To: field, Subjec
+t: field, etc., and add text to the body of the message if you wish.  When you are finished you may click the "Send" button to send the message.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_FILESAVE}}}{
+\b\f7\insrsid2574372 File Save As dialog box
+\par }{\f7\insrsid2574372 
+\par The following options allow you to specify the name and location of the file you're about to save:
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 File Name
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Type a new filename to save a document with a different name.  RallyOC adds the extension you specify in the Save File As Type box.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Drives
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the drive in which you want to store the document.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Directories
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the directory in which you want to store the document.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Network...
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Choose this button to connect to a network location, assigning it a new drive letter. 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 << Add other File Save As dialog box options depending on which ones your application chooses via the OFN_ flags of the OPENFILENAME structure used by the CFileDialog. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_FILE_MRU_FILE1}}}{
+\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  files: managing}}}{
+\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ File 1, 2, 3, 4 command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 1, 2, 3, 4 command (File menu)}{\f7\insrsid2574372 
+\par 
+\par Use the numbers and filenames listed at the bottom of the File menu to open the last four documents you closed.  Choose the number that corresponds with the document you want to open.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2251502 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2251502 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2251502 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2251502 #}{\insrsid2251502  HID_DOC_INFO}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2251502 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2251502 K}{\insrsid2251502  Document Information}}}{\f7\insrsid2251502  }{\cs15\fs16\up6\insrsid2251502 ${\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2251502 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2251502 $}{\insrsid2251502  File Document Info command}}}{\f7\insrsid2251502  }{\b\f7\insrsid2251502 
+Document Info... (File menu)}{\f7\insrsid2251502 
+\par 
+\par Use this command}{\f7\insrsid10125188  to display the Document Information dialog}{\f7\insrsid4816164  where you can enter the author\rquote s name and any notes on the course design.}{\f7\insrsid2251502 
+\par }{\insrsid2251502 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_APP_EXIT}}K{\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  exit}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  File Exit command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 
+Exit command (File menu)}{\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par Use this command to end your RallyOC session.  You can also use the Close command on the application Control menu.  RallyOC prompts you to save documents with unsaved changes.
+\par }{\insrsid2574372 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Mouse:\tab Double-click the application's Control menu button.
+\par \tab \{bmc appexit.bmp\}
+\par Keys:\tab ALT+F4
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_UNDO}}}{\b\f7\insrsid2574372 Undo command (Edit menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to reverse the last editing action}{\f7\insrsid16473247 .}{\f7\insrsid2574372 .   
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab CTRL+Z or
+\par \tab ALT-BACKSPACE\tab 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_REDO}}}{
+\b\f7\insrsid2574372 Redo command (Edit menu)}{\f7\insrsid2574372 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid4816164 {\f7\insrsid16473247 Reverse\rquote s the last undo action if no other action as occurred since undo}{\f7\insrsid4816164 .   
+\par }{\b\f7\insrsid4816164 Shortcuts
+\par }\pard \ql \fi360\li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid9792117 {\f7\insrsid4816164 Keys:\tab CTRL+Y }{\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_CUT}}}{\b\f7\insrsid2574372 Cut command (Edit menu)}{\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par Use this command to remove the currently selected }{\f7\insrsid7685116 station(s) }{\f7\insrsid2574372 from the document and put it on the clipboard.  This command is unavailable if no }{\f7\insrsid7685116 station(s) }{\f7\insrsid2574372 
+currently selected.
+\par 
+\par Cutting data to the clipboard replaces the contents previously stored there.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc editcut.bmp\}
+\par Keys:\tab CTRL+X
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_COPY}}}{
+\b\f7\insrsid2574372 Copy command (Edit menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to copy selected }{\f7\insrsid7685116 station(s)}{\f7\insrsid2574372  onto the clipboard.  This command is unavailable if no }{\f7\insrsid7685116 station(s) }{\f7\insrsid2574372 currently selected.
+\par 
+\par Copying }{\f7\insrsid7685116 station(s) }{\f7\insrsid2574372 to the clipboard replaces the contents previously stored there.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc editcopy.bmp\}
+\par Keys:\tab CTRL+C
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_PASTE}}}{
+\b\f7\insrsid2574372 Paste command (Edit menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to insert a copy of the clipboard contents at the insertion point.  This command is unavailable if the clipboard is empty.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Toolbar:\tab \{bmc editpast.bmp\}
+\par Keys:\tab CTRL+V
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7685116 {\f7\insrsid7685116 \page }{\cs15\fs16\up6\insrsid7685116 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7685116 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7685116 #}{\insrsid7685116  HID_EDIT_CLEAR}}}{\b\f7\insrsid7685116 Delete command (Edit menu)}{\f7\insrsid7685116 
+\par 
+\par Use this command to remove the currently selected station(s) from the course map. This command is unavailable if no station(s) currently selected.
+\par 
+\par }{\b\f7\insrsid7685116 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0\pararsid7685116 {\f7\insrsid7685116 Keys:\tab DELETE
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7685116 {\f7\insrsid7685116 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10562739 {\f7\insrsid10562739 \page }{\cs15\fs16\up6\insrsid10562739 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10562739 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid10562739 #}{\insrsid10562739  menu_rotate}}}{\b\f7\insrsid10562739 Rotate Stations command (Edit menu)}{\f7\insrsid10562739 
+\par 
+\par Use this command to rotate the currently selected station(s) a specific degree amount 90}{\f7\insrsid10562739 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10562739  clockwise, 90}{\f7\insrsid10562739 
+{\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10562739  counter-clockwise, 180}{\f7\insrsid10562739 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10181495 , }{\f7\insrsid10562739 
+or return to 0}{\f7\insrsid10562739 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10562739 . This command is unavailable if no station(s) currently selected.
+\par 
+\par }{\b\f7\insrsid10562739 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0\pararsid10562739 {\f7\insrsid10562739 Keys:\tab }{\f7\insrsid10181495 CTRL + Up Arrow - 0}{\f7\insrsid10181495 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}
+{\f7\insrsid10562739 
+\par }{\f7\insrsid10181495 \tab CTRL + Right Arrow \endash  90}{\f7\insrsid10181495 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10181495  clockwise
+\par \tab CTRL + Left Arrow \endash  90}{\f7\insrsid10181495 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10181495  counter-clockwise
+\par \tab CRTL + Down Arrow - 180}{\f7\insrsid10181495 {\field{\*\fldinst SYMBOL 176 \\f "Symbol" \\s 10}{\fldrslt\f3\fs20}}}{\f7\insrsid10181495 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10562739 {\f7\insrsid10562739 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10838733 {\f7\insrsid10838733 \page }{\cs15\fs16\up6\insrsid10838733 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10838733 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid10838733 #}{\insrsid10838733  menu_}{\insrsid7680747 align}}}{\b\f7\insrsid10838733 Align command (Edit menu)}{\f7\insrsid10838733 
+\par 
+\par Use this command to align the currently selected stations horizontally or vertically. This command is unavailable if no or only one station currently selected.
+\par 
+\par }{\b\f7\insrsid10838733 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0\pararsid10838733 {\f7\insrsid10838733 Keys:\tab SHIFT + F9 \endash  Horizontal Alignment
+\par \tab F9 \endash  Vertical Alignment
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10838733 {\f7\insrsid10838733 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid3350950 {\f7\insrsid3350950 \page }{\cs15\fs16\up6\insrsid3350950 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid3350950 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid3350950 #}{\insrsid3350950  menu_insert}}}{\b\f7\insrsid3350950 Insert After command (Edit menu)}{\f7\insrsid3350950 
+\par 
+\par Use this command to change the station number of the selected station. }{\f7\insrsid5833330 The currently selected station will appear disabled (grey) in the list.}{\f7\insrsid13791071 
+ Select the station in the list where you want the currently selected station to be placed }{\b\f7\insrsid13791071 after}{\f7\insrsid13791071 , the list be renumber}{\f7\insrsid8202283 s}{\f7\insrsid13791071  from that point.}{\f7\insrsid8202283  }{
+\f7\insrsid3350950 
+\par }{\f7\insrsid8202283 
+\par Note: The START station is always the first station in the list.  The FINISH and HONOR stations cannot be renumbered.}{\f7\insrsid8202283\charrsid13791071 
+\par }{\f7\insrsid3350950 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_VIEW_TOOLBAR}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372 
+ toolbar}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ View Toolbar command}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 Toolbar command (View menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to display and hide the Toolbar, which includes buttons for some of the most common commands in RallyOC, such as File Open.  A check mark appears next to the menu item when the Toolbar is displayed.
+\par 
+\par See }{\f7\uldb\insrsid2574372 Toolbar}{\v\f7\insrsid2574372 AFX_HIDW_TOOLBAR}{\f7\insrsid2574372  for help on using the toolbar.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDW_TOOLBAR}}K{\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  toolbar}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  toolbar}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 Toolbar}{\f7\insrsid2574372 
+
+\par \{bml hlptbar.bmp\}
+\par 
+\par The toolbar is displayed across the top of the application window, below the menu bar.  The toolbar provides quick mouse access to many tools used in RallyOC,
+\par 
+\par To hide or display the Toolbar, choose Toolbar from the View menu (ALT, V, T).
+\par 
+\par << Add or remove toolbar buttons from the list below according to which ones your application offers. >>
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\brdrb\brdrs\brdrw15\brsp20 \tx1080\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Click\tab To}{\f7\insrsid2574372 
+\par }\pard \ql \fi-1080\li1080\ri0\widctlpar\tx1080\faauto\rin0\lin1080\itap0 {\f7\insrsid2574372 \{bmc filenew.bmp\}\tab Open a new document.
+\par 
+\par \{bmc fileopen.bmp\}\tab Open an existing document.  RallyOC displays the Open dialog box, in which you can locate and open the desired file.
+\par 
+\par \{bmc filesave.bmp\}\tab Save the active document or template with its current name.  If you have not named the document, RallyOC displays the Save As dialog box.
+\par 
+\par \{bmc fileprnt.bmp\}\tab Print the active document.
+\par 
+\par \{bmc editcut.bmp\}\tab Remove selected data from the document and stores it on the clipboard.
+\par 
+\par \{bmc editcopy.bmp\}\tab Copy the selection to the clipboard.
+\par 
+\par \{bmc editpast.bmp\}\tab Insert the contents of the clipboard at the insertion point.
+\par 
+\par \{bmc editundo.bmp\}\tab Reverse the last editing.  Note:  You cannot undo some actions.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\tx1080\faauto\rin0\lin0\itap0\pararsid1783371 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_VIEW_STATUS_BAR}}K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372 
+ status bar}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ View Status Bar Command}}}{\b\f7\insrsid2574372 Status Bar command (View menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to display and hide the Status Bar, which describes the action to be executed by the selected menu item or depressed toolbar button, and keyboard latch state. A check mark appears next to the menu item when the Status Bar is displayed.
+
+\par 
+\par See }{\f7\uldb\insrsid2574372 Status Bar}{\v\f7\insrsid2574372 AFX_HIDW_STATUS_BAR}{\f7\insrsid2574372  for help on using the status bar.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDW_STATUS_BAR}}K{\footnote 
+\pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 K}{\insrsid2574372  status bar}}}{\f7\insrsid2574372  }{\cs15\fs16\up6\insrsid2574372 ${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  status bar}}}{\b\f7\insrsid2574372 Status Bar}{\f7\insrsid2574372 
+\par \{bml hlpsbar.bmp\}
+\par 
+\par The status bar is displayed at the bottom of the RallyOC window.  To display or hide the status bar, use the Status Bar command in the View menu.
+\par 
+\par The left area of the status bar describes actions of menu items as you use the arrow keys to navigate through menus.  This area similarly shows messages that describe the actions of toolbar buttons as you depress the
+m, before releasing them.  If after viewing the description of the toolbar button command you wish not to execute the command, then release the mouse button while the pointer is off the toolbar button.
+\par 
+\par The right areas of the status bar indicate which of the following keys are latched down:
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\tx1440\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Indicator\tab Description}{\f7\insrsid2574372 
+\par }\pard \ql \fi-1440\li1440\ri0\sa120\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 CAP\tab The Caps Lock key is latched down.
+\par NUM\tab The Num Lock key is latched down.
+\par SCRL\tab The Scroll Lock key is latched down.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid9124686 {\f7\insrsid9124686 \page }{\cs15\fs16\up6\insrsid9124686 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid9124686 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid9124686 #}{\insrsid9124686  ID_VIEW_COURSE}{\insrsid7175733 _INFO}}}{\cs15\fs16\up6\insrsid2162850\charrsid2162850  }{\cs15\fs16\up6\insrsid2162850 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2162850 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2162850 K}{\insrsid2162850  Course Information}}}{\f7\insrsid2162850  }{\cs15\fs16\up6\insrsid2162850 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2162850 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2162850 $}{\insrsid2162850  View Course Information Command}}}{\b\f7\insrsid9124686 
+Course Info command (View menu)}{\f7\insrsid9124686 
+\par 
+\par Use this command to show the Course Information Text. This information is entered in the }{\f7\uldb\insrsid9124686 Course Info}{\f7\uldb\insrsid14486773 rmation Dialog}{\v\f7\insrsid9124686 IDD_COURSE_INFO}{\v\f7\insrsid14486773 .}{\f7\insrsid9124686 
+
+\par 
+\par }{\f7\insrsid14486773 The text displays the }{\f7\insrsid7567214 competition}{\f7\insrsid14486773  venue, }{\f7\insrsid7567214 judge\rquote s}{\f7\insrsid14486773 
+ name, the type of class, and date. The text can be placed any where on the course by dragging with the mouse.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid2162850 {\f7\insrsid2162850 \{bml courseinfo.bmp\}
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid9124686 {\f7\insrsid2162850 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15872340 {\f7\insrsid15872340 \page }{\cs15\fs16\up6\insrsid15872340 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15872340 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15872340 #}{\insrsid15872340  ID_SIZE_TO_SCREEN}}}{\cs15\fs16\up6\insrsid15872340\charrsid2162850  }{\cs15\fs16\up6\insrsid15872340 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15872340 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15872340 K}{\insrsid15872340  Size to Screen}}}{\f7\insrsid15872340  }{\cs15\fs16\up6\insrsid15872340 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15872340 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15872340 $}{\insrsid15872340  View Size to Screen Command}}}{\b\f7\insrsid15872340 Siz
+e to Screen command (View menu)}{\f7\insrsid15872340 
+\par 
+\par Use this command to resize the screen to fit the window size.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13187278 {\f7\insrsid13187278 \page }{\cs15\fs16\up6\insrsid13187278 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13187278 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13187278 #}{\insrsid13187278  ID_DRAW_START}}}{\cs15\fs16\up6\insrsid13187278\charrsid2162850  }{\cs15\fs16\up6\insrsid13187278 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13187278 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13187278 K}{\insrsid13187278  Start Station}}}{\f7\insrsid13187278  }{\cs15\fs16\up6\insrsid13187278 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13187278 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13187278 $}{\insrsid13187278  Start Station}}}{\b\f7\insrsid13187278 Start (Add menu)}{
+\f7\insrsid13187278 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid13187278 Use this command to add the START}{\f7\insrsid10039298  Station}{\f7\insrsid11557657 , indicating the beginning of the course}{\f7\insrsid10039298 . }{\f7\insrsid11557657 
+Timing begins at this station. All courses must have a START station.
+\par 
+\par }{\f7\insrsid10039298 Click on the course map where you would like the Station to be placed.}{\f7\insrsid748626  }{\f7\insrsid11557657 This command is included in the right mouse button pop-up menu.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 {\b\f7\insrsid11557657 
+\par Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0\pararsid11557657 {\f7\insrsid11557657 Keys:\tab Alt}{\f7\insrsid10581037  ,}{\f7\insrsid11557657  A, S
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid748626 {\f7\insrsid748626 \page }{\cs15\fs16\up6\insrsid748626 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid748626 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid748626 #}{\insrsid748626  ID_DRAW_FINISH}}}{\cs15\fs16\up6\insrsid748626\charrsid2162850  }{\cs15\fs16\up6\insrsid748626 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid748626 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid748626 K}{\insrsid748626  Finish Station}}}{\f7\insrsid748626  }{\cs15\fs16\up6\insrsid748626 ${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid748626 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid748626 $}{\insrsid748626  Finish Station}}}{\b\f7\insrsid748626 Finish (Add menu)}{
+\f7\insrsid748626 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 {\f7\insrsid748626 Use this command to add the FINISH Station}{\f7\insrsid11557657 , indicating the end of the course}{\f7\insrsid748626 . }{\f7\insrsid10581037 Timing }{
+\f7\insrsid11557657 stops at this station. All courses must have a FINISH station.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid10581037 {\f7\insrsid748626 Click on the course map where you would like the Station to be placed. }{\f7\insrsid10581037 This command is included in the right mouse button pop-up menu.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 {\f7\insrsid11557657 \page }{\cs15\fs16\up6\insrsid11557657 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid11557657 #}{\insrsid11557657  ID_DRAW_HONOR}}}{\cs15\fs16\up6\insrsid11557657\charrsid2162850  }{\cs15\fs16\up6\insrsid11557657 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid11557657 K}{\insrsid11557657  Honor Station}}}{\f7\insrsid11557657  }{\cs15\fs16\up6\insrsid11557657 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid11557657 $}{\insrsid11557657  Honor Station}}}{\b\f7\insrsid11557657 Honor (Add menu)}{
+\f7\insrsid11557657 
+\par 
+\par Use this command to add the HONOR Station. }{\f7\insrsid10581037 This station is included only in the Excellent Class.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid1010655 {\f7\insrsid1010655 \page }{\cs15\fs16\up6\insrsid1010655 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid1010655 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid1010655 #}{\insrsid1010655  ID_FORWARD_HALT}}}{\cs15\fs16\up6\insrsid1010655\charrsid2162850  }{\cs15\fs16\up6\insrsid1010655 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid1010655 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid1010655 K}{\insrsid1010655  Halt-Perform Exercise-Forward Stations}}}{\f7\insrsid1010655  }{
+\cs15\fs16\up6\insrsid1010655 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid1010655 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid1010655 $}{\insrsid1010655 
+ Halt-Perform Exercise-Forward Stations}}}{\b\f7\insrsid1010655 Halt Forward (Add menu)}{\f7\insrsid1010655 
+\par 
+\par }{\f7\insrsid7996066 Use this command to add }{\f7\insrsid1010655 a Halt-Perform-Exercise-Forward Station. }{\f7\insrsid7996066 Select the station from the pop-up menu.}{\f7\insrsid1010655 
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7996066 {\f7\insrsid7996066 \page }{\cs15\fs16\up6\insrsid7996066 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7996066 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7996066 #}{\insrsid7996066  ID_CHANGE_PACE}}}{\cs15\fs16\up6\insrsid7996066\charrsid2162850  }{\cs15\fs16\up6\insrsid7996066 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7996066 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7996066 K}{\insrsid7996066  Pace Stations}}}{\f7\insrsid7996066  }{\cs15\fs16\up6\insrsid7996066 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7996066 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7996066 $}{\insrsid7996066  Pace Stations}}}{\b\f7\insrsid7996066 Pace (Add menu)}{
+\f7\insrsid7996066 
+\par 
+\par Use this command to add a change Pace Station. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15227571 {\f7\insrsid15227571 \page }{\cs15\fs16\up6\insrsid15227571 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15227571 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15227571 #}{\insrsid15227571  ID_RIGHT_TURNS}}}{\cs15\fs16\up6\insrsid15227571\charrsid2162850  }{\cs15\fs16\up6\insrsid15227571 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15227571 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15227571 K}{\insrsid15227571  Right Turn Stations}}}{\f7\insrsid15227571  }{
+\cs15\fs16\up6\insrsid15227571 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15227571 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15227571 $}{\insrsid15227571  Right Turn Stations}}}{
+\b\f7\insrsid15227571 Right Turns (Add menu)}{\f7\insrsid15227571 
+\par 
+\par Use this command to add a Right Turn Station. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 {\f7\insrsid15871797 \page }{\cs15\fs16\up6\insrsid15871797 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 #}{\insrsid15871797  ID_LEFT_TURNS}}}{\cs15\fs16\up6\insrsid15871797\charrsid2162850  }{\cs15\fs16\up6\insrsid15871797 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 K}{\insrsid15871797  Left Turn Stations}}}{\f7\insrsid15871797  }{\cs15\fs16\up6\insrsid15871797 
+${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 $}{\insrsid15871797  Left Turn Stations}}}{\b\f7\insrsid15871797 Left
+ Turns (Add menu)}{\f7\insrsid15871797 
+\par 
+\par Use this command to add a Left Turn Station. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par \page }{\cs15\fs16\up6\insrsid15871797 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 #}{\insrsid15871797  ID_FINISH}}}{
+\cs15\fs16\up6\insrsid15871797\charrsid2162850  }{\cs15\fs16\up6\insrsid15871797 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid15871797 K}{\insrsid15871797  Front Stations}}}{\f7\insrsid15871797  }{\cs15\fs16\up6\insrsid15871797 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 $}{\insrsid15871797  Front Stations}}}{\b\f7\insrsid15871797 Front (Add menu)}{\f7\insrsid15871797 
+\par 
+\par Use this command to add station which includes calling a dog to the Front position. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par \page }{\cs15\fs16\up6\insrsid15871797 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 #}{\insrsid15871797  ID_MOVE}}}{
+\cs15\fs16\up6\insrsid15871797\charrsid2162850  }{\cs15\fs16\up6\insrsid15871797 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid15871797 K}{\insrsid15871797  Moving Stations}}}{\f7\insrsid15871797  }{\cs15\fs16\up6\insrsid15871797 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 $}{\insrsid15871797  Moving Stations}}}{\b\f7\insrsid15871797 Moving (Add menu)}{\f7\insrsid15871797 
+\par 
+\par Use this command to add a station where the exercise involves continuous movement. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par \page }{\cs15\fs16\up6\insrsid15871797 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 #}{\insrsid15871797  ID_HEEL}}}{
+\cs15\fs16\up6\insrsid15871797\charrsid2162850  }{\cs15\fs16\up6\insrsid15871797 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid15871797 K}{\insrsid15871797  Heeling Stations}}}{\f7\insrsid15871797  }{\cs15\fs16\up6\insrsid15871797 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid15871797 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid15871797 $}{\insrsid15871797  Heeling Stations}}}{\b\f7\insrsid15871797 Heel (Add menu)}{\f7\insrsid15871797 
+\par 
+\par Use this command to add a station where the dog performs }{\f7\insrsid7567214 an exercise in the heeling position without obstacles}{\f7\insrsid15871797 . Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 {\f7\insrsid7567214 \page }{\cs15\fs16\up6\insrsid7567214 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 #}{\insrsid7567214  ID_WEAVE}}}{\cs15\fs16\up6\insrsid7567214\charrsid2162850  }{\cs15\fs16\up6\insrsid7567214 K{\footnote \pard\plain 
+\s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 K}{\insrsid7567214  Weave Stations}}}{\f7\insrsid7567214  }{\cs15\fs16\up6\insrsid7567214 $
+{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 $}{\insrsid7567214  Weave Stations}}}{\b\f7\insrsid7567214 Weave (Add menu)}{
+\f7\insrsid7567214 
+\par 
+\par Use this command to add a station where the dog performs an exercise in the heeling position with obstacles. Select the station from the pop-up menu.
+\par 
+\par Click on the course map where you would like the Station to be placed. This command is included in the right mouse button pop-up menu.
+\par \page }{\cs15\fs16\up6\insrsid7567214 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 #}{\insrsid7567214  }{
+\insrsid7567214\charrsid7567214 IDD_COURSE_INFO}}}{\cs15\fs16\up6\insrsid7567214\charrsid2162850  }{\cs15\fs16\up6\insrsid7567214 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 K}{\insrsid7567214  Course Information}}}{\f7\insrsid7567214  }{\cs15\fs16\up6\insrsid7567214 ${\footnote \pard\plain 
+\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid7567214 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid7567214 $}{\insrsid7567214  Course Information}}}{\b\f7\insrsid7567214 Info\'85 (Course menu)}{
+\f7\insrsid7567214 
+\par 
+\par This command displays the Course Information Dialog. Use this dialog to enter in }{\f7\insrsid4144512 Name of the Competition (or name of training exercise), class, date, judges name, set ring size, and grid spacing.}{\f7\insrsid13107446 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13107446 {\f7\insrsid4144512  }{\f7\insrsid13107446 \page }{\cs15\fs16\up6\insrsid13107446 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13107446 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13107446 #}{\insrsid13107446  }{\insrsid13107446\charrsid7567214 IDD_}{\insrsid13107446\charrsid13107446 COURSE_VERIFY}}}{\cs15\fs16\up6\insrsid13107446\charrsid2162850  }{
+\cs15\fs16\up6\insrsid13107446 K{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13107446 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13107446 K}{\insrsid13107446  Verify Course}}}{
+\f7\insrsid13107446  }{\cs15\fs16\up6\insrsid13107446 ${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13107446 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid13107446 $}{\insrsid13107446 
+ Verify Course}}}{\b\f7\insrsid13107446 Verify (Course menu)}{\f7\insrsid13107446 
+\par 
+\par This command to run the verify course checker and display the Course Design Error Report. This course checker analyzes the course design based on the American Kennel Club (AKC) Rally Obedience
+ Regulations (dated ?). The results of the course check are displayed in the Course Design Error Report  
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid11557657 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_NEW}}}{\b\f7\insrsid2574372 New command (Window menu)}{\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par Use this command to open a new window with the same contents as the active
+ window.  You can open multiple document windows to display different parts or views of a document at the same time.  If you change the contents in one window, all other windows containing the same document reflect those changes.  When you open a new wind
+ow, it becomes the active window and is displayed on top of all other open windows.
+\par 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_CASCADE}}}{
+\b\f7\insrsid2574372 Cascade command (Window menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to arrange multiple opened windows in an overlapped fashion. 
+\par 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_TILE}}}{
+\b\f7\insrsid2574372 Tile command (Window menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to arrange multiple opened windows in a non-overlapped fashion.
+\par 
+\par 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_TILE_HORZ}}}{
+\b\f7\insrsid2574372 Tile Horizontal command (Window menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to vertically arrange multiple opened windows in a non-overlapped fashion.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_TILE_VERT}}}{
+\b\f7\insrsid2574372 Tile Vertical command (Window menu)}{\f7\insrsid2574372 
+\par 
+\par Use this command to arrange multiple opened windows side by side.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_ARRANGE}}}{
+\b\f7\insrsid2574372 Window Arrange Icons Command}{\f7\insrsid2574372 
+\par 
+\par Use this command to arrange the icons for minimized windows at the bottom of t
+he main window.  If there is an open document window at the bottom of the main window, then some or all of the icons may not be visible because they will be underneath this document window.\page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain 
+\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_SPLIT}}}{\b\f7\insrsid2574372 Split Command (Window menu)
+\par 
+\par }{\f7\insrsid2574372 Use this command 
+to split the active window into panes.  You may then use the mouse or the keyboard arrows to move the splitter bars.  When you are finished, press the mouse button or enter to leave the splitter bars in their new location.  Pressing escape keeps the split
+ter bars in their original location.  << In a single document interface application, this command will appear on the View menu. >>\page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_WINDOW_ALL}}}{\b\f7\insrsid2574372 1, 2, ... command (Window menu)}{\f7\insrsid2574372 
+\par 
+\par RallyOC displays a list of currently open document windows at the bottom of the Window menu.  A check mark appears in front of the document name of the active window.  Choose a document from this list to make its window active.  
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_HELP_INDEX}}}{
+\b\f7\insrsid2574372 Index command (Help menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to display the opening screen of Help.  From the opening screen, you can jump to step-by-step instructions for using RallyOC and various types of reference information.  
+\par 
+\par Once you open Help, you can click the Contents button whenever you want to return to the opening screen.
+\par 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_HELP_USING}}}{
+\b\f7\insrsid2574372 Using Help command (Help menu)
+\par }{\f7\insrsid2574372 
+\par Use this command for instructions about using Help.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_APP_ABOUT}}}{
+\b\f7\insrsid2574372 About command (Help menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to display the copyright notice and version number of your copy of RallyOC.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_CONTEXT_HELP}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Help Using Help Command}}}{\b\f7\insrsid2574372 Context Help command 
+\par }{\f7\insrsid2574372 \{bml curhelp.bmp\}
+\par 
+\par Use the Context Help command to obtain help on some portion of RallyOC.  When you choose the Toolbar's Context Help button, the mouse pointer will change to an arrow and question mark.  Then
+ click somewhere in the RallyOC window, such as another Toolbar button.  The Help topic will be shown for the item you clicked.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab SHIFT+F1
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_HT_CAPTION}}}{\b\f7\insrsid2574372 Title Bar}{\insrsid2574372 
+\par 
+\par }{\f7\insrsid2574372 << Show your application's title bar here. >>
+\par 
+\par }\pard\plain \s42\ql \fi-360\li360\ri0\widctlpar\tx360\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 The title bar is located a
+long the top of a window.  It contains the name of the application and document.
+\par }\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 
+\par }\pard\plain \s42\ql \fi-360\li360\ri0\widctlpar\tx360\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 
+To move the window, drag the title bar.  Note: You can also move dialog boxes by dragging their title bars.
+\par }\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 
+\par }\pard \ql \fi-360\li360\ri0\widctlpar\tx360\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 A title bar may contain the following elements:
+\par }\pard\plain \s41\ql \fi-360\li360\ri0\sb40\sa40\widctlpar\tx360\faauto\rin0\lin360\itap0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 \{bmc bullet.bmp\}\tab Application Control-menu button
+\par \{bmc bullet.bmp\}\tab Document Control-menu button
+\par \{bmc bullet.bmp\}\tab Maximize button
+\par \{bmc bullet.bmp\}\tab Minimize button
+\par \{bmc bullet.bmp\}\tab Name of the application
+\par \{bmc bullet.bmp\}\tab Name of the document
+\par \{bmc bullet.bmp\}\tab Restore button
+\par }\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 
+\f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  scrollbars}}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 Scroll bars}{\f7\insrsid2574372 
+\par 
+\par Displayed at the right and bottom edges of the document window.  The scroll boxes inside the scroll bars indicate your vertical and horizontal location in the document.  You can use the mouse to scroll to other parts of the document.
+\par 
+\par << Describe the actions of the various parts of the scrollbar, according to how they behave in your application. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_SIZE}}}{\b\f7\insrsid2574372 
+Size command (System menu)}{\insrsid2574372 
+\par 
+\par }{\f7\insrsid2574372 Use this command to display a four-headed arrow so you can size the active window with the arrow keys.
+\par \{bml curarw4.bmp\}
+\par 
+\par After the pointer changes to the four-headed arrow:
+\par }\pard \ql \fi-360\li360\ri0\sb60\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 1.\tab Press one of the DIRECTION keys (left, right, up, or down arrow key) to move the pointer to the border you want to move.  
+\par 2.\tab Press a DIRECTION key to move the border.
+\par 3.\tab Press ENTER when the window is the size you want.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par Note:  This command is unavailable if you maximize the window.
+\par }{\insrsid2574372 
+\par }{\b\f7\insrsid2574372 Shortcut}{\b\insrsid2574372 
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Mouse:\tab Drag the size bars at the corners or edges of the window.
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_MOVE}}}{\b\f7\insrsid2574372 Move command (Control menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to display a four-headed arrow so you can move the active window or dialog box with the arrow keys.
+\par \{bmc curarw4.bmp\}
+\par 
+\par Note:  This command is unavailable if you maximize the window.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab CTRL+F7
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\tx1440\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_MINIMIZE}}${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ System Minimize Command}}}{\b\f7\insrsid2574372 Minimize command (application Control menu)
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par Use this command to reduce the RallyOC window to an icon.
+\par }\pard \ql \fi-360\li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\b\insrsid2574372 
+\par }{\b\f7\insrsid2574372 Shortcut}{\f7\insrsid2574372 
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Mouse:\tab Click the minimize icon \{bmc scmin.bmp\} on the title bar.
+\par Keys:\tab ALT+F9
+\par }\pard \ql \fi-360\li1080\ri0\widctlpar\faauto\rin0\lin1080\itap0 {\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_MAXIMIZE}}}{\b\f7\insrsid2574372 Maximize command (System menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to enlarge the active window to fill the available space.
+\par }\pard \ql \fi-360\li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\b\f7\insrsid2574372 
+\par Shortcut}{\f7\insrsid2574372 
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Mouse:\tab Click the maximize icon \{bmc scmax.bmp\} on the title bar; or double-click the title bar.
+\par Keys:\tab CTRL+F10 enlarges a document window.
+\par }\pard \ql \fi-360\li1080\ri0\widctlpar\faauto\rin0\lin1080\itap0 {\insrsid2574372 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_NEXTWINDOW}}}{\b\f7\insrsid2574372 Next Window command (document Control menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to switch to the next open document window.  RallyOC determines which window is next according to the order in which you opened the windows.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab CTRL+F6
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_PREVWINDOW}}}{
+\b\f7\insrsid2574372 Previous Window command (document Control menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to switch to the previous open document window.  RallyOC determines which window is previous according to the order in which you opened the windows.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab SHIFT+CTRL+F6
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_CLOSE}}}{\b\f7\insrsid2574372 
+Close command (Control menus)
+\par }{\f7\insrsid2574372 
+\par Use this command to close the active window or dialog box.
+\par 
+\par Double-clicking a Control-menu box is the same as choosing the Close command.
+\par \{bml appexit.bmp\}
+\par 
+\par Note:  If you have multiple windows open for a single document, the Close command on the document Control menu closes only one window at a time.  You can close all windows at once with the Close command on the File menu.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcuts
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys: \tab CTRL+F4 closes a document window
+\par \tab ALT+F4 closes the <<YourType>> window or dialog box
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \tab \tab \tab \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+{\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_RESTORE}}}{\b\f7\insrsid2574372 Restore command (Control menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to return the active window to its size and position before you chose the Maximize or Minimize command.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_SC_TASKLIST}}}{
+\b\f7\insrsid2574372 Switch to command (application Control menu)
+\par }{\f7\insrsid2574372 
+\par Use this command to display a list of all open applications.  Use this "Task List" to switch to or close an application on the list.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Keys:\tab CTRL+ESC
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par }{\b\f7\insrsid2574372 Dialog Box Options
+\par }{\f7\insrsid2574372 When you choose the Switch To command, you will be presented with a dialog box with the following options:
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Task List
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Select the application you want to switch to or close.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Switch To
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Makes the selected application active.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 End Task
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Closes the selected application.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Cancel
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Closes the Task List box.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Cascade
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Arranges open applications so they overlap and you can see each title bar.  This option does not affect applications reduced to icons.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Tile
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Arranges open applications into windows that do not overlap.  This option does not affect applications reduced to icons.
+\par }\pard \ql \li0\ri0\sb60\widctlpar\faauto\rin0\lin0\itap0 {\b\f7\insrsid2574372 Arrange Icons
+\par }\pard \ql \li360\ri0\widctlpar\faauto\rin0\lin360\itap0 {\f7\insrsid2574372 Arranges the icons of all minimized applications across the bottom of the screen.
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_VIEW_RULER}}${\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372 
+ View Ruler Command}}}{\b\f7\insrsid2574372 Ruler command (View menu)
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_FONT}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Choose Font Dialog}}}{\b\f7\insrsid2574372 Choose Font dialog box
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_COLOR}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Choose Color Dialog}}}{\b\f7\insrsid2574372 Choose Color dialog box
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_FIND}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Edit Find Command}}}{\b\f7\insrsid2574372 Find command (Edit menu)
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_FIND}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Find Dialog}}}{\b\f7\insrsid2574372 Find dialog box
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_REPLACE}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Edit Replace Command}}}{\b\f7\insrsid2574372 Replace command (Edit menu)
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDD_REPLACE}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Replace Dialog}}}{\b\f7\insrsid2574372 Replace dialog box
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_REPEAT}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Edit Repeat Command}}}{\b\f7\insrsid2574372 Repeat command (Edit menu)
+\par 
+\par }{\f7\insrsid2574372 Use this command to repeat the last editing command carried out.  The Repeat menu item changes to Can't Repeat if you cannot repeat your last action.
+\par 
+\par }{\b\f7\insrsid2574372 Shortcut
+\par }\pard \ql \fi-1080\li1440\ri0\widctlpar\tx1440\faauto\rin0\lin1440\itap0 {\f7\insrsid2574372 Key:\tab F4
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 {\f7\insrsid2574372 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_CLEAR}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Edit Clear Command}}}{\b\f7\insrsid2574372 Clear command (Edit menu)
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_EDIT_CLEAR_ALL}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Edit Clear All}}}{\b\f7\insrsid2574372 Clear All command (Edit menu)
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_NEXT_PANE}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Next Pane Command}}}{\b\f7\insrsid2574372 Next Pane
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_PREV_PANE}}${\footnote 
+\pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 $}{\insrsid2574372  Prev Pane Command}}}{\b\f7\insrsid2574372 Prev Pane
+\par 
+\par }{\f7\insrsid2574372 << Write application-specific help here. >>
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HIDR_DOC1TYPE}}}{
+\b\f7\insrsid2574372 Modifying the Document
+\par }{\f7\insrsid2574372 
+\par << Write application-specific help here that provides an overview of how the user should modify a document using your application.>>
+\par 
+\par \page 
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  HID_HT_NOWHERE}}}{
+\b\f7\insrsid2574372 No Help Available}{\insrsid2574372 
+\par 
+\par }{\f7\insrsid2574372 No help is available for this area of the window.
+\par \page }{\cs15\fs16\up6\insrsid2574372 #{\footnote \pard\plain \s16\ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\fs16\up6\insrsid2574372 #}{\insrsid2574372  AFX_HIDP_default
+\par }}}{\f7\insrsid2574372  }{\b\f7\insrsid2574372 No Help Available
+\par }{\insrsid2574372 
+\par }{\f7\insrsid2574372 No help is available for this message box.
+\par }{\insrsid2574372 
+\par }{\f7\insrsid2574372 
+<< If you wish to author help specific to each message box prompt, then remove the AFX_HIDP_xxx values from the [ALIAS] section of your .HPJ file, and author a topic for each AFX_HIDP_xxx value.  For example, AFX_HIDP_INVALID_FILENAME is the help topic fo
+r the Invalid Filename message box. >>
+\par 
+\par }{\insrsid2574372 
+\par }}

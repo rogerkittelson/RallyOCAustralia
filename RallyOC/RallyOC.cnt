@@ -1,0 +1,30 @@
+:Base RallyOC.hlp
+1 Introduction
+2 About RallyOC=about_rallyoc
+2 Getting Started=quick_start
+2 Common Terms=common_terms
+1 Menus
+2 File menu=menu_file
+2 Edit menu=menu_edit
+2 View menu=menu_view
+2 Add menu=menu_add
+2 Course menu=menu_course
+2 Preferences menu=menu_preferences
+2 Window menu=menu_window
+2 Help menu=menu_help
+1 Main Topics and How To's
+2 Getting Started=quick_start
+2 Add a Station=add_station
+2 Editing A Station=edit_station
+2 Change Course Information=IDD_COURSE_INFO
+2 Rotate Station=menu_rotate
+2 Renumber Stations=renumber_station
+2 Align Stations=menu_align
+2 Pylons=pylon_information
+2 Change Stations Entrance and Exit=enter_exit
+2 Export RallyOC Information=export_rally
+2 Keyboard Shortcuts=keyboard_shortcuts
+2 Register RallyOC=register_rally
+1 License, Trademarks, and Copyright
+2 End User License Agreement=end_license
+2 Trademarks and Copyright=trade_copyright

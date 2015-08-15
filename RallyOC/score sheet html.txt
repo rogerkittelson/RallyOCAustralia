@@ -1,0 +1,274 @@
+void CFetchDemoView::CopyHTML(CString html)
+{
+   // Create temporary buffer for HTML header...
+  //  char *buf = new char [400 + strlen(html)];
+    char *buf = new char [400 + html.GetLength()];
+    if(!buf) return;
+
+    // Get clipboard id for HTML format...
+    static int cfid = 0;
+    if(!cfid) cfid = RegisterClipboardFormat("HTML Format");
+
+    // Create a template string for the HTML header...
+    strcpy(buf,
+        "Version:0.9\r\n"
+        "StartHTML:00000000\r\n"
+        "EndHTML:00000000\r\n"
+        "StartFragment:00000000\r\n"
+        "EndFragment:00000000\r\n"
+        "<html><body>\r\n"
+        "<!--StartFragment -->\r\n");
+
+    // Append the HTML...
+    strcat(buf, html);
+    strcat(buf, "\r\n");
+    // Finish up the HTML format...
+    strcat(buf,
+        "<!--EndFragment-->\r\n"
+        "</body>\r\n"
+        "</html>");
+
+    // Now go back, calculate all the lengths, and write out the
+    // necessary header information. Note, wsprintf() truncates the
+    // string when you overwrite it so you follow up with code to replace
+    // the 0 appended at the end with a '\r'...
+    char *ptr = strstr(buf, "StartHTML");
+    wsprintf(ptr+10, "%08u", strstr(buf, "<html>") - buf);
+    *(ptr+10+8) = '\r';
+
+    ptr = strstr(buf, "EndHTML");
+    wsprintf(ptr+8, "%08u", strlen(buf));
+    *(ptr+8+8) = '\r';
+
+    ptr = strstr(buf, "StartFragment");
+    wsprintf(ptr+14, "%08u", strstr(buf, "<!--StartFrag") - buf);
+    *(ptr+14+8) = '\r';
+
+    ptr = strstr(buf, "EndFragment");
+    wsprintf(ptr+12, "%08u", strstr(buf, "<!--EndFrag") - buf);
+    *(ptr+12+8) = '\r';
+
+    // Now you have everything in place ready to put on the
+    // clipboard.
+
+    // Open the clipboard...
+    if(OpenClipboard()) {
+        
+        // Empty what's in there...
+        EmptyClipboard();
+        
+        // Allocate global memory for transfer...
+        HGLOBAL hText = GlobalAlloc(GMEM_MOVEABLE |GMEM_DDESHARE, strlen(buf)+4);
+        
+        // Put your string in the global memory...
+        char *ptr = (char *)GlobalLock(hText);
+        strcpy(ptr, buf);
+        GlobalUnlock(hText);
+        
+        ::SetClipboardData(cfid, hText);
+        
+        CloseClipboard();
+        // Free memory...
+        GlobalFree(hText);
+        
+    }
+
+    // Clean up...
+    delete [] buf;
+
+}
+
+void CFetchDemoView::OnCopyHtml() 
+{
+	// TODO: Add your command handler code here
+
+	CString score_sheet_header;
+	score_sheet_header = "<STYLE TYPE='text/css'> <!--BODY{ font-family:Arial;font-size:8pt }--> </STYLE><FONT FACE='Arial' SIZE='1'> <p>Judge: Trial: Organization:</p>"
+	  "<p>Arm Band No:____________<span style='mso-spacerun:yes'>&nbsp; </span>Breed:_____________ Jump Height:_____________</p>";
+	
+	CString table_header;
+	table_header = "<table border=1 cellspacing=0 cellpadding=0"
+" style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;"
+" mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:"
+" .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>"
+" <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes' >"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >Deductions<o:p></o:p></p>"
+"  </td>"
+"  <td width=48 valign=top style='width:.5in'>"
+"  <p >Marks<o:p></o:p></p>"
+"  </td>"
+"  <td width=60 valign=top style='width:45.0pt'>"
+"  <p >Pts Lost<o:p></o:p></p>"
+"  </td>"
+"  <td width=240 valign=top style='width:2.5in'>"
+"  <p >Station<o:p></o:p></p>"
+"  </td>"
+"  <td width=91 valign=top style='width:.95in'>"
+"  <p >Pts Lost<o:p></o:p></p>"
+"  </td>"
+" </tr>";// first row
+	CString marks_cell, marks_pts_lost_cell, station_desc_cell, station_pts_lost_cell;
+	marks_cell = "  <td width=48 valign=top style='width:.5in'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	marks_pts_lost_cell = "  <td width=60 valign=top style='width:45.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";// marks points lost cell
+	station_desc_cell = "  <td width=240 valign=top style='width:2.5in'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	station_pts_lost_cell = "  <td width=91 valign=top style='width:.95in'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	CString one_point;
+	one_point = " <tr style='mso-yfti-irow:1'>"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >1 Point<o:p></o:p></p>"
+"  </td>";
+	int row;
+	CString score_sheet, station_desc_first, station_desc_last;
+	station_desc_first = " <tr style='mso-yfti-irow:";
+	station_desc_last = ";height:14.0pt'>"
+"  <td width=240 valign=top style='width:2.5in'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	score_sheet = score_sheet_header + table_header + one_point + marks_cell + marks_pts_lost_cell + station_desc_cell + station_pts_lost_cell;
+	score_sheet += " <tr style='mso-yfti-irow:2;height:14.0pt'>"
+"  <td width=151 rowspan=6 valign=top style='width:113.4pt;height:14.0pt'>"
+"  <p >Tight Leash; Poor Sits; Slow, delay, or resistance to respond; Out of Position;"
+"  Touches jump, pylon, post, or person; Dog interfering with handler<o:p></o:p></p>"
+"  </td> <td width=108 colspan=2 rowspan=6 valign=top style='width:81.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	row = 3;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += "<tr style='mso-yfti-irow:8'>"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >3 Points<o:p></o:p></p>"
+"  </td>";
+	score_sheet += " <tr style='mso-yfti-irow:9;height:14.0pt'>"
+"  <td width=151 rowspan=6 valign=top style='width:113.4pt'>"
+"  <p >Repeat of station (2 re-tries max.); Pylon or Post knocked over; Lack of control; Loud"
+"  or intimidating command or signal; Excessive barking<o:p></o:p></p>"
+"  </td><td width=108 colspan=2 rowspan=6 valign=top style='width:81.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	row += 2;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += " <tr style='mso-yfti-irow:15'>"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >10 Points<o:p></o:p></p>"
+"  </td>";
+	score_sheet += " <tr style='mso-yfti-irow:16;height:14.0pt'>"
+"  <td width=151 rowspan=3 valign=top style='width:113.4pt'>"
+"  <p >Incorrectly performed station; Hitting the jump<o:p></o:p></p>"
+"  </td> <td width=108 colspan=2 rowspan=3 valign=top style='width:81.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	row += 2;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	score_sheet += " <tr style='mso-yfti-irow:19'>"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >1-10"
+"  Points<o:p></o:p></p>"
+"  </td>";
+	score_sheet += " <tr style='mso-yfti-irow:20;height:14.0pt'>"
+"  <td width=151 rowspan=3 valign=top style='width:113.4pt'>"
+"  <p >Lack of teamwork; Lack of briskness; Handler error<o:p></o:p></p>"
+"  </td> <td width=108 colspan=2 rowspan=3 valign=top style='width:81.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>";
+	row += 2;	
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	score_sheet += " <tr style='mso-yfti-irow:23'>"
+"  <td width=151 valign=top style='width:113.4pt'>"
+"  <p >NQ<o:p></o:p></p>"
+"  </td>";
+	score_sheet += " <tr style='mso-yfti-irow:24;height:14.0pt'>"
+"  <td width=151 rowspan=21 valign=top style='width:113.4pt'>"
+"  <p >Minimum requirements not met; Dog unmanageable or uncontrolled barking; Station not attempted;"
+"  Consistently tight lead; Substantially out of position or not completing the"
+"  honor exercise; Elimination in the ring during the judging; Bar knocked off"
+"  the uprights; Using a jump as an aid in going over; Failure of dog to go over"
+"  the jump in the proper direction; Handler error<o:p></o:p></p>"
+"  </td><td width=108 colspan=2 rowspan=21 valign=top style='width:81.0pt'>"
+"  <p ><o:p>&nbsp;</o:p></p>"
+"  </td>"; 
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	row += 2;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	station_desc_cell.Format("%s%d%s",station_desc_first,row,station_desc_last);
+	row++;
+	score_sheet += station_desc_cell + station_pts_lost_cell;
+	score_sheet += "</table> <p align = 'Right'>Total Points Deducted:________</p>";
+	score_sheet += "<p align = 'right'>FINAL SCORE:________<BR>";
+	score_sheet +=                           "TIME:________<BR>";
+	score_sheet += "JUDGE'S SIGNATURE:_____________________<BR></p></FONT> ";
+
+ 
+	CopyHTML(score_sheet);
+
+ 
+}

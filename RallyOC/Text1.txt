@@ -1,0 +1,227 @@
+	CString judge_name, comp_name, organization;
+	CString station_number_text, akc_number_text, station_name, x_y_location;
+
+
+	CRallyObject* pRallyItemInlist;
+	POSITION pos;
+	CString strResult;	
+	
+	CourseInfo course_info;
+
+	CString out_string, rally_date, rally_class;
+	strResult.Empty();
+		
+	this->m_course_info->GetCourseInfo(&course_info);
+	
+	if (this->m_sspo_show_course_info) {
+		if (this->m_sspo_date) rally_date = course_info.m_date_compete.Format(_T("%A, %B %d, %Y"));
+		if (this->m_sspo_judge_name) judge_name.Format("JUDGE: %s  ",course_info.m_judge);
+		if (this->m_sspo_comp_name) comp_name.Format("TRIAL: %s", course_info.m_competation);
+		if (this->m_sspo_organization) organization.Format(" ORGANIZATION: %s", course_info.m_organization);
+
+		out_string = judge_name + comp_name + organization + "\r\n";
+		strResult += out_string + "\r\n";
+		if (this->m_sspo_class) {
+			rally_class = "RALLY CLASS: ";
+			switch (course_info.m_class) {
+			case NOVICE:
+				rally_class += "Novice ";
+				break;
+			case ADVANCED:
+				rally_class += "Advanced ";		
+				break;
+			case EXCELLENT:
+				rally_class += "Excellent ";		
+				break;
+			case TRAINING:
+				rally_class += "Training ";
+			}
+		}
+		if (this->m_sspo_subclass) {
+			switch (course_info.m_sub_class) {
+			case CLASS_A:
+				rally_class += " A ";
+				break;
+			case CLASS_B:
+				rally_class += " B ";
+				break;
+			}
+		}
+		out_string = rally_class + rally_date;
+//			out_string.Format("RALLY CLASS: %s  DATE: %s",rally_class, rally_date);
+		strResult += out_string + "\r\n";
+
+		CString arm_band, breed, jump_ht;
+		if (this->m_sspo_arm_band) arm_band = "ARM BAND NO.:_____________  ";
+		if (this->m_sspo_breed) breed = "BREED:__________________  ";
+		if (this->m_sspo_jump_ht) jump_ht = "JUMP HEIGHT:______________";
+		out_string = arm_band + breed + jump_ht;
+		strResult += out_string + "\r\n";
+
+// end of header
+	}
+
+// begin first column
+
+	out_string.Format("DEDUCTIONS | MARKS    | PTS LOST");
+	strResult += out_string + "\r\n";
+
+
+	out_string.Format("1 POINT    |_________ |_________");
+	strResult += out_string + "\r\n";
+	out_string.Format("Tight leash, Poor sits");
+	strResult += out_string + "\r\n";
+	out_string.Format("Slow, delay or resistance to respond");
+	strResult += out_string + "\r\n";
+	out_string.Format("Out of position");
+	strResult += out_string + "\r\n";
+	out_string.Format("Touches jump, pylon, post or person");
+	strResult += out_string + "\r\n";
+	out_string.Format("Dog interfering with handler");
+	strResult += out_string + "\r\n\r\n";
+
+	out_string.Format("3 POINTS    |_________ |_________");
+	strResult += out_string + "\r\n";
+	out_string.Format("Repeat of station (2 re-tries max.)");
+	strResult += out_string + "\r\n";
+	out_string.Format("Pylon or Post knocked over");
+	strResult += out_string + "\r\n";
+	out_string.Format("Lack of control");
+	strResult += out_string + "\r\n";
+	out_string.Format("Loud or intimidating command or signal");
+	strResult += out_string + "\r\n";
+	out_string.Format("Excessive barking");
+	strResult += out_string + "\r\n\r\n";
+
+	out_string.Format("10 POINTS    |_________ |_________");
+	strResult += out_string + "\r\n";
+	out_string.Format("Incorrectly performed station");
+	strResult += out_string + "\r\n";
+	out_string.Format("Hitting the jump");
+	strResult += out_string + "\r\n\r\n";
+
+	out_string.Format("1-10 POINTS  |_________ |_________");
+	strResult += out_string + "\r\n";
+	out_string.Format("Lack of Teamwork");
+	strResult += out_string + "\r\n";
+	out_string.Format("Lack of briskness");
+	strResult += out_string + "\r\n";
+	out_string.Format("Handler error");
+	strResult += out_string + "\r\n\r\n";
+
+	out_string.Format("NQ           |_________ |_________");
+	strResult += out_string + "\r\n";
+	out_string.Format("Minimum requirements not met");
+	strResult += out_string + "\r\n";
+	out_string.Format("Dog unmanageable or uncontrolled barking");
+	strResult += out_string + "\r\n";
+	out_string.Format("Station not attempted");
+	strResult += out_string + "\r\n";
+	out_string.Format("Consistently tight lead");
+	strResult += out_string + "\r\n";
+	out_string.Format("Substantially out of position or");
+	strResult += out_string + "\r\n";
+	out_string.Format(" not completing the honor exercise");
+	strResult += out_string + "\r\n";
+	out_string.Format("Elimination in the ring during judging");
+	strResult += out_string + "\r\n";
+	out_string.Format("Bar knocked off the uprights");
+	strResult += out_string + "\r\n";
+	out_string.Format("Using a jump as an aid in going over");
+	strResult += out_string + "\r\n";
+	out_string.Format("Failure of dog to go over the jump in");
+	strResult += out_string + "\r\n";
+	out_string.Format(" the proper direction");
+	strResult += out_string + "\r\n";
+	out_string.Format("Handler error");
+	strResult += out_string + "\r\n\r\n";
+
+// end first column
+
+// begin second  column
+
+	
+	pos = this->m_rallyList.GetHeadPosition();
+	if (pos != NULL) {
+		BOOL have_honor;
+		CString station_desc, station_list;
+		int station_number;
+		out_string = "STATION LIST                   PTS LOST";
+		strResult += out_string + "\r\n";
+	
+		for( pos = this->m_rallyList.GetHeadPosition(); pos != NULL; ) {
+			pRallyItemInlist = (CRallyObject*)this->m_rallyList.GetNext(pos);
+			if (pos != NULL) {
+				station_number = pRallyItemInlist->GetStationNumber();
+				if (this->m_sspo_station_number)station_number_text.Format("%d. ",station_number);
+				int honor_station = pRallyItemInlist->GetAKCNumber();
+				if (this->m_sspo_akc_number)akc_number_text.Format(" (%d)", honor_station);
+				if (honor_station == 50) {
+					have_honor = true;
+				}
+				if (station_number > 0 && honor_station != 50) {
+					if (this->m_sspo_station_name) station_name = this->m_rallyList.akc_station_names[pRallyItemInlist->GetAKCNumber()];
+					station_desc = station_number_text + station_name + akc_number_text;
+					strResult += station_desc + "____________________\r\n";
+
+				}
+			}
+			else {
+				if (have_honor) {
+					if (course_info.m_number_honor > 0) {
+						if (this->m_sspo_station_number)station_number_text.Format("%d. ",this->m_num_stations + 1);
+						if (this->m_sspo_akc_number)akc_number_text.Format(" (%d)", 50);
+						if (this->m_sspo_station_name) station_name = this->m_rallyList.akc_station_names[50];
+						station_desc = station_number_text + station_name + akc_number_text;
+
+					}
+					else {
+						if (this->m_sspo_station_number)station_number_text.Format("%d. ",this->m_num_stations + 1);
+						if (this->m_sspo_akc_number)akc_number_text.Format(" (%d)", 50);
+						if (this->m_sspo_station_name) station_name = this->m_rallyList.akc_station_names[50];
+						station_desc = "    " + station_name + akc_number_text;
+					}
+					strResult += station_desc + "___________________\r\n";
+				}
+			}
+
+		}
+
+		strResult += "Total Points Deducted:";
+		strResult +="________\r\n";
+		if (this->m_sspo_final_score) strResult += "FINAL SCORE:_________\r\n";
+		if (this->m_sspo_time) strResult += "TIME:_________";
+		if (this->m_sspo_judge_sign) strResult += "JUDGE'S SIGNATURE:_________________________\r\n";			
+
+	}
+
+	
+	// copy the string to the clipboard
+	pos = GetFirstViewPosition();
+	CView* pFirstView = GetNextView( pos );
+
+		
+	if (!pFirstView->OpenClipboard())
+	{
+		AfxMessageBox("Error Opening Clipboard");
+		return;
+	}
+
+
+	int nTextLen = (strResult.GetLength()+1)*sizeof(TCHAR);
+	HGLOBAL hGlobal = GlobalAlloc(GMEM_MOVEABLE, nTextLen);
+	if (hGlobal != NULL)
+	{
+		LPVOID lpText = GlobalLock(hGlobal);
+		memcpy(lpText, strResult, nTextLen);
+
+		EmptyClipboard();
+		GlobalUnlock(hGlobal);
+	#ifdef _UNICODE
+		SetClipboardData(CF_UNICODETEXT, hGlobal);
+	#else
+		SetClipboardData(CF_TEXT, hGlobal);
+	#endif
+	}
+	CloseClipboard();	
+	AfxMessageBox("A copy of the score sheet is available for pasting into another application.",MB_OK);	

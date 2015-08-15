@@ -1,0 +1,3117 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DogRun.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DogRun.ico"
+IDR_DOGRUNTYPE          ICON                    "res\\DogRunDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_RALLYO              BITMAP                  "res\\toolbar1.bmp"
+IDB_RIGHT_TURN          BITMAP                  "res\\stophalt.bmp"
+IDB_START               BITMAP                  "res\\bitmap1.bmp"
+IDB_FINISH              BITMAP                  "res\\bmp00001.bmp"
+IDB_CHANGEPACE          BITMAP                  "res\\haltforw.bmp"
+IDB_HALTFORWARD         BITMAP                  "res\\bmp00002.bmp"
+IDB_ABOUT_TURN          BITMAP                  "res\\right_tu.bmp"
+IDB_270_RT              BITMAP                  "res\\bmp00003.bmp"
+IDB_360_RT              BITMAP                  "res\\bmp270_r.bmp"
+IDB_90_PIVOT_RT         BITMAP                  "res\\bmp360_r.bmp"
+IDB_180_PIVOT_RT        BITMAP                  "res\\bmp90_pi.bmp"
+IDB_LEFT_TURN           BITMAP                  "res\\bmp00004.bmp"
+IDB_U_TURN              BITMAP                  "res\\about_tu.bmp"
+IDB_270_LT              BITMAP                  "res\\bmp00005.bmp"
+IDB_360_LT              BITMAP                  "res\\bmp00006.bmp"
+IDB_90_PIVOT_LT         BITMAP                  "res\\bmp00007.bmp"
+IDB_180_PIVOT_LT        BITMAP                  "res\\bmp180_p.bmp"
+IDB_HONOR               BITMAP                  "res\\start1.bmp"
+IDB_ABOUT_FORWARD_TURN_RT BITMAP                  "res\\about_fo.bmp"
+IDB_ABOUT_TURN_LT       BITMAP                  "res\\bmp00008.bmp"
+IDB_U_FORWARD_LT        BITMAP                  "res\\u_turn1.bmp"
+IDB_1STEP_HEEL_RT       BITMAP                  "res\\bmp00009.bmp"
+IDB_FINISH_RT_FOR       BITMAP                  "res\\bmp00010.bmp"
+IDB_FINISH_LT_FOR       BITMAP                  "res\\finish_r.bmp"
+IDB_FINISH_RT_HALT      BITMAP                  "res\\bmp00011.bmp"
+IDB_FINISH_LT_HALT      BITMAP                  "res\\bmp00012.bmp"
+IDB_FINISH_RT           BITMAP                  "res\\bmp00013.bmp"
+IDB_FINISH_LT           BITMAP                  "res\\bmp00014.bmp"
+IDB_FAST_SIT            BITMAP                  "res\\bmp00015.bmp"
+IDB_SIDE_RT             BITMAP                  "res\\bmp00016.bmp"
+IDB_MOVE                BITMAP                  "res\\side_rt1.bmp"
+IDB_JUMP                BITMAP                  "res\\move1.bmp"
+IDB_BACKUP              BITMAP                  "res\\bmp00017.bmp"
+IDB_HALT_3_FOR          BITMAP                  "res\\finish1.bmp"
+IDB_FRONT_3_BACK        BITMAP                  "res\\halt_3_f.bmp"
+IDB_SPIRAL_RIGHT        BITMAP                  "res\\jump1.bmp"
+IDB_SPIRAL_LEFT         BITMAP                  "res\\spiral_r.bmp"
+IDB_FIG8_TWICE          BITMAP                  "res\\spiral_l.bmp"
+IDB_FIG8_ONCE           BITMAP                  "res\\fig8_onc.bmp"
+IDB_OFFSET_FIG8         BITMAP                  "res\\bmp00018.bmp"
+IDB_SIDE_RIGHT          BITMAP                  "res\\bmp00019.bmp"
+IDB_SPLASH              BITMAP                  "Splsh30.bmp"
+IDB_ARROW               BITMAP                  "res\\bmp00020.bmp"
+IDB_PYLONS              BITMAP                  "res\\spiral_p.bmp"
+IDB_FRONT_LEFT          BITMAP                  "res\\front_ri.bmp"
+IDB_FRONT_RIGHT         BITMAP                  "res\\bmp00026.bmp"
+IDB_SIDE_RT_APDT        BITMAP                  "res\\bmp00027.bmp"
+IDB_HALT_3_FOR_APDT     BITMAP                  "res\\bmp00028.bmp"
+IDB_FRONT_3_BACK_APDT   BITMAP                  "res\\front_3_.bmp"
+IDB_FRONT_RUNNING       BITMAP                  "res\\bmp00029.bmp"
+IDB_BACK                BITMAP                  "res\\bmp00030.bmp"
+IDB_JUMP_RECALL         BITMAP                  "res\\bmp00031.bmp"
+IDB_JUMP_LEAVE          BITMAP                  "res\\jump_rec.bmp"
+IDB_LEAVE_DOWN          BITMAP                  "res\\idb_.bmp"
+IDB_LEAVE_DOWN2         BITMAP                  "res\\leave_do.bmp"
+IDB_RETRIEVE_FINISH     BITMAP                  "res\\bmp00032.bmp"
+IDB_JUMP_RECALL2        BITMAP                  "res\\bmp00033.bmp"
+IDB_JUMP_LEAVE2         BITMAP                  "res\\jump_lea.bmp"
+IDB_RETURN              BITMAP                  "res\\back1.bmp"
+IDB_TURN_FRONT          BITMAP                  "res\\bmp00034.bmp"
+IDB_TURN_HEEL           BITMAP                  "res\\turn_fro.bmp"
+IDB_TURN_DOWN_SIT       BITMAP                  "res\\bmp00035.bmp"
+IDB_ROTATE              BITMAP                  "res\\bmp00036.bmp"
+IDB_RESIZE              BITMAP                  "res\\rotate1.bmp"
+IDB_JUMP_TOOL           BITMAP                  "res\\bmp00037.bmp"
+IDB_LEASH_TOOL          BITMAP                  "res\\jump_too.bmp"
+IDB_GATE_TOOL           BITMAP                  "res\\bmp00038.bmp"
+IDB_SPIRAL_RT_1A        BITMAP                  "res\\bmp00039.bmp"
+IDB_SPIRAL_RT_1B        BITMAP                  "res\\bmp00040.bmp"
+IDB_SPIRAL_LT           BITMAP                  "res\\bmp00041.bmp"
+IDB_OFFSET_3A           BITMAP                  "res\\gate_too.bmp"
+IDB_TABLE_TOOL          BITMAP                  "res\\bmp00042.bmp"
+IDB_BR_JUMP_TOOL        BITMAP                  "res\\bmp00043.bmp"
+IDB_BONE                BITMAP                  "res\\pylons1.bmp"
+IDB_SERP_PATTERN        BITMAP                  "res\\bmp00021.bmp"
+IDB_FIG8_PATTERN        BITMAP                  "res\\serp_pat.bmp"
+IDB_FIGURE8_NODIST      BITMAP                  "res\\offset_f.bmp"
+IDB_LEFT_HALT_FORWARD   BITMAP                  "res\\left_tur.bmp"
+IDB_RIGHT_HALT_FORWARD  BITMAP                  "res\\bmp00022.bmp"
+IDB_FRONT_HEEL          BITMAP                  "res\\bmp00023.bmp"
+IDB_LEAVE_DOG_2_STEPS_HEEL BITMAP                  "res\\bmp00024.bmp"
+IDB_DOUBLE_LEFT_TURN    BITMAP                  "res\\bmp00025.bmp"
+IDB_JUMP_SEND           BITMAP                  "res\\bmp00044.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bmp00045.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_CLEAR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_TEXT
+    BUTTON      ID_ARROW_TOOL
+    BUTTON      ID_LINE_TOOL
+    BUTTON      ID_SCRIBBLE_TOOL
+    BUTTON      ID_JUMP_TOOL
+    BUTTON      ID_BR_JUMP_TOOL
+    BUTTON      ID_LEASH_TOOL
+    BUTTON      ID_GATE_TOOL
+    BUTTON      ID_TABLE_TOOL
+    BUTTON      ID_PYLONS
+    BUTTON      ID_BONE
+    BUTTON      ID_PATTERN
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_RALLYO TOOLBAR  27, 27
+BEGIN
+    BUTTON      ID_SELECTARROW
+    SEPARATOR
+    BUTTON      ID_DRAW_START
+    BUTTON      ID_DRAW_FINISH
+    SEPARATOR
+    BUTTON      ID_FORWARD_HALT
+    BUTTON      ID_CHANGE_PACE
+    BUTTON      ID_RIGHT_TURNS
+    BUTTON      ID_LEFT_TURNS
+    BUTTON      ID_PIVOT
+    BUTTON      ID_FINISH
+    BUTTON      ID_MOVE
+    BUTTON      ID_HEEL
+    BUTTON      ID_WEAVE
+    SEPARATOR
+    BUTTON      ID_STATIONARY
+    BUTTON      ID_NONSTATIONARY
+    SEPARATOR
+    BUTTON      ID_NOVICE
+    BUTTON      ID_ADVANCED
+    BUTTON      ID_EXCELLENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About RallyOC...",           ID_APP_ABOUT
+    END
+END
+
+IDR_DOGRUNTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save Bitmap...",              ID_SAVE_BITMAP
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM "Print B and W...",            ID_FILE_PRINT_BW
+        MENUITEM "Print Station List...",       ID_PRINT_STATION_LIST
+        MENUITEM "Print Score Sheet...",        ID_PRINT_SCORE_SHEET
+        MENUITEM "Print Station Desc...",       ID_PRINT_LIST_DESC
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Document In&fo...",           ID_DOC_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Straighten Line",             ID_STRAIGHT_LINE
+        MENUITEM "Reverse Arrow",               ID_REVERSE_ARROW
+        MENUITEM SEPARATOR
+        MENUITEM "Select All",                  ID_SELECT_ALL_STATIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Copy Course Map...",          ID_COPY_COURSE
+        MENUITEM "Copy Station List...",        ID_COPY_LIST
+        MENUITEM "Copy Score Sheet...",         ID_COPY_SCORE_SHEET
+        MENUITEM "Copy Course Statistics...",   ID_COPY_STATS
+        MENUITEM "Copy Station Descriptions...", ID_COPY_DESC
+        MENUITEM SEPARATOR
+        POPUP "Rotate"
+        BEGIN
+            MENUITEM "&0 Degrees\tCtrl + Up Arrow", ID_ZERO_DEGREES
+            MENUITEM "90 Degrees &CW\tCtrl + Right Arrow", ID_NINETY_CW
+            MENUITEM "90 Degrees CC&W\tCtrl + Left Arrow", ID_NINETY_CCW
+            MENUITEM "&180 Degrees\tCtrl + Down Arrow", ID_ONEEIGHTY
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "Horizontal\tShift + F9",      ID_ALIGN_HORIZ
+            MENUITEM "Vertical\tF9",                ID_ALIGN_VERT
+        END
+        POPUP "&Insert At"
+        BEGIN
+            MENUITEM "",                            ID_ITEM1
+        END
+        POPUP "Change To"
+        BEGIN
+            MENUITEM "",                            ID_CITEM1
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Station Properties...",       ID_ST_PROP_DIALOG
+        MENUITEM "Arrow/Line Properties...",    ID_AR_PROP_DIALOG
+        MENUITEM "Text Properties...",          ID_TEXT_PROP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Standard &Toolbar",           ID_VIEW_TOOLBAR
+        MENUITEM "&Rally Station Toolbar",      IDR_RALLYO
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Rally List",            ID_VIEW_RALLY_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Course Info\tF4",            ID_VIEW_COURSE_INFO
+        MENUITEM "Station &List\tF5",           ID_RALLY_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Si&ze to Screen\tF6",         ID_SIZE_TO_SCREEN
+    END
+    POPUP "&Add AKC"
+    BEGIN
+        MENUITEM "&Start",                      ID_DRAW_START
+        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        POPUP "H&alt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+            MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+            MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+            MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+            MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+            MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+        END
+        POPUP "&Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "&Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+        END
+        POPUP "&Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+        END
+        POPUP "Pi&vot"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        END
+        POPUP "Fron&t"
+        BEGIN
+            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+        END
+        POPUP "&Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
+            MENUITEM "Jump",                        ID_DRAW_JUMP
+            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+        END
+        POPUP "H&eel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+            MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+            MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+        END
+        POPUP "&Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        END
+    END
+    POPUP "Add"
+    BEGIN
+        MENUITEM "Text",                        ID_EDIT_TEXT
+        MENUITEM "Arrow",                       ID_ARROW_TOOL
+        MENUITEM "Line",                        ID_LINE_TOOL
+        MENUITEM "Free Line",                   ID_SCRIBBLE_TOOL
+        MENUITEM "Bar Jump",                    ID_JUMP_TOOL
+        MENUITEM "Broad Jump",                  ID_BR_JUMP_TOOL
+        MENUITEM "Leash Hook",                  ID_LEASH_TOOL
+        MENUITEM "Gate",                        ID_GATE_TOOL
+        MENUITEM "Table",                       ID_TABLE_TOOL
+        MENUITEM "Pylon",                       ID_PYLONS
+        MENUITEM "Distraction",                 ID_BONE
+        POPUP "Pattern"
+        BEGIN
+            MENUITEM "Sprial Right 1A",             ID_SPIRAL_RT_1A
+            MENUITEM "Sprial Right 1B",             ID_SPIRAL_RT_1B
+            MENUITEM "Spiral Left",                 ID_SPIRAL_LT
+            MENUITEM "Figure 8-Weave Twice",        ID_FIG8_PATTERN
+            MENUITEM "Serpentine Weave Once",       ID_SERP_PATTERN
+            MENUITEM "Offset",                      ID_OFFSET_3A
+        END
+    END
+    POPUP "&Course"
+    BEGIN
+        MENUITEM "&Info...\tCtrl + I",          IDD_COURSE_INFO, GRAYED
+        MENUITEM "&Verify...\tCtrl + T",        IDD_COURSE_VERIFY
+    END
+    POPUP "Preferences"
+    BEGIN
+        MENUITEM "Course Map...",               IDD_AUTOR_PREF
+        MENUITEM "Stations...",                 ID_STATION_PREF
+        MENUITEM "Arrows/Lines...",             ID_ARROW_PREF
+        MENUITEM "Text Boxes...",               ID_TEXT_FONT
+        MENUITEM "Station List ...",            ID_STATION_LIST_PR
+        MENUITEM "Score Sheet Printout...",     ID_SCORE_SHEET_PR
+        MENUITEM "Station Descriptions...",     ID_STATION_DESC_PR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "Register...",                 ID_REG_DIALOG
+        MENUITEM SEPARATOR
+        MENUITEM "&About RallyOC...",           ID_APP_ABOUT
+    END
+END
+
+ID_POPUP_ST_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        POPUP "Rotate Station"
+        BEGIN
+            MENUITEM "0 Degrees\tCtrl+Up Arrow",    ID_ZERO_DEGREES
+            MENUITEM "90 Degrees CW\tCtrl+Right Arrow", ID_NINETY_CW
+            MENUITEM "90 Degrees CCW\tCtrl+Left Arrow", ID_NINETY_CCW
+            MENUITEM "180 Degrees\tCtrl+Down Arrow", ID_ONEEIGHTY
+        END
+        POPUP "Align"
+        BEGIN
+            MENUITEM "Horizontal",                  ID_ALIGN_HORIZ
+            MENUITEM "Vertical",                    ID_ALIGN_VERT
+        END
+        POPUP "Add AKC"
+        BEGIN
+            MENUITEM "Start",                       ID_DRAW_START
+            MENUITEM "Finish",                      ID_DRAW_FINISH
+            POPUP "Halt-Forward"
+            BEGIN
+                MENUITEM "Sit",                         ID_DRAW_SITHALT
+                MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+                MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+                MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+                MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+                MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+                MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+                MENUITEM "Stand",                       ID_DRAW_STAND
+                MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+                MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+            END
+            POPUP "Pace"
+            BEGIN
+                MENUITEM "Slow",                        ID_DRAW_SLOW
+                MENUITEM "Normal",                      ID_DRAW_NORMAL
+                MENUITEM "Fast",                        ID_DRAW_FAST
+                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            END
+            POPUP "Right Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+                MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+                MENUITEM "270 Degree",                  ID_DRAW_270_RT
+                MENUITEM "360 Degree",                  ID_DRAW_360_RT
+                MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+            END
+            POPUP "Left Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+                MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
+                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+                MENUITEM "270 Degree",                  ID_DRAW_270_LT
+                MENUITEM "360 Degree",                  ID_DRAW_360_LT
+                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+                MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+                MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+            END
+            POPUP "Pi&vot"
+            BEGIN
+                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+                MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+            END
+            POPUP "Finish"
+            BEGIN
+                MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+                MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+                MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+                MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+            END
+            POPUP "Moving"
+            BEGIN
+                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+                MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+                MENUITEM "Jump",                        ID_DRAW_JUMP
+                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+                MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+                MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+                MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+                MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+                MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+                MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+                MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+                MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+            END
+            POPUP "Heel"
+            BEGIN
+                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+                MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+                MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+                MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+            END
+            POPUP "Weaves"
+            BEGIN
+                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+                MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            END
+        END
+        POPUP "Add APDT"
+        BEGIN
+            MENUITEM "&Start",                      ID_DRAW_START
+            MENUITEM "&Finish",                     ID_DRAW_FINISH
+            POPUP "H&alt-Forward"
+            BEGIN
+                MENUITEM "Sit",                         ID_DRAW_SITHALT
+                MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
+                MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
+                MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
+                MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+                MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
+                MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
+                MENUITEM "Return-Stand",                ID_RETURN_STAND
+                MENUITEM "Recall-Leave",                ID_RECALL_LEAVE
+                MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+                MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+                MENUITEM "Down-Recall",                 ID_DOWN_RECALL
+                MENUITEM "Retrieve-Finish",             ID_RETRIEVE_FINISH
+            END
+            POPUP "&Pace"
+            BEGIN
+                MENUITEM "Slow",                        ID_DRAW_SLOW
+                MENUITEM "Normal",                      ID_DRAW_NORMAL
+                MENUITEM "Fast",                        ID_DRAW_FAST
+                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            END
+            POPUP "&Right Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+                MENUITEM "270 Degree",                  ID_DRAW_270_RT
+                MENUITEM "360 Degree",                  ID_DRAW_360_RT
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+                MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+                MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
+            END
+            POPUP "&Left Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+                MENUITEM "270 Degree",                  ID_DRAW_270_LT
+                MENUITEM "360 Degree",                  ID_DRAW_360_LT
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+                MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
+            END
+            POPUP "Pi&vot"
+            BEGIN
+                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            END
+            POPUP "Fron&t"
+            BEGIN
+                MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+                MENUITEM "Turn-Call Front",             ID_TURN_FRONT
+                MENUITEM "Finish Right",                ID_FINISH_RIGHT
+                MENUITEM "Finish Left",                 ID_FINISH_LEFT
+                MENUITEM "Leave-Call Front While Running", ID_FRONT_RUN
+            END
+            POPUP "&Moving"
+            BEGIN
+                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+                MENUITEM "Jump",                        ID_DRAW_JUMP
+                MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
+                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
+                MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
+                MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+                MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+            END
+            POPUP "H&eel"
+            BEGIN
+                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+            END
+            POPUP "&Weaves"
+            BEGIN
+                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            END
+        END
+        POPUP "&Insert At"
+        BEGIN
+            MENUITEM "",                            ID_ITEM1
+        END
+        POPUP "Change To"
+        BEGIN
+            MENUITEM "",                            ID_CITEM1
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Station Properties...",       ID_ST_PROP_DIALOG
+    END
+END
+
+IDR_HALT_FOR_AKC MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Sit",                         ID_DRAW_SITHALT
+        MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
+        MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+        MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+        MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+        MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+        MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+        MENUITEM "Stand",                       ID_DRAW_STAND
+        MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+        MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+    END
+END
+
+IDR_CHANGE_PACE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Slow",                        ID_DRAW_SLOW
+        MENUITEM "Normal",                      ID_DRAW_NORMAL
+        MENUITEM "Fast",                        ID_DRAW_FAST
+        MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+    END
+END
+
+IDR_RIGHT_TURNS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+        MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+        MENUITEM "270 Degree",                  ID_DRAW_270_RT
+        MENUITEM "360 Degree",                  ID_DRAW_360_RT
+        MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+        MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+        MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+        MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+    END
+END
+
+IDR_LEFT_TURNS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+        MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+        MENUITEM "270 Degree",                  ID_DRAW_270_LT
+        MENUITEM "360 Degree",                  ID_DRAW_360_LT
+        MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+        MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+        MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+        MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+    END
+END
+
+IDR_MOVE_X MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+        MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+        MENUITEM "Jump",                        ID_DRAW_JUMP
+        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+        MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+        MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+        MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+        MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+        MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+        MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+        MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+        MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+    END
+END
+
+IDR_FINISH_X MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+        MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+        MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+        MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+        MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+        MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+        MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+    END
+END
+
+IDR_HEEL MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+        MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+        MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+        MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+        MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+        MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+    END
+END
+
+IDR_STATIONARY MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Halt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+            MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+            MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+            MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+            MENUITEM "Stand",                       ID_DRAW_STAND
+            MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+            MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+        END
+        POPUP "Pace"
+        BEGIN
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "Pivots"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "Front"
+        BEGIN
+            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+        END
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
+            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+            MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+            MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+            MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+            MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+        END
+        POPUP "Heel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+        END
+    END
+END
+
+IDR_NONSTATIONARY MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+        END
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Jump",                        ID_DRAW_JUMP
+            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+            MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+            MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+            MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+            MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+        END
+        POPUP "Heel"
+        BEGIN
+            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+            MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+            MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+        END
+        POPUP "Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        END
+    END
+END
+
+IDR_NOVICE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Halt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+            MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+            MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+        END
+        POPUP "Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+        END
+        POPUP "Front"
+        BEGIN
+            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+        END
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+        END
+        POPUP "Heel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+        END
+        POPUP "Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        END
+    END
+END
+
+IDR_ADVANCED MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Halt-Forward"
+        BEGIN
+            MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+            MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+            MENUITEM "Stand",                       ID_DRAW_STAND
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "Front"
+        BEGIN
+            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+        END
+        POPUP "Pivots"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "H&eel"
+        BEGIN
+            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+        END
+        MENUITEM "Jump",                        ID_DRAW_JUMP
+        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+    END
+END
+
+IDR_EXCELLENT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+        MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+        MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+        MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+        MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+        MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+        MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+        MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+        MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+        MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+    END
+END
+
+IDR_PIVOT_TURNS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+        MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+        MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+        MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+    END
+END
+
+IDR_HALT_FOR_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Sit",                         ID_DRAW_SITHALT
+        MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
+        MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
+        MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
+        MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+        MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
+        MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
+        MENUITEM "Return-Stand",                ID_RETURN_STAND
+        MENUITEM "Recall-Leave",                ID_RECALL_LEAVE
+        MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+        MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+        MENUITEM "Down-Recall",                 ID_DOWN_RECALL
+        MENUITEM "Turn, Recall-Down-Recall",    ID_DOWN_RECALL_TWO
+        MENUITEM "Retrieve-Finish",             ID_RETRIEVE_FINISH
+    END
+END
+
+IDR_RIGHT_TURNS_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+        MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+        MENUITEM "270 Degree",                  ID_DRAW_270_RT
+        MENUITEM "360 Degree",                  ID_DRAW_360_RT
+        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+        MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+        MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+        MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
+    END
+END
+
+IDR_LEFT_TURNS_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+        MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+        MENUITEM "270 Degree",                  ID_DRAW_270_LT
+        MENUITEM "360 Degree",                  ID_DRAW_360_LT
+        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+        MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+        MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+        MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
+    END
+END
+
+IDR_FINISH_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
+        MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
+        MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
+        MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+        MENUITEM "Turn-Call Front",             ID_TURN_FRONT
+        MENUITEM "Finish Right",                ID_FINISH_RIGHT
+        MENUITEM "Finish Left",                 ID_FINISH_LEFT
+        MENUITEM "Leave-Call Front While Running", ID_FRONT_RUN
+    END
+END
+
+IDR_MOVE_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+        MENUITEM "Jump",                        ID_DRAW_JUMP
+        MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
+        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
+        MENUITEM "Turn and Call to Heel",       ID_MOVE_STAND_LEAVE_TWO
+        MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
+        MENUITEM "Turn and Down - Sit, Call, Finish", ID_MOVE_STAND_SIT_FINISH_TWO
+        MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+        MENUITEM "Call Over Jump",              ID_JUMP_RECALL_TWO
+        MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+        MENUITEM "Send Over Jump",              ID_JUMP_LEAVE_TWO
+    END
+END
+
+IDR_PIVOT_TURNS_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+        MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+        MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+    END
+END
+
+IDR_WEAVE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+        MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+        MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+    END
+END
+
+IDR_WEAVE_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+        MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+        MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+    END
+END
+
+IDR_NOVICE_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Halt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
+            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
+            MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+            MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
+        END
+        POPUP "Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+        END
+        POPUP "Pivots"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+        END
+        POPUP "Front"
+        BEGIN
+            MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+        END
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+        END
+        POPUP "Heel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+        END
+        POPUP "Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+        END
+    END
+END
+
+IDR_ADVANCED_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Halt-Forward"
+        BEGIN
+            MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
+        END
+        POPUP "Pace"
+        BEGIN
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "Right Turns"
+        BEGIN
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+        END
+        POPUP "Left Turns"
+        BEGIN
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+        END
+        POPUP "Front"
+        BEGIN
+            MENUITEM "Turn-Call Front",             ID_TURN_FRONT
+            MENUITEM "Finish Right",                ID_FINISH_RIGHT
+            MENUITEM "Finish Left",                 ID_FINISH_LEFT
+            MENUITEM "Leave-Call Front While Running", ID_FRONT_RUN
+        END
+        POPUP "Pivots"
+        BEGIN
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        END
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Jump",                        ID_DRAW_JUMP
+            MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
+        END
+        POPUP "Heel"
+        BEGIN
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+        END
+        POPUP "Weaves"
+        BEGIN
+            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        END
+    END
+END
+
+IDR_EXCELLENT_APDT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Moving"
+        BEGIN
+            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
+            MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
+            MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+            MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+        END
+        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+        MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
+        MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
+        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        MENUITEM "Down-Recall",                 ID_DOWN_RECALL
+        MENUITEM "Retrieve-Finish",             ID_RETRIEVE_FINISH
+    END
+END
+
+IDR_ADD_AKC MENU 
+BEGIN
+    POPUP "&Add"
+    BEGIN
+        MENUITEM "&Start",                      ID_DRAW_START
+        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        POPUP "H&alt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+            MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+            MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+            MENUITEM "Stand",                       ID_DRAW_STAND
+            MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+            MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+            MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+        END
+        POPUP "&Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "&Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+        END
+        POPUP "&Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "Pi&vot"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+            MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+        END
+        POPUP "Finish"
+        BEGIN
+            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+        END
+        POPUP "&Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Jump",                        ID_DRAW_JUMP
+            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+            MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+            MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+            MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+            MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+            MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+            MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+        END
+        POPUP "H&eel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+            MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+            MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+        END
+        POPUP "&Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        END
+    END
+END
+
+IDR_ADD_APDT MENU 
+BEGIN
+    POPUP "&Add APDT"
+    BEGIN
+        MENUITEM "&Start",                      ID_DRAW_START
+        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        POPUP "H&alt-Forward"
+        BEGIN
+            MENUITEM "Sit",                         ID_DRAW_SITHALT
+            MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
+            MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
+            MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
+            MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+            MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
+            MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
+            MENUITEM "Return-Stand",                ID_RETURN_STAND
+            MENUITEM "Recall-Leave",                ID_RECALL_LEAVE
+            MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+            MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+            MENUITEM "Down-Recall",                 ID_DOWN_RECALL
+            MENUITEM "Retrieve-Finish",             ID_RETRIEVE_FINISH
+        END
+        POPUP "&Pace"
+        BEGIN
+            MENUITEM "Slow",                        ID_DRAW_SLOW
+            MENUITEM "Normal",                      ID_DRAW_NORMAL
+            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        END
+        POPUP "&Right Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree",                  ID_DRAW_270_RT
+            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
+        END
+        POPUP "&Left Turns"
+        BEGIN
+            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree",                  ID_DRAW_270_LT
+            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
+        END
+        POPUP "Pi&vot"
+        BEGIN
+            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        END
+        POPUP "Fron&t"
+        BEGIN
+            MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Turn-Call Front",             ID_TURN_FRONT
+            MENUITEM "Finish Right",                ID_FINISH_RIGHT
+            MENUITEM "Finish Left",                 ID_FINISH_LEFT
+            MENUITEM "Leave-Call Front While Running", ID_FRONT_RUN
+        END
+        POPUP "&Moving"
+        BEGIN
+            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Jump",                        ID_DRAW_JUMP
+            MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
+            MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
+            MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
+            MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
+        END
+        POPUP "H&eel"
+        BEGIN
+            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+        END
+        POPUP "&Weaves"
+        BEGIN
+            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        END
+    END
+END
+
+ID_POPUP_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        POPUP "Align"
+        BEGIN
+            MENUITEM "Horizontal",                  ID_ALIGN_HORIZ
+            MENUITEM "Vertical",                    ID_ALIGN_VERT
+        END
+        POPUP "Add AKC"
+        BEGIN
+            MENUITEM "Start",                       ID_DRAW_START
+            MENUITEM "Finish",                      ID_DRAW_FINISH
+            POPUP "Halt-Forward"
+            BEGIN
+                MENUITEM "Sit",                         ID_DRAW_SITHALT
+                MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+                MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
+                MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
+                MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
+                MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
+                MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
+                MENUITEM "Stand",                       ID_DRAW_STAND
+                MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+                MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+            END
+            POPUP "Pace"
+            BEGIN
+                MENUITEM "Slow",                        ID_DRAW_SLOW
+                MENUITEM "Normal",                      ID_DRAW_NORMAL
+                MENUITEM "Fast",                        ID_DRAW_FAST
+                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            END
+            POPUP "Right Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
+                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
+                MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+                MENUITEM "270 Degree",                  ID_DRAW_270_RT
+                MENUITEM "360 Degree",                  ID_DRAW_360_RT
+                MENUITEM "HALT Right Forward",          ID__DRAW_HALTRIGHTFORWARD
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+            END
+            POPUP "Left Turns"
+            BEGIN
+                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+                MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
+                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+                MENUITEM "270 Degree",                  ID_DRAW_270_LT
+                MENUITEM "360 Degree",                  ID_DRAW_360_LT
+                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+                MENUITEM "HALT Left Forward",           ID__DRAW_HALTLEFTFORWARD
+                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+                MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+            END
+            POPUP "Pi&vot"
+            BEGIN
+                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "Halt Right Pivot Forward",    ID_DRAW_HALTRIGHTPIVOTFORWARD
+                MENUITEM "Halt Left Pivot Forward",     ID_DRAW_HALTLEFTPIVOTFORWARD
+            END
+            POPUP "Finish"
+            BEGIN
+                MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
+                MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+                MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
+                MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
+            END
+            POPUP "Moving"
+            BEGIN
+                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+                MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+                MENUITEM "Jump",                        ID_DRAW_JUMP
+                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
+                MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+                MENUITEM "Stand While Heeling",         ID__STAND_HEEL
+                MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
+                MENUITEM "Stand-Leave-Down-Front-Finish", ID__STAND_LEAVE_DOWN
+                MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+                MENUITEM "Send to Jump",                ID__DRAW_SENDTOJUMP
+                MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
+                MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+            END
+            POPUP "Heel"
+            BEGIN
+                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+                MENUITEM "Halt-Leave-2 Steps-Heel-Forward", ID__DRAW_2_STEPS_FORWARD
+                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+                MENUITEM "Double Left About Turn",      ID__DRAW_DOUBLE_LEFT_TURN
+                MENUITEM "Call to Heel",                ID__DRAW_CALLTOHEEL
+            END
+            POPUP "Weaves"
+            BEGIN
+                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+                MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
+            END
+        END
+    END
+END
+
+ID_POPUP_AR_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Straighten Line",             ID_STRAIGHT_LINE
+        MENUITEM "Reverse Arrow",               ID_REVERSE_ARROW
+        MENUITEM SEPARATOR
+        MENUITEM "Arrow/Line Properties...",    ID_AR_PROP_DIALOG
+    END
+END
+
+ID_POPUP_TX_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Text Properties...",          ID_TEXT_PROP
+    END
+END
+
+IDR_PATTERN MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Sprial Right 1A",             ID_SPIRAL_RT_1A
+        MENUITEM "Sprial Right 1B",             ID_SPIRAL_RT_1B
+        MENUITEM "Spiral Left",                 ID_SPIRAL_LT
+        MENUITEM "Figure 8-Weave Twice",        ID_FIG8_PATTERN
+        MENUITEM "Serpentine Weave Once",       ID_SERP_PATTERN
+        MENUITEM "Offset Figure 8",             ID_OFFSET_3A
+    END
+END
+
+ID_POPUP_SCR_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Line Properties...",          ID_AR_PROP_DIALOG
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "I",            IDD_COURSE_INFO,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            IDD_COURSE_VERIFY,      VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_ONEEIGHTY,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_VIEW_COURSE_INFO,    VIRTKEY, NOINVERT
+    VK_F5,          ID_RALLY_LIST,          VIRTKEY, NOINVERT
+    VK_F6,          ID_SIZE_TO_SCREEN,      VIRTKEY, NOINVERT
+    VK_F9,          ID_ALIGN_VERT,          VIRTKEY, NOINVERT
+    VK_F9,          ID_ALIGN_HORIZ,         VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_NINETY_CCW,          VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_NINETY_CW,           VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_ZERO_DEGREES,        VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RallyOC 2012"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "RallyOC 2012 Version 3.0.1",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,40,16,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Copyright (C) 2005-All Natural Software",IDC_STATIC,39,31,138,8
+    GROUPBOX        "This product is licensed to:",IDC_REG_INFO,13,47,206,45
+    LTEXT           "Warning:This computer program is protected under copyright law and international treaties.",IDC_STATIC,7,99,221,19
+    LTEXT           " Unautorized reproduction or distribution of this program, or any protion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.",IDC_STATIC,7,118,221,25
+    LTEXT           "",IDC_REG_DETAIL,17,58,198,28
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,14,20,20
+END
+
+IDD_DOCINFO DIALOG  0, 0, 217, 158
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DOCUMENT INFORMATION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_AUTHOR,42,7,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NOTES,42,31,168,52,ES_MULTILINE | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,97,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,137,50,14
+    LTEXT           "Author:",IDC_STATIC,13,9,24,8
+    LTEXT           "Notes:",IDC_STATIC,13,31,24,9
+    LTEXT           "Created:",IDC_STATIC,9,89,28,8
+    LTEXT           "Modified:",IDC_STATIC,7,106,30,8
+    LTEXT           "Static",IDC_CREATED,40,89,170,8
+    LTEXT           "Static",IDC_MODIFIED,40,106,170,8
+    LTEXT           "Printed:",IDC_STATIC,12,123,25,8
+    LTEXT           "Static",IDC_PRINTED,40,123,170,8
+END
+
+IDD_COURSE DIALOG  0, 0, 318, 239
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "COURSE INFORMATION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMPETATION,52,11,240,13,ES_AUTOHSCROLL
+    CONTROL         "AKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,31,30,10
+    CONTROL         "APDT",IDC_TYPE_APDT,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,103,31,35,10
+    CONTROL         "Novice",IDC_NOVICE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,51,44,39,10
+    CONTROL         "Advanced",IDC_ADVANCED,"Button",BS_AUTORADIOBUTTON,103,44,49,10
+    CONTROL         "Excellent",IDC_EXCELLENT,"Button",BS_AUTORADIOBUTTON,165,44,45,10
+    CONTROL         "Training",IDC_TRAINING,"Button",BS_AUTORADIOBUTTON,219,44,41,10
+    CONTROL         "Class A",IDC_CLASS_A,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,60,39,10
+    CONTROL         "Class B",IDC_CLASS_B,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,103,60,39,10
+    CONTROL         "None",IDC_CLASS_NONE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,165,60,33,10
+    CONTROL         "DateTimePicker1",IDC_DATECOMPETE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,51,76,63,14
+    EDITTEXT        IDC_LOCATION,52,97,240,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORGANIZATION,52,116,240,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JUDGE,52,134,240,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_WIDTH,51,153,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RING_LENGHT,107,153,25,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_GRID_SPACEING,194,153,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,185,73,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,200,31,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,200,33,10
+    CONTROL         "Location",IDC_SH_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,185,43,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,200,45,10
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,200,59,10
+    PUSHBUTTON      "Default",ID_DEFAULT,140,218,50,14
+    DEFPUSHBUTTON   "OK",IDOK,203,218,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,261,218,50,14
+    LTEXT           "Competition:",IDC_STATIC,6,13,40,8
+    LTEXT           "Class:",IDC_STATIC,27,45,20,8
+    LTEXT           "Date:",IDC_STATIC,29,79,18,8
+    LTEXT           "Location:",IDC_STATIC,17,100,30,8
+    RTEXT           "Judge:",IDC_JUDGE_INST,2,136,45,8
+    LTEXT           "Ring Size:",IDC_STATIC,14,155,33,8
+    LTEXT           "X",IDC_STATIC,89,155,8,8
+    LTEXT           "Grid Spacing:",IDC_STATIC,145,155,44,8
+    LTEXT           "Type:",IDC_STATIC,28,32,19,8
+    LTEXT           "Sub-class:",IDC_STATIC,13,60,34,8
+    GROUPBOX        "Include In Course Information",IDC_STATIC,22,171,251,43
+    LTEXT           "Organization:",IDC_STATIC,5,118,42,8
+    CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,185,55,10
+END
+
+IDD_RENUMBER DIALOG  0, 0, 298, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "COURSE INFORMATION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,181,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,69,50,14
+    LTEXT           "STATIC",IDC_STATIC_CURRENT,9,16,271,8
+    LTEXT           "Insert",IDC_STATIC,23,38,18,8
+    CONTROL         "Before",IDC_BEFORE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,29,37,10
+    CONTROL         "After",IDC_AFTER,"Button",BS_AUTORADIOBUTTON,48,47,31,10
+    COMBOBOX        IDC_STATIONLIST,107,38,133,52,CBS_DROPDOWN | CBS_SORT | WS_TABSTOP
+END
+
+IDD_ERROR_REPORT DIALOG  0, 0, 315, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Course Design Error Report"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,258,153,50,14
+    PUSHBUTTON      "PRINT",IDPRINT,196,153,50,14
+    EDITTEXT        IDC_ERROR_REPORT,7,13,301,127,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_REGISTER DIALOG  0, 0, 252, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RallyOC Activation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_REG_USER,64,79,171,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACT_KEY,64,142,171,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    DEFPUSHBUTTON   "REGISTER",IDOK,92,162,50,14,NOT WS_TABSTOP
+    LTEXT           "Static",IDC_DEMOMSG,8,7,237,60
+    LTEXT           "Product ID:",IDC_PRODID_ST,22,124,37,8,NOT WS_VISIBLE
+    LTEXT           "Activation Key:",IDC_ACTKEY_ST,11,143,48,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_REQ_KEY,64,122,171,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    DEFPUSHBUTTON   "OK",IDCANCEL,195,162,50,14,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "ORDER FORM",IDPURCHASE,8,162,79,14,NOT WS_TABSTOP
+    PUSHBUTTON      "CONTACT",IDC_CONTACT,147,162,43,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    LTEXT           "User Name:",IDC_STATIC,21,80,38,8
+    PUSHBUTTON      "GENERATE PRODUCT ID&",IDC_GEN_PROD_ID,104,103,89,11
+END
+
+IDD_RALLY_LIST DIALOGEX 0, 0, 257, 257
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Rally Station List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,7,243,240
+    PUSHBUTTON      "Button1",IDOK,45,244,18,6,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "Button2",IDCANCEL,143,243,20,7,NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_EDITTEXT DIALOG  0, 0, 77, 20
+STYLE DS_SETFONT | WS_POPUP | WS_THICKFRAME
+FONT 1, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TEXT,0,0,77,20,ES_MULTILINE | ES_WANTRETURN | NOT WS_BORDER
+END
+
+IDD_SELECT_FINISH DIALOG  0, 0, 186, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FINISH STATION SELECTION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Finish Right",IDOK,17,45,50,14
+    PUSHBUTTON      "Finish Left",IDCANCEL,117,45,50,14
+    LTEXT           "SELECT A FINISH STATION",IDC_STATIC,42,20,94,8
+END
+
+IDD_AUTOR_PREF DIALOG  0, 0, 346, 255
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "COURSE MAP PREFERENCES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "AKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,6,30,10
+    CONTROL         "APDT",IDC_TYPE_APDT,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,103,6,35,10
+    CONTROL         "Novice",IDC_NOVICE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,19,39,10
+    CONTROL         "Advanced",IDC_ADVANCED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,103,19,49,10
+    CONTROL         "Excellent",IDC_EXCELLENT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,165,19,45,10
+    CONTROL         "Training",IDC_TRAINING,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,219,19,41,10
+    CONTROL         "Class A",IDC_CLASS_A,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,33,39,10
+    CONTROL         "Class B",IDC_CLASS_B,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,103,33,39,10
+    CONTROL         "None",IDC_CLASS_NONE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,165,33,33,10
+    EDITTEXT        IDC_JUDGE,52,45,240,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORGANIZATION,52,61,240,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_WIDTH,51,77,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RING_LENGHT,107,76,25,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_GRID_SPACEING,201,77,29,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Black",IDC_LINES_BLACK,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,101,34,10
+    CONTROL         "Grey",IDC_LINES_GREY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,112,31,10
+    CONTROL         "None",IDC_LINES_NONE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,123,33,10
+    CONTROL         "Bottom",IDC_LIST_BOTTOM,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,94,101,38,10
+    CONTROL         "Right",IDC_LIST_RIGHT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,94,112,33,10
+    CONTROL         "Custom (Drag Into Position)",IDC_LIST_CUSTOM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,94,123,101,10
+    CONTROL         "Auto Add Path",IDC_COURSE_PATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,101,62,10
+    CONTROL         "Auto Add Required Stations",IDC_AUTO_ADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,112,103,10
+    CONTROL         "Size to Screen",IDC_SIZE_TO_SCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,123,62,10
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,150,73,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,165,31,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,165,33,10
+    CONTROL         "Location",IDC_SH_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,150,43,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,165,45,10
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,182,165,59,10
+    PUSHBUTTON      "Change Font",IDC_CHANGE_FONT,13,184,69,11
+    PUSHBUTTON      "Default",ID_DEFAULT,167,234,50,14
+    DEFPUSHBUTTON   "OK",IDOK,228,234,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,289,234,50,14
+    LTEXT           "Class:",IDC_STATIC,26,20,20,8
+    RTEXT           "Judge:",IDC_JUDGE_INST,1,47,45,8
+    LTEXT           "Ring Size:",IDC_STATIC,13,79,33,8
+    LTEXT           "X",IDC_STATIC,89,79,8,8
+    LTEXT           "Grid Spacing:",IDC_STATIC,151,79,44,8
+    GROUPBOX        "Show Station List/Course Information",IDC_STATIC,89,91,132,44
+    LTEXT           "Type:",IDC_STATIC,27,7,19,8
+    LTEXT           "Sub-class:",IDC_STATIC,11,33,34,8
+    GROUPBOX        "Print Grid Lines",IDC_STATIC,12,91,69,44
+    LTEXT           "Static",IDC_COURSE_FONT,95,184,235,44,NOT WS_VISIBLE | NOT WS_GROUP
+    GROUPBOX        "Include In Course Information",IDC_STATIC,12,139,251,40
+    LTEXT           "Organization:",IDC_STATIC,5,63,42,8
+    CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,182,150,55,10
+END
+
+IDD_STAT_PROP DIALOG  0, 0, 318, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "STATION PROPERTIES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,261,114,50,14,NOT WS_VISIBLE
+    LTEXT           "Station Number",IDC_TX_STAT_NO,1,7,50,8
+    LTEXT           "Station Name",IDC_TX_STAT_NAME,55,7,44,8
+    LTEXT           "AKC / APDT No.",IDC_TX_AKC_NO,253,7,55,8
+    COMBOBOX        IDC_STAT_NAME,54,22,195,310,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_A_NUMBER,254,22,57,315,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STAT_NO,1,22,46,12,ES_AUTOHSCROLL
+    CONTROL         "Show Station Desc/Picture",IDC_STAT_BOTH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,62,102,10
+    CONTROL         "Show Picture Only",IDC_STAT_PIC,"Button",BS_AUTORADIOBUTTON,122,62,74,10
+    CONTROL         "Show Text Only",IDC_STAT_TEXT,"Button",BS_AUTORADIOBUTTON,203,62,66,10
+    GROUPBOX        "Station Information",IDC_STATIC,9,53,266,27
+    CONTROL         "2 Feet",IDC_SIZE_2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,96,36,10
+    CONTROL         "5 Feet",IDC_SIZE_5,"Button",BS_AUTORADIOBUTTON,63,96,36,10
+    CONTROL         "7 Feet",IDC_SIZE_7,"Button",BS_AUTORADIOBUTTON,110,96,34,10
+    CONTROL         "Custom",IDC_SIZE_CUSTOM,"Button",BS_AUTORADIOBUTTON,155,96,39,10
+    EDITTEXT        IDC_CUSTOM_SIZE,201,94,38,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Set Station Size",IDC_STATIC,9,84,266,27
+    LTEXT           "Set Station Rotation (0-360 degrees)",IDC_STATION_DEG_ST,14,40,116,8
+    EDITTEXT        IDC_STATION_DEG,135,38,33,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_ARROW_PREF DIALOG  0, 0, 213, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "COURSE PATH/ARROW/LINE PREFERENCES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LINE_THICK,169,8,24,13,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "As Straight Lines",IDC_LINE_ST,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,19,69,10
+    CONTROL         "As Curvable Lines",IDC_LINE_CURVE,"Button",BS_AUTORADIOBUTTON,21,35,73,10
+    CONTROL         "Move Arrows With Stations",IDC_MOVE_ARROWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,55,105,10
+    PUSHBUTTON      "Set Color",IDC_SET_COLOR,144,28,56,12,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,94,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,68,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,33,68,50,14
+    GROUPBOX        "Create Paths/Arrows",IDC_STATIC_TYPE,12,7,90,42
+    LTEXT           "Line Thickness:",IDC_STATIC,111,11,51,8,NOT WS_GROUP
+    CONTROL         "",IDC_SHOW_COLOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,117,31,22,8
+    COMBOBOX        IDC_LINE_STYLE,122,44,70,74,CBS_DROPDOWNLIST | WS_TABSTOP
+END
+
+IDD_STATION_PREF DIALOG  0, 0, 300, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "STATION PREFERENCES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Show Station Desc/Picture",IDC_STAT_BOTH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,24,102,10
+    CONTROL         "Show Picture Only",IDC_STAT_PIC,"Button",BS_AUTORADIOBUTTON,122,24,74,10
+    CONTROL         "Show Text Only",IDC_STAT_TEXT,"Button",BS_AUTORADIOBUTTON,203,24,66,10
+    CONTROL         "2 Feet",IDC_SIZE_2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,56,36,10
+    CONTROL         "5 Feet",IDC_SIZE_5,"Button",BS_AUTORADIOBUTTON,64,56,36,10
+    CONTROL         "7 Feet",IDC_SIZE_7,"Button",BS_AUTORADIOBUTTON,109,56,34,10
+    CONTROL         "Custom",IDC_SIZE_CUSTOM,"Button",BS_AUTORADIOBUTTON,152,56,39,10
+    EDITTEXT        IDC_CUSTOM_SIZE,195,54,22,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Top Left",IDC_TOP_LEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,98,43,10
+    CONTROL         "Exit",IDC_EXIT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,69,98,27,10
+    CONTROL         "Top Right",IDC_TOP_RIGHT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,109,99,44,8
+    CONTROL         "Bottom Left",IDC_BOT_LEFT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,110,52,10
+    CONTROL         "Enter",IDC_ENTER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,69,110,33,10
+    CONTROL         "Bottom Right",IDC_BOT_RIGHT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,109,110,57,10
+    CONTROL         "Hide Station Numbers",IDC_HIDE_ST_NUM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,123,85,10
+    CONTROL         "Entrance",IDC_CONE_ENTRANCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,191,98,45,10
+    CONTROL         "Exit",IDC_CONE_EXIT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,249,98,27,10
+    CONTROL         "Middle",IDC_CONE_MIDDLE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,191,110,37,10
+    CONTROL         "Hide",IDC_CONE_HIDE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,249,110,31,10
+    PUSHBUTTON      "Change Font",IDC_CHANGE_FONT,7,141,71,11
+    DEFPUSHBUTTON   "OK",IDOK,180,185,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,119,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,185,50,14
+    CONTROL         "Rotate Text",IDC_ROTATE_TEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,74,53,10
+    CONTROL         "Number Honor Station",IDC_NUM_HONOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,81,74,86,10
+    GROUPBOX        "Show Station Numbers At:",IDC_STATIC,7,86,166,50
+    GROUPBOX        "Show Station At Cones",IDC_STATIC,185,86,105,37
+    GROUPBOX        "Station Information",IDC_STATIC,9,13,266,27
+    LTEXT           "Static",IDC_STATION_FONT,82,142,209,37,NOT WS_VISIBLE | NOT WS_GROUP
+    GROUPBOX        "Set Station Size",IDC_STATIC,9,44,214,27
+END
+
+IDD_TEXT_PREF DIALOG  0, 0, 298, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "TEXT BOX PREFERENCES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Set Color",IDC_SET_COLOR,111,8,56,12
+    DEFPUSHBUTTON   "OK",IDOK,180,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,240,75,50,14
+    CONTROL         "",IDC_SHOW_COLOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,84,10,22,8
+    PUSHBUTTON      "Default",ID_DEFAULT,119,75,50,14
+    CONTROL         "Outline Text Box",IDC_OUT_RECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,9,68,10
+    LTEXT           "Static",IDC_TEXT_FONT,85,30,199,37,NOT WS_VISIBLE | NOT WS_GROUP
+    PUSHBUTTON      "Change Font",IDC_CHANGE_FONT,6,29,71,11
+END
+
+IDD_COURSE_INFO_PREF DIALOG  0, 0, 259, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Course Map Text Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,114,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,81,114,50,14
+    GROUPBOX        "Include In Course Information",IDC_STATIC,1,7,251,48
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,21,73,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,21,33,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,21,45,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,36,31,10
+    CONTROL         "Location",IDC_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,36,54,11
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,36,59,10
+    GROUPBOX        "Include In Station List",IDC_STATIC,1,63,251,45
+    CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,74,65,10
+    CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,91,59,10
+    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,74,57,10
+    CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,91,55,10
+END
+
+IDD_STATION_LIST_PREF DIALOG  0, 0, 259, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Station List Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,154,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,81,154,50,14
+    GROUPBOX        "Include In Station List Printout",IDC_STATIC,1,6,251,99
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,28,73,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,41,33,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,41,45,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,41,31,10
+    CONTROL         "Location",IDC_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,28,43,10
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,41,59,10
+    CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,58,65,10
+    CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,71,59,10
+    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,58,57,10
+    CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,71,55,10
+    CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,80,9
+    CONTROL         "Course Statistics",IDC_STATS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,88,68,10
+    GROUPBOX        "Include In Course Map Station List ",IDC_STATIC,1,111,251,38
+    CONTROL         "Station Number",IDC_STAT_NUMBER_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,122,65,10
+    CONTROL         "Station Name",IDC_STAT_NAME_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,136,59,10
+    CONTROL         "AKC Number",IDC_AKC_NUMBER_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,122,57,10
+    CONTROL         "XY Location",IDC_XY_LOCATION_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,136,55,10
+    CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,28,55,10
+END
+
+IDD_SCORE_SHEET_PREF DIALOG  0, 0, 259, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Score Sheet Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,117,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,81,117,50,14
+    GROUPBOX        "Include On Score Sheet",-1,1,8,251,103
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,30,73,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,43,33,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,43,45,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,43,31,10
+    CONTROL         "Location",IDC_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,30,43,10
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,43,59,10
+    CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,92,65,10
+    CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,92,59,10
+    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,92,57,10
+    CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,13,121,55,10
+    CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,80,9
+    CONTROL         "Arm Band No.",IDC_ARM_BAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,59,60,10
+    CONTROL         "Breed",IDC_BREED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,59,35,10
+    CONTROL         "Jump Height",IDC_JUMP_HT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,59,55,10
+    CONTROL         "Final Score",IDC_FINAL_SCORE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,74,51,10
+    CONTROL         "Time",IDC_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,74,31,10
+    CONTROL         "Judge's Signature",IDC_JUDGE_SIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,74,72,10
+    CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,30,55,10
+END
+
+IDD_STATION_DESC_PREF DIALOG  0, 0, 259, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Station Description Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,105,50,14
+    PUSHBUTTON      "Default",ID_DEFAULT,81,105,50,14
+    GROUPBOX        "Include In Station List Printout",-1,1,8,251,85
+    CONTROL         "Competition Name",IDC_COMP_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,30,73,10
+    CONTROL         "Class",IDC_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,43,33,10
+    CONTROL         "SubClass",IDC_SUBCLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,43,45,10
+    CONTROL         "Date",IDC_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,43,31,10
+    CONTROL         "Location",IDC_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,30,43,10
+    CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,43,59,10
+    CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,60,65,10
+    CONTROL         "Station Name and Desciption",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,73,108,10
+    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,60,57,10
+    CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,73,55,10
+    CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,80,9
+    CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,29,55,10
+END
+
+IDD_OBJECT_PROP DIALOG  0, 0, 262, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OBJECT PROPERTIES"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,68,50,14
+    CONTROL         "2 Feet",IDC_SIZE_2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,43,36,10
+    CONTROL         "5 Feet",IDC_SIZE_5,"Button",BS_AUTORADIOBUTTON,63,43,36,10
+    CONTROL         "7 Feet",IDC_SIZE_7,"Button",BS_AUTORADIOBUTTON,110,43,34,10
+    CONTROL         "Custom",IDC_SIZE_CUSTOM,"Button",BS_AUTORADIOBUTTON,155,43,39,10
+    EDITTEXT        IDC_CUSTOM_SIZE,201,41,38,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Set Station Size",-1,9,31,238,27
+    LTEXT           "Set Station Rotation (0-360 degrees)",-1,14,16,116,8
+    EDITTEXT        IDC_STATION_DEG,135,14,33,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_MAIL_ADDRESS DIALOG  0, 0, 245, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Address Information: Please Fill-out Completely"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,47,5,185,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STREET,47,21,185,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUITE_NO,47,37,185,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CITY,47,53,185,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATE,47,69,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZIP_CODE,125,69,113,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE_NO,47,88,110,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL_ADD,58,105,180,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "PRINT",IDOK,188,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,125,50,14
+    LTEXT           "Name:",IDC_STATIC,20,7,22,8
+    LTEXT           "Street:",IDC_STATIC,20,23,22,8
+    LTEXT           "Suite/Apt#:",IDC_STATIC,4,39,38,8
+    LTEXT           "City:",IDC_STATIC,28,55,14,8
+    LTEXT           "State:",IDC_STATIC,22,71,20,8
+    LTEXT           "Zip Code:",IDC_STATIC,87,71,32,8
+    LTEXT           "Email Adresss:",IDC_STATIC,7,107,46,8
+    LTEXT           "Phone:",IDC_STATIC,18,90,24,8
+END
+
+PRINTDLGORD DIALOG  36, 52, 225, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Printer:",1093,4,4,40,8
+    LTEXT           "System Default",1088,44,4,120,18
+    GROUPBOX        "Print Range",1072,4,27,132,67
+    RADIOBUTTON     "&All",1056,10,39,76,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "S&election",1057,10,52,76,12
+    RADIOBUTTON     "&Pages",1058,10,65,76,12
+    RTEXT           "&From:",1089,24,80,24,9
+    EDITTEXT        1152,52,78,26,12,ES_RIGHT
+    RTEXT           "&To:",1090,82,80,16,9
+    EDITTEXT        1153,102,78,26,12,ES_RIGHT
+    LTEXT           "Print &Quality:",1091,4,100,50,9
+    COMBOBOX        1136,55,98,81,36,CBS_DROPDOWNLIST | WS_BORDER | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Copies:",1092,153,100,29,9
+    EDITTEXT        1154,184,98,26,12,ES_RIGHT
+    CONTROL         "Print to Fi&le",1040,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,96,113,51,12
+    CONTROL         "Collate Cop&ies",1041,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,152,113,67,12
+    DEFPUSHBUTTON   "OK",IDOK,170,4,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,170,21,50,14,WS_GROUP
+    PUSHBUTTON      "&Setup...",1024,170,41,50,14,WS_GROUP
+    PUSHBUTTON      "&Help",1038,170,75,50,14,WS_GROUP
+    CONTROL         "Left Margin One Inch",IDC_LEFT_MARGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,114,83,10
+END
+
+IDD_PRINT DIALOG  32, 32, 288, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Printer",1075,8,4,272,84,WS_GROUP
+    LTEXT           "&Name:",1093,16,20,36,8
+    COMBOBOX        1139,52,18,152,152,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "&Properties",1025,212,17,60,14,WS_GROUP
+    LTEXT           "Status:",1095,16,36,36,10,SS_NOPREFIX
+    CONTROL         "",1099,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,52,36,224,10
+    LTEXT           "Type:",1094,16,48,36,10,SS_NOPREFIX
+    CONTROL         "",1098,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,52,48,224,10
+    LTEXT           "Where:",1097,16,60,36,10,SS_NOPREFIX
+    CONTROL         "",1101,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,52,60,224,10
+    LTEXT           "Comment:",1096,16,72,36,10,SS_NOPREFIX
+    CONTROL         "",1100,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,52,72,152,10
+    CONTROL         "Print to fi&le",1040,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,212,70,64,12
+    GROUPBOX        "Print range",1072,8,92,144,64,WS_GROUP
+    CONTROL         "&All",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,106,64,12
+    CONTROL         "Pa&ges",1058,"Button",BS_AUTORADIOBUTTON,16,122,36,12
+    CONTROL         "&Selection",1057,"Button",BS_AUTORADIOBUTTON,16,138,64,12
+    RTEXT           "&from:",1089,52,124,20,8
+    EDITTEXT        1152,74,122,26,12,ES_NUMBER | WS_GROUP
+    RTEXT           "&to:",1090,100,124,16,8
+    EDITTEXT        1153,118,122,26,12,ES_NUMBER | WS_GROUP
+    GROUPBOX        "Copies",1073,160,92,120,64,WS_GROUP
+    LTEXT           "Number of &copies:",1092,168,108,68,8
+    EDITTEXT        1154,240,106,32,12,ES_NUMBER | WS_GROUP
+    CONTROL         "C&ollate",1041,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,240,130,36,12
+    DEFPUSHBUTTON   "OK",IDOK,178,177,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,231,177,48,14
+    CONTROL         "Left Margin One Inch",IDC_LEFT_MARGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,170,83,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,1,1
+ PRODUCTVERSION 3,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "All Natural Software"
+            VALUE "FileDescription", "RallyOC 2012 MFC Application"
+            VALUE "FileVersion", "3, 0, 1, 1"
+            VALUE "InternalName", "RallyOC2012"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "LegalTrademarks", "All Natural Software, RallyOC"
+            VALUE "OriginalFilename", "RallyOC2012.EXE"
+            VALUE "ProductName", "RallyOC2012"
+            VALUE "ProductVersion", "3, 0, 1, 1"
+            VALUE "SpecialBuild", "Release Version 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DOCINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_COURSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_RENUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_ERROR_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_RALLY_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_SELECT_FINISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 179
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_AUTOR_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_STAT_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ARROW_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_STATION_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_TEXT_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_COURSE_INFO_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_STATION_LIST_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SCORE_SHEET_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_STATION_DESC_PREF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OBJECT_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_MAIL_ADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_OPEN           CURSOR                  "res\\Pan_Open.cur"
+IDC_HAND_GRAB           CURSOR                  "res\\Pan_Grab.cur"
+IDC_FINGER              CURSOR                  "res\\H_POINT.CUR"
+IDC_HAND_LEFT           CURSOR                  "res\\hnesw.cur"
+IDC_HAND_RIGHT          CURSOR                  "res\\hnwse.cur"
+IDC_ROTATE              CURSOR                  "res\\cursor1.cur"
+IDC_SELECT_ROTATE       CURSOR                  "res\\cur00001.cur"
+IDC_SELECT_ENT          CURSOR                  "res\\select_r.cur"
+IDC_SELECT_EXIT         CURSOR                  "res\\select_e.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ARROW_PREF DLGINIT
+BEGIN
+    IDC_LINE_STYLE, 0x403, 6, 0
+0x4f53, 0x494c, 0x0044, 
+    IDC_LINE_STYLE, 0x403, 7, 0
+0x4144, 0x4853, 0x4445, "\000" 
+    IDC_LINE_STYLE, 0x403, 7, 0
+0x4f44, 0x5454, 0x4445, "\000" 
+    IDC_LINE_STYLE, 0x403, 9, 0
+0x4144, 0x4853, 0x442d, 0x544f, "\000" 
+    IDC_LINE_STYLE, 0x403, 13, 0
+0x4144, 0x4853, 0x442d, 0x544f, 0x442d, 0x544f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RallyOC2012"
+    IDR_DOGRUNTYPE          "\nRallyOCD\nRallyOC\nRallyOCD Files (*.rocd)\n.rocd\nRallyOCD.Document\nRallyOCD Document"
+    IDS_RALLYVER            "1.1.0"
+    IDS_VERSION             "3.0.0"
+    IDR_RALLYO              "Show or hide the station toolbar\nToggle StationToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RallyOC"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MOVE                 "MOVEMENT\nMovement Stations"
+    ID_FINISH               "FRONT DOG\nAll Dog Front Stations"
+    ID_LEFT_TURNS           "LEFT TURNS\nAll Left Turn Stations"
+    ID_VIEW_AGILITY_BAR     "Show or hide the agility toolbar\nToggle Agility ToolBar"
+    ID_DRAW_NORMAL          "NORMAL PACE\nNormal Pace"
+    ID_RIGHT_TURNS          "RIGHT TURNS\nAll Right Turn Stations"
+    ID_DRAW_SITHALT         "HALT - SIT\nHalt - Sit"
+    IDD_COURSE_INFO         "Show the Course Information Dialog\nCourse Information"
+    ID_VIEW_COURSE_INFO     "Show course information on map."
+    ID_SIZE_TO_SCREEN       "Display Course To Fit Screen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRAW_FINISH          "FINISH\nFinish"
+    ID_DRAW_SITHALTDOWN     "HALT-SIT-DOWN\nHalt - Sit - Down"
+    ID_DRAW_START           "START\nStart"
+    ID_FORWARD_HALT         "HALT-PERFORM EXERCISE-FORWARD\nHalt-Perform Exercise-Move Forward Stations"
+    ID_CHANGE_PACE          "CHANGE PACE\nChange Pace Stations"
+    ID_DRAW_HALTWALK        "HALT-WALK AROUND\nHalt - Walk Around"
+    ID_HALT_WALK            "HALT-WALK AROUND"
+    ID_DRAW_STANDWALK       "HALT-STAND-EXAM-LEAVE\nHalt-Stand-Exam-Leave"
+    ID_DRAW_DOWNWALK        "HALT-SIT-DOWN-WALK AROUND\nHalt-Sit-Down-Walk Around"
+    ID_DRAW_STANDDOWN       "HALT-STAND-DOWN\nHalt-Stand-Down"
+    ID_DRAW_DOWNSIT         "HALT-SIT-DOWN-SIT\nHalt-Sit-Down-Sit"
+    ID_DRAW_STANDSIT        "HALT-STAND-SIT\nHalt-Stand-Sit"
+    ID_CH_STATION_NUM       "Change Station Number"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZERO_DEGREES         "Rotate Station Back Normal"
+    ID_NINETY_CW            "Rotate Station 90 Degrees clock-wise"
+    ID_NINETY_CCW           "Rotate Station 90 Degrees counter clock-wise"
+    ID_ONEEIGHTY            "Rotate Station 180 degrees"
+    ID_ALIGN_HORIZ          "Align Stations Horizontally"
+    ID_ALIGN_VERT           "Align Stations Vertically"
+    ID_ITEM1                "Station Number"
+    ID_ITEM2                "Station Number"
+    ID_ITEM3                "Station Number"
+    ID_ITEM4                "Station Number"
+    ID_ITEM5                "Station Number"
+    ID_ITEM6                "Station Number"
+    ID_ITEM7                "Station Number"
+    ID_ITEM8                "Station Number"
+    ID_ITEM9                "Station Number"
+    ID_ITEM10               "Station Number"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ITEM11               "Station Number"
+    ID_ITEM12               "Station Number"
+    ID_ITEM13               "Station Number"
+    ID_ITEM14               "Station Number"
+    ID_ITEM15               "Station Number"
+    ID_ITEM16               "Station Number"
+    ID_ITEM17               "Station Number"
+    ID_ITEM18               "Station Number"
+    ID_ITEM19               "Station Number"
+    ID_ITEM20               "Station Number"
+    ID_ITEM21               "Station Number"
+    ID_ITEM22               "Station Number"
+    ID_ITEM23               "Station Number"
+    ID_ITEM24               "Station Number"
+    ID_ITEM25               "Station Number"
+    ID_ITEM26               "Station Number"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ITEM27               "Station Number"
+    ID_ITEM28               "Station Number"
+    ID_ITEM29               "Station Number"
+    ID_ITEM30               "Station Number"
+    ID_ITEM31               "Station Number"
+    ID_ITEM32               "Station Number"
+    ID_ITEM33               "Station Number"
+    ID_ITEM34               "Station Number"
+    ID_ITEM35               "Station Number"
+    ID_ITEM36               "Station Number"
+    ID_ITEM37               "Station Number"
+    ID_ITEM38               "Station Number"
+    ID_ITEM39               "Station Number"
+    ID_ITEM40               "Station number"
+    ID_WEAVE                "WEAVE STATIONS\nWeave Stations"
+    ID_DRAW_SPIRAL_RIGHT    "SPIRAL RIGHT-DOG OUTSIDE\nSpiral Right-Dog Outside"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRAW_SPIRAL_LEFT     "SPIRAL LEFT-DOG INSIDE\nSpiral Left-Dog Inside"
+    ID_WEAVE_TWICE          "STRAIGHT FIGURE 8 WEAVE TWICE"
+    ID_DRAW_SERP_ONCE       "SERPENTINE WEAVE ONCE\nSerpentine Weave Once"
+    ID_DRAW_WEAVE_TWICE     "STRAIGHT FIGURE 8 WEAVE TWICE\nStraight Figure 8 Weave Twice"
+    ID_DRAW_OFFSET_8        "OFF-SET FIGURE 8\nOffset Figure 8"
+    ID_DRAW_SIDE_RIGHT      "HALT-SIDE STEP RIGHT-HALT\nHalt-Side Step Right-Halt"
+    IDD_COURSE_VERIFY       "Verify Course"
+    ID_STATIONARY           "STATIONARY EXERCISES\nStationary Exercises"
+    ID_NONSTATIONARY        "NON-STATIONARY EXERCISES\nNon-Stationary Exercises"
+    ID_NOVICE               "NOVICE or LEVEL 1 EXERCISES\nNovice or Level 1 Exercises"
+    ID_ADVANCED             "ADVANCED EXERCISES\nAdvanced Exercises"
+    ID_EXCELLENT            "EXCELLENT EXERCISES\nExcellent Exercises"
+    ID_VIEW_RALLY_LIST      "Show or hide the Edit Rally List Dialog\nRally List Dialog"
+    ID_PIVOT                "PIVOT TURNS\nAll Pivot Turn Stations"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HEEL                 "HEEL STATIONS\nHeel Stations"
+    ID_DRAW_BACKUP_3        "BACKUP 3 STEPS\nBackup 3 Steps"
+    ID_HALT_3_STEPS_FOR     "HALT-1,2,3 STEPS FORWARD"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FRONT_3_STEPS_BACK   "CALL FRONT-1,2,3 STEPS BACKWARD"
+    ID_DRAW_HALT_3_STEPS_FOR 
+                            "HALT 1,2,3 STEPS FORWARD\nHalt 1,2,3 Steps Forward"
+    ID_DRAW_FRONT_3_STEPS_BACK 
+                            "CALL FRONT-1,2,3 STEPS BACKWARD\nCall Front-1,2,3 Steps Backward"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_PRINT_BW        "Print the active document in Black and White\nPrint"
+    ID_RALLY_LIST           "Show Station List on Map"
+    ID_PRINT_SCORE_SHEET    "Print a Score Sheet"
+    ID_CITEM1               "Station Name"
+    ID_CITEM2               "Print Judges Score Sheet"
+    ID_CITEM3               "DRAW LINE\nLine"
+    ID_CITEM4               "DRAW RECTANGEL\nRectangle"
+    ID_CITEM5               "DRAW ROUNDED RECTANGLE\\Rounded Rectangle"
+    ID_CITEM6               "DRAW ELLISPE\nEllispe"
+    ID_CITEM7               "Station Name"
+    ID_CITEM8               "DRAW POLYGON\nPolygon"
+    ID_CITEM9               "DRAW ARROW\nArrow"
+    ID_CITEM10              "STANDARD TOOLBAR/nStandard Toolbar"
+    ID_CITEM11              "RALLY STATIONS TOOLBAR"
+    ID_CITEM12              "DRAWING\nDrawing"
+    ID_CITEM13              "Station Name"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRAW_SLOW            "SLOW PACE\nSlow Pace"
+    ID_DRAW_FAST            "FAST PACE\nFast Pace"
+    ID_DRAW_RT_TURN         "RIGHT TURN\nRight Turn"
+    ID_DRAW_ABOUT_RT        "ABOUT TURN RIGHT\nAbout Turn Right"
+    ID_DRAW_270_RT          "270 DEG RIGHT TURN\n270 Deg Right Turn"
+    ID_DRAW_360_RT          "360 DEG RIGHT TURN\n360 Deg Right Turn"
+    ID_DRAW_90_PIVOT_RT     "HALT-90 DEG PIVOT RIGHT-HALT\nHalt-90 Deg Pivot Right-Halt"
+    ID_DRAW_180_PIVOT_RT    "HALT-180 DEG PIVOT RIGHT-HALT\nHalt-180 Deg Pivot Right-Halt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRAW_HALT_FINISH_LT  "HALT-CALL DOG FRONT-FINISH LEFT\nHalt-Call Dog Front-Finish Left"
+    ID_DRAW_FAST_SIT        "HALT-FAST FORWARD FROM SIT\nHalt-Fast Forward From Sit"
+    ID_DRAW_SIDE_RT         "MOVING SIDE STEP RIGHT\nMoving Side Step Right"
+    ID_DRAW_MOVE_DOWN       "Down and Stop\nDown and Stop"
+    ID_DRAW_MOVE_STAND_WALK "MOVING STAND-WALK AROUND DOG\nMoving Stand-Walk Around Dog"
+    ID_DRAW_JUMP            "SEND OVER JUMPS-HANDLER RUNS BY\nSend Over Jumps-Handler Runs By"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRAW_LT_TURN         "LEFT TURN\nLeft Turn"
+    ID_DRAW_ABOUT_LT        "ABOUT ""U"" TURN\nAbout 'U"" Turn"
+    ID_DRAW_270_LT          "270 DEG LEFT TURN\n270 Deg Left Turn"
+    ID_DRAW_360_LT          "360 DEG LEFT TURN\n360 Deg Left Turn"
+    ID_DRAW_90_PIVOT_LT     "HALT-90 DEG PIVOT LEFT-HALT\nHalt-90 Deg Pivot Left-Halt"
+    ID_DRAW_180_PIVOT_LT    "HALT-180 DEG PIVOT LEFT-HALT\nHalt-180 Deg Pivot Left-Halt"
+    ID_DRAW_HONOR           "HONOR\nHonor"
+    ID_ABOUT_FORWARD_RT     "HALT-ABOUT TURN RIGHT-FORWARD\nHalt-About Turn Right-Forward"
+    ID_DRAW_ABOUT_TURN_LT   "LEFT ABOUT TURN\nLeft About Turn"
+    ID_DRAW_U_FORWARD_LT    "HALT-ABOUT ""U"" TURN-FORWARD\nHalt-About ""U"" Turn-Forward"
+    ID_DRAW_1STEP_HEEL_RT   "HALT-TURN RIGHT ONE STEP-CALL TO HEEL-HALT\nHalt-Turn Right One Step-Call to Heel-Halt"
+    ID_DRAW_FINISH_RT_FORWARD 
+                            "CALL DOG FRONT-FINISH RIGHT-FORWARD\nCall Dog Front-Finish Right-Forward"
+    ID_DRAW_FINISH_LEFT_FORWARD 
+                            "CALL DOG FRONT-FINISH LEFT-FORWARD\nCall Dog Front-Finish Left-Forward"
+    ID_DRAW_FINISH_RT_HALT  "CALL DOG FRONT-FINISH RIGHT-HALT\nCall Dog Front-Finish Right-Halt"
+    ID_DRAW_FINISH_LT_HALT  "CALL DOG FRONT-FINISH LEFT-HALT\nCall Dog Front-Finish Left-Halt"
+    ID_DRAW_HALT_FINISH_RT  "HALT-CALL DOG FRONT-FINISH RIGHT\nHalt-Call Dog Front-Finish Right"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CITEM14              "Station Name"
+    ID_CITEM15              "Station Name"
+    ID_CITEM16              "Station Name"
+    ID_CITEM17              "Station Name"
+    ID_CITEM18              "Station Name"
+    ID_CITEM19              "CHANGE THE ENTRANCE POINT\nChange the Entrance Point"
+    ID_CITEM20              "CHANGE THE EXIT POINT\nChange the Exit Point"
+    ID_CITEM21              "Station Name"
+    ID_CITEM22              "Print the Station List and Station Statistics"
+    ID_CITEM23              "Copy Station List to the Windows Clipboard"
+    ID_CITEM24              "Station Name"
+    ID_CITEM25              "Station Name"
+    ID_CITEM26              "Station Name"
+    ID_CITEM28              "Change the default font for the course map"
+    ID_CITEM29              "Station Name"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CITEM30              "Change the default font for text boxes."
+    ID_CITEM31              "HALT - SIT-STAND\nHalt - Sit - Stand"
+    ID_CITEM32              "HALT - SIT-DOWN-SIT\nHalt - Sit - Down - Sit"
+    ID_CITEM33              "HALT-SIT-STAND\nHalt - Sit - Stand"
+    ID_CITEM34              "MOVING STAND-LEAVE DOG\nMoving Stand-Leave Dog"
+    ID_CITEM35              "HALT-LEAVE-CALL DOG FRONT WHILE RUNNING\nHalt-Leave-Call Dog Front While Running"
+    ID_CITEM36              "RECALL OVER JUMP\nRecall Over Jump"
+    ID_CITEM37              "SEND OVER HALT-LEAVE DOG-TURN AND SEND OVER JUMP\nHalt - Leave Dog - Turn and Send Over Jump"
+    ID_CITEM38              "RIGHT TURN-DOWN\nRight Turn-Down"
+    ID_CITEM39              "LEFT TURN-DOWN\nLeft Turn-Down"
+    ID_CITEM40              "TURN-HALT-RETRIEVE-FINISH\nTurn-Halt-Retrieve-Finish"
+    ID_CITEM41              "LEAVE DOG-DOWN ON RECALL\nLeave Dog-Down on Recall"
+    ID_CITEM42              "HALT-RECALL-LEAVE DOG\nHalt- Recall - Leave Dog"
+    ID_CITEM43              "Station Name"
+    ID_CITEM44              "Station Name"
+    ID_CITEM45              "Station Name"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CITEM46              "Station Name"
+    ID_CITEM47              "Station Name"
+    ID_CITEM48              "Station Name"
+    ID_CITEM49              "Station Name"
+    ID_CITEM50              "Station Name"
+    ID_AR_PROP_DIALOG       "Change an Arrow\\Line Properties\nArrow\\Line Properties"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_STATION_PREF         "Display the Station Preferences Dialog\nStation Preferences"
+    ID_TEXT_PROP            "Change Text Properties\nText Properties"
+    ID_ARROW_PREF           "Display the Arrows and LinesPreferences Dialog\n Arrows and Lines Preferences"
+    ID_ST_PROP_DIALOG       "Change a Stations Properties\nStation Properties"
+    ID_REVERSE_ARROW        "Reverse Direction of an Arrow\nReverse"
+    ID_STRAIGHT_LINE        "Straighten a Curved Line\nStraighten"
+    ID_PATTERN              "Draw an Obstacle Pattern\nPattern Tool"
+    ID_PYLONS               "DRAW PYLON\nDraw Pylon"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_COPY_LIST            "Places a Text Copy of the Station List in the Windows Clipboard"
+    ID_COPY_STATS           "Places a Text Copy of the Station Statistics in the Windows Clipboard"
+    ID_COPY_COURSE          "Places a Bitmap Copy of the Course Map in the Windows Clipboard"
+    ID_COPY_DESC            "Places a Text Copy of the Station List with Descriptions in the Windows Clipboard"
+    ID_DRAW_SIT_STAND       "HALT - SIT\nHalt - Sit"
+    ID_MOVE_STAND_LEAVE     "MOVING STAND-LEAVE DOG\nMoving Stand-Leave Dog"
+    ID_FRONT_RUN            "HALT- LEAVE- CALL DOG FRONT WHILE RUNNING\nHalt-Leave-Call Dog Front While Running"
+    ID_JUMP_RECALL          "RECALL OVER JUMP \nRecall Over Jump"
+    ID_JUMP_LEAVE           "HALT-LEAVE-SEND OVER JUMP\nHalt-Leave-Send Over Jump"
+    ID_DRAW_RT_DOWN         "RIGHT TURN 1, 2 STEPS FORWARD- DOWN\nRight Turn 1,2 Steps Forward-Down"
+    ID_DRAW_LT_DOWN         "LEFT TURN 1, 2 STEPS FORWARD- DOWN\nLeft Turn 1,2 Steps Forward-Down"
+    ID_RETRIEVE_FINISH      "HALT-RETRIEVE-FINISH\nHalt-Retrieve-Finish"
+    ID_DOWN_RECALL          "HALT-DOWN-RECALL\nHalt-Down-Recall"
+    ID_RETURN_STAND         "RETURN AND STAND\nReturn and Stand"
+    ID_RECALL_LEAVE         "HALT - RECALL - LEAVE DOG \nHalt - Recall - Leave Dog"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TURN_FRONT           "TURN AND CALL DOG FRONT\nTurn and Call Dog Front"
+    ID_FINISH_RIGHT         "FINISH RIGHT\nFinish Right"
+    ID_FINISH_LEFT          "FINISH LEFT\nFinish Left"
+    ID_MOVE_STAND_LEAVE_TWO "TURN AND CALL TO HEEL\nTurn and Call to Heel"
+    ID_MOVE_STAND_SIT_FINISH_TWO 
+                            "TURN AND DOWN SIT CALL FINISH\nTurn and Down Sit Call Finish"
+    ID_JUMP_RECALL_TWO      "TURN AND CALL OVER JUMP, FINISH OR FORWARD\nTurn and Call Over Jump, Finish or Forward"
+    ID_JUMP_LEAVE_TWO       "TURN AND SEND OVER JUMP, FINISH OR FORWARD\nTurn and Send Over Jump, Finish or Forward"
+    ID_DOWN_RECALL_TWO      "TURN RECALL DOWN RECALL, FINISH OR FORWARD\nTurn Recall Down Recall, Finish or Forward"
+    ID_EDIT_TEXT            "Type in Text\nText Tool"
+    ID_TEXT_FONT            "Display the Text Preferences Dialog\nText Preferences"
+    ID_JUMP_TOOL            "Place a High or Bar Jump\nHigh or Bar Jump Tool"
+    ID_LEASH_TOOL           "Designate Leash Location\nLeash Tool"
+    ID_GATE_TOOL            "Place entry and exit gates\nGate Tool"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ARROW_TOOL           "Draw a new Arrow\nArrow Tool"
+    ID_STATION_LIST_PR      "Display the Station Preferences Dialog\nStation List Preferences"
+    ID_SCORE_SHEET_PR       "Display the Score Sheet Preferences Dialog\nScore Sheet Preferences"
+    ID_STATION_DESC_PR      "Display the Station Descriptions Preferences Dialog\nStation Descriptions Preferences"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_COPY_SCORE_SHEET     "Places a Text Copy of the Score Sheet in the Windows Clipboard"
+    ID_TABLE_TOOL           "Place a scoring timer table\nTable Tool"
+    ID_SELECT_ALL_STATIONS  "Select All Objects\nSelect All"
+    ID_LINE_TOOL            "Draw a new Line\nLine Tool"
+    ID_BR_JUMP_TOOL         "Place a Broad Jump\nBroad Jump Tool"
+    ID_SCRIBBLE_TOOL        "Draw Free Hand\nFree Hand Tool"
+    ID_SCR_PROP_DIALOG      "Change the Line Properties\nLine Properties"
+    ID_BONE                 "DRAW DISTRACTION\nDraw Distraction"
+    ID_ADD_DISTRACTION      "DRAW DISTRACTION\nDraw Distraction"
+END
+
+STRINGTABLE 
+BEGIN
+    IDD_AUTOR_PREF          "Display the Course Preferences Dialog\nCourse Preferences"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CH_MENU_1            "Change Menu Item"
+    ID_CH_MENU_2            "Change Menu Item"
+    ID_CH_MENU_3            "Change Menu Item"
+    ID_CH_MENU_4            "Change Menu Item"
+    ID_CH_MENU_5            "Change Menu Item"
+    ID_CH_MENU_6            "Change Menu Item"
+    ID_CH_MENU_7            "Change Menu Item"
+    ID_CH_MENU_8            "Change Menu Item"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CH_MENU_9            "Change Menu Item"
+    ID_CH_MENU_10           "Change Menu Item"
+    ID_CH_MENU_11           "Change Menu Item"
+    ID_CH_MENU_12           "Change Menu Item"
+    ID_CH_MENU_13           "Change Menu Item"
+    ID_CH_MENU_14           "Change Menu Item"
+    ID_CH_MENU_15           "Change Menu Item"
+    ID_CH_MENU_16           "Change Menu Item"
+    ID_CH_MENU_17           "Change Menu Item"
+    ID_CH_MENU_18           "Change Menu Item"
+    ID_CH_MENU_19           "Change Menu Item"
+    ID_CH_MENU_20           "Change Menu Item"
+    ID_CH_MENU_21           "Change Menu Item"
+    ID_CH_MENU_22           "Change Menu Item"
+    ID_CH_MENU_23           "Change Menu Item"
+    ID_CH_MENU_24           "Change Menu Item"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CH_MENU_25           "Change Menu Item"
+    ID_CH_MENU_26           "Change Menu Item"
+    ID_CH_MENU_27           "Change Menu Item"
+    ID_CH_MENU_28           "Change Menu Item"
+    ID_CH_MENU_29           "Change Menu Item"
+    ID_CH_MENU_30           "Change Menu Item"
+    ID_CH_MENU_31           "Change Menu Item"
+    ID_CH_MENU_32           "Change Menu Item"
+    ID_CH_MENU_33           "Change Menu Item"
+    ID_CH_MENU_34           "Change Menu Item"
+    ID_CH_MENU_35           "Change Menu Item"
+    ID_CH_MENU_36           "Change Menu Item"
+    ID_CH_MENU_37           "Change Menu Item"
+    ID_CH_MENU_38           "Change Menu Item"
+    ID_CH_MENU_39           "Change Menu Item"
+    ID_CH_MENU_40           "Change Menu Item"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CH_MENU_41           "Change Menu Item"
+    ID_CH_MENU_42           "Change Menu Item"
+    ID_CH_MENU_43           "Change Menu Item"
+    ID_CH_MENU_44           "Change Menu Item"
+    ID_CH_MENU_45           "Change Menu Item"
+    ID_CH_MENU_46           "Change Menu Item"
+    ID_CH_MENU_47           "Change Menu Item"
+    ID_CH_MENU_48           "Change Menu Item"
+    ID_CH_MENU_49           "Change Menu Item"
+    ID_CH_MENU_50           "Change Menu Item"
+    ID_CH_MENU_51           "Change Menu Item"
+    ID_CH_MENU_52           "Change Menu Item"
+    ID_CH_MENU_53           "Change Menu Item"
+    ID_CH_MENU_54           "Change Menu Item"
+    ID_CH_MENU_55           "Change Menu Item"
+    ID_CH_MENU_56           "Change Menu Item"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CH_MENU_57           "Change Menu Item"
+    ID_CH_MENU_58           "Change Menu Item"
+    ID_CH_MENU_59           "Change Menu Item"
+    ID_CH_MENU_60           "Change Menu Item"
+    ID_CH_MENU_61           "Change Menu Item"
+    ID_CH_MENU_62           "Change Menu Item"
+    ID_CH_MENU_63           "Change Menu Item"
+    ID_CH_MENU_64           "Change Menu Item"
+    ID_CH_MENU_65           "Change Menu Item"
+    ID_CH_MENU_66           "Change Menu Item"
+    ID_CH_MENU_67           "Change Menu Item"
+    ID_CH_MENU_68           "Change Menu Item"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DogRun.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
