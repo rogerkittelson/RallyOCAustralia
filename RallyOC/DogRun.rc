@@ -1804,9 +1804,9 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About RallyOC 2012"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    CONTROL         "RallyOC 2012 Version 3.0.1",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,40,16,119,8
+    CONTROL         "RallyOC Australia Version 1.0.0",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,40,16,119,8
     DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
-    LTEXT           "Copyright (C) 2005-All Natural Software",IDC_STATIC,39,31,138,8
+    LTEXT           "Copyright (C) 2015-All Natural Software",IDC_STATIC,39,31,138,8
     GROUPBOX        "This product is licensed to:",IDC_REG_INFO,13,47,206,45
     LTEXT           "Warning:This computer program is protected under copyright law and international treaties.",IDC_STATIC,7,99,221,19
     LTEXT           " Unautorized reproduction or distribution of this program, or any protion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.",IDC_STATIC,7,118,221,25
@@ -2316,7 +2316,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 3,0,1,1
+ FILEVERSION 1,0,0,0
  PRODUCTVERSION 3,0,1,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -2333,15 +2333,15 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "CompanyName", "All Natural Software"
-            VALUE "FileDescription", "RallyOC 2012 MFC Application"
-            VALUE "FileVersion", "3, 0, 1, 1"
-            VALUE "InternalName", "RallyOC2012"
-            VALUE "LegalCopyright", "Copyright (C) 2006"
-            VALUE "LegalTrademarks", "All Natural Software, RallyOC"
-            VALUE "OriginalFilename", "RallyOC2012.EXE"
-            VALUE "ProductName", "RallyOC2012"
+            VALUE "FileDescription", "RallyOC Australia MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "RallyOCAustralia"
+            VALUE "LegalCopyright", "Copyright (C) 2015"
+            VALUE "LegalTrademarks", "All Natural Software, RallyOCAustralia"
+            VALUE "OriginalFilename", "RallyOCAustralia.EXE"
+            VALUE "ProductName", "RallyOCAustralia"
             VALUE "ProductVersion", "3, 0, 1, 1"
-            VALUE "SpecialBuild", "Release Version 3"
+            VALUE "SpecialBuild", "Release Version 1"
         END
     END
     BLOCK "VarFileInfo"
@@ -2557,10 +2557,10 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDR_MAINFRAME           "RallyOC2012"
+    IDR_MAINFRAME           "RallyOCAustralia"
     IDR_DOGRUNTYPE          "\nRallyOCD\nRallyOC\nRallyOCD Files (*.rocd)\n.rocd\nRallyOCD.Document\nRallyOCD Document"
-    IDS_RALLYVER            "1.1.0"
-    IDS_VERSION             "3.0.0"
+    IDS_RALLYVER            "1.0.0"
+    IDS_VERSION             "1.0.0"
     IDR_RALLYO              "Show or hide the station toolbar\nToggle StationToolBar"
 END
 
