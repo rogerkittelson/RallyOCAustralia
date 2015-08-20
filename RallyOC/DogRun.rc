@@ -509,8 +509,8 @@ BEGIN
             MENUITEM "Finish",                      ID_DRAW_FINISH
             POPUP "Halt-Forward"
             BEGIN
-                MENUITEM "Sit",                         ID_DRAW_SITHALT
-                MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+                MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+                MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
                 MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
                 MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
                 MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
@@ -722,8 +722,8 @@ IDR_HALT_FOR_AKC MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Sit",                         ID_DRAW_SITHALT
-        MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
+        MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+        MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
         MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
         MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
         MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
@@ -834,8 +834,8 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Sit",                         ID_DRAW_SITHALT
-            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+            MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
             MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
             MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
             MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
@@ -967,8 +967,8 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Sit",                         ID_DRAW_SITHALT
-            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+            MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
             MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
             MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
             MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT
@@ -1377,8 +1377,8 @@ BEGIN
         MENUITEM "&Finish",                     ID_DRAW_FINISH
         POPUP "H&alt-Forward"
         BEGIN
-            MENUITEM "Sit",                         ID_DRAW_SITHALT
-            MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+            MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
             MENUITEM "Walk Around",                 ID_DRAW_HALTWALK
             MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
             MENUITEM "Slow Forward from Sit",       ID_DRAW_SLOWFORWARDFROMSIT

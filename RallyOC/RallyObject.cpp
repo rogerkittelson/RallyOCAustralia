@@ -67,11 +67,11 @@ void CRallyObject::DrawStringForStationScoreSheet(CDC* pDC, CPoint top_left) {
 		pDC->TextOut(new_left  + (new_width / 2) - half_string,new_bottom - (tm.tmHeight * 2),string_to_draw);
 		break;
 	case ID_DRAW_SITHALTDOWN:
-		string_to_draw = "SIT";
+		string_to_draw = "DOWN";
 		len = string_to_draw.GetLength();
 		half_string = (len * tm.tmAveCharWidth) / 2;
 		pDC->TextOut(new_left  + (new_width / 2) - half_string + 10,new_bottom - (tm.tmHeight * 2)- 5,string_to_draw);
-		string_to_draw = "DOWN";
+//		string_to_draw = "DOWN";
 		len = string_to_draw.GetLength();
 		half_string = (len * tm.tmAveCharWidth) / 2;
 		pDC->TextOut(new_left  + (new_width / 2) - half_string ,new_bottom - tm.tmHeight- 5,string_to_draw);
@@ -2311,54 +2311,34 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 		case ID_DRAW_SITHALTDOWN:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "SIT";
+			string_to_draw = "DOWN";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string + 10,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "SIT";
+			string_to_draw = "DOWN";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (half_string)+10,this->m_station_rect.bottom - (tm.tmHeight * 3) - 5,string_to_draw);
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (half_string)+ 8 ,this->m_station_rect.bottom - (tm.tmHeight*2) - 5,string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "SIT";
+			string_to_draw = "DOWN";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (half_string*2)+ 10,this->m_station_rect.bottom - (tm.tmHeight * 4) - 10,string_to_draw);
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (half_string*2) ,this->m_station_rect.bottom - tm.tmHeight*3 -10,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "SIT";
+			string_to_draw = "DOWN";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)-8,string_to_draw);
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight*3-8,string_to_draw);
 			break;
 		default:
-			string_to_draw = "SIT";
+			string_to_draw = "DOWN";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string + 10,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		}
 		break;
