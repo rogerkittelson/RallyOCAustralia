@@ -190,6 +190,8 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_SIDE_RT, OnUpdateDrawSideRt)
 	ON_COMMAND(ID_DRAW_MOVE_DOWN, OnDrawMoveDown)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_MOVE_DOWN, OnUpdateDrawMoveDown)
+	ON_COMMAND(ID_DRAW_MOVINGSTAND, OnDrawMoveStand)
+	ON_UPDATE_COMMAND_UI(ID_DRAW_MOVINGSTAND, OnUpdateDrawMoveStand)
 	ON_COMMAND(ID_DRAW_JUMP, OnDrawJump)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_JUMP, OnUpdateDrawJump)
 	ON_COMMAND(ID__DRAW_DOWNWHILEHEELING, OnDrawDownWhileHeeling)
@@ -5491,7 +5493,7 @@ void CDogRunView::OnContextMenu(CWnd* pWnd, CPoint point)
 void CDogRunView::UpdateInsertAfterMenu(CMenu* insert_menu) {
 
 	CDogRunDoc* pDoc = GetDocument();
-	int iPos, find_slash;
+	int iPos;
 	for (iPos = insert_menu->GetMenuItemCount()-1; iPos > 0; iPos--)
 		insert_menu->DeleteMenu(iPos, MF_BYPOSITION);
 
@@ -6117,8 +6119,8 @@ void CDogRunView::OnUpdateSlowForwardFromSit(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	pCmdUI->Enable(TRUE);
-
+	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_SLOWFORWARDFROMSIT) 
 		pCmdUI->SetCheck(TRUE);
@@ -7027,7 +7029,9 @@ void CDogRunView::OnUpdateHaltLeftForward(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	pCmdUI->Enable(TRUE);
+	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_HALTLEFTFORWARD) 
 		pCmdUI->SetCheck(TRUE);
 	else 
@@ -7047,7 +7051,9 @@ void CDogRunView::OnUpdateFrontHeel(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	pCmdUI->Enable(TRUE);
+		if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_FRONTHEEL) 
 		pCmdUI->SetCheck(TRUE);
 	else 
@@ -7067,7 +7073,9 @@ void CDogRunView::OnUpdateHaltRightForward(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	pCmdUI->Enable(TRUE);
+	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_HALTRIGHTFORWARD) 
 		pCmdUI->SetCheck(TRUE);
 	else 
@@ -7375,7 +7383,7 @@ void CDogRunView::OnUpdateDrawHaltFinishRt(CCmdUI* pCmdUI)
 void CDogRunView::OnUpdateMove(CCmdUI* pCmdUI) 
 {
 	// TODO: Add your command update UI handler code here
-	if (this->m_SelectedShapeOnToolBar == ID_DRAW_SIDE_RT || this->m_SelectedShapeOnToolBar == ID_DRAW_MOVE_DOWN 
+	if (this->m_SelectedShapeOnToolBar == ID_DRAW_SIDE_RT || this->m_SelectedShapeOnToolBar == ID_DRAW_MOVE_DOWN  || this->m_SelectedShapeOnToolBar == ID_DRAW_MOVINGSTAND 
 		|| this->m_SelectedShapeOnToolBar == ID_DRAW_MOVE_STAND_WALK || this->m_SelectedShapeOnToolBar == ID_DRAW_JUMP 
 		|| this->m_SelectedShapeOnToolBar == ID_DRAW_BACKUP_3 || this->m_SelectedShapeOnToolBar == ID__DRAW_DOWNWHILEHEELING
 		|| this->m_SelectedShapeOnToolBar == ID__DRAW_MOVE_DOWN || this->m_SelectedShapeOnToolBar == ID__STAND_HEEL
@@ -7419,9 +7427,28 @@ void CDogRunView::OnUpdateDrawMoveDown(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == NOVICE && course_info.m_type_of_course == APDT_COURSE) pCmdUI->Enable(FALSE);
-	else pCmdUI->Enable(TRUE);
+	pCmdUI->Enable(TRUE);
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_MOVE_DOWN) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawMoveStand() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_DRAW_MOVINGSTAND;
+	this->ClearAllStationsFromSelectedList(true);	
+}
+
+void CDogRunView::OnUpdateDrawMoveStand(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	pCmdUI->Enable(TRUE);
+	if (this->m_SelectedShapeOnToolBar == ID_DRAW_MOVINGSTAND) 
 		pCmdUI->SetCheck(TRUE);
 	else 
 		pCmdUI->SetCheck(FALSE);	

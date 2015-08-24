@@ -341,6 +341,8 @@ protected:
 	afx_msg void OnUpdateDrawSideRt(CCmdUI* pCmdUI);
 	afx_msg void OnDrawMoveDown();
 	afx_msg void OnUpdateDrawMoveDown(CCmdUI* pCmdUI);
+	afx_msg void OnDrawMoveStand();
+	afx_msg void OnUpdateDrawMoveStand(CCmdUI* pCmdUI);
 	afx_msg void OnDrawJump();
 	afx_msg void OnUpdateDrawJump(CCmdUI* pCmdUI);
 	afx_msg void OnDrawMoveStandWalk();

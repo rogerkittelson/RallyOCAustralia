@@ -404,7 +404,7 @@ BEGIN
         POPUP "&Moving"
         BEGIN
             MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
             MENUITEM "Jump",                        ID_DRAW_JUMP
             MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
         END
@@ -576,7 +576,7 @@ BEGIN
             POPUP "Moving"
             BEGIN
                 MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-                MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+                MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
                 MENUITEM "Jump",                        ID_DRAW_JUMP
                 MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
                 MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
@@ -785,7 +785,8 @@ BEGIN
     POPUP ""
     BEGIN
         MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-        MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+        MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
+        MENUITEM "Moving - Stand",              ID_DRAW_MOVINGSTAND
         MENUITEM "Jump",                        ID_DRAW_JUMP
         MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
         MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
@@ -887,7 +888,8 @@ BEGIN
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Stand",              ID_DRAW_MOVINGSTAND
             MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
             MENUITEM "Stand While Heeling",         ID__STAND_HEEL
             MENUITEM "Stand-Leave-Sit-Front-Finish", ID__DRAW_STAND_SIT_LEAVE
@@ -1009,7 +1011,8 @@ BEGIN
         POPUP "Moving"
         BEGIN
             MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Stand",              ID_DRAW_MOVINGSTAND
         END
         POPUP "Heel"
         BEGIN
@@ -1443,7 +1446,8 @@ BEGIN
         POPUP "&Moving"
         BEGIN
             MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
+            MENUITEM "Moving - Stand",              ID_DRAW_MOVINGSTAND
             MENUITEM "Jump",                        ID_DRAW_JUMP
             MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
             MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
@@ -1665,7 +1669,8 @@ BEGIN
             POPUP "Moving"
             BEGIN
                 MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-                MENUITEM "Down and Stop",               ID_DRAW_MOVE_DOWN
+                MENUITEM "Moving - Down",               ID_DRAW_MOVE_DOWN
+                MENUITEM "Moving - Stand",              ID_DRAW_MOVINGSTAND
                 MENUITEM "Jump",                        ID_DRAW_JUMP
                 MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
                 MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
@@ -2848,8 +2853,9 @@ BEGIN
     ID_DRAW_HALT_FINISH_LT  "HALT-CALL DOG FRONT-FINISH LEFT\nHalt-Call Dog Front-Finish Left"
     ID_DRAW_FAST_SIT        "HALT-FAST FORWARD FROM SIT\nHalt-Fast Forward From Sit"
     ID_DRAW_SIDE_RT         "MOVING SIDE STEP RIGHT\nMoving Side Step Right"
-    ID_DRAW_MOVE_DOWN       "Down and Stop\nDown and Stop"
-    ID_DRAW_MOVE_STAND_WALK "MOVING STAND-WALK AROUND DOG\nMoving Stand-Walk Around Dog"
+    ID_DRAW_MOVE_DOWN       "Moving - Down\nMoving - Down"
+	ID_DRAW_MOVINGSTAND     "Moving - Stand\nMoving - Stand"
+	ID_DRAW_MOVE_STAND_WALK "MOVING STAND-WALK AROUND DOG\nMoving Stand-Walk Around Dog"
     ID_DRAW_JUMP            "SEND OVER JUMPS-HANDLER RUNS BY\nSend Over Jumps-Handler Runs By"
 END
 

@@ -92,7 +92,7 @@ CRallyObject * RallyObjList::FindRallyStationByStationNumber(int station_number)
 
 void RallyObjList::CalculateEntryExitPoints(CRallyObject *first_station, CRallyObject *second_station, POINT *entry, POINT *exit)
 {
-	POINT first_point, second_point,first_left, second_left, first_right, second_right;
+	POINT first_point, second_point;
 	POINT top_exit, left_exit, right_exit, bottom_exit, exit_point;
 	POINT top_entry, left_entry, right_entry, bottom_entry, entry_point;
 

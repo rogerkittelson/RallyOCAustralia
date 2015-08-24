@@ -239,7 +239,7 @@ void CChildFrame::ModifyInsertAfterMenu(void) {
 	}
 }
 CMenu*  CChildFrame::GetChangeToMenu(void) {
-	CMenu *edit_menu, *insert_menu, *temp_menu;
+	CMenu *edit_menu, *insert_menu;
 	CMenu* pTopMenu = AfxGetMainWnd()->GetMenu();
 	UINT editmenuid = this->FindMenuItem(pTopMenu,"&Edit");
 	edit_menu =  pTopMenu->GetSubMenu(editmenuid);
@@ -260,54 +260,20 @@ void CChildFrame::SetUpChangeMenu(void) {
 		insert_menu->DeleteMenu(iPos, MF_BYPOSITION);
 
 	CourseInfo course_info;
-	int class_cutoff, i, menu_cmd_id;
+	int i, menu_cmd_id;
 	CString add_string;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
-	if (course_info.m_type_of_course == AKC_COURSE) {
-		switch (course_info.m_class) {
-		case NOVICE:
-			class_cutoff = 31;
-			break;
-		case ADVANCED:
-			class_cutoff = 45;
-			break;
-		case EXCELLENT:
-		case TRAINING:
-			class_cutoff = 49;
-			break;
-		}
-		CStringList Items;
-		StationMapper::GetStationDescriptionByAKCType(course_info.m_class,Items);
-		POSITION Position = Items.GetHeadPosition();
-		i=0;
-		while (Position){
-			add_string = Items.GetNext(Position);
-			menu_cmd_id = i + ID_CH_MENU_1;
-			insert_menu->InsertMenu(i, MF_STRING | MF_BYPOSITION,menu_cmd_id, add_string);
-			i++;
-		}
-	}
-	else {
-		switch (course_info.m_class) {
-		case NOVICE:
-			class_cutoff = 29;
-			break;
-		case ADVANCED:
-			class_cutoff = 50;
-			break;
-		case EXCELLENT:
-		case TRAINING:
-			class_cutoff = 60;
-			break;
-		}
-		for (i=0;i<class_cutoff;i++) {
-			add_string = pDoc->m_rallyList.apdt_station_names[i+1];
-			menu_cmd_id = i + ID_CITEM1;
-			insert_menu->InsertMenu(i, MF_STRING | MF_BYPOSITION,menu_cmd_id, add_string);
-		}
-	}
 
-
+	CStringList Items;
+	StationMapper::GetStationDescriptionByAKCType(course_info.m_class,Items);
+	POSITION Position = Items.GetHeadPosition();
+	i=0;
+	while (Position){
+		add_string = Items.GetNext(Position);
+		menu_cmd_id = i + ID_CH_MENU_1;
+		insert_menu->InsertMenu(i, MF_STRING | MF_BYPOSITION,menu_cmd_id, add_string);
+		i++;
+	}
 }
 void CChildFrame::OnForwardHalt() 
 {

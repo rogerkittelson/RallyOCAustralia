@@ -96,7 +96,7 @@ BOOL StationPropDlg::OnInitDialog()
 	p_dogRunDoc->m_course_info->GetCourseInfo(&course_info);
 	// TODO: Add extra initialization here
 	int class_cutoff;
-	if (course_info.m_type_of_course == AKC_COURSE) {
+	
 		switch (course_info.m_class) {
 		case NOVICE:
 			class_cutoff = 31;
@@ -109,22 +109,6 @@ BOOL StationPropDlg::OnInitDialog()
 			class_cutoff = 49;
 			break;
 		}
-
-	}
-	else {
-		switch (course_info.m_class) {
-		case NOVICE:
-			class_cutoff = 29;
-			break;
-		case ADVANCED:
-			class_cutoff = 50;
-			break;
-		case EXCELLENT:
-		case TRAINING:
-			class_cutoff = 60;
-			break;
-		}
-	}
 
 	CString str, station_number, station_name;
 	int error;

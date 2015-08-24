@@ -5086,154 +5086,107 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID_DRAW_MOVE_DOWN:
 		switch (this->m_rotate_text) {
 		case 0:
-			if (this->m_type_station == APDT_COURSE) {
-				string_to_draw = "MOVING";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "& FOWARD";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
-			else {
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "AND";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "STOP";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Down";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 90:
-			if (this->m_type_station == APDT_COURSE) {
-				string_to_draw = "MOVING";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "& FOWARD";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
-			else {
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "AND";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "STOP";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Down";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 180:
-			if (this->m_type_station == APDT_COURSE) {
-				string_to_draw = "MOVING";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-				string_to_draw = "& FOWARD";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			}
-			else {
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
-				string_to_draw = "AND";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-				string_to_draw = "STOP";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-		}
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
+			string_to_draw = "Down";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
 			break;
 		case 270:
-			if (this->m_type_station == APDT_COURSE) {
-				string_to_draw = "MOVING";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth);
-				pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "& FOWARD";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
-			else {
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth);
-				pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "AND";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "STOP";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth);
+			pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Down";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		default:
-			if (this->m_type_station == APDT_COURSE) {
-				string_to_draw = "MOVING";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "& FOWARD";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
-			else {
-				string_to_draw = "DOWN";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-				string_to_draw = "AND";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-				string_to_draw = "STOP";
-				len = string_to_draw.GetLength();
-				half_string = (len * tm.tmAveCharWidth) / 2;
-				pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 1),string_to_draw);
-			}
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Down";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			break;
+		}
+		break;
+	case ID_DRAW_MOVINGSTAND:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth);
+			pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			break;
+		default:
+			string_to_draw = "Moving";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
 			break;
 		}
 		break;

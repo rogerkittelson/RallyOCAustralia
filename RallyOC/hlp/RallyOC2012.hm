@@ -368,6 +368,7 @@ HID__SITSTAY                            0x18113
 HID__CALLTOHEEL                         0x18114
 HID__DRAW_SITSTAY                       0x18115
 HID__DRAW_CALLTOHEEL                    0x18116
+HID_DRAW_MOVINGSTAND                    0x18117
  
 // Prompts (IDP_*) 
  

@@ -119,7 +119,7 @@ void MyFont::GetLogFont(LOGFONT *p_log_font)
 	p_log_font->lfClipPrecision = this->m_lfClipPrecision;
 	p_log_font->lfQuality = this->m_lfQuality;
 	p_log_font->lfPitchAndFamily = this->m_lfPitchAndFamily;
-	strcpy(p_log_font->lfFaceName, this->m_lfFaceName);
+	strcpy_s(p_log_font->lfFaceName, this->m_lfFaceName);
 
 }
 
