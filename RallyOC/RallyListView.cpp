@@ -202,7 +202,7 @@ BOOL RallyListView::RenumberStation(int index, int new_number) {
 	int akc_number = pRallyItemInlist->GetAKCNumber();
 
 	
-	if (akc_number == 1 || akc_number == 2 || akc_number == 50 || akc_number == 299) return false; //START, FINISH or HONOR 
+	if (akc_number == 1 || akc_number == 2 ) return false; //START, FINISH 
 	p_dogRunDoc->AddUndoStation(pRallyItemInlist, pos,INSERT_AT);
 	p_dogRunDoc->RenumberStations(new_number, INSERT_AT, pRallyItemInlist, false);
 	this->pDoc->UpdateAllViews(NULL,CHANGE_STATION,NULL);
@@ -232,7 +232,7 @@ bool RallyListView::OnEndInPlaceEdit(IN int Row, IN int Col, IN bool Canceled, I
 			if (Col ==1) {		
 				akc_number = atoi(Text);
 				old_string = this->GetItemText(Row,Col);
-				if (!strcmp(old_string,"1") || !strcmp(old_string,"2") || !strcmp(old_string,"50")) {
+				if (!strcmp(old_string,"1") || !strcmp(old_string,"2")) {
 					Text = old_string;
 					Canceled = true;
 				}
@@ -251,7 +251,7 @@ bool RallyListView::OnEndInPlaceEdit(IN int Row, IN int Col, IN bool Canceled, I
 			if (Col == 2) {
 				old_string = this->GetItemText(Row,1);
 				akc_number = StationMapper::GetAKCidFromComboBoxSelection(this->mComboIndex);
-				if (!strcmp(old_string,"1") || !strcmp(old_string,"2") || !strcmp(old_string,"50") || !strcmp(old_string,"299") || (akc_number==299)) {
+				if (!strcmp(old_string,"1") || !strcmp(old_string,"2") || !strcmp(old_string,"299") || (akc_number==299)) {
 					Canceled = true;
 				}
 				else if (!this->CheckForExistingStartFinishHonor(akc_number)) {
@@ -302,19 +302,10 @@ BOOL RallyListView::CheckForExistingStartFinishHonor(int akc_num) {
 	case 1:
 		pRallyItem = (CRallyObject*)this->mp_rallyList->GetNext(pos);
 		if (pRallyItem->GetAKCNumber() == 1) return true;
-		if (pRallyItem->GetAKCNumber() == 50){ 			
-			pRallyItem = (CRallyObject*)this->mp_rallyList->GetNext(pos);
-			if (pos == NULL) return false;
-			if (pRallyItem->GetAKCNumber() == 1) return true;
-		}
 		break;
 	case 2:
 		pRallyItem = (CRallyObject*)this->mp_rallyList->GetTail();
 		if (pRallyItem->GetAKCNumber() == 2) return true;
-		break;
-	case 50:
-		pRallyItem = (CRallyObject*)this->mp_rallyList->GetHead();
-		if (pRallyItem->GetAKCNumber() == 50) return true;
 		break;
 	default:
 		return false;
@@ -347,14 +338,6 @@ BOOL RallyListView::InsertStationIntoList(int akc_number) {
 	else if (akc_number == 2) {
 		pRallyItem->SetStationNumber(FINISH_STATION);
 		pos = p_dogRunDoc->InsertStationIntoList(pRallyItem, FINISH_STATION, false);
-	}
-	else if (akc_number == 50){
-		pRallyItem->SetStationNumber(HONOR_STATION);
-		pos = p_dogRunDoc->InsertStationIntoList(pRallyItem, HONOR_STATION, false);
-	}
-	else if (akc_number == 299){
-		pRallyItem->SetStationNumber(CALL_TO_HEEL_STATION);
-		pos = p_dogRunDoc->InsertStationIntoList(pRallyItem, CALL_TO_HEEL_STATION, false);
 	}
 	else {
 		num_stations = p_dogRunDoc->GetNumberStations();
@@ -451,7 +434,7 @@ void RallyListView::SetUpRallyList(CObList *p_rallyList, CDocument *pDoc) {
 		pRallyItemInlist = (CRallyObject*)mp_rallyList->GetNext(pos);
 
 		akc_number = pRallyItemInlist->GetAKCNumber();
-		if( akc_number == 1 || akc_number == 2 || akc_number == 50 || akc_number == 299) {
+		if( akc_number == 1 || akc_number == 2) {
 			row_data.Format(TEXT(""));
 		}
 		else {

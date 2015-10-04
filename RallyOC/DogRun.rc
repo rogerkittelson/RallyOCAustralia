@@ -728,9 +728,10 @@ BEGIN
         MENUITEM "Down-Walk Around",            ID_DRAW_DOWNWALK
         MENUITEM "Stand-Walk Around",           ID_DRAW_STANDWALK
         MENUITEM "Down-Sit",                    ID_DRAW_DOWNSIT
-        MENUITEM "Stand",                       ID_DRAW_STAND
-        MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
         MENUITEM "Stand-Sit",                   ID_DRAW_STANDSIT
+        MENUITEM "Stand-Down",                  ID_DRAW_STANDDOWN
+        MENUITEM "Leave Dog - Recall",          ID_DRAW_SLOWFORWARDFROMSIT
+        MENUITEM "Leave Dog - Down - Sit",      ID_DRAW_STAND
     END
 END
 

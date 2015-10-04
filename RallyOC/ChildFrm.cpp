@@ -198,7 +198,7 @@ void CChildFrame::UpdateInsertAfterMenu(void) {
 		pRallyItemInlist = (CRallyObject*)pDoc->m_rallyList.GetNext(pos);
 		num_of_station = pRallyItemInlist->GetStationNumber();
 		akc_number = pRallyItemInlist->GetAKCNumber();
-		if (num_of_station > 0 && akc_number != 50) {
+		if (num_of_station > 0) {
 			station_number.Format("%d",num_of_station);
 			station_desc.LoadString( pRallyItemInlist->GetStringNumber());
 			find_slash = station_desc.Find("\n");

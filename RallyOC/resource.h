@@ -667,7 +667,8 @@
 #define ID__CALLTOHEEL                  33044
 #define ID__DRAW_SITSTAY                33045
 #define ID__DRAW_CALLTOHEEL             33046
-#define ID_DRAW_MOVINGSTAND            33047
+#define ID_DRAW_MOVINGSTAND             33047
+#define ID__LEAVEDOG                    33048
 
 // Next default values for new objects
 // 
@@ -675,7 +676,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        246
-#define _APS_NEXT_COMMAND_VALUE         33048
+#define _APS_NEXT_COMMAND_VALUE         33049
 #define _APS_NEXT_CONTROL_VALUE         1151
 #define _APS_NEXT_SYMED_VALUE           101
 #endif

@@ -878,7 +878,7 @@ void CDogRunDoc::RemoveStationFromList(CRallyObject *p_rally_station_remove, POS
 		this->m_rallyList.RemoveAt(remove_pos);
 		int station_number = p_rally_station_remove->GetStationNumber();
 		int akc_number = p_rally_station_remove->GetAKCNumber();
-		if (station_number > 0 && akc_number != 50) {
+		if (station_number > 0) {
 			this->RenumberStations(station_number,DELETE_STATION_NUMBER, p_rally_station_remove, false);
 			this->m_num_stations--;
 			this->m_rallyList.SetLastNumber(this->m_num_stations);
@@ -901,14 +901,6 @@ BOOL CDogRunDoc::StartStationInList(void) {
 		pRallyItem = (CRallyObject*)this->m_rallyList.GetNext(pos);
 		if (pRallyItem->GetStationNumber() == START_STATION) {
 			found = true;
-		}
-		else if (pRallyItem->GetAKCNumber() == 50) {
-			head_pos = pos;
-			pRallyItem = (CRallyObject*)this->m_rallyList.GetNext(pos);	
-			
-			if (pRallyItem->GetStationNumber() == START_STATION) {
-				found = true;
-			}
 		}
 	}
 
@@ -952,7 +944,7 @@ BOOL CDogRunDoc::HonorStationInList(int type_of_course) {
 			}
 		}
 	}
-
+	found = false;
 	return found;
 }
 
@@ -972,9 +964,6 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 	// all screwed up!!!
 	if (course_info.m_type_of_course == AKC_COURSE) {
 		int akc_number = p_rally_station_add->GetAKCNumber();
-		if (akc_number == 50) stat_desc = HONOR_STATION;
-		if (akc_number == 299) stat_desc = CALL_TO_HEEL_STATION;
-		call_to_station = 299;
 	}
 	else {
 		int akc_number = p_rally_station_add->GetAKCNumber();
@@ -1577,12 +1566,6 @@ void CDogRunDoc::UpdateRallyList(int index, int akc_number, POSITION pos_to_chan
 		case 299:
 			AfxMessageBox("Changing to Call to Heel not supported at this time.",MB_OK,ID_DRAW_START);
 			return;
-		case 50:
-			if (this->HonorStationInList(course_info.m_type_of_course)) {
-				AfxMessageBox("You can only have one HONOR station per course.",MB_OK,ID_DRAW_START);
-				return;
-			}
-			break;
 		}
 		pRallyItemInlist = (CRallyObject*)this->m_rallyList.GetAt(pos);
 		if (index > -2) this->AddUndoStation(pRallyItemInlist, pos,CHANGE_STATION);
@@ -1602,20 +1585,8 @@ void CDogRunDoc::UpdateRallyList(int index, int akc_number, POSITION pos_to_chan
 			this->SetNumberStations(number_of_stations);
 			if (number_of_stations != 0)this->RenumberStations(FINISH_STATION, INSERT_AT, pRallyItemInlist,false);
 			break;
-		case 299:
-			pRallyItemInlist->SetStationNumber(CALL_TO_HEEL_STATION);
-			number_of_stations--;
-			this->SetNumberStations(number_of_stations);
-			if (number_of_stations != 0)this->RenumberStations(CALL_TO_HEEL_STATION, INSERT_AT, pRallyItemInlist,false);
-			break;
-		case 50:
-			pRallyItemInlist->SetStationNumber(HONOR_STATION);
-			number_of_stations--;
-			this->SetNumberStations(number_of_stations);
-			if (number_of_stations != 0)this->RenumberStations(HONOR_STATION, INSERT_AT, pRallyItemInlist,false);
-			break;
 		default:
-			if (old_akc_number == 1 ||old_akc_number == 2 || old_akc_number == 50 || old_akc_number == 299) { // START, FINISH OR HONOR STATION
+			if (old_akc_number == 1 ||old_akc_number == 2) { // START, FINISH
 				number_of_stations++;
 				pRallyItemInlist->SetStationNumber(number_of_stations);
 				if (number_of_stations > 1)this->RenumberStations(number_of_stations, INSERT_AT, pRallyItemInlist,false);
@@ -1978,10 +1949,8 @@ int store_bottom_of_text = bottom_of_text;
 					if (this->m_sspo_station_number)station_number_text.Format("%d. ",station_number);
 					int honor_station = pRallyItemInlist->GetAKCNumber();
 					if (this->m_sspo_akc_number)akc_number_text.Format(" (%d)", honor_station);
-					if (honor_station == 50) {
-						have_honor = true;
-					}
-					if (station_number > 0 && honor_station != 50) {
+
+					if (station_number > 0) {
 						if (this->m_sspo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber()); 
 						station_desc = station_number_text + station_name + akc_number_text;
 //						station_desc.Format("%d. %s",station_number,this->m_rallyList.akc_station_names[pRallyItemInlist->GetAKCNumber()]);

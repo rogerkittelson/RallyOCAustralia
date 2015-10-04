@@ -154,12 +154,7 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 					x_y_location.Format("X: %d, Y: %d",mid_point.x, mid_point.y);
 				}
 
-				if (akc_number == 50) {
-					have_honor = true;
-					honor_station_number = station_number;
-					honor_mid_point = mid_point;
-				}
-				if (station_number > 0 && akc_number != 50) {
+				if (station_number > 0) {
 					station_desc = station_number_text + station_name + " " + akc_number_text + x_y_location + "\n\r";
 //					station_desc.Format("%d. %s %d\n\r",station_number,this->akc_station_names[pRallyItemInlist->GetAKCNumber()],pRallyItemInlist->GetAKCNumber() );
 				}
@@ -279,15 +274,8 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 					mid_point.y = (long)(mid_point.y/this->m_pixels_per_foot_ht);
 					x_y_location.Format("X: %d, Y: %d",mid_point.x, mid_point.y);
 				}
-				if (akc_number == 50) {
-					have_honor = true;
-					honor_station_number = station_number;
-					honor_mid_point = mid_point;
-					i--;
-					continue;
-				}
 
-				if (station_number > 0 && akc_number != 50) {
+				if (station_number > 0) {
 					station_desc = station_number_text + station_name + " " + akc_number_text + x_y_location ;
 //					station_desc.Format("  %d. %s %d",station_number,this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 				}
@@ -441,11 +429,6 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 			mid_point.x = (long)(mid_point.x/this->m_pixels_per_foot_wd);
 			mid_point.y = (long)(mid_point.y/this->m_pixels_per_foot_ht);
 			if (type_of_course == AKC_COURSE) {
-				if (akc_number == 50) {
-					have_honor = true;
-					honor_station_number = station_number;
-					honor_mid_point = mid_point;
-				}
 			}
 			else {
 				if (akc_number == 60) {

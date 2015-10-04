@@ -3506,7 +3506,6 @@ void CDogRunView::RedoChangeStation(CRallyObject *p_redoStation) {
 	switch (old_station_akc_num){ // need to re-order list
 	case 1:
 	case 2:
-	case 50:
 		pOldRallyItemInlist->SetStationNumber(number_of_stations+1);
 
 //		if (old_station_num > START_STATION) {
@@ -3542,12 +3541,6 @@ void CDogRunView::RedoChangeStation(CRallyObject *p_redoStation) {
 		break;
 	case 2:
 		pOldRallyItemInlist->SetStationNumber(FINISH_STATION);
-		break;
-	case 299:
-		pOldRallyItemInlist->SetStationNumber(CALL_TO_HEEL_STATION);
-		break;
-	case 50:
-		pOldRallyItemInlist->SetStationNumber(HONOR_STATION);
 		break;
 	}
 //	pOldRallyItemInlist->SetStationRect();
@@ -4250,7 +4243,6 @@ void CDogRunView::UndoChangeStation(CRallyObject *p_undoStation) {
 	switch (cur_station_akc_num){ // need to re-order list
 	case 1:
 	case 2:
-	case 50:
 		pOldRallyItemInlist->SetStationNumber(number_of_stations+1);
 
 		if (old_station_num > START_STATION) {
@@ -4271,13 +4263,6 @@ void CDogRunView::UndoChangeStation(CRallyObject *p_undoStation) {
 		break;
 	case 2:
 		pOldRallyItemInlist->SetStationNumber(FINISH_STATION);
-
-		break;
-	case 299:
-		pOldRallyItemInlist->SetStationNumber(CALL_TO_HEEL_STATION);
-		break;
-	case 50:
-		pOldRallyItemInlist->SetStationNumber(HONOR_STATION);
 		break;
 	}
 //	pOldRallyItemInlist->SetStationRect();
@@ -4294,12 +4279,6 @@ void CDogRunView::UndoChangeStation(CRallyObject *p_undoStation) {
 		break;
 	case 2:
 		p_undoStation->SetStationNumber(FINISH_STATION);
-		break;
-	case 299:
-		p_undoStation->SetStationNumber(CALL_TO_HEEL_STATION);
-		break;
-	case 50:
-		p_undoStation->SetStationNumber(HONOR_STATION);
 		break;
 	}
 //	p_undoStation->SetStationRect();
@@ -5507,7 +5486,7 @@ void CDogRunView::UpdateInsertAfterMenu(CMenu* insert_menu) {
 		pRallyItemInlist = (CRallyObject*)pDoc->m_rallyList.GetNext(pos);
 		num_of_station = pRallyItemInlist->GetStationNumber();
 		akc_number = pRallyItemInlist->GetAKCNumber();
-		if (num_of_station > 0 && akc_number != 50) {
+		if (num_of_station > 0) {
 			station_number.Format("%d",num_of_station);
 			station_desc = StationMapper::GetAKCDescrptionFromAKCNumber(akc_number);
 			add_string = station_number + ": " + station_desc;
