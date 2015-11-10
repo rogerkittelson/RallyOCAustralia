@@ -171,6 +171,8 @@
 #define IDB_DOUBLE_LEFT_TURN            243
 #define IDB_JUMP_SEND                   244
 #define IDB_BITMAP1                     245
+#define IDB_JUMP1                       246
+#define IDB_360_CIRCLE_HEEL             246
 #define IDC_AUTHOR                      1000
 #define ID_CH_MENU_1                    1000
 #define IDC_NOTES                       1001
@@ -669,6 +671,7 @@
 #define ID__DRAW_CALLTOHEEL             33046
 #define ID_DRAW_MOVINGSTAND             33047
 #define ID__LEAVEDOG                    33048
+#define ID__STAND33049                  33049
 
 // Next default values for new objects
 // 
@@ -676,7 +679,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        246
-#define _APS_NEXT_COMMAND_VALUE         33049
+#define _APS_NEXT_COMMAND_VALUE         33050
 #define _APS_NEXT_CONTROL_VALUE         1151
 #define _APS_NEXT_SYMED_VALUE           101
 #endif

@@ -1007,6 +1007,7 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 				}
 				pos = temp_pos;
 			}
+
 			if (pRallyItem->GetStationNumber() == FINISH_STATION) {
 				pos = NULL;
 				AfxMessageBox("You can only have one FINISH station per course.",MB_OK,ID_DRAW_FINISH);
@@ -1015,6 +1016,7 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 			pos = this->m_rallyList.InsertAfter(pos, p_rally_station_add);
 		}
 		break;
+
 	case CALL_TO_HEEL_STATION:
 		if (pos == NULL) {
 			pos = this->m_rallyList.AddTail(p_rally_station_add);
@@ -1024,6 +1026,7 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 			pos = this->m_rallyList.AddTail(p_rally_station_add);
 		}
 		break;
+
 	default:
 		if (pos == NULL) {
 			pos = this->m_rallyList.AddTail(p_rally_station_add);
@@ -1032,6 +1035,7 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 		else {
 			pos = this->m_rallyList.GetTailPosition();
 			pRallyItem = (CRallyObject*)this->m_rallyList.GetAt(pos);
+
 			if (pRallyItem->GetStationNumber() == CALL_TO_HEEL_STATION)
 			{
 				while (pRallyItem->GetStationNumber() == CALL_TO_HEEL_STATION)
@@ -3424,9 +3428,11 @@ void CDogRunDoc::AddArrow(CRallyObject* pRallyItemAdded, bool from_undo_delete)
 			}
 		}
 		break;
+/*
 	case ID__DRAW_CALLTOHEEL://call to heel  station
 		return; // no p_Arrow to or from honor station
 		break;
+*/
 	case IDB_RETRIEVE_FINISH: //APDT bonus station no arrows
 		return;
 		break;

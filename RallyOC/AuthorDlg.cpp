@@ -58,6 +58,9 @@ void AuthorDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Radio(pDX, IDC_LIST_BOTTOM, m_list_placement);
 	DDX_Check(pDX, IDC_AUTO_ADD, m_auto_add);
 	DDX_Check(pDX, IDC_COURSE_PATH, m_show_path);
+	double convert = atof(m_grid_spacing);
+	convert = convert * 0.3;
+	m_grid_spacing.Format("%.1f",convert);
 	DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
 	DDX_Text(pDX, IDC_JUDGE_INST, m_judge_or_instruct);
 	DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);

@@ -611,14 +611,14 @@ void CRallyObject::DrawStringForStationScoreSheet(CDC* pDC, CPoint top_left) {
 		pDC->TextOut(new_left  + (new_width / 2) - half_string - 15,new_bottom - (tm.tmHeight),string_to_draw);
 		break;
 	case ID__DRAW_DOWNWHILEHEELING:
-		string_to_draw = "DOWN";
-		len = string_to_draw.GetLength();
-		half_string = (len * tm.tmAveCharWidth) / 2;
-		pDC->TextOut(new_left  + (new_width / 2) - half_string - 15,new_bottom - (tm.tmHeight * 3),string_to_draw);
-		string_to_draw = "WHILE HEELING";
-		len = string_to_draw.GetLength();
-		half_string = (len * tm.tmAveCharWidth) / 2;
-		pDC->TextOut(new_left  + (new_width / 2) - half_string - 15,new_bottom - (tm.tmHeight * 2),string_to_draw);
+		string_to_draw = "Moving Stand";
+		pDC->TextOut(new_left ,new_bottom - (tm.tmHeight*4),string_to_draw);
+		string_to_draw = "Leave dog 3 mtrs";
+		pDC->TextOut(new_left ,new_bottom - (tm.tmHeight*3),string_to_draw);
+		string_to_draw = "Distance Down";
+		pDC->TextOut(new_left,new_bottom - (tm.tmHeight * 2),string_to_draw);
+		string_to_draw = "Return Around Dog";
+		pDC->TextOut(new_left,new_bottom - tm.tmHeight,string_to_draw);
 		break;
 	case ID__STAND_HEEL:
 		string_to_draw = "STAND";
@@ -643,11 +643,11 @@ void CRallyObject::DrawStringForStationScoreSheet(CDC* pDC, CPoint top_left) {
 	case ID__STAND_LEAVE_DOWN:
 		string_to_draw = "STAND";
 		pDC->TextOut(new_left ,new_bottom - (tm.tmHeight*4),string_to_draw);
-		string_to_draw = "LEAVE DOG";
+		string_to_draw = "LEAVE DOG 3 mtrs";
 		pDC->TextOut(new_left ,new_bottom - (tm.tmHeight*3),string_to_draw);
-		string_to_draw = "DOWN DOG";
+		string_to_draw = "Distance Down - Sit";
 		pDC->TextOut(new_left,new_bottom - (tm.tmHeight * 2),string_to_draw);
-		string_to_draw = "CALL FRONT-FINISH";
+		string_to_draw = "Return Around Dog";
 		pDC->TextOut(new_left,new_bottom - tm.tmHeight,string_to_draw);
 		break;
 	case ID_DRAW_JUMP:
@@ -682,14 +682,20 @@ void CRallyObject::DrawStringForStationScoreSheet(CDC* pDC, CPoint top_left) {
 		pDC->TextOut(new_left,new_bottom - tm.tmHeight,string_to_draw);
 		break;
 	case ID__DRAW_SITSTAY:
-		string_to_draw = "SIT";
-		pDC->TextOut(new_left,new_bottom - (tm.tmHeight * 2),string_to_draw);
-		string_to_draw = "STAY";
-		pDC->TextOut(new_left,new_bottom - tm.tmHeight,string_to_draw);
+		string_to_draw = "Moving Sit";
+		pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+		string_to_draw = "Walk Around";
+		pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+		string_to_draw = "dog";
+		pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 		break;
 	case ID__DRAW_CALLTOHEEL:
-		string_to_draw = "CALL TO HEEL";
-		pDC->TextOut(new_left,new_bottom - tm.tmHeight,string_to_draw);
+		string_to_draw = "360 Left";
+		pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+		string_to_draw = "Circle Spin";
+		pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+		string_to_draw = "At Heel";
+		pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 		break;
 
 // HEEL STATIONS
@@ -5293,54 +5299,54 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID__DRAW_DOWNWHILEHEELING:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-			string_to_draw = "WHILE HEELING";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Moving Stand";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Distance Down";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Return Around Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 		break;
 		case 90:
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-			string_to_draw = "WHILE HEELING";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			break;
+			string_to_draw = "Moving Stand";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Distance Down";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Return Around Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
 		case 180:
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-			string_to_draw = "WHILE HEELING";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Moving Stand";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Distance Down";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Return Around Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-			string_to_draw = "WHILE HEELING";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Moving Stand";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Distance Down";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Return Around Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 		break;
 		default:
-			string_to_draw = "DOWN";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
-			string_to_draw = "WHILE HEELING";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Moving Stand";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Distance Down";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Return Around Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		}
 		break;
@@ -5455,53 +5461,53 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID__STAND_LEAVE_DOWN:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "STAND";
+			string_to_draw = "Stand Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "LEAVE DOG";
+			string_to_draw = "Leave Dog 3 mtrs";
 			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "DOWN DOG";
+			string_to_draw = "Distance Down - Sit";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "CALL FRONT-FINISH";
+			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "STAND";
+			string_to_draw = "Stand Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "LEAVE DOG";
+			string_to_draw = "Leave Dog 3 mtrs";
 			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "DOWN DOG";
+			string_to_draw = "Distance Down - Sit";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "CALL FRONT-FINISH";
+			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "STAND";
+			string_to_draw = "Stand Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "LEAVE DOG";
+			string_to_draw = "Leave Dog 3 mtrs";
 			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "DOWN DOG";
+			string_to_draw = "Distance Down - Sit";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "CALL FRONT-FINISH";
+			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "STAND";
+			string_to_draw = "Stand Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "LEAVE DOG";
+			string_to_draw = "Leave Dog 3 mtrs";
 			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "DOWN DOG";
+			string_to_draw = "Distance Down - Sit";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "CALL FRONT-FINISH";
+			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		default:
-			string_to_draw = "STAND";
+			string_to_draw = "Stand Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "LEAVE DOG";
+			string_to_draw = "Leave Dog 3 mtrs";
 			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "DOWN DOG";
+			string_to_draw = "Distance Down - Sit";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			string_to_draw = "CALL FRONT-FINISH";
+			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		}
@@ -5587,77 +5593,117 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 		case ID__DRAW_SITSTAY:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "SIT";
+			string_to_draw = "Moving Sit";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-			string_to_draw = "STAY";
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Walk Around";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			break;
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight),string_to_draw);
+		break;
 		case 90:
-			string_to_draw = "SIT";
+			string_to_draw = "Moving Sit";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-			string_to_draw = "STAY";
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Walk Around";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight),string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "SIT";
+			string_to_draw = "Moving Sit";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-			string_to_draw = "STAY";
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Walk Around";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight),string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "SIT";
+			string_to_draw = "Moving Sit";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-			string_to_draw = "STAY";
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Walk Around";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight),string_to_draw);
 			break;
 		default:
-			string_to_draw = "SIT";
+			string_to_draw = "Moving Sit";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
-			string_to_draw = "STAY";
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
+			string_to_draw = "Walk Around";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
-			break;
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight),string_to_draw);
+	break;
 		}
 		break;
 		case ID__DRAW_CALLTOHEEL:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "360 Left";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Circle Spin";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "At Heel";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "360 Left";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Circle Spin";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "At Heel";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "360 Left";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Circle Spin";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "At Heel";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "360 Left";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Circle Spin";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "At Heel";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		default:
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "360 Left";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Circle Spin";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "At Heel";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		}
@@ -6514,13 +6560,13 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			string_to_draw = "LEAVE DOG";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len +  tm.tmAveCharWidth * 3,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "2 STEPS";
+			string_to_draw = "3 mtrs";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "CALL DOG TO HEEL";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "FORWARD";
+			string_to_draw = "WITHOUT STOPPING";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
@@ -6528,13 +6574,13 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			string_to_draw = "LEAVE DOG";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len +  tm.tmAveCharWidth * 3,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "2 STEPS";
+			string_to_draw = "3 mtrs";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "CALL DOG CALL TO HEEL";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "FORWARD";
+			string_to_draw = "WITHOUT STOPPING";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 
@@ -6543,13 +6589,13 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			string_to_draw = "LEAVE DOG";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len +  tm.tmAveCharWidth * 3,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "2 STEPS";
+			string_to_draw = "3 mtrs";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "CALL DOG CALL TO HEEL";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "FORWARD";
+			string_to_draw = "WITHOUT STOPPING";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
@@ -6557,13 +6603,13 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			string_to_draw = "LEAVE DOG";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len +  tm.tmAveCharWidth * 3,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "2 STEPS";
+			string_to_draw = "3 mtrs";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "CALL DOG CALL TO HEEL";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "FORWARD";
+			string_to_draw = "WITHOUT STOPPING";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
@@ -6571,13 +6617,13 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			string_to_draw = "LEAVE DOG";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len +  tm.tmAveCharWidth * 3,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "2 STEPS";
+			string_to_draw = "3 mtrs";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "CALL TO HEEL";
+			string_to_draw = "CALL DOG CALL TO HEEL";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "FORWARD";
+			string_to_draw = "WITHOUT STOPPING";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.right - len,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;

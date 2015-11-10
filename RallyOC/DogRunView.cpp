@@ -1117,11 +1117,11 @@ void CDogRunView::OnLButtonDown(UINT nFlags, CPoint point)
 			pos = pDoc->InsertStationIntoList(pRallyItem, FINISH_STATION, false);
 
 		}
-		else if (this->m_SelectedShapeOnToolBar == ID__DRAW_CALLTOHEEL) {
-			pRallyItem->SetStationNumber(CALL_TO_HEEL_STATION);
-			pos = pDoc->InsertStationIntoList(pRallyItem, CALL_TO_HEEL_STATION, false);
 
-		}
+//		else if (this->m_SelectedShapeOnToolBar == ID__DRAW_CALLTOHEEL) {
+//			pRallyItem->SetStationNumber(CALL_TO_HEEL_STATION);
+//			pos = pDoc->InsertStationIntoList(pRallyItem, CALL_TO_HEEL_STATION, false);
+//		}
 		else if (this->m_SelectedShapeOnToolBar == ID_DRAW_HONOR){
 			if (this->m_number_honor) {
 				pRallyItem->SetStationNumber(num_stations + 1);
@@ -2122,6 +2122,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	CPen penDot;
 	penDot.CreatePen(PS_DOT, 1, gridColor);
 	CPen* pOldPen = pDC->SelectObject(&penDot);
+	double meter_spacing = this->m_grid_spacing * .3;
 		for (x = rect.left ; x < rect.right; x += (int)pixels_per_grid_wd)
 		{
 			if (x != 0)
@@ -2136,7 +2137,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 					pDC->MoveTo(x, rect.top);
 					pDC->LineTo(x, rect.bottom);
 				}
-				spacing.Format("%d",grid_spacing * this->m_grid_spacing);
+
+				spacing.Format("%.1f",grid_spacing * meter_spacing);
 				pDC->TextOut(x,rect.top, spacing);
 				pDC->TextOut(x,rect.bottom, spacing);
 				grid_spacing++;
@@ -2152,7 +2154,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 					pDC->MoveTo(rect.left, y);
 					pDC->LineTo(rect.right, y);
 				}
-				spacing.Format("%d",grid_spacing * this->m_grid_spacing);
+				spacing.Format("%.1f",grid_spacing * meter_spacing);
+//				spacing.Format("%d",grid_spacing * this->m_grid_spacing);
 				pDC->TextOut(rect.right,y, spacing);
 				pDC->TextOut(rect.left,y, spacing);
 				grid_spacing++;
@@ -2169,7 +2172,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	pDC->LineTo(rect.right, rect.bottom);
 	pDC->LineTo(rect.left, rect.bottom);
 	pDC->LineTo(rect.left, rect.top);
-	spacing.Format("%d",grid_spacing * this->m_grid_spacing);
+	spacing.Format("%.1f",grid_spacing * meter_spacing);
 	pDC->TextOut(rect.right,y, spacing);
 	this->m_grid_rect = rect;
 	pDC->SelectObject(pOldPen);
@@ -6608,7 +6611,7 @@ void CDogRunView::OnUpdateInsertAfter(CCmdUI* pCmdUI)
 		CRallyObject *selected_station;
 		selected_station = (CRallyObject *)this->m_stations_selected.GetHead();
 		string_number = selected_station->GetStringNumber();
-		if (string_number == ID_DRAW_START || string_number == ID_DRAW_FINISH || string_number ==  ID__DRAW_CALLTOHEEL || string_number == ID_PYLONS) {
+		if (string_number == ID_DRAW_START || string_number == ID_DRAW_FINISH || string_number == ID_PYLONS) {
 			pCmdUI->Enable(FALSE);
 		} 
 		else {
