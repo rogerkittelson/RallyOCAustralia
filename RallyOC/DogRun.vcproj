@@ -77,7 +77,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="Release/RallyOC2012.exe"
+				OutputFile="Release/RallyOCAU2016.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				ProgramDatabaseFile=".\Release/RallyOC.pdb"
@@ -171,7 +171,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="Debug/RallyOC2012.exe"
+				OutputFile="Debug/RallyOCAU2016.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				GenerateDebugInformation="true"
@@ -1561,6 +1561,10 @@
 			</File>
 			<File
 				RelativePath=".\res\bmp00045.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00046.bmp"
 				>
 			</File>
 			<File

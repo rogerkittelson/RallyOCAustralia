@@ -2122,7 +2122,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	CPen penDot;
 	penDot.CreatePen(PS_DOT, 1, gridColor);
 	CPen* pOldPen = pDC->SelectObject(&penDot);
-	double meter_spacing = this->m_grid_spacing * .3;
+	double meter_spacing = this->m_grid_spacing * 0.3;
 		for (x = rect.left ; x < rect.right; x += (int)pixels_per_grid_wd)
 		{
 			if (x != 0)
@@ -5784,9 +5784,9 @@ void CDogRunView::OnCourseInfo()
 	courseInfo.m_location = course_info.m_location;
 	courseInfo.m_organization = course_info.m_organization;
 	courseInfo.m_judge = course_info.m_judge;
-	courseInfo.m_length.Format("%d", course_info.m_ring_lenght);
-	courseInfo.m_width.Format("%d", course_info.m_ring_width);
-	courseInfo.m_grid_spacing.Format("%d", course_info.m_grid_spacing);
+	courseInfo.m_length.Format("%.1f", course_info.m_ring_lenght);
+	courseInfo.m_width.Format("%.1f", course_info.m_ring_width);
+	courseInfo.m_grid_spacing.Format("%.1f", course_info.m_grid_spacing);
 
 	courseInfo.m_show_class = course_info.m_cmt_class;
 	courseInfo.m_show_comp = course_info.m_cmt_comp_name;
@@ -5817,9 +5817,9 @@ void CDogRunView::OnCourseInfo()
 	course_info.m_location = courseInfo.m_location;
 	course_info.m_organization= courseInfo.m_organization;
 	course_info.m_judge = courseInfo.m_judge;
-	course_info.m_ring_lenght = atoi(courseInfo.m_length);
-	course_info.m_ring_width = atoi(courseInfo.m_width);
-	course_info.m_grid_spacing = atoi(courseInfo.m_grid_spacing);
+	course_info.m_ring_lenght = atof(courseInfo.m_length);
+	course_info.m_ring_width = atof(courseInfo.m_width);
+	course_info.m_grid_spacing = atof(courseInfo.m_grid_spacing);
 
 	course_info.m_cmt_class = courseInfo.m_show_class;
 	course_info.m_cmt_comp_name = courseInfo.m_show_comp;
@@ -9174,9 +9174,9 @@ void CDogRunView::OnAutorPref()
 	author_dlg.m_class = course_info.m_class;
 	author_dlg.m_judge_name = course_info.m_judge;
 	author_dlg.m_organization= course_info.m_organization;
-	author_dlg.m_ring_lenght.Format("%d", course_info.m_ring_lenght);
-	author_dlg.m_ring_width.Format("%d", course_info.m_ring_width);
-	author_dlg.m_grid_spacing.Format("%d", course_info.m_grid_spacing);
+	author_dlg.m_ring_lenght.Format("%.1f", course_info.m_ring_lenght);
+	author_dlg.m_ring_width.Format("%.1f", course_info.m_ring_width);
+	author_dlg.m_grid_spacing.Format("%.1f", course_info.m_grid_spacing);
 	author_dlg.m_show_path = course_info.m_show_path;
 	author_dlg.m_size_to_screen = course_info.m_size_to_fit;
 	author_dlg.m_auto_add = course_info.m_add_normal;
@@ -9217,7 +9217,7 @@ void CDogRunView::OnAutorPref()
 	course_info.m_organization= author_dlg.m_organization;
 	course_info.m_ring_lenght = atoi(author_dlg.m_ring_lenght);
 	course_info.m_ring_width = atoi(author_dlg.m_ring_width);
-	course_info.m_grid_spacing = atoi(author_dlg.m_grid_spacing);
+	course_info.m_grid_spacing = atof(author_dlg.m_grid_spacing);
 
 	course_info.m_show_path = author_dlg.m_show_path;
 	course_info.m_size_to_fit = author_dlg.m_size_to_screen;

@@ -60,7 +60,7 @@ private:
 	int m_ring_width;
 	int m_ring_lenght;
 	int m_feet_or_meters;
-	int m_grid_spacing;
+	double m_grid_spacing;
 	int m_show_path;
 	int m_stat_num_loc;
 	int m_stat_desc;

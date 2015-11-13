@@ -49,6 +49,37 @@ void AuthorDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(AuthorDlg)
+	double convert;
+	if (pDX->m_bSaveAndValidate)
+	{
+		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+		DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);
+		DDX_Text(pDX, IDC_RING_WIDTH, m_ring_width);
+		convert = atof(m_grid_spacing);
+		convert = convert / 0.3;
+		m_grid_spacing.Format("%.1f",convert);
+		convert = atof(m_ring_lenght);
+		convert = convert / 0.3;
+		m_ring_lenght.Format("%.1f",convert);
+		convert = atof(m_ring_width);
+		convert = convert / 0.3;
+		m_ring_width.Format("%.1f",convert);
+	}
+	else 
+	{
+		convert = atof(m_grid_spacing);
+		convert = convert * 0.3;
+		m_grid_spacing.Format("%.1f",convert);
+		convert = atof(m_ring_lenght);
+		convert = convert * 0.3;
+		m_ring_lenght.Format("%.1f",convert);
+		convert = atof(m_ring_width);
+		convert = convert * 0.3;
+		m_ring_width.Format("%.1f",convert);
+		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+		DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);
+		DDX_Text(pDX, IDC_RING_WIDTH, m_ring_width);
+	}
 	DDX_Control(pDX, IDC_COURSE_FONT, m_text_display);
 	DDX_Radio(pDX, IDC_TYPE_AKC, m_type);
 	DDX_Radio(pDX, IDC_NOVICE, m_class);
@@ -58,13 +89,8 @@ void AuthorDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Radio(pDX, IDC_LIST_BOTTOM, m_list_placement);
 	DDX_Check(pDX, IDC_AUTO_ADD, m_auto_add);
 	DDX_Check(pDX, IDC_COURSE_PATH, m_show_path);
-	double convert = atof(m_grid_spacing);
-	convert = convert * 0.3;
-	m_grid_spacing.Format("%.1f",convert);
-	DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+
 	DDX_Text(pDX, IDC_JUDGE_INST, m_judge_or_instruct);
-	DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);
-	DDX_Text(pDX, IDC_RING_WIDTH, m_ring_width);
 	DDX_Check(pDX, IDC_SIZE_TO_SCREEN, m_size_to_screen);
 	DDX_Check(pDX, IDC_CLASS, m_show_class);
 	DDX_Check(pDX, IDC_COMP_NAME, m_show_comp_name);

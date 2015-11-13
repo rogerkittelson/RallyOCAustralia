@@ -109,9 +109,9 @@ protected:
 	int m_inch_per_horiz;
 	int m_inch_per_vert;
 	CSize m_sizeTotal;
-	int m_ring_width;
-	int m_ring_lenght;
-	int m_grid_spacing;
+	double m_ring_width;
+	double m_ring_lenght;
+	double m_grid_spacing;
 	BOOL m_show_path;
 	int m_stat_num_loc;
 	int m_where_cones;

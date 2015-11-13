@@ -45,14 +45,46 @@ CCourseInfoDlg::CCourseInfoDlg(CWnd* pParent /*=NULL*/)
 
 void CCourseInfoDlg::DoDataExchange(CDataExchange* pDX)
 {
+	double convert;
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CCourseInfoDlg)
-	DDX_Text(pDX, IDC_RING_LENGHT, m_length);
-	DDX_Text(pDX, IDC_RING_WIDTH, m_width);
+	if (pDX->m_bSaveAndValidate)
+	{
+		DDX_Text(pDX, IDC_RING_LENGHT, m_length);
+		DDX_Text(pDX, IDC_RING_WIDTH, m_width);
+		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+		convert = atof(m_length);
+		convert = convert / 0.3;
+		m_length.Format("%.1f",convert);
+		convert = atof(m_width);
+		convert = convert / 0.3;
+		m_width.Format("%.1f",convert);
+		convert = atof(m_grid_spacing);
+		convert = convert / 0.3;
+		m_grid_spacing.Format("%.1f",convert);
+}
+	else 
+	{
+		convert = atof(m_length);
+		convert = convert * 0.3;
+		m_length.Format("%.1f",convert);
+		convert = atof(m_width);
+		convert = convert * 0.3;
+		m_width.Format("%.1f",convert);
+		convert = atof(m_grid_spacing);
+		convert = convert * 0.3;
+		m_grid_spacing.Format("%.1f",convert);
+		DDX_Text(pDX, IDC_RING_LENGHT, m_length);
+		DDX_Text(pDX, IDC_RING_WIDTH, m_width);
+		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+	}
+
+
+
 	DDX_Text(pDX, IDC_COMPETATION, m_compete);
 	DDX_Text(pDX, IDC_JUDGE, m_judge);
 	DDX_Text(pDX, IDC_LOCATION, m_location);
-	DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
+
 	DDX_DateTimeCtrl(pDX, IDC_DATECOMPETE, m_date_compete);
 	DDX_Text(pDX, IDC_JUDGE_INST, m_judge_inst);
 	DDX_Radio(pDX, IDC_NOVICE, m_class);

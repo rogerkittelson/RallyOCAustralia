@@ -219,12 +219,12 @@ struct CourseInfo {
 	CString m_location;
 	CString m_judge;
 	CString m_organization;
-	int m_ring_width;
-	int m_ring_lenght;
+	double m_ring_width;
+	double m_ring_lenght;
 	int m_show_path;
 	int m_stat_num_loc;
 	int m_feet_or_meters;
-	int m_grid_spacing;
+	double m_grid_spacing;
 	BOOL m_size_to_fit;
 	BOOL m_add_normal;
 	int m_print_grid_lines;

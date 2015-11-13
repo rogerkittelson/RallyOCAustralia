@@ -65,7 +65,7 @@ CDogRunDoc::CDogRunDoc()
 	this->m_course_font = NULL;
 	this->m_stat_font = NULL;
 	this->m_text_font = NULL;
-	this->m_version_number = 2.200000;	// REMEMBER TO HARD CODE SERILIZE ON SAVING!!!!
+	this->m_version_number = 4.000000;	// REMEMBER TO HARD CODE SERILIZE ON SAVING!!!!
 
 	this->m_num_undo_actions = 0;
 
@@ -163,11 +163,13 @@ BOOL CDogRunDoc::OnNewDocument()
 }
 BOOL CDogRunDoc::GetApplicationDefaults(void) {
 	CourseInfo course_info;
+	CString grid_spacing;
 //	CClientDC dc(this);
 	course_info.m_class = AfxGetApp()->GetProfileInt(szSection,"Class",0);
 	course_info.m_ring_lenght = AfxGetApp()->GetProfileInt(szSection,"RingLen",50);
 	course_info.m_ring_width = AfxGetApp()->GetProfileInt(szSection,"RingWidth",50);
-	course_info.m_grid_spacing = AfxGetApp()->GetProfileInt(szSection,"Grid",5);
+	grid_spacing = AfxGetApp()->GetProfileString(szSection, "Gridm","5");
+	course_info.m_grid_spacing = atof(grid_spacing);
 	course_info.m_judge = AfxGetApp()->GetProfileString(szSection, "Judge");
 	course_info.m_organization = AfxGetApp()->GetProfileString(szSection, "Organize");
 	course_info.m_show_path = AfxGetApp()->GetProfileInt(szSection,"Path",1);
@@ -271,10 +273,13 @@ BOOL CDogRunDoc::GetApplicationDefaults(void) {
 }
 
 BOOL CDogRunDoc::SetApplicationDefaults(CourseInfo *course_info) {
+	CString grid_spacing;
 	AfxGetApp()->WriteProfileInt(szSection,"Class",course_info->m_class);
 	AfxGetApp()->WriteProfileInt(szSection,"RingLen",course_info->m_ring_lenght);
 	AfxGetApp()->WriteProfileInt(szSection,"RingWidth",course_info->m_ring_width);
-	AfxGetApp()->WriteProfileInt(szSection,"Grid",course_info->m_grid_spacing);
+	grid_spacing.Format("%.1f",course_info->m_grid_spacing);
+	AfxGetApp()->WriteProfileString(szSection,"Gridm",grid_spacing);
+//	AfxGetApp()->WriteProfileInt(szSection,"Grid",course_info->m_grid_spacing);
 	AfxGetApp()->WriteProfileString(szSection, "Judge",course_info->m_judge);
 	AfxGetApp()->WriteProfileString(szSection, "Organize",course_info->m_organization);
 	AfxGetApp()->WriteProfileInt(szSection, "Path",course_info->m_show_path);
@@ -437,7 +442,7 @@ void CDogRunDoc::Serialize(CArchive& ar)
 		// TODO: add storing code here
 // doc info
 //		this->PutListTogether();
-		ar << 3.000000000000000100; //this->m_version_number THIS NEEDS TO HARD CODED ELSE WILL BE OVERWRITTEN!!!
+		ar << 4.000000000000000100; //this->m_version_number THIS NEEDS TO HARD CODED ELSE WILL BE OVERWRITTEN!!!
 		ar << this->m_doc_author;
 		ar << this->m_doc_notes;
 		ar << this->m_doc_created;
@@ -528,7 +533,7 @@ void CDogRunDoc::Serialize(CArchive& ar)
 // doc info 
 		ar >> this->m_version_number;
 		old_version_close = false;
-		if (this->m_version_number < 3.0) {
+		if (this->m_version_number < 4.0) {
 			MessageBox(NULL,"This RallyOC course was created with an earlier version of RallyOC!/rStation List Conversion NOT YET IMPLEMENTED!",NULL,MB_OK);
 			this->GetApplicationDefaults();
 			this->GetApplicationDefaultFonts();

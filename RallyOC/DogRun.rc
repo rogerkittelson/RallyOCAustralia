@@ -2518,8 +2518,8 @@ STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "RallyOCAustralia"
     IDR_DOGRUNTYPE          "\nRallyOCD\nRallyOC\nRallyOCD Files (*.rocd)\n.rocd\nRallyOCD.Document\nRallyOCD Document"
-    IDS_RALLYVER            "1.0.0"
-    IDS_VERSION             "1.0.0"
+    IDS_RALLYVER            "4.0.0"
+    IDS_VERSION             "4.0.0"
     IDR_RALLYO              "Show or hide the station toolbar\nToggle StationToolBar"
 END
 

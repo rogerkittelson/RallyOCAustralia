@@ -370,6 +370,7 @@ HID__DRAW_SITSTAY                       0x18115
 HID__DRAW_CALLTOHEEL                    0x18116
 HID_DRAW_MOVINGSTAND                    0x18117
 HID__LEAVEDOG                           0x18118
+HID__STAND33049                         0x18119
  
 // Prompts (IDP_*) 
  

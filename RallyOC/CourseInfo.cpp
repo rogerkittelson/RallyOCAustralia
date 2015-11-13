@@ -104,6 +104,7 @@ void CCourseInfo::Serialize(CArchive& ar, BOOL serilize_ar, BOOL convert_old_cou
 	{
 		// TODO: add loading code here
 		unsigned int Schema;
+		
         Schema = ar.GetObjectSchema();
         if (convert_old_course && Schema != 1) Schema = 0;
 		switch (Schema)
