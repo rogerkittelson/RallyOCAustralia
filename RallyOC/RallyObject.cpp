@@ -771,10 +771,10 @@ void CRallyObject::DrawStringForStationScoreSheet(CDC* pDC, CPoint top_left) {
 		pDC->TextOut(new_left + 5,new_bottom - (tm.tmHeight*2),string_to_draw);
 		break;
 	case ID_WEAVES_FIGURE8:
-		string_to_draw = "Figure 8 ";
+		string_to_draw = "Four Cone";
 		len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 		pDC->TextOut(new_left + 5,new_bottom - (tm.tmHeight*3),string_to_draw);
-		string_to_draw = "No Distractions";
+		string_to_draw = "Figure 8";
 		len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 		pDC->TextOut(new_left + 5,new_bottom - (tm.tmHeight*2),string_to_draw);
 		break;
@@ -1239,6 +1239,7 @@ void CRallyObject::DrawStationPylons(CDC* pDC, BOOL with_transform, int where_co
 		switch(this->m_rally_string_ID) {
 		case ID_DRAW_OFFSET_8:
 		case ID_WEAVES_FIGURE8:
+					/*
 			if (where_cones != CONE_HIDE) {
 				load_bitmap = hImage.LoadBitmap(IDB_PYLONS);
 				if (load_bitmap) {
@@ -1291,7 +1292,7 @@ void CRallyObject::DrawStationPylons(CDC* pDC, BOOL with_transform, int where_co
 
 						break;
 					}
-					/*
+
 					draw = pDC->BitBlt(this->m_midPoint.x + (int)shift - bmpInfo.bmWidth/2, this->m_midPoint.y, bmpInfo.bmWidth, bmpInfo.bmHeight, 
 						&memDC, 0, 0, SRCAND);
 					draw = pDC->BitBlt(this->m_midPoint.x - (int)shift - bmpInfo.bmWidth/2, this->m_midPoint.y , bmpInfo.bmWidth, bmpInfo.bmHeight, 
@@ -1302,9 +1303,10 @@ void CRallyObject::DrawStationPylons(CDC* pDC, BOOL with_transform, int where_co
 					pDC->LineTo(this->m_midPoint.x + (int)shift - bmpInfo.bmWidth/2 + bmpInfo.bmWidth,this->m_midPoint.y + bmpInfo.bmHeight);
 					pDC->LineTo(this->m_midPoint.x - (int)shift - bmpInfo.bmWidth/2,this->m_midPoint.y + bmpInfo.bmHeight);
 					pDC->LineTo(this->m_midPoint.x - (int)shift - bmpInfo.bmWidth/2,this->m_midPoint.y);
-					*/
+
 				}
 			}
+					*/
 			break;
 
 		case ID_DRAW_SERP_ONCE:
@@ -1508,6 +1510,7 @@ void CRallyObject::DrawStationPylons(CDC* pDC, BOOL with_transform, int where_co
 	else { // no free hand rotation
 
 		switch(this->m_rally_string_ID) {
+/*
 		case ID_DRAW_OFFSET_8:
 		case ID_WEAVES_FIGURE8:
 			load_bitmap = hImage.LoadBitmap(IDB_PYLONS);
@@ -1548,7 +1551,7 @@ void CRallyObject::DrawStationPylons(CDC* pDC, BOOL with_transform, int where_co
 				}
 			}
 			break;
-
+*/
 		case ID_DRAW_SERP_ONCE:
 		case ID_DRAW_WEAVE_TWICE:
 			load_bitmap = hImage.LoadBitmap(IDB_PYLONS);
@@ -6677,42 +6680,42 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID_WEAVES_FIGURE8:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "Figure 8";
+			string_to_draw = "Four Cone";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
-			string_to_draw = "No Distractions";
+			string_to_draw = "Figure 8";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*1),string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "Figure 8";
+			string_to_draw = "Four Cone";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 25,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "No Distractions";
+			string_to_draw = "Figure 8";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 25,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "Figure 8";
+			string_to_draw = "Four Cone";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*3) + 5,string_to_draw);
-			string_to_draw = "No Distractions";
+			string_to_draw = "Figure 8";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*2) + 5,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "Figure 8";
+			string_to_draw = "Four Cone";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left - 15,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
-			string_to_draw = "No Distractions";
+			string_to_draw = "Figure 8";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left - 15,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
 			break;
 		default:
-			string_to_draw = "Figure 8";
+			string_to_draw = "Four Cone";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
-			string_to_draw = "No Distractions";
+			string_to_draw = "Figure 8";
 			len = string_to_draw.GetLength() * tm.tmAveCharWidth + 15;
 			pDC->TextOut(this->m_station_rect.left + 5,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
 			break;

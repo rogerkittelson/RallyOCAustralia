@@ -16,6 +16,7 @@ public:
 	static void GetAKCNoviceList(CStringList& Items);
 	static void GetAKCAdvancedList(CStringList& Items);
 	static void GetAKCExcellentList(CStringList& Items);
+	static void GetAKCMasterList(CStringList& Items);
 	static void GetStationDescriptionByAKCType(int type_class, CStringList& Items);
 	static int GetComboBoxSelectionFromAKCid(int akc_number);
 	static int GetAKCidFromComboBoxSelection(int choice);

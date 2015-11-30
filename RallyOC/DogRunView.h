@@ -399,6 +399,7 @@ protected:
 	afx_msg void OnUpdateNonstationary(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateStationary(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateAdvanced(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateMaster(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateExcellent(CCmdUI* pCmdUI);
 	afx_msg void OnSaveBitmap();
 	afx_msg void OnRegDialog();

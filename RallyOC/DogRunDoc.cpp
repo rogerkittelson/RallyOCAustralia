@@ -1073,7 +1073,7 @@ POSITION CDogRunDoc::InsertStationIntoList(CRallyObject *p_rally_station_add, in
 			}
 		}
 		this->m_num_stations++;
-		if (have_sit_stay) this->SetNewSitStayNumber(this->m_num_stations + 1);
+//		if (have_sit_stay) this->SetNewSitStayNumber(this->m_num_stations + 1);
 		this->m_rallyList.SetLastNumber(this->m_num_stations);
 		break;
 	}
@@ -1719,6 +1719,9 @@ void CDogRunDoc::OnPrintScoreSheet()
 				case EXCELLENT:
 					rally_class += "Excellent ";		
 					break;
+				case MASTER:
+					rally_class = "Master";		
+					break;
 				case TRAINING:
 					rally_class += "Training ";
 				}
@@ -1972,6 +1975,7 @@ int store_bottom_of_text = bottom_of_text;
 					}
 				}
 				else {
+					have_honor = false;
 					if (have_honor) {
 						if (course_info.m_number_honor > 0) {
 							if (this->m_sspo_station_number)station_number_text.Format("%d. ",this->m_num_stations + 1);
@@ -2074,6 +2078,9 @@ void CDogRunDoc::OnCopyScoreSheet()
 				break;
 			case EXCELLENT:
 				rally_class += "Excellent ";		
+				break;
+			case MASTER:
+				rally_class = "Master";		
 				break;
 			case TRAINING:
 				rally_class += "Training ";
@@ -2191,10 +2198,10 @@ void CDogRunDoc::OnCopyScoreSheet()
 				if (this->m_sspo_station_number)station_number_text.Format("%d. ",station_number);
 				int honor_station = pRallyItemInlist->GetAKCNumber();
 				if (this->m_sspo_akc_number)akc_number_text.Format(" (%d)", honor_station);
-				if (honor_station == 50) {
+				if (honor_station == 5000) {
 					have_honor = true;
 				}
-				if (station_number > 0 && honor_station != 50) {
+				if (station_number > 0) {
 					if (this->m_sspo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber()); 
 					station_desc = station_number_text + station_name + akc_number_text;
 					strResult += station_desc + "____________________\r\n";
@@ -2202,6 +2209,7 @@ void CDogRunDoc::OnCopyScoreSheet()
 				}
 			}
 			else {
+				have_honor = false;
 				if (have_honor) {
 					if (course_info.m_number_honor > 0) {
 						if (this->m_sspo_station_number)station_number_text.Format("%d. ",this->m_num_stations + 1);
@@ -2435,7 +2443,7 @@ void CDogRunDoc::OnPrintStationList()
 	CFont list_font;
 	CFont* def_font;
 	POSITION pos;
-	Verify verify_course;
+//	Verify verify_course;
 	CPoint station_location;
 	CString strResult;	
 	CourseInfo course_info;
@@ -2523,6 +2531,9 @@ void CDogRunDoc::OnPrintStationList()
 				case EXCELLENT:
 					rally_class += "Excellent ";		
 					break;
+				case MASTER:
+					rally_class = "Master";		
+					break;
 				case TRAINING:
 					rally_class += "Training ";
 				}
@@ -2592,12 +2603,12 @@ void CDogRunDoc::OnPrintStationList()
 				if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber())  + " ";
 				if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 
-				if (akc_station_number == 50) {
+				if (akc_station_number == 5000) {
 					have_honor = true;
 					honor_location = station_location;
 
 				}
-				if (akc_station_number != 50) {
+				if (akc_station_number != 5000) {
 					if (akc_station_number == 1 || akc_station_number == 2) {
 						station_desc = "   " + station_name + akc_number_text + x_y_location;
 //						station_desc.Format("   %s (AKC # %d)  %d-%d",this->m_rallyList.akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber(), station_location.x, station_location.y);
@@ -2612,6 +2623,7 @@ void CDogRunDoc::OnPrintStationList()
 					strResult += station_desc + "\r\n";
 				}
 			}
+			have_honor = false;
 			if (have_honor) {
 				if (this->m_slpo_station_number) station_number_text.Format("%d ",this->m_num_stations + 1);
 				if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d)",50);
@@ -2637,8 +2649,8 @@ void CDogRunDoc::OnPrintStationList()
 				top_left.x = text_margin;
 				top_left.y = line_number;
 				line_number += (int)2 * line_height;
-				verify_course.VerifyCourse(this,false, course_info.m_type_of_course);
-				temp_error = verify_course.GetStationStatistics();
+//				verify_course.VerifyCourse(this,false, course_info.m_type_of_course);
+//				temp_error = verify_course.GetStationStatistics();
 				strResult += temp_error + "\r\n";
 
 				while(not_done) {
@@ -2673,7 +2685,7 @@ void CDogRunDoc::OnCopyList()
 	BOOL not_done = true;
 	CRallyObject* pRallyItemInlist;
 	POSITION pos;
-	Verify verify_course;
+//	Verify verify_course;
 	CPoint station_location, honor_location;
 	CString strResult;	
 	CourseInfo course_info;
@@ -2709,7 +2721,10 @@ void CDogRunDoc::OnCopyList()
 			case EXCELLENT:
 				rally_class = "Excellent";		
 				break;
-			case TRAINING:
+			case MASTER:
+				rally_class = "Master";		
+				break;
+				case TRAINING:
 				rally_class = "Training";
 			}
 		}
@@ -2760,12 +2775,12 @@ void CDogRunDoc::OnCopyList()
 			if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber()) + " ";
 			if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 
-			if (akc_station_number == 50) {
+			if (akc_station_number == 5000) {
 				have_honor = true;
 				honor_location = station_location;
 
 			}
-			if (akc_station_number != 50) {
+			if (akc_station_number != 5000) {
 				if (akc_station_number == 1 || akc_station_number == 2) {
 					station_desc = "   " + station_name + akc_number_text + x_y_location;
 //					station_desc.Format("   %s (AKC # %d)  %d-%d",this->m_rallyList.akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber(), station_location.x, station_location.y);
@@ -2777,6 +2792,7 @@ void CDogRunDoc::OnCopyList()
 				strResult += station_desc + "\r\n";
 			}
 		}
+		have_honor = false;
 		if (have_honor) {
 			if (this->m_slpo_station_number) station_number_text.Format("%d ",this->m_num_stations + 1);
 			if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d)",50);
@@ -2835,7 +2851,7 @@ void CDogRunDoc::OnCopyStats()
 	BOOL not_done = true;
 
 	POSITION pos;
-	Verify verify_course;
+//	Verify verify_course;
 	CPoint station_location, honor_location;
 	CString strResult;	
 	CourseInfo course_info;
@@ -2860,6 +2876,9 @@ void CDogRunDoc::OnCopyStats()
 	case EXCELLENT:
 		rally_class = "Excellent";		
 		break;
+	case MASTER:
+		rally_class = "Master";		
+		break;
 	case TRAINING:
 		rally_class = "Training";
 	}	
@@ -2871,8 +2890,8 @@ void CDogRunDoc::OnCopyStats()
 	pos = this->m_rallyList.GetHeadPosition();
 	if (pos != NULL) {
 
-		verify_course.VerifyCourse(this,false, course_info.m_type_of_course);
-		temp_error = verify_course.GetStationStatistics();
+//		verify_course.VerifyCourse(this,false, course_info.m_type_of_course);
+//		temp_error = verify_course.GetStationStatistics();
 		strResult += temp_error + "\r\n";
 
 		while(not_done) {
@@ -3021,6 +3040,9 @@ void CDogRunDoc::OnPrintListDesc()
 				case EXCELLENT:
 					rally_class += "Excellent";		
 					break;
+				case MASTER:
+					rally_class = "Master";		
+					break;
 				case TRAINING:
 					rally_class += "Training";
 				}
@@ -3056,7 +3078,7 @@ void CDogRunDoc::OnPrintListDesc()
 		if (pos != NULL) {
 			CPoint top_left, bottom_right;
 			int mid_text;
-			BOOL have_honor;
+			BOOL have_honor = false;
 			top_left.y = top_of_text;
 			top_left.x = text_margin;
 			bottom_right.y = top_left.y + line_height +5;
@@ -3079,12 +3101,7 @@ void CDogRunDoc::OnPrintListDesc()
 				if (this->m_sdpo_station_name) station_name = StationMapper::GetAKCDetailedDescrptionFromAKCNumber(akc_station_number) + " ";
 				if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 
-				if (akc_station_number == 50) {
-					have_honor = true;
-					honor_location = station_location;
-
-				}
-				if (akc_station_number != 50) {
+				if (akc_station_number != 1000) {
 					if (akc_station_number == 1 || akc_station_number == 2) {
 						station_desc = station_name + akc_number_text + x_y_location;
 //						station_desc.Format("   %s (AKC # %d)",this->akc_station_desc[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
@@ -3129,6 +3146,7 @@ void CDogRunDoc::OnPrintListDesc()
 //					text_rect.top = temp_rect.bottom;
 				}
 			}
+			have_honor = false;
 			if (have_honor) {
 				if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 				if (course_info.m_number_honor > 0) {
@@ -3191,7 +3209,7 @@ void CDogRunDoc::OnCopyDesc()
 	BOOL not_done = true;
 	CRallyObject* pRallyItemInlist;
 	POSITION pos;
-	Verify verify_course;
+//	Verify verify_course;
 	CString strResult;	
 	CourseInfo course_info;
 	CString out_string, rally_date, rally_class, temp_error;
@@ -3223,6 +3241,9 @@ void CDogRunDoc::OnCopyDesc()
 				break;
 			case EXCELLENT:
 				rally_class = "Excellent";		
+				break;
+			case MASTER:
+				rally_class = "Master";		
 				break;
 			case TRAINING:
 				rally_class = "Training";
@@ -3270,12 +3291,12 @@ void CDogRunDoc::OnCopyDesc()
 			if (this->m_sdpo_station_name) station_name =  StationMapper::GetAKCDetailedDescrptionFromAKCNumber(akc_station_number) + " ";
 			if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 	
-			if (akc_station_number == 50) {
+			if (akc_station_number == 5000) {
 				have_honor = true;
 				honor_location = station_location;
 
 			}
-			if (akc_station_number != 50) {
+			if (akc_station_number != 5000) {
 				if (akc_station_number == 1 || akc_station_number == 2) {
 					station_desc = station_name + akc_number_text + x_y_location;
 //					station_desc.Format("   %s (AKC # %d)",this->akc_station_desc[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
@@ -3288,6 +3309,7 @@ void CDogRunDoc::OnCopyDesc()
 				strResult += station_desc + "\r\n";
 			}
 		}
+		have_honor = false;
 		if (have_honor) {
 			if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 			if (course_info.m_number_honor > 0) {
@@ -3378,7 +3400,7 @@ void CDogRunDoc::AddArrow(CRallyObject* pRallyItemAdded, bool from_undo_delete)
 			int station_id = pRallyItemInlist->GetStationID();
 			int station_number = pRallyItemInlist->GetStationNumber();
 			int string_number = pRallyItemInlist->GetStringNumber();
-			if (station_number != START_STATION && station_number != CALL_TO_HEEL_STATION && string_number != ID__DRAW_SITSTAY ) {
+			if (station_number != START_STATION) {// && station_number != CALL_TO_HEEL_STATION && string_number != ID__DRAW_SITSTAY ) {
 				m_rallyList.CalculateEntryExitPoints(pRallyItemAdded, pRallyItemInlist, &cp_entry, &cp_exit);
 				p_Arrow = new ArrowObj(&cp_entry, &cp_exit, &this->m_default_pen, pRallyItemInlist->GetStationNumber(), pRallyItemAdded->GetStationNumber(), this->m_default_arrow_type, this->m_move_arrows_with_station, false);
 				if (bitmap_num == IDB_FINISH) {
@@ -3401,7 +3423,7 @@ void CDogRunDoc::AddArrow(CRallyObject* pRallyItemAdded, bool from_undo_delete)
 			int station_number = pRallyItemInlist->GetStationNumber();
 			int string_number = pRallyItemInlist->GetStringNumber();
 
-			if (station_number != FINISH_STATION && station_number != CALL_TO_HEEL_STATION && string_number != ID__DRAW_SITSTAY) {
+			if (station_number != FINISH_STATION) {// && station_number != CALL_TO_HEEL_STATION && string_number != ID__DRAW_SITSTAY) {
 				m_rallyList.CalculateEntryExitPoints(pRallyItemInlist, pRallyItemAdded, &cp_entry, &cp_exit);
 				p_Arrow = new ArrowObj(&cp_entry, &cp_exit, &this->m_default_pen, pRallyItemAdded->GetStationNumber(), pRallyItemInlist->GetStationNumber(), this->m_default_arrow_type, this->m_move_arrows_with_station, false);
 				p_Arrow->SetEntryOwner(FINISH_STATION);
@@ -3446,10 +3468,6 @@ void CDogRunDoc::AddArrow(CRallyObject* pRallyItemAdded, bool from_undo_delete)
 		station_number_add = pRallyItemAdded->GetStationNumber();
 		bool have_sit_stay = this->m_rallyList.HaveSitStayStation();
 		bool handle_sit_stay = false;
-		if (station_number == ID__DRAW_SITSTAY)
-		{
-			break;
-		}
 		if (from_undo_delete && (station_number_add != this->m_num_stations)){
 			pRallyItemInlist = this->m_rallyList.FindRallyStationByStationNumber(station_number_add+1);
 			if (pRallyItemInlist != NULL) {
@@ -4081,7 +4099,7 @@ void CDogRunDoc::OnCopyHtml()
 	
 	CourseInfo course_info;
 	this->m_course_info->GetCourseInfo(&course_info);
-	have_honor = this->HonorStationInList(course_info.m_type_of_course);
+	have_honor = false;
 	have_start = this->StartStationInList();
 	have_finish = this->FinishStationInList();
 	CString out_string, rally_date, rally_class;
@@ -4104,6 +4122,9 @@ void CDogRunDoc::OnCopyHtml()
 			case EXCELLENT:
 				rally_class += "Excellent ";		
 				break;
+		case MASTER:
+			rally_class = "Master";		
+			break;
 			case TRAINING:
 				rally_class += "Training ";
 			}
@@ -4393,7 +4414,7 @@ CString CDogRunDoc::CreateStationDescription(CString station_desc, int row_numbe
 	have_start = this->StartStationInList();
 	have_finish = this->FinishStationInList();
 	this->m_course_info->GetCourseInfo(&course_info);
-	have_honor = this->HonorStationInList(course_info.m_type_of_course);
+	have_honor = false;
 	int total_number_of_stations = this->m_rallyList.GetCount();
 	station_number_look_up = row_number;
 	if (row_number > total_number_of_stations) {
@@ -4426,6 +4447,7 @@ CString CDogRunDoc::CreateStationDescription(CString station_desc, int row_numbe
 		station_desc.Replace("&nbsp;",station_desc_text);
 		return station_desc;
 	}
+	have_honor = false;
 	if (have_honor) {
 		pRallyItemInlist = this->m_rallyList.FindRallyStationByStationNumber(HONOR_STATION);
 		station_desc_text.Format("%s",StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber()));

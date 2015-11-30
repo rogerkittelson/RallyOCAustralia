@@ -63,6 +63,7 @@ protected:
 	afx_msg void OnNonstationary();
 	afx_msg void OnAdvanced();
 	afx_msg void OnExcellent();
+	afx_msg void OnMaster();
 	afx_msg void OnNovice();
 	afx_msg void OnPivot();
 	afx_msg void OnViewRallyList();

@@ -249,6 +249,7 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_STATIONARY, OnUpdateStationary)
 	ON_UPDATE_COMMAND_UI(ID_ADVANCED, OnUpdateAdvanced)
 	ON_UPDATE_COMMAND_UI(ID_EXCELLENT, OnUpdateExcellent)
+	ON_UPDATE_COMMAND_UI(ID_MASTER, OnUpdateMaster)
 	ON_COMMAND(ID_SAVE_BITMAP, OnSaveBitmap)
 	ON_COMMAND(ID_REG_DIALOG, OnRegDialog)
 	ON_WM_ERASEBKGND()
@@ -2111,9 +2112,9 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	double pixels_per_foot_ht;
 	double pixels_per_grid_ht;
 
-	pixels_per_foot_wd = this->m_inch_per_horiz / 5;	// setting for screen display is approx 1 inch = 5 ft;
+	pixels_per_foot_wd = this->m_inch_per_horiz / 1.5;	// setting for screen display is approx 1 inch = 5 ft;
 	pixels_per_grid_wd = pixels_per_foot_wd * this->m_grid_spacing;
-	pixels_per_foot_ht = this->m_inch_per_vert / 5;	// setting for screen display is 1 inch = 5 ft;
+	pixels_per_foot_ht = this->m_inch_per_vert / 1.5;	// setting for screen display is 1 inch = 5 ft;
 	pixels_per_grid_ht = pixels_per_foot_ht * this->m_grid_spacing;
 	rect.right = (long)pixels_per_foot_wd * this->m_ring_width;
 	rect.bottom = (long)pixels_per_foot_ht * this->m_ring_lenght;
@@ -2122,7 +2123,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	CPen penDot;
 	penDot.CreatePen(PS_DOT, 1, gridColor);
 	CPen* pOldPen = pDC->SelectObject(&penDot);
-	double meter_spacing = this->m_grid_spacing * 0.3;
+//	double meter_spacing = this->m_grid_spacing * 0.3;
 		for (x = rect.left ; x < rect.right; x += (int)pixels_per_grid_wd)
 		{
 			if (x != 0)
@@ -2138,7 +2139,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 					pDC->LineTo(x, rect.bottom);
 				}
 
-				spacing.Format("%.1f",grid_spacing * meter_spacing);
+//				spacing.Format("%.1f",grid_spacing * meter_spacing);
+				spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
 				pDC->TextOut(x,rect.top, spacing);
 				pDC->TextOut(x,rect.bottom, spacing);
 				grid_spacing++;
@@ -2154,8 +2156,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 					pDC->MoveTo(rect.left, y);
 					pDC->LineTo(rect.right, y);
 				}
-				spacing.Format("%.1f",grid_spacing * meter_spacing);
-//				spacing.Format("%d",grid_spacing * this->m_grid_spacing);
+//				spacing.Format("%.1f",grid_spacing * meter_spacing);
+				spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
 				pDC->TextOut(rect.right,y, spacing);
 				pDC->TextOut(rect.left,y, spacing);
 				grid_spacing++;
@@ -2172,7 +2174,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	pDC->LineTo(rect.right, rect.bottom);
 	pDC->LineTo(rect.left, rect.bottom);
 	pDC->LineTo(rect.left, rect.top);
-	spacing.Format("%.1f",grid_spacing * meter_spacing);
+//	spacing.Format("%.1f",grid_spacing * meter_spacing);
+	spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
 	pDC->TextOut(rect.right,y, spacing);
 	this->m_grid_rect = rect;
 	pDC->SelectObject(pOldPen);
@@ -2182,8 +2185,8 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	m_bmp_save_rect = rect;
 	CDogRunDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);	
-	pDoc->m_pixels_per_foot_ht = pDoc->m_station_list->m_pixels_per_foot_ht = pixels_per_foot_ht;
-	pDoc->m_pixels_per_foot_wd = pDoc->m_station_list->m_pixels_per_foot_wd = pixels_per_foot_wd;
+	pDoc->m_pixels_per_foot_ht = pDoc->m_station_list->m_pixels_per_foot_ht = this->m_inch_per_horiz / 5;
+	pDoc->m_pixels_per_foot_wd = pDoc->m_station_list->m_pixels_per_foot_wd = this->m_inch_per_vert / 5;
 	
 }
 
@@ -5527,14 +5530,17 @@ void CDogRunView::UpdateChangeToMenu(CMenu* insert_menu) {
 	else {
 		switch (course_info.m_class) {
 		case NOVICE:
-			class_cutoff = 29;
+			class_cutoff = 32;
 			break;
 		case ADVANCED:
-			class_cutoff = 50;
+			class_cutoff = 46;
 			break;
 		case EXCELLENT:
+			class_cutoff = 53;
+			break;
+		case MASTER:
 		case TRAINING:
-			class_cutoff = 60;
+			class_cutoff = 59;
 			break;
 		}
 		for (i=0;i<class_cutoff;i++) {
@@ -6010,8 +6016,8 @@ void CDogRunView::OnUpdateDrawStand(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
-	else pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING ) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_STAND) 
 		pCmdUI->SetCheck(TRUE);
@@ -6056,7 +6062,7 @@ void CDogRunView::OnUpdateDrawStanddown(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_STANDDOWN) 
@@ -6101,7 +6107,7 @@ void CDogRunView::OnUpdateSlowForwardFromSit(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	if (course_info.m_class == NOVICE || course_info.m_class == ADVANCED) pCmdUI->Enable(FALSE);
 	else pCmdUI->Enable(TRUE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_SLOWFORWARDFROMSIT) 
@@ -6127,7 +6133,7 @@ void CDogRunView::OnUpdateDrawStandsit(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_STANDSIT) 
@@ -7473,7 +7479,7 @@ void CDogRunView::OnUpdateDrawMoveDownWalk(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_MOVE_DOWN) 
@@ -7495,7 +7501,7 @@ void CDogRunView::OnUpdateDrawMoveStandWalk(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_MOVE_STAND_WALK) 
@@ -7561,7 +7567,7 @@ void CDogRunView::OnUpdateDrawSitStay(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_SITSTAY) 
@@ -7583,7 +7589,7 @@ void CDogRunView::OnUpdateDrawCalltoHeel(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER|| course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_CALLTOHEEL) 
@@ -7605,7 +7611,7 @@ void CDogRunView::OnUpdateDrawDownWhileHeeling(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_DOWNWHILEHEELING) 
@@ -7671,7 +7677,7 @@ void CDogRunView::OnUpdateDrawStandDownLeave(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__STAND_LEAVE_DOWN) 
@@ -8119,7 +8125,7 @@ void CDogRunView::OnUpdateDrawBackup3(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == EXCELLENT || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
 	else pCmdUI->Enable(FALSE);
 
 	if (this->m_SelectedShapeOnToolBar == ID_DRAW_BACKUP_3) 
@@ -8216,7 +8222,7 @@ void CDogRunView::OnUpdateDrawTwoStepsForward(CCmdUI* pCmdUI)
 	CourseInfo course_info;
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
-	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	if (course_info.m_class == NOVICE || course_info.m_class == ADVANCED || course_info.m_class == EXCELLENT) pCmdUI->Enable(FALSE);
 	else pCmdUI->Enable(TRUE);
 
 	if (this->m_SelectedShapeOnToolBar == ID__DRAW_2_STEPS_FORWARD) 
@@ -8312,8 +8318,8 @@ void CDogRunView::OnUpdateFig8NoDistractions(CCmdUI* pCmdUI)
 	pDoc->m_course_info->GetCourseInfo(&course_info);
 	ASSERT_VALID(pDoc);
 	
-	pCmdUI->Enable(TRUE);
-
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER || course_info.m_class == TRAINING)pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
 	if (this->m_SelectedShapeOnToolBar == ID_WEAVES_FIGURE8) 
 		pCmdUI->SetCheck(TRUE);
 	else 
@@ -8399,7 +8405,18 @@ void CDogRunView::OnUpdateExcellent(CCmdUI* pCmdUI)
 	else pCmdUI->Enable(TRUE);
 
 }
+void CDogRunView::OnUpdateMaster(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);	
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
 
+	if (course_info.m_class == NOVICE || course_info.m_class == ADVANCED || course_info.m_class == EXCELLENT) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+}
 
 void CDogRunView::OnSaveBitmap() 
 {
@@ -9147,8 +9164,8 @@ void CDogRunView::SetUpCourseVariablesAndGrid()
 	this->m_number_honor = course_info.m_number_honor;
 	this->m_inch_per_horiz = dc.GetDeviceCaps(LOGPIXELSX);
 	this->m_inch_per_vert = dc.GetDeviceCaps(LOGPIXELSY);
-	this->m_sizeTotal.cx = this->m_ring_width * (this->m_inch_per_horiz / 5) + 50;
-	this->m_sizeTotal.cy = this->m_ring_lenght * (this->m_inch_per_vert / 5)+ 50;	
+	this->m_sizeTotal.cx = this->m_ring_width * (this->m_inch_per_horiz / 1.5) + 50;
+	this->m_sizeTotal.cy = this->m_ring_lenght * (this->m_inch_per_vert / 1.5)+ 50;	
 	CSize scroll_size = this->m_sizeTotal;
 	if (this->m_size_to_fit) {
 		scroll_size.cx = 0;

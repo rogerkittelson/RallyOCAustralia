@@ -54,25 +54,25 @@ void CCourseInfoDlg::DoDataExchange(CDataExchange* pDX)
 		DDX_Text(pDX, IDC_RING_WIDTH, m_width);
 		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
 		convert = atof(m_length);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_length.Format("%.1f",convert);
 		convert = atof(m_width);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_width.Format("%.1f",convert);
 		convert = atof(m_grid_spacing);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_grid_spacing.Format("%.1f",convert);
 }
 	else 
 	{
 		convert = atof(m_length);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_length.Format("%.1f",convert);
 		convert = atof(m_width);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_width.Format("%.1f",convert);
 		convert = atof(m_grid_spacing);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_grid_spacing.Format("%.1f",convert);
 		DDX_Text(pDX, IDC_RING_LENGHT, m_length);
 		DDX_Text(pDX, IDC_RING_WIDTH, m_width);
@@ -109,6 +109,7 @@ BEGIN_MESSAGE_MAP(CCourseInfoDlg, CDialog)
 	ON_BN_CLICKED(IDC_ADVANCED, OnAdvanced)
 	ON_BN_CLICKED(IDC_EXCELLENT, OnExcellent)
 	ON_BN_CLICKED(IDC_TRAINING, OnTraining)
+	ON_BN_CLICKED(IDC_MASTER, OnMaster)
 	ON_BN_CLICKED(IDC_TYPE_AKC, OnTypeAkc)
 	ON_BN_CLICKED(IDC_TYPE_APDT, OnTypeApdt)
 	ON_WM_SHOWWINDOW()
@@ -158,7 +159,13 @@ void CCourseInfoDlg::OnExcellent()
 	judge_inst_ed = this->GetDlgItem(IDC_JUDGE_INST);
 	judge_inst_ed->SetWindowText("Judge:");
 }	
-
+void CCourseInfoDlg::OnMaster() 
+{
+	// TODO: Add your control notification handler code here
+	CWnd *judge_inst_ed;
+	judge_inst_ed = this->GetDlgItem(IDC_JUDGE_INST);
+	judge_inst_ed->SetWindowText("Judge:");
+}
 
 void CCourseInfoDlg::OnTraining() 
 {
@@ -172,11 +179,13 @@ void CCourseInfoDlg::OnTraining()
 void CCourseInfoDlg::OnTypeAkc() 
 {
 	// TODO: Add your control notification handler code here
-	CWnd *novice, *advanced, *excellent;
+	CWnd *novice, *advanced, *excellent, *master;
 	novice = this->GetDlgItem(IDC_NOVICE);
 	novice->SetWindowText("Novice:");
 	advanced = this->GetDlgItem(IDC_ADVANCED);
 	advanced->SetWindowText("Advanced:");
+	master = this->GetDlgItem(IDC_MASTER);
+	master->SetWindowText("Master:");
 	excellent = this->GetDlgItem(IDC_EXCELLENT);
 	excellent->SetWindowText("Excellent:");		
 }

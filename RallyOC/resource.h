@@ -155,6 +155,8 @@
 #define IDB_SPIRAL_RT_1A                230
 #define ID_POPUP_SCR_MENU               230
 #define IDB_SPIRAL_RT_1B                231
+#define IDR_EXCELLENT1                  231
+#define IDR_MASTER                      231
 #define IDB_SPIRAL_LT                   232
 #define IDB_TABLE_TOOL                  233
 #define IDB_BR_JUMP_TOOL                234
@@ -173,6 +175,7 @@
 #define IDB_BITMAP1                     245
 #define IDB_JUMP1                       246
 #define IDB_360_CIRCLE_HEEL             246
+#define IDB_FOUR_CONE_FIG8              247
 #define IDC_AUTHOR                      1000
 #define ID_CH_MENU_1                    1000
 #define IDC_NOTES                       1001
@@ -372,6 +375,8 @@
 #define IDC_STATIC_TYPE                 1146
 #define IDC_ONE_INCH                    1148
 #define IDC_LEFT_MARGIN                 1149
+#define IDC_MASTERS                     1151
+#define IDC_MASTER                      1152
 #define PRINTDLGORD                     1538
 #define ID_DRAW_SLOW                    32600
 #define ID_DRAW_FAST                    32601
@@ -672,6 +677,7 @@
 #define ID_DRAW_MOVINGSTAND             33047
 #define ID__LEAVEDOG                    33048
 #define ID__STAND33049                  33049
+#define ID_MASTER                       33050
 
 // Next default values for new objects
 // 
@@ -679,8 +685,8 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        246
-#define _APS_NEXT_COMMAND_VALUE         33050
-#define _APS_NEXT_CONTROL_VALUE         1151
+#define _APS_NEXT_COMMAND_VALUE         33051
+#define _APS_NEXT_CONTROL_VALUE         1153
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

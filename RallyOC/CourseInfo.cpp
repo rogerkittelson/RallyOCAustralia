@@ -352,6 +352,9 @@ void CCourseInfo::DrawCourseInfo(CDC *pDC, BOOL show_station_list, CRect *grid_r
 		case EXCELLENT:
 			rally_class = "Excellent";		
 			break;
+		case MASTER:
+			rally_class = "Master";		
+			break;
 		case TRAINING:
 			rally_class = "Training";
 		}

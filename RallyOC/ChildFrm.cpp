@@ -34,6 +34,7 @@ BEGIN_MESSAGE_MAP(CChildFrame, CMDIChildWnd)
 	ON_COMMAND(ID_NONSTATIONARY, OnNonstationary)
 	ON_COMMAND(ID_ADVANCED, OnAdvanced)
 	ON_COMMAND(ID_EXCELLENT, OnExcellent)
+	ON_COMMAND(ID_MASTER, OnMaster)
 	ON_COMMAND(ID_NOVICE, OnNovice)
 	ON_COMMAND(ID_PIVOT, OnPivot)
 	ON_COMMAND(ID_VIEW_RALLY_LIST, OnViewRallyList)
@@ -568,7 +569,24 @@ void CChildFrame::OnExcellent()
 		}
 	}
 }
+void CChildFrame::OnMaster() 
+{
+	// TODO: Add your command handler code here
+	CMenu menu;
+	CDogRunDoc* pDoc = (CDogRunDoc*)GetActiveDocument();
+	ASSERT_KINDOF(CDogRunDoc, pDoc);
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
 
+	if (course_info.m_type_of_course == AKC_COURSE) {
+		if (menu.LoadMenu(IDR_MASTER)) {
+			CMenu* pPopup = menu.GetSubMenu(0);
+			ASSERT(pPopup != NULL);
+			pPopup->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, this->m_point.x, this->m_point.y, AfxGetMainWnd()); // route commands through main window
+		}
+	}
+
+}
 void CChildFrame::OnNovice() 
 {
 	// TODO: Add your command handler code here

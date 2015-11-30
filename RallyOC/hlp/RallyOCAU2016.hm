@@ -371,6 +371,7 @@ HID__DRAW_CALLTOHEEL                    0x18116
 HID_DRAW_MOVINGSTAND                    0x18117
 HID__LEAVEDOG                           0x18118
 HID__STAND33049                         0x18119
+HID_MASTER                              0x1811A
  
 // Prompts (IDP_*) 
  
@@ -408,6 +409,8 @@ HIDR_DRAW                               0x200CA
 HIDR_ADD_AKC                            0x200E0
 HIDR_ADD_APDT                           0x200E1
 HIDR_PATTERN                            0x200E5
+HIDR_EXCELLENT1                         0x200E7
+HIDR_MASTER                             0x200E7
  
 // Dialogs (IDD_*) 
 HIDD_ABOUTBOX                           0x20064

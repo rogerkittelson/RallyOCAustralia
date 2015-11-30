@@ -57,6 +57,7 @@ protected:
 	afx_msg void OnNovice();
 	afx_msg void OnAdvanced();
 	afx_msg void OnExcellent();
+	afx_msg void OnMaster();
 	afx_msg void OnTraining();
 	afx_msg void OnTypeAkc();
 	afx_msg void OnTypeApdt();

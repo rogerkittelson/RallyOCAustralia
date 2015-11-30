@@ -56,25 +56,25 @@ void AuthorDlg::DoDataExchange(CDataExchange* pDX)
 		DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);
 		DDX_Text(pDX, IDC_RING_WIDTH, m_ring_width);
 		convert = atof(m_grid_spacing);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_grid_spacing.Format("%.1f",convert);
 		convert = atof(m_ring_lenght);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_ring_lenght.Format("%.1f",convert);
 		convert = atof(m_ring_width);
-		convert = convert / 0.3;
+//		convert = convert / 0.3;
 		m_ring_width.Format("%.1f",convert);
 	}
 	else 
 	{
 		convert = atof(m_grid_spacing);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_grid_spacing.Format("%.1f",convert);
 		convert = atof(m_ring_lenght);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_ring_lenght.Format("%.1f",convert);
 		convert = atof(m_ring_width);
-		convert = convert * 0.3;
+//		convert = convert * 0.3;
 		m_ring_width.Format("%.1f",convert);
 		DDX_Text(pDX, IDC_GRID_SPACEING, m_grid_spacing);
 		DDX_Text(pDX, IDC_RING_LENGHT, m_ring_lenght);
