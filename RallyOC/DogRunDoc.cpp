@@ -3360,6 +3360,7 @@ void CDogRunDoc::OnCopyDesc()
 
 void CDogRunDoc::SetStationNumberForHonor(BOOL number_station)
 {
+	
 	CRallyObject* pRallyItemInlist;
 	POSITION pos;
 	for( pos = this->m_rallyList.GetHeadPosition(); pos != NULL; ) {

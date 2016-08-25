@@ -20,7 +20,7 @@ static char THIS_FILE[]=__FILE__;
 Verify::Verify()
 {
 	int i;
-	for (i=0;i<51;i++)this->m_num_stations[i] = -1;
+	for (i=0;i<60;i++)this->m_num_stations[i] = -1;
 }
 
 Verify::~Verify()
@@ -32,187 +32,106 @@ void Verify::VerifyCourse(CDogRunDoc *p_doc_to_verify, BOOL show_dialog, int typ
 	CString error_report;
 	ErrorReportDlg error_dlg;
 	int error;
-	if (type_of_course == AKC_COURSE) {
-		int akc_station_list[51][2] = {	
-			{0,0},
-			{ID_DRAW_START,0},//1
-			{ID_DRAW_FINISH,0},//2
-			{ID_DRAW_SITHALT,0},//3
-			{ID_DRAW_SITHALTDOWN,0},//4
-			{ID_DRAW_RT_TURN,0},//5
-			{ID_DRAW_LT_TURN,0},//6
-			{ID_DRAW_ABOUT_RT,0},//7
-			{ID_DRAW_ABOUT_LT,0},//8
-			{ID_DRAW_270_RT,0},//9
-			{ID_DRAW_270_LT,0},//10
-			{ID_DRAW_360_RT,0},//11
-			{ID_DRAW_360_LT,0},//12
-			{ID_DRAW_FINISH_RT_FORWARD,0},//13
-			{ID_DRAW_FINISH_LEFT_FORWARD,0},//14
-			{ID_DRAW_FINISH_RT_HALT,0},//15
-			{ID_DRAW_FINISH_LT_HALT,0},//16
-			{ID_DRAW_SLOW,0},//17
-			{ID_DRAW_FAST,0},//18
-			{ID_DRAW_NORMAL,0},//19
-			{ID_DRAW_SIDE_RT,0},//20
-			{ID_DRAW_SPIRAL_RIGHT,0},//21
-			{ID_DRAW_SPIRAL_LEFT,0},//22
-			{ID_DRAW_WEAVE_TWICE,0},//23
-			{ID_DRAW_SERP_ONCE,0},//24
-			{ID_DRAW_HALT_3_STEPS_FOR,0},//25
-			{ID_DRAW_FRONT_3_STEPS_BACK,0},//26
-			{ID_DRAW_MOVE_DOWN,0},//27
-			{ID_DRAW_FAST_SIT,0},//28
-			{ID_DRAW_ABOUT_TURN_LT,0},//29
-			{ID_DRAW_HALTWALK,0},//30
-			{ID_DRAW_DOWNWALK,0},//31 end novice
-			{ID_ABOUT_FORWARD_RT,0},//32
-			{ID_DRAW_U_FORWARD_LT,0},//33
-			{ID_DRAW_JUMP,0},//34
-			{ID_DRAW_1STEP_HEEL_RT,0},//35
-			{ID_DRAW_STANDWALK,0},//36
-			{ID_DRAW_90_PIVOT_RT,0},//37
-			{ID_DRAW_90_PIVOT_LT,0},//38
-			{ID_DRAW_OFFSET_8,0},//39
-			{ID_DRAW_SIDE_RIGHT,0},//40
-			{ID_DRAW_FINISH_RT_HALT,0},//41
-			{ID_DRAW_HALT_FINISH_LT,0},//42
-			{ID_DRAW_180_PIVOT_RT,0},//43
-			{ID_DRAW_180_PIVOT_LT,0},//44
-			{ID_DRAW_DOWNSIT,0},//45
-			{ID_DRAW_STANDDOWN,0},//46
-			{ID_DRAW_STANDSIT,0},//47
-			{ID_DRAW_MOVE_STAND_WALK,0},//48
-			{ID_DRAW_BACKUP_3,0},//49
-			{ID_DRAW_HONOR,0}//50
-		};
+	int akc_station_list[60][2] = {	
+		{0,0},
+		{ID_DRAW_START,0},//1
+		{ID_DRAW_FINISH,0},//2
+		{ID_DRAW_SITHALT,0},//3
+		{ID_DRAW_SITHALTDOWN,0},//4
+		{ID_DRAW_RT_TURN,0},//5
+		{ID_DRAW_LT_TURN,0},//6
+		{ID_DRAW_ABOUT_RT,0},//7
+		{ID_DRAW_ABOUT_LT,0},//8
+		{ID_DRAW_270_RT,0},//9
+		{ID_DRAW_270_LT,0},//10
+		{ID_DRAW_360_RT,0},//11
+		{ID_DRAW_360_LT,0},//12
+		{ID_DRAW_FINISH_RT_FORWARD,0},//13
+		{ID_DRAW_FINISH_LEFT_FORWARD,0},//14
+		{ID_DRAW_FINISH_RT_HALT,0},//15
+		{ID_DRAW_FINISH_LT_HALT,0},//16
+		{ID_DRAW_SLOW,0},//17
+		{ID_DRAW_FAST,0},//18
+		{ID_DRAW_NORMAL,0},//19
+		{ID_DRAW_SIDE_RT,0},//20
+		{ID_DRAW_SPIRAL_RIGHT,0},//21
+		{ID_DRAW_SPIRAL_LEFT,0},//22
+		{ID_DRAW_WEAVE_TWICE,0},//23
+		{ID_DRAW_SERP_ONCE,0},//24
+		{ID_DRAW_HALT_3_STEPS_FOR,0},//25
+		{ID_DRAW_FRONT_3_STEPS_BACK,0},//26
+		{ID_DRAW_MOVE_DOWN,0},//27
+		{ID_DRAW_FAST_SIT,0},//28
+		{ID_DRAW_ABOUT_TURN_LT,0},//29
+		{ID_DRAW_HALTWALK,0},//30
+		{ID_DRAW_DOWNWALK,0},//31 end novice
+		{ID_DRAW_MOVINGSTAND,0},//32
+		{ID_DRAW_U_FORWARD_LT,0},//33
+		{ID_ABOUT_FORWARD_RT,0},//34
+		{ID_DRAW_1STEP_HEEL_RT,0},//35
+		{ID_DRAW_STANDWALK,0},//36
+		{ID_DRAW_90_PIVOT_RT,0},//37
+		{ID_DRAW_90_PIVOT_LT,0},//38
+		{ID_DRAW_OFFSET_8,0},//39
+		{ID_DRAW_SIDE_RIGHT,0},//40
+		{ID_DRAW_FINISH_RT_HALT,0},//41
+		{ID_DRAW_HALT_FINISH_LT,0},//42
+		{ID_DRAW_180_PIVOT_RT,0},//43
+		{ID_DRAW_180_PIVOT_LT,0},//44
+		{ID_DRAW_DOWNSIT,0},//45
+		{ID_DRAW_JUMP,0},//46
+		{ID_DRAW_STANDSIT,0},//47
+		{ID_DRAW_STANDDOWN,0},//48
+		{ID_DRAW_MOVE_STAND_WALK,0},//49
+		{ID_DRAW_SLOWFORWARDFROMSIT,0},//50
+		{ID__DRAW_CALLTOHEEL,0},//51
+		{ID_WEAVES_FIGURE8,0},//52
+		{ID_DRAW_BACKUP_3,0},//53
+		{ID_DRAW_STAND,0},//54
+		{ID__STAND_LEAVE_DOWN,0},//55
+		{ID__DRAW_DOWNWHILEHEELING,0},//56
+		{ID__DRAW_MOVE_DOWN,0},//57
+		{ID__DRAW_SITSTAY,0},//58
+		{ID__DRAW_2_STEPS_FORWARD,0}//59
+	};
 
-		this->FillOutStationList(&p_doc_to_verify->m_rallyList, akc_station_list);
-		error_report.Empty();
-		error_dlg.m_error_report = "Congratulations! You have no errors in your course Design.";
-		error = this->FindStartFinish(akc_station_list);
-		if (error == NEITHER) error_report = "Missing Start and Finish Stations\r\n";
-		if (error == FINISH_ONLY) error_report = "Missing Start Station\r\n";
-		if (error == START_ONLY) error_report = "Missing Finish Station\r\n";
+	this->FillOutStationList(&p_doc_to_verify->m_rallyList, akc_station_list);
+	error_report.Empty();
+	error_dlg.m_error_report = "Congratulations! You have no errors in your course Design.";
+	error = this->FindStartFinish(akc_station_list);
+	if (error == NEITHER) error_report = "Missing Start and Finish Stations\r\n";
+	if (error == FINISH_ONLY) error_report = "Missing Start Station\r\n";
+	if (error == START_ONLY) error_report = "Missing Finish Station\r\n";
 
-		this->CheckForSingleStations(akc_station_list, &error_report);
-		this->ChangePaceBackToNormal(&error_report);
-		p_doc_to_verify->m_course_info->GetCourseInfo(&course_info);
-		switch (course_info.m_class) {
-		case NOVICE:
-			this->CheckNoviceCourse(akc_station_list, &error_report);
-			break;
-		case ADVANCED:
-			this->CheckAdvancedCourse(akc_station_list, &error_report);
-			break;
-		case EXCELLENT:
-			this->CheckExcellentCourse(akc_station_list, &error_report);
-			break;
-		case TRAINING:
-			this->CheckExcellentCourse(akc_station_list, &error_report);//doing this to gather station stats
-			error_report = "This is a training course, everything is allowed!";
-			break;
-		}
-		if (!error_report.IsEmpty()) error_dlg.m_error_report = error_report;
-		CString temp_string = this->StationStatistics(akc_station_list);
-		if (!temp_string.IsEmpty()) error_dlg.m_error_report += temp_string;
-		error_dlg.m_course_info = this->CreateCourseHeader(p_doc_to_verify);
-		if (show_dialog) error_dlg.DoModal();
+	this->CheckForSingleStations(akc_station_list, &error_report);
+	this->ChangePaceBackToNormal(&error_report);
+	this->CheckConsectiveJumpStations(&error_report);
+	p_doc_to_verify->m_course_info->GetCourseInfo(&course_info);
+	switch (course_info.m_class) {
+	case NOVICE:
+		this->CheckNoviceCourse(akc_station_list, &error_report);
+		break;
+	case ADVANCED:
+		this->CheckAdvancedCourse(akc_station_list, &error_report);
+		break;
+	case EXCELLENT:
+		this->CheckExcellentCourse(akc_station_list, &error_report);
+		break;
+	case MASTER:
+		this->CheckMasterCourse(akc_station_list, &error_report);
+		break;
+	case TRAINING:
+		this->CheckExcellentCourse(akc_station_list, &error_report);//doing this to gather station stats
+		error_report = "This is a training course, everything is allowed!";
+		break;
 	}
-	if (type_of_course == APDT_COURSE) {
-		int apdt_station_list[60][2] = {	
-			{0,0},
-			{ID_DRAW_SITHALT,0},//1*
-			{ID_DRAW_SIT_STAND,0},//2*
-			{ID_DRAW_SITHALTDOWN,0},//3*
-			{ID_DRAW_DOWNSIT,0},//4*
-			{ID_DRAW_HALTWALK,0},//5*
-			{ID_DRAW_DOWNWALK,0},//6*
-			{ID_DRAW_RT_TURN,0},//7*
-			{ID_DRAW_LT_TURN,0},//8*
-			{ID_DRAW_ABOUT_RT,0},//9*
-			{ID_DRAW_ABOUT_LT,0},//10*
-			{ID_DRAW_270_RT,0},//11*
-			{ID_DRAW_270_LT,0},//12*
-			{ID_DRAW_360_RT,0},//13*
-			{ID_DRAW_360_LT,0},//14*
-			{ID_DRAW_FINISH_RT_FORWARD,0},//15*
-			{ID_DRAW_FINISH_LEFT_FORWARD,0},//16*
-			{ID_DRAW_HALT_FINISH_RT,0},//17*
-			{ID_DRAW_HALT_FINISH_LT,0},//18*
-			{ID_DRAW_SLOW,0},//19*
-			{ID_DRAW_FAST,0},//20*
-			{ID_DRAW_NORMAL,0},//21*
-			{ID_DRAW_SIDE_RT,0},//22*
-			{ID_DRAW_90_PIVOT_RT,0},//23*
-			{ID_DRAW_90_PIVOT_LT,0},//24*
-			{ID_DRAW_SPIRAL_RIGHT,0},//25*
-			{ID_DRAW_SPIRAL_LEFT,0},//26*
-			{ID_DRAW_HALT_3_STEPS_FOR,0},//27*
-			{ID_DRAW_1STEP_HEEL_RT,0},//28*
-			{ID_DRAW_WEAVE_TWICE,0},//29*
-			{ID_DRAW_OFFSET_8,0},//30*
-			{ID_DRAW_STANDWALK,0},//31*
-			{ID_RETURN_STAND,0},//32*  Return and Forward from Stand Add to menu???
-			{ID_RECALL_LEAVE,0},//33*  
-			{ID_TURN_FRONT,0},//34* 
-			{ID_FINISH_RIGHT,0},//35* 
-			{ID_FINISH_LEFT,0},//36* 
-			{ID_DRAW_180_PIVOT_RT,0},//37*
-			{ID_DRAW_180_PIVOT_LT,0},//38*
-			{ID_ABOUT_FORWARD_RT,0},//39* 
-			{ID_DRAW_U_FORWARD_LT,0},//40* 
-			{ID_DRAW_FRONT_3_STEPS_BACK,0},//41*
-			{ID_DRAW_JUMP,0},//42*
-			{ID_FRONT_RUN,0},//43* 
-			{ID_DRAW_MOVE_DOWN,0},//44*
-			{ID_DRAW_FAST_SIT,0},//45*
-			{ID_DRAW_ABOUT_TURN_LT,0},//47*
-			{ID_DRAW_START,0},//48*
-			{ID_DRAW_FINISH,0},//49*
-			{ID_DRAW_MOVE_STAND_WALK,0},//50*
-			{ID_MOVE_STAND_LEAVE,0},//51* 
-			{ID_MOVE_STAND_LEAVE,0},//52*
-			{ID_DRAW_BACKUP_3,0},//53*
-			{ID_JUMP_RECALL,0},//54*
-			{ID_JUMP_LEAVE,0},//55*
-			{ID_DRAW_RT_DOWN,0},//56*
-			{ID_DRAW_LT_DOWN,0},//57*
-			{ID_DRAW_SERP_ONCE,0},//58*
-			{ID_DOWN_RECALL,0},//59*
-			{ID_RETRIEVE_FINISH,0}//60*
-		};
-		this->FillOutAPDTStationList(&p_doc_to_verify->m_rallyList, apdt_station_list);
-		error_report.Empty();
-		error_dlg.m_error_report = "Congratulations! You have no errors in your course Design.";
-		error = this->FindAPDTStartFinish(apdt_station_list);
-		if (error == NEITHER) error_report = "Missing Start and Finish Stations\r\n";
-		if (error == FINISH_ONLY) error_report = "Missing Start Station\r\n";
-		if (error == START_ONLY) error_report = "Missing Finish Station\r\n";
-		this->CheckForLinkedStations(&error_report);
-		p_doc_to_verify->m_course_info->GetCourseInfo(&course_info);
-		switch (course_info.m_class) {
-		case NOVICE:
-			this->CheckLevelOneCourse(apdt_station_list, &error_report);
-			break;
-		case ADVANCED:
-			this->CheckLevelTwoCourse(apdt_station_list, &error_report);
-			break;
-		case EXCELLENT:
-			this->CheckLevelTwoCourse(apdt_station_list, &error_report);
-			break;
-		case TRAINING:
-//			this->CheckLevelTwoCourse(apdt_station_list, &error_report);//doing this to gather station stats
-			error_report = "This is a training course, everything is allowed!";
-			break;
-		}
-		if (!error_report.IsEmpty()) error_dlg.m_error_report = error_report;
-		CString temp_string = this->APDTStationStatistics(apdt_station_list);
-		if (!temp_string.IsEmpty()) error_dlg.m_error_report += temp_string;
-		error_dlg.m_course_info = this->CreateCourseHeader(p_doc_to_verify);
-		if (show_dialog) error_dlg.DoModal();
-		
-	}
+	if (!error_report.IsEmpty()) error_dlg.m_error_report = error_report;
+	CString temp_string = this->StationStatistics(akc_station_list);
+	if (!temp_string.IsEmpty()) error_dlg.m_error_report += temp_string;
+	error_dlg.m_course_info = this->CreateCourseHeader(p_doc_to_verify);
+	if (show_dialog) error_dlg.DoModal();
+
+
 
 }
 CString Verify::CreateCourseHeader(CDogRunDoc *p_doc_to_verify) {
@@ -259,39 +178,41 @@ void Verify::FillOutStationList(CObList *rallyList, int station_list[51][2]) {
 		station_num = pRallyItemInlist->GetStationNumber();
 		this->m_num_stations[station_num] = string_id;
 	}
-	this->m_num_advanced = this->m_num_excellent = this->m_num_novice = this->m_num_stationary = 0;
+	this->m_num_advanced = this->m_num_excellent = 
+		this->m_num_novice = this->m_num_stationary = this->m_num_master = 0;
 	int i;
-	for (i = 3; i<=31; i++) {
+	for (i = 3; i<=32; i++) {
 		this->m_num_novice += station_list[i][1];
 	}
-	for (i = 32; i<=45; i++) {
+	for (i = 33; i<=46; i++) {
 		this->m_num_advanced += station_list[i][1];
 	}
-	for (i = 46; i<=50; i++) {
+	for (i = 47; i<=52; i++) {
 		this->m_num_excellent += station_list[i][1];
 	}	
-
+	for (i = 53; i<=59; i++) {
+		this->m_num_master += station_list[i][1];
+	}
 }
 void Verify::CheckNoviceCourse(int station_list[51][2], CString *error_report) {
 	int i, j, station_count, find_slash, str_len;
 	CString station_num_error, station_type_error, sel_station_desc, num_stationary_error, stat_exe_loc;
 	CString station_number;
 	station_count = 0;
-	for (i = 3; i<=31; i++) {
+	for (i = 3; i<=32; i++) {
 		station_count += station_list[i][1];
 	}
 	if (station_count < 10) station_num_error = "You have less than the required 10 stations!\r\n";
 	if (station_count > 15) station_num_error = "You have more than 15 stations!\r\n";
 	
 	*error_report += station_num_error;
-	for (i = 32; i<=50; i++) {
+	for (i = 33; i<=59; i++) {
 		if (station_list[i][1] > 0) {
 			sel_station_desc.LoadString(station_list[i][0]);
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);
-			if (i< 50) station_type_error += sel_station_desc + " not allowed in this class! Station Number(s):";
-			else station_type_error += sel_station_desc + " not allowed in this class!  ";// Honor station
-			for(j=0;j<51;j++) {
+			station_type_error += sel_station_desc + " not allowed in this class! Station Number(s):";
+			for(j=0;j<60;j++) {
 				if (station_list[i][0] == this->m_num_stations[j]) {
 					station_number.Format("%d",j);
 					station_type_error  += station_number + ", ";
@@ -319,23 +240,21 @@ void Verify::CheckAdvancedCourse(int station_list[51][2], CString *error_report)
 	CString station_number;
 
 	station_count = 0;
-	for (i = 3; i<=45; i++) {
+	for (i = 3; i<=46; i++) {
 		station_count += station_list[i][1];
 	}
 	if (station_count < 12) station_num_error = "You have less than the required 12 stations!\r\n";
 	if (station_count > 17) station_num_error = "You have more than 17 stations!\r\n";
-	
 	*error_report += station_num_error;
-	for (i = 46; i<=50; i++) {
+	if (this->m_num_advanced < 4) station_num_error = "You must have at least 4 Advanced level Stations!\r\n"; 
+	*error_report += station_num_error;
+	for (i = 47; i<=59; i++) {
 		if (station_list[i][1] > 0) {
-			int string_id = station_list[i][0];
 			sel_station_desc.LoadString(station_list[i][0]);
-			
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);
-			if (i< 50) station_type_error += sel_station_desc + " not allowed in this class! Station Number(s):";
-			else station_type_error += sel_station_desc + " not allowed in this class!  ";// Honor station
-			for(j=0;j<51;j++) {
+			station_type_error += sel_station_desc + " not allowed in this class! Station Number(s):";
+			for(j=0;j<60;j++) {
 				if (station_list[i][0] == this->m_num_stations[j]) {
 					station_number.Format("%d",j);
 					station_type_error  += station_number + ", ";
@@ -348,10 +267,23 @@ void Verify::CheckAdvancedCourse(int station_list[51][2], CString *error_report)
 	}
 	
 	*error_report += station_type_error;
-	if (station_list[34][1] != 1) jump_error = "You must have one jump for this class!\r\n";
-	*error_report += jump_error;
-	if (this->GetStationaryCount(station_list, &stat_exe_loc) > 7) {
-		num_stationary_error = "7 Maximum Stationary exercises allowed!";
+	if (station_list[46][1] < 1) 
+	{
+		jump_error = "You must have one jump for this class!\r\n";
+		*error_report += jump_error;
+	}
+	if (station_list[46][1] > 1) 
+	{
+		jump_error = "You are only allowed one jump for this class!\r\n";
+		*error_report += jump_error;
+	}
+
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) > 10) {
+		num_stationary_error = "10 Maximum Stationary exercises allowed! \r\n";
+		num_stationary_error += stat_exe_loc;
+	}
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) < 3) {
+		num_stationary_error = "Must have at least 3 Stationary exercises! \r\n";
 		num_stationary_error += stat_exe_loc;
 	}
 	*error_report += num_stationary_error;
@@ -359,32 +291,114 @@ void Verify::CheckAdvancedCourse(int station_list[51][2], CString *error_report)
 	return;
 }
 void Verify::CheckExcellentCourse(int station_list[51][2], CString *error_report) {
+	int i, station_count, find_slash, j, str_len;
+	CString station_num_error, station_type_error, sel_station_desc, jump_error, num_stationary_error;
+	CString stat_exe_loc, honor_station_error;
+	CString station_number;
+	
+	station_count = 0;
+	for (i = 3; i<53; i++) {
+		station_count += station_list[i][1];
+	}
+	if (station_count < 15) station_num_error = "You have less than the required 15 stations!\r\n";
+	if (station_count > 20) station_num_error = "You have more than 20 stations!\r\n";
+	*error_report += station_num_error;
+	for (i = 53; i<=59; i++) {
+		if (station_list[i][1] > 0) {
+			sel_station_desc.LoadString(station_list[i][0]);
+			find_slash = sel_station_desc.Find("\n");
+			sel_station_desc = sel_station_desc.Left(find_slash);
+			station_type_error += sel_station_desc + " not allowed in this class! Station Number(s):";
+			for(j=0;j<60;j++) {
+				if (station_list[i][0] == this->m_num_stations[j]) {
+					station_number.Format("%d",j);
+					station_type_error  += station_number + ", ";
+				}
+			}
+			str_len = station_type_error.GetLength();
+			station_type_error = station_type_error.Left(str_len-2);
+			station_type_error += "\r\n";
+		}
+	}
+	*error_report += station_type_error;
+	
+	if (this->m_num_advanced < 6) 
+	{
+		station_num_error = "You must have at least 6 Advanced level stations!\r\n"; 
+		*error_report += station_num_error;
+	}
+	if (this->m_num_excellent < 4) 
+	{
+		station_num_error = "You must have at least 4 Excellent level stations!\r\n"; 
+		*error_report += station_num_error;
+	}
+	if (station_list[46][1] < 2) {
+		jump_error = "You must have two jumps for this class!\r\n";
+		*error_report += jump_error;
+	}
+	if (station_list[46][1] > 2) {
+		jump_error = "You are only allowed two jumps for this class!\r\n";
+		*error_report += jump_error;
+	}
+	
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) > 10) {
+		num_stationary_error = "10 Maximum Stationary exercises allowed!";
+		num_stationary_error += stat_exe_loc;
+	}
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) < 3) {
+		num_stationary_error = "Must have at least 3 Stationary exercises!";
+		num_stationary_error += stat_exe_loc;
+	}
+	*error_report += num_stationary_error;	
+
+	*error_report += honor_station_error;	
+	return;
+}
+
+void Verify::CheckMasterCourse(int station_list[51][2], CString *error_report) {
 	int i, station_count;
 	CString station_num_error, station_type_error, sel_station_desc, jump_error, num_stationary_error;
 	CString stat_exe_loc, honor_station_error;
 
 	
 	station_count = 0;
-	for (i = 3; i<=50; i++) {
+	for (i = 3; i<60; i++) {
 		station_count += station_list[i][1];
 	}
-	if (station_count < 15) station_num_error = "You have less than the required 15 stations!\r\n";
-	if (station_count > 20) station_num_error = "You have more than 20 stations!\r\n";
-	
+	if (station_count < 18) station_num_error = "You have less than the required 18 stations!\r\n";
+	if (station_count > 24) station_num_error = "You have more than 24 stations!\r\n";
 
 	*error_report += station_num_error;
-
-	if (station_list[34][1] != 2) jump_error = "You must have two jumps for this class!\r\n";
+/*
+	if (this->m_num_advanced < 6) 
+	{
+		station_num_error = "You must have at least 6 Advanced level stations!\r\n"; 
+		*error_report += station_num_error;
+	}
+*/
+	if (this->m_num_excellent < 4) 
+	{
+		station_num_error = "You must have at least 4 Excellent level stations!\r\n"; 
+		*error_report += station_num_error;
+	}
+	if (this->m_num_master  < 3) 
+	{
+		station_num_error = "You must have at least 3 Master level stations!\r\n"; 
+		*error_report += station_num_error;
+	}
+	if (station_list[46][1] > 0) jump_error = "Master Class does not allow jumps!\r\n";
 	*error_report += jump_error;
 	
-	if (this->GetStationaryCount(station_list, &stat_exe_loc) > 7) {
-		num_stationary_error = "7 Maximum Stationary exercises allowed!";
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) > 10) {
+		num_stationary_error = "10 Maximum Stationary exercises allowed!\r\n";
+		num_stationary_error += stat_exe_loc;
+	}
+	if (this->GetStationaryCount(station_list, &stat_exe_loc) < 3) {
+		num_stationary_error = "Must have at least 3 Stationary exercises!\r\n";
 		num_stationary_error += stat_exe_loc;
 	}
 	*error_report += num_stationary_error;	
-	if (!this->FindHonorStation(station_list)) {
-		honor_station_error = "You must have an HONOR station!";
-	}
+
 	*error_report += honor_station_error;	
 	return;
 }
@@ -409,13 +423,13 @@ void Verify::CheckForSingleStations(int station_list[51][2], CString *error_repo
 	
 	single_station_error.Empty();
 	i = 1;
-	while(i<51) {
+	while(i<60) {
 		if (station_list[i][1] > 1) {
 			sel_station_desc.LoadString(station_list[i][0]);
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);
 			single_station_error += "Can Only Have 1 " + sel_station_desc + " Station Numbers: ";
-			for (j = 0, k = 0; j< 51; j++) {
+			for (j = 0, k = 0; j < 60; j++) {
 				if (station_list[i][0] == this->m_num_stations[j]) {
 					station_number.Format("%d ",j);
 					single_station_error += station_number;
@@ -426,7 +440,7 @@ void Verify::CheckForSingleStations(int station_list[51][2], CString *error_repo
 		}
 		if (i == 4) i = 10;
 		if (i == 16) i = 19;
-		if (i == 33) i = 34;
+		if (i == 45) i = 46;
 		i++;
 	}
 	if (!single_station_error.IsEmpty()) single_station_error += "\r\n";
@@ -439,7 +453,7 @@ void Verify::ChangePaceBackToNormal(CString *error_report) {
 	int i, find_slash;
 	CString pace_error, sel_station_desc, station_number;
 
-	for(i=0;i<51;i++) {
+	for(i=0;i<60;i++) {
 		if (this->m_num_stations[i] == ID_DRAW_FAST || this->m_num_stations[i] == ID_DRAW_SLOW 
 			|| this->m_num_stations[i] == ID_DRAW_FAST_SIT) {
 			if (!(this->m_num_stations[i+1] == ID_DRAW_NORMAL) && !(this->m_num_stations[i+1] == -1)) {
@@ -456,6 +470,26 @@ void Verify::ChangePaceBackToNormal(CString *error_report) {
 	
 	return;
 }
+void Verify::CheckConsectiveJumpStations(CString *error_report) {
+	int i, find_slash;
+	CString jump_error, sel_station_desc, station_number;
+
+	for(i=0;i<60;i++) {
+		if (this->m_num_stations[i] == ID_DRAW_JUMP) {
+			if (this->m_num_stations[i+1] == ID_DRAW_JUMP) {
+				sel_station_desc.LoadString(this->m_num_stations[i]);
+				find_slash = sel_station_desc.Find("\n");
+				sel_station_desc = sel_station_desc.Left(find_slash);
+				station_number.Format("%d ",i);
+				jump_error += sel_station_desc + " (Station Number:"+ station_number + ") Can not be followed by another Jump\r\n";
+			}
+
+		}
+	}
+	*error_report += jump_error;
+	
+	return;
+}
 int Verify::GetStationaryCount(int station_list[51][2], CString *stat_exe_loc) {
 	int num_stationary_stations;
 	int i, str_len;
@@ -465,248 +499,324 @@ int Verify::GetStationaryCount(int station_list[51][2], CString *stat_exe_loc) {
 	num_stationary_stations = 0;
 	if (station_list[3][1] > 0) {
 		num_stationary_stations += station_list[3][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[3][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #3), ";
 			}
 		}
 	}
 	if (station_list[4][1] > 0) {
 		num_stationary_stations += station_list[4][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[4][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #4), ";
 			}
 		}
 	}
 	if (station_list[13][1] > 0) {
 		num_stationary_stations += station_list[13][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[13][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #13), ";
 			}
 		}
 	}	
 	if (station_list[14][1] > 0) {
 		num_stationary_stations += station_list[14][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[14][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #14), ";
 			}
 		}
 	}	
 	
 	if (station_list[15][1] > 0) {
 		num_stationary_stations += station_list[15][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[15][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #15), ";
 			}
 		}
 	}
 	if (station_list[16][1] > 0) {
 		num_stationary_stations += station_list[16][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[16][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #16), ";
 			}
 		}
 	}
 	if (station_list[25][1] > 0) {
 		num_stationary_stations += station_list[25][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[25][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #25), ";
 			}
 		}
 	}
 	if (station_list[26][1] > 0) {
 		num_stationary_stations += station_list[26][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[26][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #26), ";
 			}
 		}
 	}
 	if (station_list[27][1] > 0) {
 		num_stationary_stations += station_list[27][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[27][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #27), ";
 			}
 		}
 	}
 	if (station_list[28][1] > 0) {
 		num_stationary_stations += station_list[28][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[28][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #28), ";
 			}
 		}
 	}
 	if (station_list[30][1] > 0) {
 		num_stationary_stations += station_list[30][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[30][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #30), ";
 			}
 		}
 	}
 	if (station_list[31][1] > 0) {
 		num_stationary_stations += station_list[31][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[31][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #31), ";
 			}
 		}
 	}
 	if (station_list[32][1] > 0) {
 		num_stationary_stations += station_list[32][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[32][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #32), ";
 			}
 		}
 	}
 	if (station_list[33][1] > 0) {
 		num_stationary_stations += station_list[33][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[33][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #33), ";
+			}
+		}
+	}
+	if (station_list[34][1] > 0) {
+		num_stationary_stations += station_list[34][1];
+		for(i=0;i<60;i++) {
+			if (station_list[34][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #34), ";
 			}
 		}
 	}
 	if (station_list[35][1] > 0) {
 		num_stationary_stations += station_list[35][1];
-		for(i=0;i<51;i++) {
-			if (station_list[4][0] == this->m_num_stations[i]) {
+		for(i=0;i<60;i++) {
+			if (station_list[35][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #35), ";
 			}
 		}
 	}
 	if (station_list[36][1] > 0) {
 		num_stationary_stations += station_list[36][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[36][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #36), ";
 			}
 		}
 	}
 	if (station_list[37][1] > 0) {
 		num_stationary_stations += station_list[37][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[37][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #37), ";
 			}
 		}
 	}
 	if (station_list[38][1] > 0) {
 		num_stationary_stations += station_list[38][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[38][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #38), ";
 			}
 		}
 	}
 	if (station_list[40][1] > 0) {
 		num_stationary_stations += station_list[40][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[40][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #40), ";
 			}
 		}
 	}
+	
 	if (station_list[41][1] > 0) {
-		num_stationary_stations += station_list[41][1];
-		for(i=0;i<51;i++) {
-			if (station_list[41][0] == this->m_num_stations[i]) {
+		num_stationary_stations += station_list[40][1];
+		for(i=0;i<60;i++) {
+			if (station_list[40][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #41), ";
 			}
 		}
 	}
+	
 	if (station_list[42][1] > 0) {
 		num_stationary_stations += station_list[42][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[42][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #42), ";
 			}
 		}
 	}
 	if (station_list[43][1] > 0) {
 		num_stationary_stations += station_list[43][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[43][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #43), ";
 			}
 		}
 	}
 	if (station_list[44][1] > 0) {
 		num_stationary_stations += station_list[44][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[44][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #44), ";
 			}
 		}
 	}
 	if (station_list[45][1] > 0) {
 		num_stationary_stations += station_list[45][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[45][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
-			}
-		}
-	}
-	if (station_list[46][1] > 0) {
-		num_stationary_stations += station_list[46][1];
-		for(i=0;i<51;i++) {
-			if (station_list[46][0] == this->m_num_stations[i]) {
-				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #45), ";
 			}
 		}
 	}
 	if (station_list[47][1] > 0) {
 		num_stationary_stations += station_list[47][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[47][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #47), ";
 			}
 		}
 	}
 	if (station_list[48][1] > 0) {
 		num_stationary_stations += station_list[48][1];
-		for(i=0;i<51;i++) {
+		for(i=0;i<60;i++) {
 			if (station_list[48][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + ", ";
+				*stat_exe_loc  += station_number + "(AKC #48), ";
 			}
 		}
 	}
+	if (station_list[49][1] > 0) {
+		num_stationary_stations += station_list[49][1];
+		for(i=0;i<60;i++) {
+			if (station_list[49][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #49), ";
+			}
+		}
+	}
+	if (station_list[50][1] > 0) {
+		num_stationary_stations += station_list[50][1];
+		for(i=0;i<60;i++) {
+			if (station_list[50][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #50), ";
+			}
+		}
+	}	
+	if (station_list[54][1] > 0) {
+		num_stationary_stations += station_list[54][1];
+		for(i=0;i<60;i++) {
+			if (station_list[54][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #54), ";
+			}
+		}
+	}	
+	if (station_list[55][1] > 0) {
+		num_stationary_stations += station_list[55][1];
+		for(i=0;i<60;i++) {
+			if (station_list[55][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #55), ";
+			}
+		}
+	}	
+	if (station_list[56][1] > 0) {
+		num_stationary_stations += station_list[56][1];
+		for(i=0;i<60;i++) {
+			if (station_list[56][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #56), ";
+			}
+		}
+	}	
+	
+	if (station_list[57][1] > 0) {
+		num_stationary_stations += station_list[57][1];
+		for(i=0;i<60;i++) {
+			if (station_list[57][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #57), ";
+			}
+		}
+	}	
+	if (station_list[58][1] > 0) {
+		num_stationary_stations += station_list[58][1];
+		for(i=0;i<60;i++) {
+			if (station_list[58][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #58), ";
+			}
+		}
+	}	
+	if (station_list[59][1] > 0) {
+		num_stationary_stations += station_list[59][1];
+		for(i=0;i<60;i++) {
+			if (station_list[59][0] == this->m_num_stations[i]) {
+				station_number.Format("%d",i);
+				*stat_exe_loc  += station_number + "(AKC #59), ";
+			}
+		}
+	}	
+	
 	if (!stat_exe_loc->IsEmpty()) {
 		str_len = stat_exe_loc->GetLength();
 		*stat_exe_loc = stat_exe_loc->Left(str_len-2);
@@ -722,16 +832,21 @@ CString Verify::StationStatistics(int station_list[51][2])
 	CString station_stats, temp_string, sel_station_desc;
 	int i, find_slash;
 	station_stats = "\r\nCourse Statistics.\r\n";
+	temp_string.Format("%d  Total Number of Stations\r\n",this->m_num_novice +
+		this->m_num_advanced + this->m_num_excellent + m_num_master);
+	station_stats += temp_string;
 	temp_string.Format("%d  Novice Stations\r\n",this->m_num_novice);
 	station_stats += temp_string;
 	temp_string.Format("%d  Advanced Stations\r\n",this->m_num_advanced);
 	station_stats += temp_string;
 	temp_string.Format("%d  Excellent Stations\r\n",this->m_num_excellent);
 	station_stats += temp_string;
+	temp_string.Format("%d  Master Stations\r\n",this->m_num_master);
+	station_stats += temp_string;
 	temp_string.Format("%d  Stationary Stations\r\n",this->m_num_stationary);
 	station_stats += temp_string;
-	for (i=1;i<=50;i++) {
-		if (station_list[i] [1]> 0) {
+	for (i=1;i<60;i++) {
+		if (station_list[i][1]> 0) {
 			sel_station_desc.LoadString(station_list[i][0]);
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);			

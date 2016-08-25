@@ -1123,7 +1123,7 @@ void CDogRunView::OnLButtonDown(UINT nFlags, CPoint point)
 //			pRallyItem->SetStationNumber(CALL_TO_HEEL_STATION);
 //			pos = pDoc->InsertStationIntoList(pRallyItem, CALL_TO_HEEL_STATION, false);
 //		}
-		else if (this->m_SelectedShapeOnToolBar == ID_DRAW_HONOR){
+		else if (this->m_SelectedShapeOnToolBar == ID_DRAW_HONOR && false){
 			if (this->m_number_honor) {
 				pRallyItem->SetStationNumber(num_stations + 1);
 			}
@@ -2480,7 +2480,7 @@ void CDogRunView::OnEditPaste()
 	CDogRunApp* dogRunApp;
 	CPoint offset_pt(50,50), top_left (10000,10000), stat_mid_point;
 	POSITION pos, posInList;
-	BOOL number_honor_station = false;
+	BOOL number_honor_station = true;
 	dogRunApp = (CDogRunApp*)AfxGetApp( ); 
 	CDogRunDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -2817,6 +2817,7 @@ void CDogRunView::OnEditPaste()
 		}
 
 	}
+
 	if (number_honor_station) {
 		pDoc->SetStationNumberForHonor(true);	
 	}
@@ -8361,11 +8362,11 @@ void CDogRunView::OnUpdateDrawSpiralRight(CCmdUI* pCmdUI)
 void CDogRunView::OnCourseVerify() 
 {
 	// TODO: Add your command handler code here
-	AfxMessageBox("Course Verificatin is not yet implemented in Version 3.0.0 Beta!");
-//	Verify verify_course;
-//	CDogRunDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	verify_course.VerifyCourse(pDoc, true, this->m_type_course);
+//	AfxMessageBox("Course Verificatin is not yet implemented in Version 3.0.0 Beta!");
+	Verify verify_course;
+	CDogRunDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	verify_course.VerifyCourse(pDoc, true, this->m_type_course);
 }
 
 void CDogRunView::OnUpdateNonstationary(CCmdUI* pCmdUI) 
@@ -9161,7 +9162,7 @@ void CDogRunView::SetUpCourseVariablesAndGrid()
 	this->m_where_cones = course_info.m_where_cones;
 	this->m_where_list = course_info.m_where_list;
 	this->m_print_grid_lines = course_info.m_print_grid_lines;
-	this->m_number_honor = course_info.m_number_honor;
+	this->m_number_honor = true; //course_info.m_number_honor;
 	this->m_inch_per_horiz = dc.GetDeviceCaps(LOGPIXELSX);
 	this->m_inch_per_vert = dc.GetDeviceCaps(LOGPIXELSY);
 	this->m_sizeTotal.cx = this->m_ring_width * (this->m_inch_per_horiz / 1.5) + 50;

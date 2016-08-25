@@ -99,14 +99,17 @@ BOOL StationPropDlg::OnInitDialog()
 	
 		switch (course_info.m_class) {
 		case NOVICE:
-			class_cutoff = 31;
+			class_cutoff = 32;
 			break;
 		case ADVANCED:
-			class_cutoff = 45;
+			class_cutoff = 46;
 			break;
 		case EXCELLENT:
+			class_cutoff = 53;
+			break;
+		case MASTER:
 		case TRAINING:
-			class_cutoff = 49;
+			class_cutoff = 60;
 			break;
 		}
 
@@ -179,7 +182,7 @@ BOOL StationPropDlg::OnInitDialog()
 		int selection = StationMapper::GetComboBoxSelectionFromAKCid(this->m_pRallyObject->GetAKCNumber());
 		this->m_a_number.SetCurSel(selection);
 		this->m_station_name.SetCurSel(selection);
-		if (this->m_pRallyObject->GetAKCNumber() == 1 || this->m_pRallyObject->GetAKCNumber() == 2 || this->m_pRallyObject->GetAKCNumber() == 50|| this->m_pRallyObject->GetAKCNumber() == 299) {
+		if (this->m_pRallyObject->GetAKCNumber() == 1 || this->m_pRallyObject->GetAKCNumber() == 2 || this->m_pRallyObject->GetAKCNumber() == 299) {
 			tempWnd = this->GetDlgItem(IDC_TX_STAT_NO);
 			tempWnd->ShowWindow(SW_HIDE);
 			tempWnd = this->GetDlgItem(IDC_TX_STAT_NAME);

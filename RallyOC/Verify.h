@@ -38,14 +38,17 @@ protected:
 	void CheckNoviceCourse(int station_list[51][2], CString *error_report);
 	void CheckAdvancedCourse(int station_list[51][2], CString *error_report);
 	void CheckExcellentCourse(int station_list[51][2], CString *error_report);
+	void CheckMasterCourse(int station_list[51][2], CString *error_report);
 	void CheckForSingleStations(int station_list[51][2], CString *error_report);
 	void ChangePaceBackToNormal(CString *error_report);
+	void CheckConsectiveJumpStations(CString *error_report);
 	int GetStationaryCount(int station_list[51][2], CString *stat_exe_loc);
 	CString CreateCourseHeader(CDogRunDoc *p_doc_to_verify);
 	int m_num_stations[61];
 	int m_num_novice;
 	int m_num_advanced;
 	int m_num_excellent;
+	int m_num_master;
 	int m_num_stationary;
 	CString m_station_stats;
 private:

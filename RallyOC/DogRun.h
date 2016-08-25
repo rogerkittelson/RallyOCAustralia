@@ -84,6 +84,7 @@ enum rally_class {
 	NOVICE,
 	ADVANCED,
 	EXCELLENT,
+	MASTER,
 	TRAINING
 };
 enum sub_rally_class {
