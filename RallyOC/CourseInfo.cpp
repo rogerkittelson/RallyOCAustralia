@@ -295,7 +295,7 @@ void CCourseInfo::GetCourseInfo(CourseInfo *course_info){
 	course_info->m_print_grid_lines = this->m_print_grid_lines;
 	course_info->m_where_cones = this->m_where_cones;
 	course_info->m_where_list = this->m_where_list;
-	course_info->m_number_honor = this->m_number_honor;
+	course_info->m_number_honor = true; //this->m_number_honor;
 	course_info->m_honor_in_list = this->m_honor_in_list;
 	course_info->m_type_of_course = this->m_type_of_course;
 	course_info->m_sub_class = this->m_sub_class;
