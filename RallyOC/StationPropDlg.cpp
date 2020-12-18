@@ -102,14 +102,14 @@ BOOL StationPropDlg::OnInitDialog()
 			class_cutoff = 32;
 			break;
 		case ADVANCED:
-			class_cutoff = 46;
+			class_cutoff = 53;
 			break;
 		case EXCELLENT:
-			class_cutoff = 53;
+			class_cutoff = 65;
 			break;
 		case MASTER:
 		case TRAINING:
-			class_cutoff = 60;
+			class_cutoff = 76;
 			break;
 		}
 

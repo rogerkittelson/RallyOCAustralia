@@ -5195,50 +5195,30 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID_DRAW_MOVE_DOWN:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Down";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Down";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
 			string_to_draw = "Down";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth);
-			pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Down";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		default:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Down";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
@@ -5249,50 +5229,30 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 	case ID_DRAW_MOVINGSTAND:
 		switch (this->m_rotate_text) {
 		case 0:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Stand";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 90:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Stand";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + 5,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		case 180:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 4) + 5,string_to_draw);
 			string_to_draw = "Stand";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 5,this->m_station_rect.bottom - (tm.tmHeight * 3) + 5,string_to_draw);
 			break;
 		case 270:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth);
-			pDC->TextOut(this->m_station_rect.left + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Stand";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
 			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2),this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			break;
 		default:
-			string_to_draw = "Moving";
-			len = string_to_draw.GetLength();
-			half_string = (len * tm.tmAveCharWidth) / 2;
-			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3),string_to_draw);
 			string_to_draw = "Stand";
 			len = string_to_draw.GetLength();
 			half_string = (len * tm.tmAveCharWidth) / 2;
@@ -5350,6 +5310,1419 @@ void CRallyObject::DrawStringForStation(CDC* pDC) {
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
 			string_to_draw = "Return Around Dog";
 			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_HALT_LEAVE_RECALL:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "About Turn";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Recall Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Handler Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 90:
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "About Turn";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Recall Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Handler Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 180:
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "About Turn";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Recall Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Handler Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "About Turn";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Recall Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Handler Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		default:
+			string_to_draw = "Leave Dog 3 mtrs";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "About Turn";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Recall Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Handler Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_FRONT_REV_3_STEPS:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Call Front";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Reverse 3";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Steps Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "To Heel";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 90:
+			string_to_draw = "Call Front";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Reverse 3";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Steps Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "To Heel";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 180:
+			string_to_draw = "Call Front";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Reverse 3";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Steps Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "To Heel";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Call Front";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Reverse 3";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Steps Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "To Heel";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		default:
+			string_to_draw = "Call Front";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "Reverse 3";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Steps Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "To Heel";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_LEAVE_ABOUT_RET:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Leave Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "5 Mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "About      Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Turn       to Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 90:
+			string_to_draw = "Leave Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "5 Mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "About      Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Turn       to Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		case 180:
+			string_to_draw = "Leave Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "5 Mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "About      Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Turn       to Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Leave Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "5 Mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "About      Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Turn       to Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+		break;
+		default:
+			string_to_draw = "Leave Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight*4),string_to_draw);
+			string_to_draw = "5 Mtrs";
+			pDC->TextOut(this->m_station_rect.left ,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "About      Return";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - (tm.tmHeight * 2),string_to_draw);
+			string_to_draw = "Turn       to Dog";
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_HALT_CIRCLE_FOR:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Circles";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "Handler";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 20,this->m_station_rect.top,string_to_draw);
+			string_to_draw = "Circles";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + (tm.tmHeight),string_to_draw);
+			string_to_draw = "Handler";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top,string_to_draw);
+			string_to_draw = "Circles";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight,string_to_draw);
+			string_to_draw = "Handler";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + half_string + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Circles";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "Handler";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			string_to_draw = "Circles";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "Handler";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_LEAVE_ABT_REC_FIN_R:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_LEAVE_ABT_REC_FIN_L:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Leave Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Call Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_R_U_LEFT_ABOUT:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_L_U_LEFT_ABOUT:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_L_ABOUT_RIGHT_U:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_L_ABOUT_LEFT_U:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_STAND_PIVOT_R_FOR:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Right Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Right Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Right Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Right Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Right Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_STAND_PIVOT_L_FOR:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Stand";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "90";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Pivot";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_FRT_CIR_R_FIN_L:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Call Front";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "360 Circle";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Spin Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Call Front";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "360 Circle";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Spin Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Call Front";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "360 Circle";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Spin Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Call Front";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "360 Circle";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Spin Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Call Front";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "360 Circle";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "Spin Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Finish Left Forward";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_TR_L_HEEL_R_T_R:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "180 Left Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "Heels Right Side";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "180 Right Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Returns to Heel";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string - 15,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "180 Left Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "Heels Right Side";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "180 Right Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Returns to Heel";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "180 Left Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "Heels Right Side";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "180 Right Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Returns to Heel";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "180 Left Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "Heels Right Side";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "180 Right Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Returns to Heel";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		default:
+			string_to_draw = "180 Left Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 4)- 5,string_to_draw);
+			string_to_draw = "Heels Right Side";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 3)- 5,string_to_draw);
+			string_to_draw = "180 Right Dog";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 15,this->m_station_rect.bottom - (tm.tmHeight * 2)- 5,string_to_draw);
+			string_to_draw = "Returns to Heel";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width / 2) - half_string ,this->m_station_rect.bottom - tm.tmHeight- 5,string_to_draw);
+			break;
+		}	
+		break;
+	case ID_DOUBLE_RIGHT_UTURN:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 20,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 20, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + (tm.tmHeight),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + 5, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + half_string + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + half_string + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Right";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_DOUBLE_LEFT_UTURN:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 20,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 20, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + (tm.tmHeight),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + 5, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight,string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + half_string + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + half_string + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "U Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		}
+		break;
+	case ID_DOUBLE_LEFT_ATURN:
+		switch (this->m_rotate_text) {
+		case 0:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		case 90:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 20,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 20, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + (tm.tmHeight),string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 180:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top,string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + 5, this->m_station_rect.top, len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight,string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + 5,this->m_station_rect.top + tm.tmHeight * 2,string_to_draw);
+			break;
+		case 270:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2) + half_string + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + (this->m_width/2) + half_string + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + (this->m_width/2),this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
+			break;
+		default:
+			string_to_draw = "Double";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*3),string_to_draw);
+			this->DrawDegreeSymbol(pDC,this->m_station_rect.left  + 10, this->m_station_rect.bottom - (tm.tmHeight*3), len,tm.tmAveCharWidth); 
+			string_to_draw = "Left";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - (tm.tmHeight*2),string_to_draw);
+			string_to_draw = "About Turn";
+			len = string_to_draw.GetLength();
+			half_string = (len * tm.tmAveCharWidth) / 2;
+			pDC->TextOut(this->m_station_rect.left  + 10,this->m_station_rect.bottom - tm.tmHeight,string_to_draw);
 			break;
 		}
 		break;

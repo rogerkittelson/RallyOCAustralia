@@ -241,6 +241,12 @@ protected:
 	afx_msg void OnUpdateDrawDownwalk(CCmdUI* pCmdUI);
 	afx_msg void OnDrawDownsit();
 	afx_msg void OnUpdateDrawDownsit(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeaveAboutReturn();
+	afx_msg void OnUpdateLeaveAboutReturn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawDogCircleForward();
+	afx_msg void OnUpdateDogCircleForwar(CCmdUI* pCmdUI);
+	afx_msg void OnDrawHaltLeaveRecall();
+	afx_msg void OnUpdateHaltLeaveRecall(CCmdUI* pCmdUI);
 	afx_msg void OnDrawStand();
 	afx_msg void OnUpdateDrawStand(CCmdUI* pCmdUI);
 	afx_msg void OnDrawStanddown();
@@ -282,6 +288,12 @@ protected:
 	afx_msg void OnUpdateDraw360Rt(CCmdUI* pCmdUI);
 	afx_msg void OnDraw90PivotRt();
 	afx_msg void OnUpdateDraw90PivotRt(CCmdUI* pCmdUI);
+	afx_msg void OnDrawDoubleRtUTurn();
+	afx_msg void OnUpdateDrawDoubleRtUTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawRtUTurnLeftAboutTurn();
+	afx_msg void OnUpdateDrawRtUTurnLeftAboutTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawStandPivotRightForward();
+	afx_msg void OnUpdateDrawStandPivotRightForward(CCmdUI* pCmdUI);
 	afx_msg void OnDraw180PivotRt();
 	afx_msg void OnUpdateDraw180PivotRt(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateLeftTurns(CCmdUI* pCmdUI);
@@ -297,6 +309,20 @@ protected:
 	afx_msg void OnUpdateDraw90PivotLt(CCmdUI* pCmdUI);
 	afx_msg void OnDraw180PivotLt();
 	afx_msg void OnUpdateDraw180PivotLt(CCmdUI* pCmdUI);
+	afx_msg void OnDrawDoubleLeftUTurn();
+	afx_msg void OnUpdateDoubleLeftUTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawDoubleLeftAboutTurn();
+	afx_msg void OnUpdateDoubleLeftAboutTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeftUTurnLeftAboutTurn();
+	afx_msg void OnUpdateLeftUTurnLeftAboutTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeftUTurnRightAboutTurn();
+	afx_msg void OnUpdateLeftUTurnRightAboutTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeftAboutTurnLeftUTurn();
+	afx_msg void OnUpdateLeftAboutTurnLeftUTurn(CCmdUI* pCmdUI);
+	afx_msg void OnDrawStandPivotLeftForward();
+	afx_msg void OnUpdateStandPivotLeftForward(CCmdUI* pCmdUI);
+	afx_msg void OnDraw180LeftHeelRight180Right();
+	afx_msg void OnUpdate180LeftHeelRight180Right(CCmdUI* pCmdUI);
 	afx_msg void OnDrawHaltLeftPivotForward();
 	afx_msg void OnUpdateHaltLeftPivotForward(CCmdUI* pCmdUI);
 	afx_msg void OnDrawHaltRightPivotForward();
@@ -326,12 +352,20 @@ protected:
 	afx_msg void OnUpdateDrawFinishRtHalt(CCmdUI* pCmdUI);
 	afx_msg void OnDrawSlowForwardFromSit();
 	afx_msg void OnUpdateSlowForwardFromSit(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeaveAboutRecallFinishRight();
+	afx_msg void OnUpdateLeaveAboutRecallFinishRight(CCmdUI* pCmdUI);
+	afx_msg void OnDrawLeaveAboutRecallFinishLeft();
+	afx_msg void OnUpdateLeaveAboutRecallFinishLeft(CCmdUI* pCmdUI);
 
 
 	afx_msg void OnDrawFrontHeel();
 	afx_msg void OnUpdateFrontHeel(CCmdUI* pCmdUI);
 	afx_msg void OnDrawHaltFinishLt();
 	afx_msg void OnUpdateDrawHaltFinishLt(CCmdUI* pCmdUI);
+	afx_msg void OnDrawReverseThreeSteps();
+	afx_msg void OnUpdateDrawReverseThreeSteps(CCmdUI* pCmdUI);
+	afx_msg void OnDrawFrontCircleRightFinishLeft();
+	afx_msg void OnUpdateDrawFrontCircleRightFinishLeft(CCmdUI* pCmdUI);
 	afx_msg void OnDrawHaltFinishRt();
 	afx_msg void OnUpdateDrawHaltFinishRt(CCmdUI* pCmdUI);
 	afx_msg void OnDrawFastSit();

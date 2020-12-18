@@ -159,7 +159,7 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 //					station_desc.Format("%d. %s %d\n\r",station_number,this->akc_station_names[pRallyItemInlist->GetAKCNumber()],pRallyItemInlist->GetAKCNumber() );
 				}
 				else {
-					if (akc_number != 50) {
+					if (akc_number != 60) {
 						station_desc = station_name + " " + akc_number_text + x_y_location + "\n\r";
 //						station_desc.Format("   %s %d\n\r",this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 					}
@@ -279,7 +279,7 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 					station_desc = station_number_text + station_name + " " + akc_number_text + x_y_location ;
 //					station_desc.Format("  %d. %s %d",station_number,this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 				}
-				else if(akc_number != 50) {
+				else if(akc_number != 60) {
 					station_desc = station_name + " " + akc_number_text + x_y_location;
 //					station_desc.Format("   %s %d",this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 				}
@@ -447,12 +447,12 @@ void StationList::DrawStationList(CDC *pDC, RallyObjList *p_rallyList, int where
 					mid_point.y = (long)(mid_point.y/this->m_pixels_per_foot_ht);
 					x_y_location.Format("X: %d, Y: %d",mid_point.x, mid_point.y);
 				}
-				if (station_number > 0 && akc_number != 50) {
+				if (station_number > 0 && akc_number != 60) {
 					station_desc = station_number_text + station_name + " " + akc_number_text + x_y_location + "\n\r";
 //					station_desc.Format("%d. %s %d\n\r",station_number,this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 				}
 				else {
-					if (akc_number != 50) {
+					if (akc_number != 60) {
 						station_desc = station_name + " " + akc_number_text + x_y_location + "\n\r";
 //						station_desc.Format("   %s %d\n\r",this->akc_station_names[pRallyItemInlist->GetAKCNumber()], pRallyItemInlist->GetAKCNumber());
 					}

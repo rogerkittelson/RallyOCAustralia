@@ -77,7 +77,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="Release/RallyOCAU2016.exe"
+				OutputFile="Release/RallyOCAU2021.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				ProgramDatabaseFile=".\Release/RallyOC.pdb"
@@ -1568,6 +1568,30 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\bmp00047.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00048.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00049.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00050.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00051.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bmp00052.bmp"
+				>
+			</File>
+			<File
 				RelativePath="res\bmp180_p.bmp"
 				>
 			</File>
@@ -1592,6 +1616,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\dogagility.ico"
+				>
+			</File>
+			<File
 				RelativePath="res\DogRun.ico"
 				>
 			</File>
@@ -1601,6 +1629,14 @@
 			</File>
 			<File
 				RelativePath="res\DogRunDoc.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\res\double_l.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\double_r.bmp"
 				>
 			</File>
 			<File
@@ -1620,7 +1656,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\fro_rev_.bmp"
+				>
+			</File>
+			<File
 				RelativePath="res\front_3_.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\front_he.bmp"
 				>
 			</File>
 			<File
@@ -1652,11 +1696,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\icon1.ico"
+				>
+			</File>
+			<File
 				RelativePath="res\idb_.bmp"
 				>
 			</File>
 			<File
 				RelativePath="res\jump1.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\jump2.bmp"
 				>
 			</File>
 			<File
@@ -1672,11 +1724,27 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\leave_ab.bmp"
+				>
+			</File>
+			<File
 				RelativePath="res\leave_do.bmp"
 				>
 			</File>
 			<File
+				RelativePath=".\res\left_abo.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\left_hal.bmp"
+				>
+			</File>
+			<File
 				RelativePath=".\res\left_tur.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\left_u_l.bmp"
 				>
 			</File>
 			<File
@@ -1717,6 +1785,10 @@
 			</File>
 			<File
 				RelativePath="res\right_tu.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\right_u_.bmp"
 				>
 			</File>
 			<File

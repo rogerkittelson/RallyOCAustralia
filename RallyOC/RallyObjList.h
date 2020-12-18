@@ -33,7 +33,7 @@ public:
 	CRallyObject * FindRallyStationByStationNumber(int station_number);
 	void DrawRallyObjects(CDC* pDC, int stat_num_loc, BOOL advanced_mode, int where_cones, BOOL rotating, BOOL printing);
 	CString GetAKCDescrption(int objectid);
-	CString apdt_station_names[70];
+	CString apdt_station_names[76];
 	RallyObjList();
 	virtual ~RallyObjList();
 

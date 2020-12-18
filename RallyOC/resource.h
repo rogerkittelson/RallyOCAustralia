@@ -142,8 +142,8 @@
 #define IDB_ROTATE                      223
 #define IDB_RESIZE                      224
 #define IDR_ADD_AKC                     224
-#define IDR_ADD_APDT                    225
 #define IDB_JUMP_TOOL                   225
+#define IDR_ADD_APDT                    225
 #define IDB_LEASH_TOOL                  226
 #define ID_POPUP_MENU1                  226
 #define ID_POPUP_MENU                   226
@@ -176,6 +176,24 @@
 #define IDB_JUMP1                       246
 #define IDB_360_CIRCLE_HEEL             246
 #define IDB_FOUR_CONE_FIG8              247
+#define IDB_HALTFORWARD1                248
+#define IDB_FORWARD                     248
+#define IDB_DOUBLE_RGT_U                249
+#define IDB_DOUBLE_LFT_U                250
+#define IDB_DOUBLE_LFT_A                251
+#define IDB_FRO_REV_3                   252
+#define IDB_LEAVE_ABOUT_RET             253
+#define IDB_HALT_CIRCLE_FORWARD         254
+#define IDB_LEAVE_ABT_REC_FIN_R         255
+#define IDB_LEAVE_ABT_REC_FIN_L         256
+#define IDB_RIGHT_U_LEFT_ABOUT          257
+#define IDB_LEFT_U_LEFT_ABOUT           258
+#define IDB_LEFT_ABOUT_RIGHT_U          259
+#define IDB_LEFT_ABOUT_RIGHT_U1         260
+#define IDB_LEFT_ABOUT_LEFT_U           260
+#define IDB_FRONT_360_R_HEEL            261
+#define IDB_180_PIVOT_LT1               262
+#define IDB_180_L_HEEL_R_180            262
 #define IDC_AUTHOR                      1000
 #define ID_CH_MENU_1                    1000
 #define IDC_NOTES                       1001
@@ -305,13 +323,21 @@
 #define IDC_TYPE_AKC                    1067
 #define ID_CH_MENU_68                   1067
 #define IDC_TYPE_APDT                   1068
+#define ID_CH_MENU_69                   1068
 #define IDC_CLASS_A                     1069
+#define ID_CH_MENU_70                   1069
 #define IDC_CLASS_B                     1070
+#define ID_CH_MENU_71                   1070
 #define IDC_CLASS_NONE                  1071
+#define ID_CH_MENU_72                   1071
 #define IDC_AUTO_ADD                    1072
+#define ID_CH_MENU_73                   1072
 #define IDC_HONOR_BEFORE                1073
+#define ID_CH_MENU_74                   1073
 #define IDC_HONOR_AFTER                 1074
+#define ID_CH_MENU_75                   1074
 #define IDC_LINES_BLACK                 1075
+#define ID_CH_MENU_76                   1075
 #define IDC_LINES_GREY                  1076
 #define IDC_LINES_NONE                  1077
 #define IDC_STAT_NAME                   1081
@@ -678,13 +704,30 @@
 #define ID__LEAVEDOG                    33048
 #define ID__STAND33049                  33049
 #define ID_MASTER                       33050
+#define ID_HALT_LEAVE_RECALL            33051
+#define ID_DOUBLE_RIGHT_UTURN           33052
+#define ID_DOUBLE_LEFT_UTURN            33053
+#define ID_DOUBLE_LEFT_ATURN            33054
+#define ID_FRONT_REV_3_STEPS            33055
+#define ID_LEAVE_ABOUT_RET              33056
+#define ID_HALT_CIRCLE_FOR              33057
+#define ID_LEAVE_ABT_REC_FIN_R          33058
+#define ID_LEAVE_ABT_REC_FIN_L          33059
+#define ID_R_U_LEFT_ABOUT               33060
+#define ID_L_U_LEFT_ABOUT               33061
+#define ID_L_ABOUT_RIGHT_U              33062
+#define ID_L_ABOUT_LEFT_U               33063
+#define ID_STAND_PIVOT_R_FOR            33064
+#define ID_STAND_PIVOT_L_FOR            33065
+#define ID_FRT_CIR_R_FIN_L              33066
+#define ID_TR_L_HEEL_R_T_R              33067
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        246
+#define _APS_NEXT_RESOURCE_VALUE        248
 #define _APS_NEXT_COMMAND_VALUE         33051
 #define _APS_NEXT_CONTROL_VALUE         1153
 #define _APS_NEXT_SYMED_VALUE           101

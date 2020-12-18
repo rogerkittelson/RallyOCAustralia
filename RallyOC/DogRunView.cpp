@@ -86,6 +86,12 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_DOWNWALK, OnUpdateDrawDownwalk)
 	ON_COMMAND(ID_DRAW_DOWNSIT, OnDrawDownsit)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_DOWNSIT, OnUpdateDrawDownsit)
+	ON_COMMAND(ID_LEAVE_ABOUT_RET, OnDrawLeaveAboutReturn)
+	ON_UPDATE_COMMAND_UI(ID_LEAVE_ABOUT_RET, OnUpdateLeaveAboutReturn)
+	ON_COMMAND(ID_HALT_CIRCLE_FOR, OnDrawDogCircleForward)
+	ON_UPDATE_COMMAND_UI(ID_HALT_CIRCLE_FOR, OnUpdateDogCircleForwar)
+	ON_UPDATE_COMMAND_UI(ID_HALT_LEAVE_RECALL, OnUpdateHaltLeaveRecall)
+	ON_COMMAND(ID_HALT_LEAVE_RECALL, OnDrawHaltLeaveRecall)
 	ON_COMMAND(ID_DRAW_STAND, OnDrawStand)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_STAND, OnUpdateDrawStand)
 
@@ -98,6 +104,10 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_SIT_STAND, OnUpdateDrawSitstand)
 	ON_COMMAND(ID_DRAW_SLOWFORWARDFROMSIT, OnDrawSlowForwardFromSit)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_SLOWFORWARDFROMSIT, OnUpdateSlowForwardFromSit)
+	ON_COMMAND(ID_LEAVE_ABT_REC_FIN_R, OnDrawLeaveAboutRecallFinishRight)
+	ON_UPDATE_COMMAND_UI(ID_LEAVE_ABT_REC_FIN_R, OnUpdateLeaveAboutRecallFinishRight)
+	ON_COMMAND(ID_LEAVE_ABT_REC_FIN_L, OnDrawLeaveAboutRecallFinishLeft)
+	ON_UPDATE_COMMAND_UI(ID_LEAVE_ABT_REC_FIN_L, OnUpdateLeaveAboutRecallFinishLeft)
 	ON_COMMAND(ID_CH_STATION_NUM, OnChStationNum)
 	ON_UPDATE_COMMAND_UI(ID_CH_STATION_NUM, OnUpdateChStationNum)
 	ON_COMMAND(ID_ZERO_DEGREES, OnZeroDegrees)
@@ -135,6 +145,12 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_90_PIVOT_RT, OnUpdateDraw90PivotRt)
 	ON_COMMAND(ID_DRAW_180_PIVOT_RT, OnDraw180PivotRt)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_180_PIVOT_RT, OnUpdateDraw180PivotRt)
+	ON_COMMAND(ID_DOUBLE_RIGHT_UTURN, OnDrawDoubleRtUTurn)
+	ON_UPDATE_COMMAND_UI(ID_DOUBLE_RIGHT_UTURN, OnUpdateDrawDoubleRtUTurn)
+	ON_COMMAND(ID_R_U_LEFT_ABOUT, OnDrawRtUTurnLeftAboutTurn)
+	ON_UPDATE_COMMAND_UI(ID_R_U_LEFT_ABOUT, OnUpdateDrawRtUTurnLeftAboutTurn)
+	ON_COMMAND(ID_STAND_PIVOT_R_FOR, OnDrawStandPivotRightForward)
+	ON_UPDATE_COMMAND_UI(ID_STAND_PIVOT_R_FOR, OnUpdateDrawStandPivotRightForward)
 	ON_UPDATE_COMMAND_UI(ID_LEFT_TURNS, OnUpdateLeftTurns)
 	ON_COMMAND(ID_DRAW_LT_TURN, OnDrawLtTurn)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_LT_TURN, OnUpdateDrawLtTurn)
@@ -148,6 +164,20 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_90_PIVOT_LT, OnUpdateDraw90PivotLt)
 	ON_COMMAND(ID_DRAW_180_PIVOT_LT, OnDraw180PivotLt)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_180_PIVOT_LT, OnUpdateDraw180PivotLt)
+	ON_COMMAND(ID_DOUBLE_LEFT_UTURN, OnDrawDoubleLeftUTurn)
+	ON_UPDATE_COMMAND_UI(ID_DOUBLE_LEFT_UTURN, OnUpdateDoubleLeftUTurn)
+	ON_COMMAND(ID_DOUBLE_LEFT_ATURN, OnDrawDoubleLeftAboutTurn)
+	ON_UPDATE_COMMAND_UI(ID_DOUBLE_LEFT_ATURN, OnUpdateDoubleLeftAboutTurn)
+	ON_COMMAND(ID_L_U_LEFT_ABOUT, OnDrawLeftUTurnLeftAboutTurn)
+	ON_UPDATE_COMMAND_UI(ID_L_U_LEFT_ABOUT, OnUpdateLeftUTurnLeftAboutTurn)
+	ON_COMMAND(ID_L_ABOUT_RIGHT_U, OnDrawLeftUTurnRightAboutTurn)
+	ON_UPDATE_COMMAND_UI(ID_L_ABOUT_RIGHT_U, OnUpdateLeftUTurnRightAboutTurn)
+	ON_COMMAND(ID_L_ABOUT_LEFT_U, OnDrawLeftAboutTurnLeftUTurn)
+	ON_UPDATE_COMMAND_UI(ID_L_ABOUT_LEFT_U, OnUpdateLeftAboutTurnLeftUTurn)
+	ON_COMMAND(ID_STAND_PIVOT_L_FOR, OnDrawStandPivotLeftForward)
+	ON_UPDATE_COMMAND_UI(ID_STAND_PIVOT_L_FOR, OnUpdateStandPivotLeftForward)
+	ON_COMMAND(ID_TR_L_HEEL_R_T_R, OnDraw180LeftHeelRight180Right)
+	ON_UPDATE_COMMAND_UI(ID_TR_L_HEEL_R_T_R, OnUpdate180LeftHeelRight180Right)
 	ON_COMMAND(ID_DRAW_HONOR, OnDrawHonor)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_HONOR, OnUpdateDrawHonor)
 	ON_COMMAND(ID_ABOUT_FORWARD_RT, OnAboutForwardRt)
@@ -181,6 +211,10 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_FINISH_RT_HALT, OnUpdateDrawFinishRtHalt)
 	ON_COMMAND(ID_DRAW_HALT_FINISH_LT, OnDrawHaltFinishLt)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_HALT_FINISH_LT, OnUpdateDrawHaltFinishLt)
+	ON_COMMAND(ID_FRONT_REV_3_STEPS, OnDrawReverseThreeSteps)
+	ON_UPDATE_COMMAND_UI(ID_FRONT_REV_3_STEPS, OnUpdateDrawReverseThreeSteps)
+	ON_COMMAND(ID_FRT_CIR_R_FIN_L, OnDrawFrontCircleRightFinishLeft)
+	ON_UPDATE_COMMAND_UI(ID_FRT_CIR_R_FIN_L, OnUpdateDrawFrontCircleRightFinishLeft)
 	ON_COMMAND(ID_DRAW_HALT_FINISH_RT, OnDrawHaltFinishRt)
 	ON_UPDATE_COMMAND_UI(ID_DRAW_HALT_FINISH_RT, OnUpdateDrawHaltFinishRt)
 	ON_COMMAND(ID_DRAW_FAST_SIT, OnDrawFastSit)
@@ -365,8 +399,8 @@ BEGIN_MESSAGE_MAP(CDogRunView, CScrollView)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, CScrollView::OnFilePrintPreview)
 	ON_COMMAND_RANGE(ID_ITEM1, ID_ITEM40, OnInsertAfter)
 	ON_UPDATE_COMMAND_UI_RANGE(ID_ITEM1, ID_ITEM40, OnUpdateInsertAfter)
-	ON_COMMAND_RANGE(ID_CH_MENU_1, ID_CH_MENU_68, OnChangeTo)
-	ON_UPDATE_COMMAND_UI_RANGE(ID_CH_MENU_1, ID_CH_MENU_68, OnUpdateChangeTo)
+	ON_COMMAND_RANGE(ID_CH_MENU_1, ID_CH_MENU_76, OnChangeTo)
+	ON_UPDATE_COMMAND_UI_RANGE(ID_CH_MENU_1, ID_CH_MENU_76, OnUpdateChangeTo)
 
 	END_MESSAGE_MAP()
 
@@ -5534,14 +5568,14 @@ void CDogRunView::UpdateChangeToMenu(CMenu* insert_menu) {
 			class_cutoff = 32;
 			break;
 		case ADVANCED:
-			class_cutoff = 46;
+			class_cutoff = 53;
 			break;
 		case EXCELLENT:
-			class_cutoff = 53;
+			class_cutoff = 65;
 			break;
 		case MASTER:
 		case TRAINING:
-			class_cutoff = 59;
+			class_cutoff = 76;
 			break;
 		}
 		for (i=0;i<class_cutoff;i++) {
@@ -6048,6 +6082,72 @@ void CDogRunView::OnUpdateDrawDownsit(CCmdUI* pCmdUI)
 	else 
 		pCmdUI->SetCheck(FALSE);	
 }
+void CDogRunView::OnDrawLeaveAboutReturn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_HALT_LEAVE_RECALL;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateLeaveAboutReturn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_HALT_LEAVE_RECALL) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawDogCircleForward() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_HALT_CIRCLE_FOR;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateDogCircleForwar(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_HALT_CIRCLE_FOR) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawHaltLeaveRecall() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_LEAVE_ABOUT_RET;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateHaltLeaveRecall(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_LEAVE_ABOUT_RET) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
 
 void CDogRunView::OnDrawStanddown() 
 {
@@ -6116,7 +6216,51 @@ void CDogRunView::OnUpdateSlowForwardFromSit(CCmdUI* pCmdUI)
 	else 
 		pCmdUI->SetCheck(FALSE);	
 }
+void CDogRunView::OnDrawLeaveAboutRecallFinishRight() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_LEAVE_ABT_REC_FIN_R;
+	this->ClearAllStationsFromSelectedList(true);	
+}
 
+void CDogRunView::OnUpdateLeaveAboutRecallFinishRight(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE || course_info.m_class == ADVANCED) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_LEAVE_ABT_REC_FIN_R) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+
+void CDogRunView::OnDrawLeaveAboutRecallFinishLeft() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_LEAVE_ABT_REC_FIN_L;
+	this->ClearAllStationsFromSelectedList(true);	
+}
+
+void CDogRunView::OnUpdateLeaveAboutRecallFinishLeft(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE || course_info.m_class == ADVANCED) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_LEAVE_ABT_REC_FIN_L) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
 
 
 
@@ -6888,6 +7032,73 @@ void CDogRunView::OnUpdateDraw90PivotRt(CCmdUI* pCmdUI)
 		pCmdUI->SetCheck(FALSE);		
 }
 
+void CDogRunView::OnDrawDoubleRtUTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_DOUBLE_RIGHT_UTURN;
+	this->ClearAllStationsFromSelectedList(true);	
+}
+
+void CDogRunView::OnUpdateDrawDoubleRtUTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_DOUBLE_RIGHT_UTURN) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);		
+}
+void CDogRunView::OnDrawRtUTurnLeftAboutTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_R_U_LEFT_ABOUT;
+	this->ClearAllStationsFromSelectedList(true);	
+}
+
+void CDogRunView::OnUpdateDrawRtUTurnLeftAboutTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_R_U_LEFT_ABOUT) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);		
+}
+void CDogRunView::OnDrawStandPivotRightForward() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_STAND_PIVOT_R_FOR;
+	this->ClearAllStationsFromSelectedList(true);	
+}
+
+void CDogRunView::OnUpdateDrawStandPivotRightForward(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_STAND_PIVOT_R_FOR) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);		
+}
+
 void CDogRunView::OnDraw180PivotRt() 
 {
 	// TODO: Add your command handler code here
@@ -7169,6 +7380,160 @@ void CDogRunView::OnUpdateDraw180PivotLt(CCmdUI* pCmdUI)
 	else 
 		pCmdUI->SetCheck(FALSE);	
 }
+void CDogRunView::OnDrawDoubleLeftUTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_DOUBLE_LEFT_UTURN;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateDoubleLeftUTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_DOUBLE_LEFT_UTURN) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawDoubleLeftAboutTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_DOUBLE_LEFT_ATURN;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateDoubleLeftAboutTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_DOUBLE_LEFT_ATURN) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawLeftUTurnLeftAboutTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_L_U_LEFT_ABOUT;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateLeftUTurnLeftAboutTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_L_U_LEFT_ABOUT) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawLeftUTurnRightAboutTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_L_ABOUT_RIGHT_U;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateLeftUTurnRightAboutTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_L_ABOUT_RIGHT_U) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawLeftAboutTurnLeftUTurn() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_L_ABOUT_LEFT_U;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateLeftAboutTurnLeftUTurn(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == EXCELLENT || course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_L_ABOUT_LEFT_U) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawStandPivotLeftForward() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_STAND_PIVOT_L_FOR;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateStandPivotLeftForward(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_STAND_PIVOT_L_FOR) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDraw180LeftHeelRight180Right() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_TR_L_HEEL_R_T_R;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdate180LeftHeelRight180Right(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == MASTER ||course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_TR_L_HEEL_R_T_R) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
 
 void CDogRunView::OnDrawHaltRightPivotForward() 
 {
@@ -7343,6 +7708,52 @@ void CDogRunView::OnUpdateDrawHaltFinishLt(CCmdUI* pCmdUI)
 	else 
 		pCmdUI->SetCheck(FALSE);	
 }
+void CDogRunView::OnDrawReverseThreeSteps() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_FRONT_REV_3_STEPS;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateDrawReverseThreeSteps(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
+	else pCmdUI->Enable(TRUE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_FRONT_REV_3_STEPS) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+void CDogRunView::OnDrawFrontCircleRightFinishLeft() 
+{
+	// TODO: Add your command handler code here
+	this->m_SelectedShapeOnToolBar = ID_FRT_CIR_R_FIN_L;
+	this->ClearAllStationsFromSelectedList(true);		
+}
+
+void CDogRunView::OnUpdateDrawFrontCircleRightFinishLeft(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CDogRunDoc* pDoc = GetDocument();
+	CourseInfo course_info;
+	pDoc->m_course_info->GetCourseInfo(&course_info);
+	ASSERT_VALID(pDoc);
+	if (course_info.m_class == MASTER || course_info.m_class == TRAINING) pCmdUI->Enable(TRUE);
+	else pCmdUI->Enable(FALSE);
+
+	if (this->m_SelectedShapeOnToolBar == ID_FRT_CIR_R_FIN_L) 
+		pCmdUI->SetCheck(TRUE);
+	else 
+		pCmdUI->SetCheck(FALSE);	
+}
+
+
 
 void CDogRunView::OnDrawHaltFinishRt() 
 {

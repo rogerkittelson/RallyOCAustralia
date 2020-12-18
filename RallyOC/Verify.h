@@ -44,7 +44,7 @@ protected:
 	void CheckConsectiveJumpStations(CString *error_report);
 	int GetStationaryCount(int station_list[51][2], CString *stat_exe_loc);
 	CString CreateCourseHeader(CDogRunDoc *p_doc_to_verify);
-	int m_num_stations[61];
+	int m_num_stations[77];
 	int m_num_novice;
 	int m_num_advanced;
 	int m_num_excellent;

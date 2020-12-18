@@ -75,6 +75,14 @@ HID_CH_MENU_65                          0x10428
 HID_CH_MENU_66                          0x10429
 HID_CH_MENU_67                          0x1042A
 HID_CH_MENU_68                          0x1042B
+HID_CH_MENU_69                          0x1042C
+HID_CH_MENU_70                          0x1042D
+HID_CH_MENU_71                          0x1042E
+HID_CH_MENU_72                          0x1042F
+HID_CH_MENU_73                          0x10430
+HID_CH_MENU_74                          0x10431
+HID_CH_MENU_75                          0x10432
+HID_CH_MENU_76                          0x10433
 HID_DRAW_SLOW                           0x17F58
 HID_DRAW_FAST                           0x17F59
 HID_DRAW_RT_TURN                        0x17F5A
@@ -372,6 +380,23 @@ HID_DRAW_MOVINGSTAND                    0x18117
 HID__LEAVEDOG                           0x18118
 HID__STAND33049                         0x18119
 HID_MASTER                              0x1811A
+HID_HALT_LEAVE_RECALL                   0x1811B
+HID_DOUBLE_RIGHT_UTURN                  0x1811C
+HID_DOUBLE_LEFT_UTURN                   0x1811D
+HID_DOUBLE_LEFT_ATURN                   0x1811E
+HID_FRONT_REV_3_STEPS                   0x1811F
+HID_LEAVE_ABOUT_RET                     0x18120
+HID_HALT_CIRCLE_FOR                     0x18121
+HID_LEAVE_ABT_REC_FIN_R                 0x18122
+HID_LEAVE_ABT_REC_FIN_L                 0x18123
+HID_R_U_LEFT_ABOUT                      0x18124
+HID_L_U_LEFT_ABOUT                      0x18125
+HID_L_ABOUT_RIGHT_U                     0x18126
+HID_L_ABOUT_LEFT_U                      0x18127
+HID_STAND_PIVOT_R_FOR                   0x18128
+HID_STAND_PIVOT_L_FOR                   0x18129
+HID_FRT_CIR_R_FIN_L                     0x1812A
+HID_TR_L_HEEL_R_T_R                     0x1812B
  
 // Prompts (IDP_*) 
  
