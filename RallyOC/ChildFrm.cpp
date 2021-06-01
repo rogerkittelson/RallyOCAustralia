@@ -656,7 +656,7 @@ void CChildFrame::SetAddMenu(void)
 	int iPos;
 
 	pDoc->m_course_info->GetCourseInfo(&course_info);
-	iPos = FindMenuItem(pTopMenu, "&Add AKC");
+	iPos = FindMenuItem(pTopMenu, "&Add ANKC");
 	if (iPos == -1)
 	  return;
 

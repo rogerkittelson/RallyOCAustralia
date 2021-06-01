@@ -75,6 +75,14 @@ HID_CH_MENU_65                          0x10428
 HID_CH_MENU_66                          0x10429
 HID_CH_MENU_67                          0x1042A
 HID_CH_MENU_68                          0x1042B
+HID_CH_MENU_69                          0x1042C
+HID_CH_MENU_70                          0x1042D
+HID_CH_MENU_71                          0x1042E
+HID_CH_MENU_72                          0x1042F
+HID_CH_MENU_73                          0x10430
+HID_CH_MENU_74                          0x10431
+HID_CH_MENU_75                          0x10432
+HID_CH_MENU_76                          0x10433
 HID_DRAW_SLOW                           0x17F58
 HID_DRAW_FAST                           0x17F59
 HID_DRAW_RT_TURN                        0x17F5A

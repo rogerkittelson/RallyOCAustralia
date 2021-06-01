@@ -412,7 +412,7 @@ void RallyListView::SetUpRallyList(CObList *p_rallyList, CDocument *pDoc) {
 	CString col_title;
 	col_title = "No." ;
 	this->InsertColumn(0, col_title, LVCFMT_LEFT, 60, 0);
-	col_title = "AKC No." ;
+	col_title = "ANKC No." ;
 	this->InsertColumn(1, col_title, LVCFMT_LEFT, 60, 1);
 	col_title = "Station Description"; 
 	this->InsertColumn(2, col_title, LVCFMT_LEFT, 240, 2);	

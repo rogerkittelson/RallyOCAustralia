@@ -120,7 +120,7 @@ void Verify::VerifyCourse(CDogRunDoc *p_doc_to_verify, BOOL show_dialog, int typ
 	if (error == FINISH_ONLY) error_report = "Missing Start Station\r\n";
 	if (error == START_ONLY) error_report = "Missing Finish Station\r\n";
 
-// not needed?	this->CheckForSingleStations(akc_station_list, &error_report);
+	this->CheckForSingleStations(akc_station_list, &error_report);
 	this->ChangePaceBackToNormal(&error_report);
 	this->CheckConsectiveJumpStations(&error_report);
 	p_doc_to_verify->m_course_info->GetCourseInfo(&course_info);
@@ -314,7 +314,7 @@ void Verify::CheckExcellentCourse(int station_list[51][2], CString *error_report
 	CString station_number;
 	
 	station_count = 0;
-	for (i = 3; i<65; i++) {
+	for (i = 3; i<66; i++) {
 		station_count += station_list[i][1];
 	}
 	if (station_count < 15) station_num_error = "You have less than the required 15 stations!\r\n";
@@ -410,10 +410,11 @@ void Verify::CheckMasterCourse(int station_list[51][2], CString *error_report) {
 		num_stationary_error = "10 Maximum Stationary exercises allowed!\r\n";
 		num_stationary_error += stat_exe_loc;
 	}
-	if (this->GetStationaryCount(station_list, &stat_exe_loc) < 3) {
-		num_stationary_error = "Must have at least 3 Stationary exercises!\r\n";
-		num_stationary_error += stat_exe_loc;
-	}
+// no miniumm number
+//	if (this->GetStationaryCount(station_list, &stat_exe_loc) < 3) {
+//		num_stationary_error = "Must have at least 3 Stationary exercises!\r\n";
+//		num_stationary_error += stat_exe_loc;
+//	}
 	*error_report += num_stationary_error;	
 
 	*error_report += honor_station_error;	
@@ -454,10 +455,11 @@ void Verify::CheckForSingleStations(int station_list[77][2], CString *error_repo
 					if (k < station_list[i][1]) single_station_error += ", ";
 				}
 			}
+			single_station_error += "\r\n";
 		}
-		if (i == 4) i = 10;
+		if (i == 4) i = 10; // last one limited to 1 station to last one allowed to more than  one 
 		if (i == 16) i = 19;
-		if (i == 45) i = 46;
+		if (i == 52) i = 53;
 		i++;
 	}
 	if (!single_station_error.IsEmpty()) single_station_error += "\r\n";
@@ -519,7 +521,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[3][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #3), ";
+				*stat_exe_loc  += station_number + "(ANKC #3), ";
 			}
 		}
 	}
@@ -528,7 +530,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[4][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #4), ";
+				*stat_exe_loc  += station_number + "(ANKC #4), ";
 			}
 		}
 	}
@@ -537,7 +539,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[13][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #13), ";
+				*stat_exe_loc  += station_number + "(ANKC #13), ";
 			}
 		}
 	}	
@@ -546,7 +548,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[14][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #14), ";
+				*stat_exe_loc  += station_number + "(ANKC #14), ";
 			}
 		}
 	}	
@@ -556,7 +558,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[15][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #15), ";
+				*stat_exe_loc  += station_number + "(ANKC #15), ";
 			}
 		}
 	}
@@ -565,7 +567,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[16][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #16), ";
+				*stat_exe_loc  += station_number + "(ANKC #16), ";
 			}
 		}
 	}
@@ -574,7 +576,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[25][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #25), ";
+				*stat_exe_loc  += station_number + "(ANKC #25), ";
 			}
 		}
 	}
@@ -583,7 +585,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[26][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #26), ";
+				*stat_exe_loc  += station_number + "(ANKC #26), ";
 			}
 		}
 	}
@@ -592,7 +594,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[27][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #27), ";
+				*stat_exe_loc  += station_number + "(ANKC #27), ";
 			}
 		}
 	}
@@ -601,7 +603,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[28][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #28), ";
+				*stat_exe_loc  += station_number + "(ANKC #28), ";
 			}
 		}
 	}
@@ -610,7 +612,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[30][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #30), ";
+				*stat_exe_loc  += station_number + "(ANKC #30), ";
 			}
 		}
 	}
@@ -619,7 +621,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[31][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #31), ";
+				*stat_exe_loc  += station_number + "(ANKC #31), ";
 			}
 		}
 	}
@@ -628,7 +630,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[32][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #32), ";
+				*stat_exe_loc  += station_number + "(ANKC #32), ";
 			}
 		}
 	}
@@ -637,7 +639,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[33][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #33), ";
+				*stat_exe_loc  += station_number + "(ANKC #33), ";
 			}
 		}
 	}
@@ -646,7 +648,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[34][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #34), ";
+				*stat_exe_loc  += station_number + "(ANKC #34), ";
 			}
 		}
 	}
@@ -655,7 +657,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[35][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #35), ";
+				*stat_exe_loc  += station_number + "(ANKC #35), ";
 			}
 		}
 	}
@@ -664,7 +666,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[36][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #36), ";
+				*stat_exe_loc  += station_number + "(ANKC #36), ";
 			}
 		}
 	}
@@ -673,7 +675,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[37][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #37), ";
+				*stat_exe_loc  += station_number + "(ANKC #37), ";
 			}
 		}
 	}
@@ -682,7 +684,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[38][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #38), ";
+				*stat_exe_loc  += station_number + "(ANKC #38), ";
 			}
 		}
 	}
@@ -691,7 +693,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[40][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #40), ";
+				*stat_exe_loc  += station_number + "(ANKC #40), ";
 			}
 		}
 	}
@@ -701,7 +703,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[40][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #41), ";
+				*stat_exe_loc  += station_number + "(ANKC #41), ";
 			}
 		}
 	}
@@ -711,7 +713,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[42][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #42), ";
+				*stat_exe_loc  += station_number + "(ANKC #42), ";
 			}
 		}
 	}
@@ -720,7 +722,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[43][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #43), ";
+				*stat_exe_loc  += station_number + "(ANKC #43), ";
 			}
 		}
 	}
@@ -729,7 +731,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[44][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #44), ";
+				*stat_exe_loc  += station_number + "(ANKC #44), ";
 			}
 		}
 	}
@@ -738,7 +740,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[45][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #45), ";
+				*stat_exe_loc  += station_number + "(ANKC #45), ";
 			}
 		}
 	}
@@ -747,7 +749,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[46][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #47), ";
+				*stat_exe_loc  += station_number + "(ANKC #47), ";
 			}
 		}
 	}
@@ -756,7 +758,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[51][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #48), ";
+				*stat_exe_loc  += station_number + "(ANKC #48), ";
 			}
 		}
 	}
@@ -765,7 +767,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[54][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #49), ";
+				*stat_exe_loc  += station_number + "(ANKC #49), ";
 			}
 		}
 	}
@@ -774,7 +776,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[55][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #50), ";
+				*stat_exe_loc  += station_number + "(ANKC #50), ";
 			}
 		}
 	}	
@@ -783,7 +785,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[56][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #56), ";
+				*stat_exe_loc  += station_number + "(ANKC #56), ";
 			}
 		}
 	}	
@@ -793,7 +795,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[57][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #57), ";
+				*stat_exe_loc  += station_number + "(ANKC #57), ";
 			}
 		}
 	}	
@@ -802,7 +804,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[58][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #58), ";
+				*stat_exe_loc  += station_number + "(ANKC #58), ";
 			}
 		}
 	}	
@@ -811,7 +813,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[59][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -820,7 +822,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[66][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -829,7 +831,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[67][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -838,7 +840,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[68][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -847,7 +849,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[69][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -856,7 +858,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[70][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -865,7 +867,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[71][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -874,7 +876,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[73][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}	
@@ -883,7 +885,7 @@ int Verify::GetStationaryCount(int station_list[77][2], CString *stat_exe_loc) {
 		for(i=0;i<77;i++) {
 			if (station_list[74][0] == this->m_num_stations[i]) {
 				station_number.Format("%d",i);
-				*stat_exe_loc  += station_number + "(AKC #59), ";
+				*stat_exe_loc  += station_number + "(ANKC #59), ";
 			}
 		}
 	}		
@@ -920,7 +922,7 @@ CString Verify::StationStatistics(int station_list[51][2])
 			sel_station_desc.LoadString(station_list[i][0]);
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);			
-			temp_string.Format("%d  %s Station(s) (AKC # %d) \r\n",station_list[i][1], sel_station_desc, i);
+			temp_string.Format("%d  %s Station(s) (ANKC # %d) \r\n",station_list[i][1], sel_station_desc, i);
 			station_stats += temp_string;
 		}
 	}
@@ -1262,7 +1264,7 @@ CString Verify::APDTStationStatistics(int station_list[][2])
 			sel_station_desc.LoadString(station_list[i][0]);
 			find_slash = sel_station_desc.Find("\n");
 			sel_station_desc = sel_station_desc.Left(find_slash);			
-			temp_string.Format("%d  %s Station(s) (AKC # %d) \r\n",station_list[i][1], sel_station_desc, i);
+			temp_string.Format("%d  %s Station(s) (ANKC # %d) \r\n",station_list[i][1], sel_station_desc, i);
 			station_stats += temp_string;
 		}
 	}

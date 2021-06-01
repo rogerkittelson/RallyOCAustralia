@@ -2564,7 +2564,7 @@ void CDogRunDoc::OnPrintStationList()
 		strResult += out_string + "\r\n";
 		if (this->m_slpo_station_number) out_string += "No.  ";
 		if (this->m_slpo_station_name) out_string += "Station Description ";
-		if (this->m_slpo_akc_number) out_string += "(AKC Number)  ";
+		if (this->m_slpo_akc_number) out_string += "(ANKC Number)  ";
 		if (this->m_slpo_xy_location) out_string += "Grid Location (middle of station)";
 
 //		out_string.Format("No.  Station Description (AKC Number)  X-Y Grid Location (middle of station)");
@@ -2599,7 +2599,7 @@ void CDogRunDoc::OnPrintStationList()
 				station_location.y = (long)(station_location.y/this->m_pixels_per_foot_ht);
 
 				if (this->m_slpo_station_number) station_number_text.Format("%d. ",station_number);
-				if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d) ",akc_station_number);
+				if (this->m_slpo_akc_number) akc_number_text.Format("(ANKC # %d) ",akc_station_number);
 				if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber())  + " ";
 				if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 
@@ -2626,7 +2626,7 @@ void CDogRunDoc::OnPrintStationList()
 			have_honor = false;
 			if (have_honor) {
 				if (this->m_slpo_station_number) station_number_text.Format("%d ",this->m_num_stations + 1);
-				if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d)",50);
+				if (this->m_slpo_akc_number) akc_number_text.Format("(ANKC # %d)",50);
 				if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(50) + " ";
 				if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 
@@ -2749,7 +2749,7 @@ void CDogRunDoc::OnCopyList()
 	strResult += out_string + "\r\n";
 	if (this->m_slpo_station_number) out_string += "No.  ";
 	if (this->m_slpo_station_name) out_string += "Station Description ";
-	if (this->m_slpo_akc_number) out_string += "(AKC Number)  ";
+	if (this->m_slpo_akc_number) out_string += "(ANKC Number)  ";
 	if (this->m_slpo_xy_location) out_string += "Grid Location (middle of station)";
 //	out_string.Format("No.  Station Description (AKC Number)  X-Y Grid Location (middle of station)");
 
@@ -2771,7 +2771,7 @@ void CDogRunDoc::OnCopyList()
 			station_location.x = (long)(station_location.x/this->m_pixels_per_foot_wd);
 			station_location.y = (long)(station_location.y/this->m_pixels_per_foot_ht);
 			if (this->m_slpo_station_number) station_number_text.Format("%d. ",station_number);
-			if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d) ",akc_station_number);
+			if (this->m_slpo_akc_number) akc_number_text.Format("(ANKC # %d) ",akc_station_number);
 			if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(pRallyItemInlist->GetAKCNumber()) + " ";
 			if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 
@@ -2795,7 +2795,7 @@ void CDogRunDoc::OnCopyList()
 		have_honor = false;
 		if (have_honor) {
 			if (this->m_slpo_station_number) station_number_text.Format("%d ",this->m_num_stations + 1);
-			if (this->m_slpo_akc_number) akc_number_text.Format("(AKC # %d)",50);
+			if (this->m_slpo_akc_number) akc_number_text.Format("(ANKC # %d)",50);
 			if (this->m_slpo_station_name) station_name = StationMapper::GetAKCDescrptionFromAKCNumber(50) + " ";
 			if (this->m_slpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 			if (course_info.m_number_honor > 0) {
@@ -3150,10 +3150,10 @@ void CDogRunDoc::OnPrintListDesc()
 			if (have_honor) {
 				if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 				if (course_info.m_number_honor > 0) {
-					station_desc.Format("%d. %s (AKC # 50) %s",this->m_num_stations + 1, StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
+					station_desc.Format("%d. %s (ANKC # 50) %s",this->m_num_stations + 1, StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
 				}
 				else {
-					station_desc.Format("    %s (AKC # 50) %s",StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
+					station_desc.Format("    %s (ANKC # 50) %s",StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
 				}
 				temp_error = station_desc;
 				while(not_done) {
@@ -3287,7 +3287,7 @@ void CDogRunDoc::OnCopyDesc()
 			
 			
 			if (this->m_sdpo_station_number) station_number_text.Format("%d. ",station_number);
-			if (this->m_sdpo_akc_number) akc_number_text.Format("(AKC # %d) ",akc_station_number);
+			if (this->m_sdpo_akc_number) akc_number_text.Format("(ANKC # %d) ",akc_station_number);
 			if (this->m_sdpo_station_name) station_name =  StationMapper::GetAKCDetailedDescrptionFromAKCNumber(akc_station_number) + " ";
 			if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",station_location.x, station_location.y);
 	
@@ -3313,10 +3313,10 @@ void CDogRunDoc::OnCopyDesc()
 		if (have_honor) {
 			if (this->m_sdpo_xy_location) x_y_location.Format("%d-%d",honor_location.x, honor_location.y);
 			if (course_info.m_number_honor > 0) {
-				station_desc.Format("%d. %s (AKC # 50) %s",this->m_num_stations + 1, StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
+				station_desc.Format("%d. %s (ANKC # 50) %s",this->m_num_stations + 1, StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
 			}
 			else {
-				station_desc.Format("    %s (AKC # 50) %s",StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
+				station_desc.Format("    %s (ANKC # 50) %s",StationMapper::GetAKCDetailedDescrptionFromAKCNumber(50),x_y_location);
 			}
 			station_desc.Replace("\r\n"," ");
 

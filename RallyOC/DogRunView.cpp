@@ -2158,7 +2158,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	penDot.CreatePen(PS_DOT, 1, gridColor);
 	CPen* pOldPen = pDC->SelectObject(&penDot);
 //	double meter_spacing = this->m_grid_spacing * 0.3;
-		for (x = rect.left ; x < rect.right; x += (int)pixels_per_grid_wd)
+	for (x = rect.left ; x < rect.right; x += (int)pixels_per_grid_wd)
 		{
 			if (x != 0)
 			{
@@ -2180,8 +2180,18 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 				grid_spacing++;
 			}
 		}
-		grid_spacing = 0;
+		int temp_spacing = 0;
 		for (y = rect.top; y < rect.bottom; y += (int)pixels_per_grid_ht)
+		{
+			if (y != 0)
+			{
+				temp_spacing++;
+			}
+		}
+		grid_spacing = temp_spacing;
+		grid_spacing = 0;
+//		for (y = rect.top; y < rect.bottom; y += (int)pixels_per_grid_ht)
+		for (y = rect.bottom; y > rect.top; y -= (int)pixels_per_grid_ht)
 		{
 			if (y != 0)
 			{
@@ -2192,7 +2202,7 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 				}
 //				spacing.Format("%.1f",grid_spacing * meter_spacing);
 				spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
-				pDC->TextOut(rect.right,y, spacing);
+				if (y != rect.bottom) pDC->TextOut(rect.right,y, spacing);
 				pDC->TextOut(rect.left,y, spacing);
 				grid_spacing++;
 			}
@@ -2209,8 +2219,11 @@ void CDogRunView::DrawGrid(CDC* pDC) {
 	pDC->LineTo(rect.left, rect.bottom);
 	pDC->LineTo(rect.left, rect.top);
 //	spacing.Format("%.1f",grid_spacing * meter_spacing);
-	spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
-	pDC->TextOut(rect.right,y, spacing);
+//	spacing.Format("%.1f",grid_spacing * this->m_grid_spacing);
+	spacing.Format("%.1f",this->m_ring_lenght);
+	pDC->TextOut(rect.right,rect.top, spacing);
+	spacing.Format("%.1f",this->m_ring_width);
+	pDC->TextOut(rect.right,rect.bottom, spacing);
 	this->m_grid_rect = rect;
 	pDC->SelectObject(pOldPen);
 	DeleteObject(penSolid);
@@ -6085,7 +6098,7 @@ void CDogRunView::OnUpdateDrawDownsit(CCmdUI* pCmdUI)
 void CDogRunView::OnDrawLeaveAboutReturn() 
 {
 	// TODO: Add your command handler code here
-	this->m_SelectedShapeOnToolBar = ID_HALT_LEAVE_RECALL;
+	this->m_SelectedShapeOnToolBar = ID_LEAVE_ABOUT_RET;
 	this->ClearAllStationsFromSelectedList(true);		
 }
 
@@ -6099,7 +6112,7 @@ void CDogRunView::OnUpdateLeaveAboutReturn(CCmdUI* pCmdUI)
 	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
 	else pCmdUI->Enable(TRUE);
 
-	if (this->m_SelectedShapeOnToolBar == ID_HALT_LEAVE_RECALL) 
+	if (this->m_SelectedShapeOnToolBar == ID_LEAVE_ABOUT_RET) 
 		pCmdUI->SetCheck(TRUE);
 	else 
 		pCmdUI->SetCheck(FALSE);	
@@ -6129,7 +6142,7 @@ void CDogRunView::OnUpdateDogCircleForwar(CCmdUI* pCmdUI)
 void CDogRunView::OnDrawHaltLeaveRecall() 
 {
 	// TODO: Add your command handler code here
-	this->m_SelectedShapeOnToolBar = ID_LEAVE_ABOUT_RET;
+	this->m_SelectedShapeOnToolBar = ID_HALT_LEAVE_RECALL;
 	this->ClearAllStationsFromSelectedList(true);		
 }
 
@@ -6143,7 +6156,7 @@ void CDogRunView::OnUpdateHaltLeaveRecall(CCmdUI* pCmdUI)
 	if (course_info.m_class == NOVICE && course_info.m_type_of_course == AKC_COURSE) pCmdUI->Enable(FALSE);
 	else pCmdUI->Enable(TRUE);
 
-	if (this->m_SelectedShapeOnToolBar == ID_LEAVE_ABOUT_RET) 
+	if (this->m_SelectedShapeOnToolBar == ID_HALT_LEAVE_RECALL) 
 		pCmdUI->SetCheck(TRUE);
 	else 
 		pCmdUI->SetCheck(FALSE);	

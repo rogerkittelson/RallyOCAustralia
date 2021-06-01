@@ -359,114 +359,114 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Si&ze to Screen\tF6",         ID_SIZE_TO_SCREEN
     END
-    POPUP "&Add AKC"
+    POPUP "&Add ANKC"
     BEGIN
-        MENUITEM "&Start",                      ID_DRAW_START
-        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        MENUITEM "&Start [1]",                  ID_DRAW_START
+        MENUITEM "&Finish [2]",                 ID_DRAW_FINISH
         POPUP "H&alt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-            MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
-            MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-            MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-            MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-            MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-            MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-            MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-            MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
-            MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-            MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-            MENUITEM "Halt-Leave Dog-Recall",       ID_DRAW_SLOWFORWARDFROMSIT
-            MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-            MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-            MENUITEM "Halt-Leave Dog-Down-Sit",     ID_DRAW_STAND
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+            MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+            MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+            MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+            MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
+            MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+            MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+            MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+            MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+            MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
         END
         POPUP "&Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "&Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
-            MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-            MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-            MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-            MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+            MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+            MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+            MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
         END
         POPUP "&Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
-            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-            MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-            MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-            MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-            MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-            MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-            MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+            MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+            MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+            MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+            MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+            MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+            MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
         END
         POPUP "Pi&vot"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "Fron&t"
         BEGIN
-            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Halt-Left",                   ID_DRAW_HALT_FINISH_LT
-            MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
-            MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
+            MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
         END
         POPUP "&Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-            MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
-            MENUITEM "Jump",                        ID_DRAW_JUMP
-            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-            MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-            MENUITEM "Stand-Leave Dog-Distance Down", ID__DRAW_DOWNWHILEHEELING
-            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-            MENUITEM "Sit-Walk Around Dog",         ID__DRAW_SITSTAY
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
+            MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+            MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+            MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+            MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
         END
         POPUP "H&eel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-            MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-            MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+            MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+            MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+            MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
         END
         POPUP "&Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
-            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-            MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
+            MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+            MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
         END
     END
     POPUP "Add"
@@ -486,9 +486,9 @@ BEGIN
         BEGIN
             MENUITEM "Sprial Right 1A",             ID_SPIRAL_RT_1A
             MENUITEM "Sprial Right 1B",             ID_SPIRAL_RT_1B
-            MENUITEM "Spiral Left",                 ID_SPIRAL_LT
-            MENUITEM "Figure 8-Weave Twice",        ID_FIG8_PATTERN
-            MENUITEM "Serpentine Weave Once",       ID_SERP_PATTERN
+            MENUITEM "Spiral Left [22]",            ID_SPIRAL_LT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_FIG8_PATTERN
+            MENUITEM "Serpentine Weave Once [24]",  ID_SERP_PATTERN
             MENUITEM "Offset",                      ID_OFFSET_3A
         END
     END
@@ -545,128 +545,127 @@ BEGIN
             MENUITEM "Horizontal",                  ID_ALIGN_HORIZ
             MENUITEM "Vertical",                    ID_ALIGN_VERT
         END
-        POPUP "Add AKC"
+        POPUP "Add ANKC"
         BEGIN
-            MENUITEM "Start",                       ID_DRAW_START
-            MENUITEM "Finish",                      ID_DRAW_FINISH
+            MENUITEM "Start [1]",                   ID_DRAW_START
+            MENUITEM "Finish [2]",                  ID_DRAW_FINISH
             POPUP "Halt-Forward"
             BEGIN
-                MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-                MENUITEM "Halt-Down",                   ID_DRAW_SITHALTDOWN
-                MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-                MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-                MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-                MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-                MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-                MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-                MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
-                MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-                MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-                MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-                MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-                MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-                MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
+                MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+                MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+                MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+                MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+                MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+                MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+                MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+                MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+                MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
+                MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+                MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+                MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+                MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+                MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+                MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
             END
             POPUP "Pace"
             BEGIN
-                MENUITEM "Slow",                        ID_DRAW_SLOW
-                MENUITEM "Normal",                      ID_DRAW_NORMAL
-                MENUITEM "Fast",                        ID_DRAW_FAST
-                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+                MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+                MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+                MENUITEM "Fast [18]",                   ID_DRAW_FAST
+                MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
             END
             POPUP "Right Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-                MENUITEM "270 Degree",                  ID_DRAW_270_RT
-                MENUITEM "360 Degree",                  ID_DRAW_360_RT
-                MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-                MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-                MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-                MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+                MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+                MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+                MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+                MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+                MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+                MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+                MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+                MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+                MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
             END
             POPUP "Left Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-                MENUITEM "270 Degree",                  ID_DRAW_270_LT
-                MENUITEM "360 Degree",                  ID_DRAW_360_LT
-                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-                MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-                MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-                MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-                MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-                MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-                MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+                MENUITEM "90 Degree [5]",               ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+                MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+                MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+                MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+                MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+                MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+                MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+                MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+                MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+                MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+                MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
             END
             POPUP "Pi&vot"
             BEGIN
-                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
             END
             POPUP "Finish"
             BEGIN
-                MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-                MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-                MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-                MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-                MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
-                MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-                MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-                MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
-                MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
+                MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+                MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+                MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+                MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
+                MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
             END
             POPUP "Moving"
             BEGIN
-                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-                MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-                MENUITEM "Jump",                        ID_DRAW_JUMP
-                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-                MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-                MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
-                MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-                MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
-                MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
+                MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+                MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+                MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+                MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+                MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+                MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+                MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
+                MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
             END
             POPUP "Heel"
             BEGIN
-                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-                MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-                MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+                MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+                MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+                MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+                MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
             END
             POPUP "Weaves"
             BEGIN
-                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
-                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-                MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+                MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+                MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
+                MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+                MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
             END
         END
         POPUP "Add APDT"
         BEGIN
-            MENUITEM "&Start",                      ID_DRAW_START
-            MENUITEM "&Finish",                     ID_DRAW_FINISH
+            MENUITEM "&Start [1]",                  ID_DRAW_START
+            MENUITEM "&Finish [2]",                 ID_DRAW_FINISH
             POPUP "H&alt-Forward"
             BEGIN
-                MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+                MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
                 MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
                 MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
-                MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
-                MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+                MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+                MENUITEM "Sit-Walk Around [30]",        ID_DRAW_HALTWALK
                 MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
                 MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
                 MENUITEM "Return-Stand",                ID_RETURN_STAND
@@ -678,56 +677,56 @@ BEGIN
             END
             POPUP "&Pace"
             BEGIN
-                MENUITEM "Slow",                        ID_DRAW_SLOW
-                MENUITEM "Normal",                      ID_DRAW_NORMAL
-                MENUITEM "Fast",                        ID_DRAW_FAST
-                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+                MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+                MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+                MENUITEM "Fast [18]",                   ID_DRAW_FAST
+                MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
             END
             POPUP "&Right Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-                MENUITEM "270 Degree",                  ID_DRAW_270_RT
-                MENUITEM "360 Degree",                  ID_DRAW_360_RT
-                MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-                MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-                MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-                MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+                MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+                MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+                MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+                MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+                MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+                MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+                MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+                MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+                MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
             END
             POPUP "&Left Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-                MENUITEM "270 Degree",                  ID_DRAW_270_LT
-                MENUITEM "360 Degree",                  ID_DRAW_360_LT
-                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-                MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-                MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-                MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-                MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-                MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-                MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+                MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+                MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+                MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+                MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+                MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+                MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+                MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+                MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+                MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+                MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+                MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
             END
             POPUP "Pi&vot"
             BEGIN
-                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+                MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
             END
             POPUP "Fron&t"
             BEGIN
-                MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
-                MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
-                MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
-                MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+                MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
                 MENUITEM "Turn-Call Front",             ID_TURN_FRONT
                 MENUITEM "Finish Right",                ID_FINISH_RIGHT
                 MENUITEM "Finish Left",                 ID_FINISH_LEFT
@@ -735,10 +734,10 @@ BEGIN
             END
             POPUP "&Moving"
             BEGIN
-                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-                MENUITEM "Jump",                        ID_DRAW_JUMP
-                MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
-                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+                MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+                MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+                MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
                 MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
                 MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
                 MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
@@ -746,18 +745,18 @@ BEGIN
             END
             POPUP "H&eel"
             BEGIN
-                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+                MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+                MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
             END
             POPUP "&Weaves"
             BEGIN
-                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+                MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+                MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+                MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
             END
         END
         POPUP "&Insert At"
@@ -777,21 +776,21 @@ IDR_HALT_FOR_AKC MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-        MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
-        MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-        MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-        MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-        MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-        MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-        MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-        MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
-        MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-        MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-        MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-        MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-        MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-        MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
+        MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+        MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+        MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+        MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+        MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+        MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+        MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+        MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+        MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
+        MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+        MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+        MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+        MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+        MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+        MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
     END
 END
 
@@ -799,10 +798,10 @@ IDR_CHANGE_PACE MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Slow",                        ID_DRAW_SLOW
-        MENUITEM "Normal",                      ID_DRAW_NORMAL
-        MENUITEM "Fast",                        ID_DRAW_FAST
-        MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+        MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+        MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+        MENUITEM "Fast [18]",                   ID_DRAW_FAST
+        MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
     END
 END
 
@@ -810,17 +809,17 @@ IDR_RIGHT_TURNS MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-        MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-        MENUITEM "270 Degree",                  ID_DRAW_270_RT
-        MENUITEM "360 Degree",                  ID_DRAW_360_RT
-        MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-        MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-        MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-        MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-        MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+        MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+        MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+        MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+        MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+        MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+        MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+        MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+        MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+        MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+        MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+        MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
     END
 END
 
@@ -828,21 +827,21 @@ IDR_LEFT_TURNS MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-        MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-        MENUITEM "270 Degree",                  ID_DRAW_270_LT
-        MENUITEM "360 Degree",                  ID_DRAW_360_LT
-        MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-        MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-        MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-        MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-        MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-        MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-        MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-        MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-        MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+        MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+        MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+        MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+        MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+        MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+        MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+        MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+        MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+        MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+        MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+        MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+        MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+        MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+        MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
     END
 END
 
@@ -850,16 +849,16 @@ IDR_MOVE_X MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-        MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-        MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
-        MENUITEM "Jump",                        ID_DRAW_JUMP
-        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-        MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-        MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-        MENUITEM "Stand-Leave Dog-Distance Down", ID__DRAW_DOWNWHILEHEELING
-        MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-        MENUITEM "Sit Walk Around Dog",         ID__DRAW_SITSTAY
+        MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+        MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+        MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
+        MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+        MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+        MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+        MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+        MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+        MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
     END
 END
 
@@ -867,14 +866,14 @@ IDR_FINISH_X MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-        MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-        MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-        MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-        MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-        MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-        MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
-        MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
+        MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+        MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+        MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+        MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+        MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+        MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+        MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
+        MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
     END
 END
 
@@ -882,12 +881,12 @@ IDR_HEEL MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-        MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-        MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-        MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-        MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+        MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+        MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+        MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+        MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+        MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+        MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
     END
 END
 
@@ -897,70 +896,69 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-            MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
-            MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-            MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-            MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-            MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-            MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-            MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-            MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-            MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-            MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-            MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-            MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-            MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+            MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+            MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+            MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+            MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+            MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+            MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+            MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+            MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
         END
         POPUP "Pace"
         BEGIN
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
         END
         POPUP "Pivots"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "Front"
         BEGIN
-            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-            MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
-            MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
+            MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-            MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
-            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
-            MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
+            MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
         END
         POPUP "Heel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-            MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+            MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
         END
     END
 END
@@ -971,50 +969,49 @@ BEGIN
     BEGIN
         POPUP "Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+            MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Jump",                        ID_DRAW_JUMP
-            MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-            MENUITEM "Stand-Leave Dog-Distance Down", ID__DRAW_DOWNWHILEHEELING
-            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-            MENUITEM "Sit-Walk Around Dog",         ID__DRAW_SITSTAY
-            MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+            MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+            MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+            MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+            MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
+            MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
         END
         POPUP "Heel"
         BEGIN
-            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-            MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
+            MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+            MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
         END
         POPUP "Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
-            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-            MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
+            MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+            MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
         END
     END
 END
@@ -1025,57 +1022,57 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-            MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
-            MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-            MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+            MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
         END
         POPUP "Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
-            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+            MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
         END
         POPUP "Front"
         BEGIN
-            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-            MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
         END
         POPUP "Heel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
         END
         POPUP "Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
         END
     END
 END
@@ -1086,47 +1083,47 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-            MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-            MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-            MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-            MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
+            MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+            MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+            MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-            MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+            MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-            MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-            MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+            MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
         END
         POPUP "Front"
         BEGIN
-            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-            MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
         END
         POPUP "Pivots"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot [38]", ID_DRAW_180_PIVOT_RT
             MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "H&eel"
         BEGIN
-            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
+            MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
         END
-        MENUITEM "Jump",                        ID_DRAW_JUMP
-        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+        MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+        MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
     END
 END
 
@@ -1136,22 +1133,22 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-            MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-            MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-            MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-            MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
+            MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+            MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+            MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+            MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
         END
         POPUP "Left Turn"
         BEGIN
-            MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-            MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-            MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
+            MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+            MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+            MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
         END
-        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-        MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-        MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
-        MENUITEM "Right U Turn-Left About Turn", ID_R_U_LEFT_ABOUT
+        MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+        MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
+        MENUITEM "Right U Turn-Left About Turn [60]", ID_R_U_LEFT_ABOUT
     END
 END
 
@@ -1159,10 +1156,12 @@ IDR_PIVOT_TURNS MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-        MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-        MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-        MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+        MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+        MENUITEM "Stand Pivot Right Forward (73)", ID_STAND_PIVOT_R_FOR
+        MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
+        MENUITEM "Stand Pivot Right Left (74)", ID_STAND_PIVOT_L_FOR
     END
 END
 
@@ -1170,12 +1169,12 @@ IDR_HALT_FOR_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+        MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
         MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
         MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
-        MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
-        MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-        MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+        MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+        MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+        MENUITEM "Sit-Walk Around [30]",        ID_DRAW_HALTWALK
         MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
         MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
         MENUITEM "Return-Stand",                ID_RETURN_STAND
@@ -1192,14 +1191,14 @@ IDR_RIGHT_TURNS_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-        MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-        MENUITEM "270 Degree",                  ID_DRAW_270_RT
-        MENUITEM "360 Degree",                  ID_DRAW_360_RT
-        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-        MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-        MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+        MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+        MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+        MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+        MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+        MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+        MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+        MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+        MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
         MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
     END
 END
@@ -1208,14 +1207,14 @@ IDR_LEFT_TURNS_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-        MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-        MENUITEM "270 Degree",                  ID_DRAW_270_LT
-        MENUITEM "360 Degree",                  ID_DRAW_360_LT
-        MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-        MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-        MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-        MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+        MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+        MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+        MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+        MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+        MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+        MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+        MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
         MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
     END
 END
@@ -1224,10 +1223,10 @@ IDR_FINISH_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
-        MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
-        MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
-        MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+        MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+        MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+        MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+        MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
         MENUITEM "Turn-Call Front",             ID_TURN_FRONT
         MENUITEM "Finish Right",                ID_FINISH_RIGHT
         MENUITEM "Finish Left",                 ID_FINISH_LEFT
@@ -1239,10 +1238,10 @@ IDR_MOVE_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-        MENUITEM "Jump",                        ID_DRAW_JUMP
-        MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
-        MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+        MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+        MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+        MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+        MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
         MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
         MENUITEM "Turn and Call to Heel",       ID_MOVE_STAND_LEAVE_TWO
         MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
@@ -1258,10 +1257,10 @@ IDR_PIVOT_TURNS_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-        MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-        MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-        MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+        MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+        MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+        MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+        MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
     END
 END
 
@@ -1269,12 +1268,12 @@ IDR_WEAVE MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-        MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-        MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
-        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-        MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+        MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+        MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+        MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+        MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
+        MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+        MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
     END
 END
 
@@ -1282,11 +1281,11 @@ IDR_WEAVE_APDT MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-        MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-        MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-        MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+        MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+        MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+        MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+        MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
     END
 END
 
@@ -1296,63 +1295,63 @@ BEGIN
     BEGIN
         POPUP "Halt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
             MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
             MENUITEM "Sit-Down",                    ID_DRAW_SITHALTDOWN
-            MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
-            MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Sit-Walk Around [30]",        ID_DRAW_HALTWALK
             MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
         END
         POPUP "Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
             MENUITEM "About Turn",                  ID_DRAW_ABOUT_TURN_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
         END
         POPUP "Pivots"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
         END
         POPUP "Front"
         BEGIN
-            MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
-            MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
         END
         POPUP "Heel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
         END
         POPUP "Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
         END
     END
 END
@@ -1367,17 +1366,17 @@ BEGIN
         END
         POPUP "Pace"
         BEGIN
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "Right Turns"
         BEGIN
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
         END
         POPUP "Left Turns"
         BEGIN
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
         END
         POPUP "Front"
         BEGIN
@@ -1388,21 +1387,21 @@ BEGIN
         END
         POPUP "Pivots"
         BEGIN
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "Moving"
         BEGIN
-            MENUITEM "Jump",                        ID_DRAW_JUMP
-            MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
+            MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
         END
         POPUP "Heel"
         BEGIN
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
         END
         POPUP "Weaves"
         BEGIN
-            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
+            MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
         END
     END
 END
@@ -1411,115 +1410,114 @@ IDR_ADD_AKC MENU
 BEGIN
     POPUP "&Add"
     BEGIN
-        MENUITEM "&Start",                      ID_DRAW_START
-        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        MENUITEM "&Start [1]",                  ID_DRAW_START
+        MENUITEM "&Finish [2]",                 ID_DRAW_FINISH
         POPUP "H&alt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-            MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
-            MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-            MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-            MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-            MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-            MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-            MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-            MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
-            MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-            MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-            MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-            MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-            MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-            MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+            MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+            MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+            MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+            MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+            MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
+            MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+            MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+            MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+            MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+            MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+            MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
         END
         POPUP "&Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "&Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
-            MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-            MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-            MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-            MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+            MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+            MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+            MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
         END
         POPUP "&Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
-            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-            MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-            MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-            MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-            MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-            MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-            MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+            MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+            MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+            MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+            MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+            MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+            MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
         END
         POPUP "Pi&vot"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "Finish"
         BEGIN
-            MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-            MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-            MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
-            MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-            MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+            MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
             MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
         END
         POPUP "&Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-            MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
-            MENUITEM "Jump",                        ID_DRAW_JUMP
-            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-            MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-            MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
-            MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-            MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
-            MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
+            MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+            MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+            MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+            MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+            MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
+            MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
         END
         POPUP "H&eel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-            MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-            MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+            MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+            MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+            MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
         END
         POPUP "&Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+            MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
             MENUITEM "Figure 8-No Distractions",    ID_WEAVES_FIGURE8
-            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-            MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+            MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+            MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
         END
     END
 END
@@ -1538,116 +1536,115 @@ BEGIN
             MENUITEM "Horizontal",                  ID_ALIGN_HORIZ
             MENUITEM "Vertical",                    ID_ALIGN_VERT
         END
-        POPUP "Add AKC"
+        POPUP "Add ANKC"
         BEGIN
-            MENUITEM "Start",                       ID_DRAW_START
-            MENUITEM "Finish",                      ID_DRAW_FINISH
+            MENUITEM "Start [1]",                   ID_DRAW_START
+            MENUITEM "Finish [2]",                  ID_DRAW_FINISH
             POPUP "Halt-Forward"
             BEGIN
-                MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
-                MENUITEM "Halt- Down",                  ID_DRAW_SITHALTDOWN
-                MENUITEM "Halt-Walk Around",            ID_DRAW_HALTWALK
-                MENUITEM "Halt-Down-Walk Around",       ID_DRAW_DOWNWALK
-                MENUITEM "Halt-Stand-Walk Around",      ID_DRAW_STANDWALK
-                MENUITEM "Halt-Down-Sit",               ID_DRAW_DOWNSIT
-                MENUITEM "Halt–Leave Dog-Recall",       ID_HALT_LEAVE_RECALL
-                MENUITEM "Leave-About Turn–Return",     ID_LEAVE_ABOUT_RET
-                MENUITEM "Halt–Dog circles–Forward",    ID_HALT_CIRCLE_FOR
-                MENUITEM "Halt-Stand-Sit",              ID_DRAW_STANDSIT
-                MENUITEM "Halt-Stand-Down",             ID_DRAW_STANDDOWN
-                MENUITEM "Halt-Leave Dog - Recall",     ID_DRAW_SLOWFORWARDFROMSIT
-                MENUITEM "Leave-About–Recall–Fin Right", ID_LEAVE_ABT_REC_FIN_R
-                MENUITEM "Leave-About–Recall–Fin Left", ID_LEAVE_ABT_REC_FIN_L
-                MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
+                MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
+                MENUITEM "Halt-Down [4]",               ID_DRAW_SITHALTDOWN
+                MENUITEM "Halt-Walk Around [30]",       ID_DRAW_HALTWALK
+                MENUITEM "Halt-Down-Walk Around [31]",  ID_DRAW_DOWNWALK
+                MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
+                MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+                MENUITEM "Halt–Leave Dog-Recall [46]",  ID_HALT_LEAVE_RECALL
+                MENUITEM "Leave-About Turn–Return [51]", ID_LEAVE_ABOUT_RET
+                MENUITEM "Halt–Dog circles–Forward [52]", ID_HALT_CIRCLE_FOR
+                MENUITEM "Halt-Stand-Sit [54]",         ID_DRAW_STANDSIT
+                MENUITEM "Halt-Stand-Down [55]",        ID_DRAW_STANDDOWN
+                MENUITEM "Halt-Leave Dog-Recall [57]",  ID_DRAW_SLOWFORWARDFROMSIT
+                MENUITEM "Leave-About–Recall–Fin Right [58]", ID_LEAVE_ABT_REC_FIN_R
+                MENUITEM "Leave-About–Recall–Fin Left [59]", ID_LEAVE_ABT_REC_FIN_L
+                MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
             END
             POPUP "Pace"
             BEGIN
-                MENUITEM "Slow",                        ID_DRAW_SLOW
-                MENUITEM "Normal",                      ID_DRAW_NORMAL
-                MENUITEM "Fast",                        ID_DRAW_FAST
-                MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+                MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+                MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+                MENUITEM "Fast [18]",                   ID_DRAW_FAST
+                MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
             END
             POPUP "Right Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-                MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-                MENUITEM "270 Degree",                  ID_DRAW_270_RT
-                MENUITEM "360 Degree",                  ID_DRAW_360_RT
-                MENUITEM "Halt About-Forward",          ID_ABOUT_FORWARD_RT
-                MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-                MENUITEM "Double Right U Turn",         ID_DOUBLE_RIGHT_UTURN
-                MENUITEM "Right U Turn–Left About Turn", ID_R_U_LEFT_ABOUT
-                MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
+                MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+                MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+                MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+                MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+                MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
+                MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+                MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+                MENUITEM "Double Right U Turn [47]",    ID_DOUBLE_RIGHT_UTURN
+                MENUITEM "Right U Turn–Left About Turn [60]", ID_R_U_LEFT_ABOUT
+                MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
             END
             POPUP "Left Turns"
             BEGIN
-                MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-                MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-                MENUITEM "270 Degree",                  ID_DRAW_270_LT
-                MENUITEM "360 Degree",                  ID_DRAW_360_LT
-                MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
-                MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-                MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-                MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-                MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-                MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-                MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-                MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-                MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+                MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+                MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+                MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+                MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+                MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
+                MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+                MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+                MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+                MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+                MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+                MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+                MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+                MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
             END
             POPUP "Pi&vot"
             BEGIN
-                MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-                MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-                MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-                MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+                MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+                MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+                MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+                MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
             END
             POPUP "Finish"
             BEGIN
-                MENUITEM "Right Forward",               ID_DRAW_FINISH_RT_FORWARD
-                MENUITEM "Left Forward",                ID_DRAW_FINISH_LEFT_FORWARD
-                MENUITEM "Right Halt",                  ID_DRAW_FINISH_RT_HALT
-                MENUITEM "Left Halt",                   ID_DRAW_FINISH_LT_HALT
-                MENUITEM "Front Return Heel",           ID_DRAW_FRONTHEEL
-                MENUITEM "Halt-Right",                  ID_DRAW_HALT_FINISH_RT
-                MENUITEM "Halt Left",                   ID_DRAW_HALT_FINISH_LT
-                MENUITEM "Handler Rev. 3 Steps",        ID_FRONT_REV_3_STEPS
-                MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
+                MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+                MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+                MENUITEM "Front Finish Right Halt [15] ", ID_DRAW_FINISH_RT_HALT
+                MENUITEM "Front Finish Left Halt [16] ", ID_DRAW_FINISH_LT_HALT
+                MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+                MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
+                MENUITEM "Handler Rev. 3 Steps [50]",   ID_FRONT_REV_3_STEPS
+                MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
             END
             POPUP "Moving"
             BEGIN
-                MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-                MENUITEM "Down",                        ID_DRAW_MOVE_DOWN
-                MENUITEM "Stand",                       ID_DRAW_MOVINGSTAND
-                MENUITEM "Jump",                        ID_DRAW_JUMP
-                MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
-                MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-                MENUITEM "Down While Heeling",          ID__DRAW_DOWNWHILEHEELING
-                MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-                MENUITEM "Sit Stay",                    ID__DRAW_SITSTAY
-                MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
+                MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+                MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+                MENUITEM "Stand [32]",                  ID_DRAW_MOVINGSTAND
+                MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+                MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
+                MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+                MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+                MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+                MENUITEM "Sit-Walk Around Dog [70]",    ID__DRAW_SITSTAY
+                MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
             END
             POPUP "Heel"
             BEGIN
-                MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-                MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-                MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-                MENUITEM "Circle Spin at Heel",         ID__DRAW_CALLTOHEEL
-                MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-                MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
+                MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+                MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+                MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+                MENUITEM "Circle Spin at Heel [64]",    ID__DRAW_CALLTOHEEL
+                MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+                MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
             END
             POPUP "Weaves"
             BEGIN
-                MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-                MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-                MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-                MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
-                MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-                MENUITEM "Four Cone Figure 8",          ID_WEAVES_FIGURE8
+                MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+                MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+                MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+                MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
+                MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+                MENUITEM "Four Cone Figure 8 [65]",     ID_WEAVES_FIGURE8
             END
         END
     END
@@ -1688,9 +1685,9 @@ BEGIN
     BEGIN
         MENUITEM "Sprial Right 1A",             ID_SPIRAL_RT_1A
         MENUITEM "Sprial Right 1B",             ID_SPIRAL_RT_1B
-        MENUITEM "Spiral Left",                 ID_SPIRAL_LT
-        MENUITEM "Figure 8-Weave Twice",        ID_FIG8_PATTERN
-        MENUITEM "Serpentine Weave Once",       ID_SERP_PATTERN
+        MENUITEM "Spiral Left [22]",            ID_SPIRAL_LT
+        MENUITEM "Figure 8-Weave Twice [23]",   ID_FIG8_PATTERN
+        MENUITEM "Serpentine Weave Once [24]",  ID_SERP_PATTERN
         MENUITEM "Offset Figure 8",             ID_OFFSET_3A
     END
 END
@@ -1712,17 +1709,17 @@ IDR_MASTER MENU
 BEGIN
     POPUP ""
     BEGIN
-        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
-        MENUITEM "Halt-Leave Dog - Down - Sit", ID_DRAW_STAND
-        MENUITEM "Stand-Leave-Down-Sit-Distance-Return", ID__STAND_LEAVE_DOWN
-        MENUITEM "Stand-Leave Dog-Distance Down", ID__DRAW_DOWNWHILEHEELING
-        MENUITEM "Down-Walk Around",            ID__DRAW_MOVE_DOWN
-        MENUITEM "Halt-Leave-3 mtrs-Heel",      ID__DRAW_2_STEPS_FORWARD
-        MENUITEM "Moving Sit-Walk Around Dog",  ID__DRAW_SITSTAY
-        MENUITEM "Stand–Pivot Right–Forward",   ID_STAND_PIVOT_R_FOR
-        MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-        MENUITEM "Call Front–Circle Spin Right–Finish Left", ID_FRT_CIR_R_FIN_L
-        MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+        MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
+        MENUITEM "Halt-Leave Dog-Down-Sit [66]", ID_DRAW_STAND
+        MENUITEM "Stand-Leave-Down-Sit-Distance-Return [67]", ID__STAND_LEAVE_DOWN
+        MENUITEM "Stand-Leave Dog-Distance Down [68]", ID__DRAW_DOWNWHILEHEELING
+        MENUITEM "Down-Walk Around [69]",       ID__DRAW_MOVE_DOWN
+        MENUITEM "Halt-Leave-3 mtrs-Heel [71]", ID__DRAW_2_STEPS_FORWARD
+        MENUITEM "Moving Sit-Walk Around Dog [70]", ID__DRAW_SITSTAY
+        MENUITEM "Stand–Pivot Right–Forward [73]", ID_STAND_PIVOT_R_FOR
+        MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+        MENUITEM "Call Front–Circle Spin Right–Finish Left [75]", ID_FRT_CIR_R_FIN_L
+        MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
     END
 END
 
@@ -1732,16 +1729,16 @@ BEGIN
     BEGIN
         POPUP "Moving"
         BEGIN
-            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
             MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
             MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
             MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
             MENUITEM "Leave-Send Over Jump",        ID_JUMP_LEAVE
         END
-        MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+        MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
         MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
         MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
-        MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+        MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
         MENUITEM "Down-Recall",                 ID_DOWN_RECALL
         MENUITEM "Retrieve-Finish",             ID_RETRIEVE_FINISH
     END
@@ -1751,17 +1748,17 @@ IDR_ADD_APDT MENU
 BEGIN
     POPUP "&Add APDT"
     BEGIN
-        MENUITEM "&Start",                      ID_DRAW_START
-        MENUITEM "&Finish",                     ID_DRAW_FINISH
+        MENUITEM "&Start [1]",                  ID_DRAW_START
+        MENUITEM "&Finish [2]",                 ID_DRAW_FINISH
         POPUP "H&alt-Forward"
         BEGIN
-            MENUITEM "Halt-Sit",                    ID_DRAW_SITHALT
+            MENUITEM "Halt-Sit [3]",                ID_DRAW_SITHALT
             MENUITEM "Sit-Stand",                   ID_DRAW_SIT_STAND
             MENUITEM "Sit - Down",                  ID_DRAW_SITHALTDOWN
-            MENUITEM "Sit-Down-Sit",                ID_DRAW_DOWNSIT
-            MENUITEM "Sit-Walk Around",             ID_DRAW_HALTWALK
+            MENUITEM "Halt-Down-Sit [45]",          ID_DRAW_DOWNSIT
+            MENUITEM "Sit-Walk Around [30]",        ID_DRAW_HALTWALK
             MENUITEM "Sit-Down-Walk Around",        ID_DRAW_DOWNWALK
-            MENUITEM "Stand-Exam-Leave",            ID_DRAW_STANDWALK
+            MENUITEM "Halt-Stand-Walk Around [36]", ID_DRAW_STANDWALK
             MENUITEM "Return-Stand",                ID_RETURN_STAND
             MENUITEM "Recall-Leave",                ID_RECALL_LEAVE
             MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
@@ -1771,55 +1768,55 @@ BEGIN
         END
         POPUP "&Pace"
         BEGIN
-            MENUITEM "Slow",                        ID_DRAW_SLOW
-            MENUITEM "Normal",                      ID_DRAW_NORMAL
-            MENUITEM "Fast",                        ID_DRAW_FAST
-            MENUITEM "Fast From Sit",               ID_DRAW_FAST_SIT
+            MENUITEM "Slow [17]",                   ID_DRAW_SLOW
+            MENUITEM "Normal [19]",                 ID_DRAW_NORMAL
+            MENUITEM "Fast [18]",                   ID_DRAW_FAST
+            MENUITEM "Fast From Sit [28]",          ID_DRAW_FAST_SIT
         END
         POPUP "&Right Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_RT_TURN
-            MENUITEM "About Turn",                  ID_DRAW_ABOUT_RT
-            MENUITEM "270 Degree",                  ID_DRAW_270_RT
-            MENUITEM "360 Degree",                  ID_DRAW_360_RT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_RT
-            MENUITEM "1 Step-Call to Heel",         ID_DRAW_1STEP_HEEL_RT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_RT
-            MENUITEM "About-Forward",               ID_ABOUT_FORWARD_RT
+            MENUITEM "90 Degree [5]",               ID_DRAW_RT_TURN
+            MENUITEM "About Turn [7]",              ID_DRAW_ABOUT_RT
+            MENUITEM "270 Degree [9]",              ID_DRAW_270_RT
+            MENUITEM "360 Degree [11]",             ID_DRAW_360_RT
+            MENUITEM "90 Degree Pivot [37]",        ID_DRAW_90_PIVOT_RT
+            MENUITEM "1 Step-Call to Heel [35]",    ID_DRAW_1STEP_HEEL_RT
+            MENUITEM "180 Degree Pivot [43]",       ID_DRAW_180_PIVOT_RT
+            MENUITEM "Halt About Turn Right -Forward [34]", ID_ABOUT_FORWARD_RT
             MENUITEM "90 Degree-Down",              ID_DRAW_RT_DOWN
         END
         POPUP "&Left Turns"
         BEGIN
-            MENUITEM "90 Degree",                   ID_DRAW_LT_TURN
-            MENUITEM "About ""U"" Turn",            ID_DRAW_ABOUT_LT
-            MENUITEM "270 Degree",                  ID_DRAW_270_LT
-            MENUITEM "360 Degree",                  ID_DRAW_360_LT
-            MENUITEM "90 Degree Pivot",             ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Pivot",            ID_DRAW_180_PIVOT_LT
-            MENUITEM """U"" Turn-Forward",          ID_DRAW_U_FORWARD_LT
-            MENUITEM "Left About Turn",             ID_DRAW_ABOUT_TURN_LT
+            MENUITEM "90 Degree [6]",               ID_DRAW_LT_TURN
+            MENUITEM "About ""U"" Turn [8]",        ID_DRAW_ABOUT_LT
+            MENUITEM "270 Degree [10]",             ID_DRAW_270_LT
+            MENUITEM "360 Degree [12]",             ID_DRAW_360_LT
+            MENUITEM "90 Degree Pivot [38]",        ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Pivot [44]",       ID_DRAW_180_PIVOT_LT
+            MENUITEM """U"" Turn-Forward [33]",     ID_DRAW_U_FORWARD_LT
+            MENUITEM "Left About Turn [29]",        ID_DRAW_ABOUT_TURN_LT
             MENUITEM "90 Degree-Down",              ID_DRAW_LT_DOWN
-            MENUITEM "Double Left U Turn",          ID_DOUBLE_LEFT_UTURN
-            MENUITEM "Double Left About Turn",      ID_DOUBLE_LEFT_ATURN
-            MENUITEM "Left U Turn–Left About Turn", ID_L_U_LEFT_ABOUT
-            MENUITEM "Left About Turn–Right U Turn", ID_L_ABOUT_RIGHT_U
-            MENUITEM "Left About Turn–Left U Turn", ID_L_ABOUT_LEFT_U
-            MENUITEM "Stand–Pivot Left–Forward",    ID_STAND_PIVOT_L_FOR
-            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right", ID_TR_L_HEEL_R_T_R
+            MENUITEM "Double Left U Turn [48]",     ID_DOUBLE_LEFT_UTURN
+            MENUITEM "Double Left About Turn [49]", ID_DOUBLE_LEFT_ATURN
+            MENUITEM "Left U Turn–Left About Turn [61]", ID_L_U_LEFT_ABOUT
+            MENUITEM "Left About Turn–Right U Turn [62]", ID_L_ABOUT_RIGHT_U
+            MENUITEM "Left About Turn–Left U Turn [63]", ID_L_ABOUT_LEFT_U
+            MENUITEM "Stand–Pivot Left–Forward [74]", ID_STAND_PIVOT_L_FOR
+            MENUITEM "180 Turn Left–Heel on Right–180 Turn Right [76]", ID_TR_L_HEEL_R_T_R
         END
         POPUP "Pi&vot"
         BEGIN
-            MENUITEM "90 Degree Right Pivot",       ID_DRAW_90_PIVOT_RT
-            MENUITEM "90 Degree Left Pivot",        ID_DRAW_90_PIVOT_LT
-            MENUITEM "180 Degree Right Pivot",      ID_DRAW_180_PIVOT_RT
-            MENUITEM "180 Degree Left Pivot",       ID_DRAW_180_PIVOT_LT
+            MENUITEM "90 Degree Right Pivot [37]",  ID_DRAW_90_PIVOT_RT
+            MENUITEM "90 Degree Left Pivot [38]",   ID_DRAW_90_PIVOT_LT
+            MENUITEM "180 Degree Right Pivot [43]", ID_DRAW_180_PIVOT_RT
+            MENUITEM "180 Degree Left Pivot [44]",  ID_DRAW_180_PIVOT_LT
         END
         POPUP "Fron&t"
         BEGIN
-            MENUITEM "Front-Forward-Right",         ID_DRAW_FINISH_RT_FORWARD
-            MENUITEM "Front-Forward-Left",          ID_DRAW_FINISH_LEFT_FORWARD
-            MENUITEM "Front-Finish-Right",          ID_DRAW_HALT_FINISH_RT
-            MENUITEM "Front-Finish-Left",           ID_DRAW_HALT_FINISH_LT
+            MENUITEM "Front-Right-Forward [13]",    ID_DRAW_FINISH_RT_FORWARD
+            MENUITEM "Front-Left-Forward [14]",     ID_DRAW_FINISH_LEFT_FORWARD
+            MENUITEM "Halt-Front-Finish Right [41]", ID_DRAW_HALT_FINISH_RT
+            MENUITEM "Halt-Front-Finish Left [42]", ID_DRAW_HALT_FINISH_LT
             MENUITEM "Turn-Call Front",             ID_TURN_FRONT
             MENUITEM "Finish Right",                ID_FINISH_RIGHT
             MENUITEM "Finish Left",                 ID_FINISH_LEFT
@@ -1827,10 +1824,10 @@ BEGIN
         END
         POPUP "&Moving"
         BEGIN
-            MENUITEM "Side Step Right",             ID_DRAW_SIDE_RT
-            MENUITEM "Jump",                        ID_DRAW_JUMP
-            MENUITEM "Down-Forward",                ID_DRAW_MOVE_DOWN
-            MENUITEM "Stand-Walk Around",           ID_DRAW_MOVE_STAND_WALK
+            MENUITEM "Side Step Right [20]",        ID_DRAW_SIDE_RT
+            MENUITEM "Jump-Handler Passes By [53]", ID_DRAW_JUMP
+            MENUITEM "Down [27]",                   ID_DRAW_MOVE_DOWN
+            MENUITEM "Stand-Walk Around [56]",      ID_DRAW_MOVE_STAND_WALK
             MENUITEM "Stand-Leave-Heel",            ID_MOVE_STAND_LEAVE
             MENUITEM "Stand-Leave-Down-Sit-Finish", ID_MOVE_STAND_SIT_FINISH
             MENUITEM "Recall Over Jump",            ID_JUMP_RECALL
@@ -1838,18 +1835,18 @@ BEGIN
         END
         POPUP "H&eel"
         BEGIN
-            MENUITEM "Halt-3 Steps Forward",        ID_DRAW_HALT_3_STEPS_FOR
-            MENUITEM "Front-3 Steps Backward",      ID_DRAW_FRONT_3_STEPS_BACK
-            MENUITEM "Side-step Right",             ID_DRAW_SIDE_RIGHT
-            MENUITEM "Backup 3 Steps",              ID_DRAW_BACKUP_3
+            MENUITEM "Halt-3 Steps Forward [25]",   ID_DRAW_HALT_3_STEPS_FOR
+            MENUITEM "Front-3 Steps Backward [26]", ID_DRAW_FRONT_3_STEPS_BACK
+            MENUITEM "Side-step Right [40]",        ID_DRAW_SIDE_RIGHT
+            MENUITEM "Backup 3 Steps [72]",         ID_DRAW_BACKUP_3
         END
         POPUP "&Weaves"
         BEGIN
-            MENUITEM "Spiral Right",                ID_DRAW_SPIRAL_RIGHT
-            MENUITEM "Spiral Left",                 ID_DRAW_SPIRAL_LEFT
-            MENUITEM "Figure 8-Weave Twice",        ID_DRAW_WEAVE_TWICE
-            MENUITEM "Off-set Figure 8",            ID_DRAW_OFFSET_8
-            MENUITEM "Serpentine Weave Once",       ID_DRAW_SERP_ONCE
+            MENUITEM "Spiral Right [21]",           ID_DRAW_SPIRAL_RIGHT
+            MENUITEM "Spiral Left [22]",            ID_DRAW_SPIRAL_LEFT
+            MENUITEM "Figure 8-Weave Twice [23]",   ID_DRAW_WEAVE_TWICE
+            MENUITEM "Off-set Figure 8 [38]",       ID_DRAW_OFFSET_8
+            MENUITEM "Serpentine Weave Once [24]",  ID_DRAW_SERP_ONCE
         END
     END
 END
@@ -1902,9 +1899,9 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About RallyOC Australia 2016"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    CONTROL         "RallyOC Australia Version 1.0.2",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,40,16,119,8
+    CONTROL         "RallyOC Australia Version 2.0.0.3",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,40,16,119,8
     DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
-    LTEXT           "Copyright (C) 2015-All Natural Software",IDC_STATIC,39,31,138,8
+    LTEXT           "Copyright (C) 2021-All Natural Software",IDC_STATIC,39,31,138,8
     GROUPBOX        "This product is licensed to:",IDC_REG_INFO,13,47,206,45
     LTEXT           "Warning:This computer program is protected under copyright law and international treaties.",IDC_STATIC,7,99,221,19
     LTEXT           " Unautorized reproduction or distribution of this program, or any protion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.",IDC_STATIC,7,118,221,25
@@ -1937,7 +1934,7 @@ CAPTION "COURSE INFORMATION"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     EDITTEXT        IDC_COMPETATION,52,11,240,13,ES_AUTOHSCROLL
-    CONTROL         "AKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,31,30,10
+    CONTROL         "ANKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,31,35,10
     CONTROL         "APDT",IDC_TYPE_APDT,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,103,31,35,10
     CONTROL         "Novice",IDC_NOVICE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,51,44,39,10
     CONTROL         "Advanced",IDC_ADVANCED,"Button",BS_AUTORADIOBUTTON,103,44,49,10
@@ -2054,7 +2051,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "COURSE MAP PREFERENCES"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    CONTROL         "AKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,6,30,10
+    CONTROL         "ANKC",IDC_TYPE_AKC,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,6,35,10
     CONTROL         "APDT",IDC_TYPE_APDT,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,103,6,35,10
     CONTROL         "Novice",IDC_NOVICE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,51,19,39,10
     CONTROL         "Advanced",IDC_ADVANCED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,103,19,49,10
@@ -2112,7 +2109,7 @@ BEGIN
     PUSHBUTTON      "Cancel",IDCANCEL,261,114,50,14,NOT WS_VISIBLE
     LTEXT           "Station Number",IDC_TX_STAT_NO,1,7,50,8
     LTEXT           "Station Name",IDC_TX_STAT_NAME,55,7,44,8
-    LTEXT           "AKC / APDT No.",IDC_TX_AKC_NO,253,7,55,8
+    LTEXT           "ANKC / APDT No.",IDC_TX_AKC_NO,253,7,55,8
     COMBOBOX        IDC_STAT_NAME,54,22,195,310,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDC_A_NUMBER,254,22,57,315,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     EDITTEXT        IDC_STAT_NO,1,22,46,12,ES_AUTOHSCROLL
@@ -2201,10 +2198,10 @@ BEGIN
     PUSHBUTTON      "Change Font",IDC_CHANGE_FONT,6,29,71,11
 END
 
-IDD_COURSE_INFO_PREF DIALOG  0, 0, 259, 135
+IDD_COURSE_INFO_PREF DIALOGEX 0, 0, 259, 135
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Course Map Text Preferences"
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,144,114,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,202,114,50,14
@@ -2219,14 +2216,14 @@ BEGIN
     GROUPBOX        "Include In Station List",IDC_STATIC,1,63,251,45
     CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,74,65,10
     CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,91,59,10
-    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,74,57,10
+    CONTROL         "ANKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,74,62,10
     CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,91,55,10
 END
 
-IDD_STATION_LIST_PREF DIALOG  0, 0, 259, 175
+IDD_STATION_LIST_PREF DIALOGEX 0, 0, 259, 175
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Station List Preferences"
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,144,154,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,202,154,50,14
@@ -2240,14 +2237,14 @@ BEGIN
     CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,41,59,10
     CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,58,65,10
     CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,71,59,10
-    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,58,57,10
+    CONTROL         "ANKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,58,62,10
     CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,71,55,10
     CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,80,9
     CONTROL         "Course Statistics",IDC_STATS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,88,68,10
     GROUPBOX        "Include In Course Map Station List ",IDC_STATIC,1,111,251,38
     CONTROL         "Station Number",IDC_STAT_NUMBER_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,122,65,10
     CONTROL         "Station Name",IDC_STAT_NAME_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,136,59,10
-    CONTROL         "AKC Number",IDC_AKC_NUMBER_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,122,57,10
+    CONTROL         "ANKC Number",IDC_AKC_NUMBER_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,122,57,10
     CONTROL         "XY Location",IDC_XY_LOCATION_CM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,136,55,10
     CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,28,55,10
 END
@@ -2269,7 +2266,7 @@ BEGIN
     CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,43,59,10
     CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,92,65,10
     CONTROL         "Station Name",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,92,59,10
-    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,92,57,10
+    CONTROL         "ANKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,92,57,10
     CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,13,121,55,10
     CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,80,9
     CONTROL         "Arm Band No.",IDC_ARM_BAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,59,60,10
@@ -2281,10 +2278,10 @@ BEGIN
     CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,30,55,10
 END
 
-IDD_STATION_DESC_PREF DIALOG  0, 0, 259, 126
+IDD_STATION_DESC_PREF DIALOGEX 0, 0, 259, 126
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Station Description Preferences"
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,144,105,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,202,105,50,14
@@ -2298,7 +2295,7 @@ BEGIN
     CONTROL         "Judges Name",IDC_JUDGE_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,43,59,10
     CONTROL         "Station Number",IDC_STAT_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,60,65,10
     CONTROL         "Station Name and Desciption",IDC_STAT_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,73,108,10
-    CONTROL         "AKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,60,57,10
+    CONTROL         "ANKC Number",IDC_AKC_NUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,60,62,10
     CONTROL         "XY Location",IDC_XY_LOCATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,73,55,10
     CONTROL         "Course Information",IDC_COURSE_INFO_LIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,80,9
     CONTROL         "Organization",IDC_ORGANIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,29,55,10
@@ -2416,8 +2413,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,0,0,0
- PRODUCTVERSION 2,0,0,0
+ FILEVERSION 2,0,0,3
+ PRODUCTVERSION 2,0,0,3
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x21L
@@ -2434,14 +2431,14 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "All Natural Software"
             VALUE "FileDescription", "RallyOC Australia MFC Application"
-            VALUE "FileVersion", "2, 0, 0, 0"
+            VALUE "FileVersion", "2, 0, 0, 3"
             VALUE "InternalName", "RallyOCAustralia2021"
             VALUE "LegalCopyright", "Copyright (C) 2015"
             VALUE "LegalTrademarks", "All Natural Software, RallyOCAustralia"
             VALUE "OriginalFilename", "RallyOCAustralia2021.EXE"
             VALUE "ProductName", "RallyOCAustralia 2021"
-            VALUE "ProductVersion", "2, 0, 0, 0"
-            VALUE "SpecialBuild", "Release Version 1"
+            VALUE "ProductVersion", "2, 0, 0, 3"
+            VALUE "SpecialBuild", "Release Version 2"
         END
     END
     BLOCK "VarFileInfo"
